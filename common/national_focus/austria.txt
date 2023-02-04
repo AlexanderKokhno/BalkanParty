@@ -203,6 +203,8 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = aus_create_hre_tooltip
+
+			add_political_power = 200
 			
 			hidden_effect = {
 				create_faction = "Holy Roman Empire"		
@@ -614,20 +616,6 @@ focus_tree = {
 							has_dlc = "Together for Victory"
 						}
 						set_autonomy = {
-							target = BUR
-							autonomy_state = bp_hre_elector
-						}
-					}
-					else = {
-						puppet = BUR
-					}
-				}
-				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
 							target = BAY
 							autonomy_state = bp_hre_elector
 						}
@@ -669,22 +657,20 @@ focus_tree = {
 			has_completed_focus = AUS_declare_HRE
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
 		}
 
 		available = {
 			is_in_faction_with = FRA
 			is_in_faction_with = BAY
-			is_in_faction_with = BUR
 			is_in_faction_with = DNZ
 			is_in_faction_with = PRE
 			is_in_faction_with = SAX
 			FRA = { has_opinion = { target = AUS value > 75 } }
 			BAY = { has_opinion = { target = AUS value > 75 } }
-			BUR = { has_opinion = { target = AUS value > 75 } }
 			DNZ = { has_opinion = { target = AUS value > 75 } }
 			PRE = { has_opinion = { target = AUS value > 50 } }
 			SAX = { has_opinion = { target = AUS value > 75 } }
@@ -707,7 +693,19 @@ focus_tree = {
 
 
 		completion_reward = {
+			 FRA = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
+			 BAY = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
+			 DNZ = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
+			 PRE = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
+			 SAX = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
+			 limit = {
+				limit = {
+					is_in_faction_with = CZE
+				}
+			 	CZE = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }								
+			 }
 
+			unlock_decision_tooltip = call_hre_to_arms
 		}
 	}
 	focus = {
@@ -728,7 +726,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			CZE = { country_event = { id = 14}}
+			CZE = { country_event = { id = austria.14} }
 
 		}
 	}
@@ -738,16 +736,26 @@ focus_tree = {
 		relative_position_id = AUS_control_bohemia
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {   }
 		prerequisite = { focus = AUS_control_bohemia}
 		ai_will_do = {
 			factor = 10
 		}
 		available_if_capitulated = yes
+		available = {
+			is_in_faction_with = CZE
+		}
 
 		completion_reward = {
-
+			transfer_state = 67
+			transfer_state = 762
+			67 = {
+				add_core_of = AUS
+			}
+			762 = {
+				add_core_of = AUS
+			}
 
 		}
 	}

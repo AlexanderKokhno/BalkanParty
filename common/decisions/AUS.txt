@@ -1,0 +1,33 @@
+
+
+HRE_emperor_decisions = {
+  call_hre_to_arms = {
+
+
+
+		available = {
+      has_completed_focus = AUS_secure_electors
+		}
+
+		cost = 10
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+      OR = {
+        has_completed_focus = AUS_declare_HRE
+      }
+		}
+
+		complete_effect = {
+			add_stability = -0.05
+      add_war_support = -0.05
+      add_political_power = -300
+
+		}
+	}
+}

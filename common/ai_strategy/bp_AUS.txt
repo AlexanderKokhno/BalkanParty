@@ -1,0 +1,54 @@
+
+
+AUS_HRE_ally_ally_the_electors_ai_effort = {
+	enable = {
+		original_tag = AUS
+		has_completed_focus = AUS_declare_HRE
+	}
+
+	abort = {
+		has_completed_focus = AUS_secure_electors
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = 200
+	}	
+	ai_strategy = {
+			type = befriend
+			id = SAX
+			value = 100
+	}
+	ai_strategy = {
+			type = befriend
+			id = PRE
+			value = 100
+	}
+	ai_strategy = {
+			type = befriend
+			id = DNZ
+			value = 100
+	}
+	ai_strategy = {
+			type = befriend
+			id = BUR
+			value = 100
+	}
+	ai_strategy = {
+			type = befriend
+			id = BAY
+			value = 100
+	}
+	ai_strategy = {
+			type = befriend
+			id = FRA
+			value = 100
+	}
+	ai_strategy = {
+			type = befriend
+			id = CZE
+			value = 100
+	}
+}
+

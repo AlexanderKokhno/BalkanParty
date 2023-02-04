@@ -779,9 +779,6 @@ country_event = {
 		AUS = {
 			add_opinion_modifier = { target = ROOT modifier = GER_anschluss_rejected }
 			country_event = { hours = 2 id = austria.15 }
-			if = { limit = { is_in_faction_with = CZE }
-				remove_from_faction = CZE
-			}
 		}
 	}
 }

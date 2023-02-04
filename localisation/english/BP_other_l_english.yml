@@ -59,3 +59,17 @@
 
  bp_hre_prince:0 "Imperial Prince"
  bp_hre_elector:0 "Imperial Elector"
+
+###################################################### OPINION MODIFIERS ###############################################
+
+ electors_secured_leanings:0 "Austrian Emperor secured the Electors"
+
+
+######################################################### DECISION CATAGORIES #############################################
+
+ HRE_emperor_decisions:0 "Imperial Decisions"
+
+######################################################### DECISIONS ##############################################
+
+ call_hre_to_arms:0 "Issue a demand for Imperial Defence"
+ call_hre_to_arms_desc:0 "The Emperor is in danger, we must mobilize the empire to save us. Just as we protect them, they must protect us."

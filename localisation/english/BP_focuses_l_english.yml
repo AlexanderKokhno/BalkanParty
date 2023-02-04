@@ -321,18 +321,7 @@
   SER_COM_trotskyite_model:0 "Trotskyite Model"
   SER_COM_trotskyite_model_desc:0 "The list of communist countries is incomplete. YOU CAN HELP BY EXPANDING IT."
   SER_COM_anti_fascism:0 "Anti Fascism Policy"
-<<<<<<< Updated upstream
   SER_COM_anti_fascism_desc:0 "Fascism is a grave threat to our very existence, we must be the vanguard of the socialist cause that stands against it."
-=======
-  SER_COM_anti_fascism_desc:0 "Fascism is a grave threat to our very existance, we must be the vanguard of the socialist cause that stands against it."
-  SER_COM_anti_fascism_2:0 ""
-  SER_COM_anti_fascism_2_desc:0 ""
-  SER_COM_unified_front:0 ""
-  SER_COM_unified_front_desc:0 ""
-  SER_COM_protect_comrades:0 ""
-  SER_COM_protect_comrades_desc:0 ""
-
->>>>>>> Stashed changes
 
 
 
