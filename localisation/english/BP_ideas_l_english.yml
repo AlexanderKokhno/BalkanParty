@@ -39,6 +39,16 @@
  Prussian_army_idea:0 "Prussian Army"
  HRE_autonomous_neutrality_idea:0 "Imperial autonomy from the Emperor."
  HRE_autonomous_neutrality_idea_desc:0 "The members of the Holy Roman Empire are not required to answer the Emperor's call to arms. They do not wish to intervene in matters outside their domain."
+ AUS_ostend_corp:0 "Ostend Company"
+ AUS_ostend_corp_desc:0 ""
+ AUS_indian_investments:0 "Indian Commerce"
+ AUS_indian_investments_desc:0 ""
+ AUS_chinese_market:0 "Chinese Markets"
+ AUS_chinese_market_desc:0 ""
+ AUS_Australian_gold:0 "Australian Gold Yields"
+ AUS_Australian_gold_desc:0 ""
+ HOL_revolt:0 "Dutch Revolt!"
+ HOL_revolt_desc:0 "The Dutch people have not taken kindly to their new overlords. While the land remains that of [ROOT.GetName], the people are not."
 
 ############ CZE
 

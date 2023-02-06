@@ -30,4 +30,41 @@ HRE_emperor_decisions = {
 
 		}
 	}
+
+	AUS_hre_annex_hol = {
+
+		available = {
+      has_completed_focus = AUS_austrian_netherlands
+		}
+
+		cost = 200
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+      OR = {
+        has_completed_focus = AUS_declare_HRE
+      }
+		}
+
+		complete_effect = {
+			AUS = {
+				annex_country = { target = HOL transfer_troops = no }
+				add_timed_idea = { idea = HOL_revolt days = 365 }
+			}
+			7 = {
+				add_core_of = AUS
+			}
+			35 = {
+				add_core_of = AUS
+			}
+			36 = {
+				add_core_of = AUS
+			}
+		}
+	}
 }

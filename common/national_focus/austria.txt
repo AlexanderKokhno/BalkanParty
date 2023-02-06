@@ -936,14 +936,16 @@ focus_tree = {
 		available = {
 			has_completed_focus = AUS_declare_HRE
 		}
-		cost = 10
+		cost = 15
 		search_filters = {   }
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 		available_if_capitulated = yes
 
 		completion_reward = {
+			unlock_decision_tooltip = AUS_hre_annex_hol
+			add_political_power = -50
 
 
 		}
@@ -958,12 +960,21 @@ focus_tree = {
 		search_filters = {   }
 		prerequisite = { focus = AUS_austrian_netherlands}
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 		available_if_capitulated = yes
+		avaliable = {
+			AUS = {
+				AND = {
+					controls_state = 7
+					controls_state = 35
+					controls_state = 36
+				}
+			}
+		}
 
 		completion_reward = {
-
+			add_ideas = AUS_ostend_corp
 
 		}
 	}
@@ -977,12 +988,12 @@ focus_tree = {
 		search_filters = {   }
 		prerequisite = { focus = AUS_the_ostend_company}
 		ai_will_do = {
-			factor = 10
+			factor = 15
 		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = AUS_indian_investments
 
 		}
 	}
@@ -1002,7 +1013,7 @@ focus_tree = {
 
 		completion_reward = {
 
-
+			add_ideas = AUS_chinese_market
 		}
 	}
 	focus = {
@@ -1021,7 +1032,7 @@ focus_tree = {
 
 		completion_reward = {
 
-
+			add_ideas = AUS_Australian_gold
 		}
 	}
 ##############################################
@@ -1041,9 +1052,13 @@ focus_tree = {
 			factor = 10
 		}
 		available_if_capitulated = yes
+		avaliable = {
+			has_stability > 0.7
+		}
 
 		completion_reward = {
-
+			add_stability = 0.05
+			add_political_power = 50
 
 		}
 	}
@@ -1062,7 +1077,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			every_state = {
+				limit = { 
+					owns_state = AUS
+				}
+				PREV = {
+					add_extra_state_shared_building_slots = 1
+					
+				}
+		}
 
 		}
 	}
@@ -1079,6 +1102,9 @@ focus_tree = {
 			factor = 10
 		}
 		available_if_capitulated = yes
+		avaliable = {
+
+		}
 
 		completion_reward = {
 
@@ -1097,10 +1123,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		available_if_capitulated = yes
+		avaliable = {
+			controls_state = 4
+			num_of_owned_factories > 29
+		}
+		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_political_power = 75
+			add_stability = 0.05
+			add_war_support = 0.05
 
 		}
 	}

@@ -393,6 +393,112 @@ ideas = {
 				war_support_factor = 0.20
 				political_power_factor = 0.50
 			}
+		}
+		AUS_ostend_corp = {
+			
+			picture = hol_gateway_to_europe
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				civilian_factory_use = 1
+			}
+		}
+		AUS_indian_investments = {
+			
+			picture = can_wartime_prices_and_trade_board
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+				industrial_capacity_factory = 0.05
+				conversion_cost_mil_to_civ_factor = 0.5
+				trade_opinion_factor = 0.25
+				min_export = -0.2
+				civilian_factory_use = 1
+			}
+		}
+		AUS_chinese_market = {
+			
+			picture = prc_permit_opium_trade
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_lack_of_resource_penalty_factor = 0.2
+				civilian_intel_decryption_bonus = 0.1
+				embargo_cost_factor = 0.5
+				civilian_factory_use = 1
+
+			}
+		}
+		AUS_Australian_gold = {
+			
+			picture = SPR_seize_the_gold_reserves
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				civilian_factory_use = 1
+			}
+		}
+		HOL_revolt = {
+			
+			picture = hol_lead_the_minor_democracies
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.05
+				communism_drift = -0.025
+				army_attack_factor = -0.025
+				max_planning = -0.025
+        weekly_manpower = -1000
+				political_power_factor = -0.2
+				party_popularity_stability_factor = -0.25
+				stability_factor = -0.1
+				war_support_factor = -0.05
+			}
+		}
+		
 	}
 	# TECHNOLOGY
 	tank_manufacturer = {

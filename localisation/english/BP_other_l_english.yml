@@ -73,3 +73,5 @@
 
  call_hre_to_arms:0 "Issue a demand for Imperial Defence"
  call_hre_to_arms_desc:0 "The Emperor is in danger, we must mobilize the empire to save us. Just as we protect them, they must protect us."
+ AUS_hre_annex_hol:0 "Integrate the Lowlands"
+ AUS_hre_annex_hol_desc:0 ""
