@@ -1148,7 +1148,7 @@ focus_tree = {
 		relative_position_id = AUS_declare_HRE
 		x = 4
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {   }
 		available = {
 			has_completed_focus = AUS_declare_HRE
@@ -1156,10 +1156,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		available = {
+			is_subject = no
+			has_army_manpower = { size > 84999 }
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			create_wargoal = {
+    		type = puppet_wargoal_focus
+    		target = HUN
+				puppet_cost = 0.5
+			}
 
 		}
 	}
@@ -1175,11 +1183,35 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		avaliable = {
+			OR = {
+				AND = {
+					HUN = {
+						is_puppet_of = AUS
+						owns_state = 43
+						owns_state = 154
+						owns_state = 155
+					}
+				}
+			}
+		}
+		bypass = {
+			AUS = {
+				owns_state = 43
+				owns_state = 154
+				owns_state = 155
+			}
+		}
+			
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
-
-
+			annex_country = {
+    		target = HUN
+   			transfer_troops = yes
+			}
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -1195,9 +1227,24 @@ focus_tree = {
 			factor = 10
 		}
 		available_if_capitulated = yes
+		avaliable = {
+			AUS = {
+				owns_state = 43
+				owns_state = 154
+				owns_state = 155
+			}
+		}
 
 		completion_reward = {
-
+			43 = {
+				add_compliance = 35
+			}
+			154 = {
+				add_compliance = 30
+			}
+			155 = {
+				add_compliance = 30
+			}
 
 		}
 	}
@@ -1255,7 +1302,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			create_wargoal = {
+    		type = annex_everything
+    		target = SLV
+			}
+			create_wargoal = {
+    		type = annex_everything
+    		target = CRO
+			}
 
 		}
 	}
@@ -1274,7 +1328,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			AUS = {
+				add_state_claim = 39
+				add_state_claim = 160
+				add_state_claim = 850
+				add_state_claim = 159
+				add_state_claim = 161
+				add_state_claim = 158
+				add_state_claim = 162
+			}
 
 		}
 	}
@@ -1293,8 +1355,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
-
+			remove_from_faction = LBV
+			declare_war_on = {
+    		target = LBV
+    		type = puppet_wargoal_focus
+			}
 		}
 	}
 	focus = {
@@ -1332,7 +1397,10 @@ focus_tree = {
 
 		completion_reward = {
 
-
+			create_wargoal = {
+    		type = annex_everything
+    		target = SER
+			}
 		}
 	}
 
@@ -1351,7 +1419,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			create_wargoal = {
+    		type = annex_everything
+    		target = TRA
+			}
 
 		}
 	}
@@ -1373,7 +1444,10 @@ focus_tree = {
 
 		completion_reward = {
 
-
+			create_wargoal = {
+    		type = annex_everything
+    		target = BUL
+			}
 		}
 	}
 	focus = {
@@ -1392,7 +1466,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			create_wargoal = {
+    		type = annex_everything
+    		target = TUR
+			}
 
 		}
 	}
