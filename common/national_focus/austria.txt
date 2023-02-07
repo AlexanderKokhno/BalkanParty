@@ -89,6 +89,14 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = AUS_Saal_Schutz
 			add_ideas = HRE_emperor_idea
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
 
 		}
 	}
@@ -1077,17 +1085,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			every_state = {
-				limit = { 
-					owns_state = AUS
-				}
-				PREV = {
-					add_extra_state_shared_building_slots = 1
-					
-				}
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1		
+			}
 		}
-
-		}
+		
 	}
 	focus = {
 		id = AUS_imperial_capitals
