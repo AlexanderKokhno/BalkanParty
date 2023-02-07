@@ -49,6 +49,8 @@
  AUS_Australian_gold_desc:0 ""
  HOL_revolt:0 "Dutch Revolt!"
  HOL_revolt_desc:0 "The Dutch people have not taken kindly to their new overlords. While the land remains that of [ROOT.GetName], the people are not."
+ AUS_hre_authority_I:0 ""
+ AUS_hre_authority_I_desc:0 ""
 
 ############ CZE
 

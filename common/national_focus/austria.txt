@@ -215,7 +215,8 @@ focus_tree = {
 			add_political_power = 200
 			
 			hidden_effect = {
-				create_faction = "Holy Roman Empire"		
+				create_faction = "Holy Roman Empire"
+				add_ideas = AUS_hre_authority_I		
 
 				WUR = {
 					transfer_state = 50

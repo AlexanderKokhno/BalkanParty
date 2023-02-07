@@ -498,6 +498,146 @@ ideas = {
 				war_support_factor = -0.05
 			}
 		}
+		AUS_hre_authority_I = {
+			
+			picture = HUN_hungarian_monarchy_fascism
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = -0.5
+				stability_factor = -0.50
+				war_support_factor = -0.50
+				political_power_factor = -0.25
+			}
+		}
+		AUS_hre_authority_II = {
+			
+			picture = HUN_hungarian_monarchy_fascism
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = -0.4
+				stability_factor = -0.40
+				war_support_factor = -0.40
+				political_power_factor = -0.2
+			}
+		}
+		AUS_hre_authority_III = {
+			
+			picture = HUN_hungarian_monarchy_fascism
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = -0.3
+				stability_factor = -0.30
+				war_support_factor = -0.30
+				political_power_factor = -0.15
+			}
+		}
+		AUS_hre_authority_IV = {
+			
+			picture = HUN_hungarian_monarchy_fascism
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = -0.2
+				stability_factor = -0.20
+				war_support_factor = -0.20
+				political_power_factor = -0.1
+			}
+		}
+		AUS_hre_authority_V = {
+			
+			picture = HUN_hungarian_monarchy_fascism
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = -0.1
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				political_power_factor = -0.05
+			}
+		}
+		AUS_hre_authority_VI = {
+			
+			picture = HUN_hungarian_monarchy_fascism
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				political_power_factor = 0.05
+			}
+		}
+		AUS_hre_authority_VII = {
+			
+			picture = HUN_hungarian_monarchy_fascism
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = 0.2
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				political_power_factor = 0.1
+			}
+		}
 		
 	}
 	# TECHNOLOGY
