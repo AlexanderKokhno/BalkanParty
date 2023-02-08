@@ -7,6 +7,7 @@ HRE_emperor_decisions = {
 
 		available = {
       has_completed_focus = AUS_secure_electors
+			surrender_progress > 0.5
 		}
 
 		cost = 10
@@ -27,6 +28,7 @@ HRE_emperor_decisions = {
 			add_stability = -0.05
       add_war_support = -0.05
       add_political_power = -300
+			news_event = bp_event.1
 			every_country = {
 				limit = {
 					has_idea = HRE_autonomous_neutrality_idea

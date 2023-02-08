@@ -1,4 +1,15 @@
 ﻿l_english: 
+
+##############################
+############# NEWS
+###############################
+
+ bp_event.1.t:0 "HRE Emperor issues demand for Imperial Defence"
+ bp_event.1.desc:0 "The Emperor has nor fared well in his war. In his desperation, he has made the choice to beg the empire to join his endeavor. Already, Imperial delegates have set out, through it should be several days before the results are seen."
+ bp_event.1.a:0 "We must make a choice"
+ bp_event.1.b:0 "Here come the Germans"
+
+
 ################################
 ############ AUS
 ###############################

@@ -1,0 +1,27 @@
+add_namespace = bp_event
+
+#HRE emperor calls princes to arms
+news_event = {      
+  id = bp_event.1
+  title = bp_event.1.t    
+  desc = bp_event.1.desc
+  
+  is_triggered_only = yes
+  major = yes
+  
+  option = {
+    trigger = {
+      has_idea = HRE_autonomous_neutrality_idea
+    }
+    name = bp_event.1.a
+  }
+  
+  option = {
+    trigger = {
+      NOT = {
+        has_idea = HRE_autonomous_neutrality_idea
+      }
+    }
+    name = bp_event.1.b
+  }
+}
