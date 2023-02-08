@@ -711,7 +711,7 @@ country_event = {
 	id = austria.14
 	title = austria.14.t
 	desc = austria.14.desc
-	picture = GFX_report_event_hitler_parade
+	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 
@@ -840,6 +840,106 @@ country_event = {
 			add_ideas = HRE_elector_idea
 			add_stability = -0.3
 		}
+
+	}
+}
+
+#Call Princes
+country_event = {
+	id = austria.17
+	title = austria.17.t
+	desc = austria.17.desc
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = austria.17.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+    			target = AUS
+    			value > 50
+				}
+			}
+		}
+		add_to_war = {
+    	targeted_alliance = AUS
+    	hostility_reason = asked_to_join
+		}
+		every_country = {
+			ROOT = { 
+				add_to_war = {
+					targeted_alliance = AUS
+					enemy = PREV
+					hostility_reason = asked_to_join
+				}		
+			}
+		}
+		
+
+		AUS = { 
+			country_event = { hours = 2 id = austria.19 } 
+		}
+	}
+	option = { # Refuse
+		name = austria.17.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+    			target = AUS
+    			value < 50
+				}
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					tag = PRE
+					tag = SWI
+					tag = COR
+				}
+			}
+		}
+		AUS = {
+			add_opinion_modifier = { target = ROOT modifier = hre_member_denied_emperors_call }
+			country_event = { hours = 2 id = austria.18 }
+		}
+	}
+}
+
+# Prince refuses
+country_event = {
+	id = austria.18
+	title = austria.18.t
+	desc = austria.18.desc
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.18.a
+	}
+}
+
+#Prince accepts
+country_event = {
+	id = austria.19
+	title = austria.19.t
+	desc = austria.19.desc
+	picture = GFX_report_event_soviet_german_soldier_handshake
+
+	is_triggered_only = yes
+
+
+
+	option = {
+		name = austria.19.a
+		add_political_power = 10
+
 
 	}
 }

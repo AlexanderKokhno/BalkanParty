@@ -27,7 +27,17 @@ HRE_emperor_decisions = {
 			add_stability = -0.05
       add_war_support = -0.05
       add_political_power = -300
-
+			every_country = {
+				limit = {
+					has_idea = HRE_autonomous_neutrality_idea
+				}
+				country_event = {
+					id = austria.17
+					days = 5
+					random_hours = 72
+					random_days = 5
+				}	
+			}
 		}
 	}
 
@@ -35,6 +45,34 @@ HRE_emperor_decisions = {
 
 		available = {
       has_completed_focus = AUS_austrian_netherlands
+			OR = {
+				AND = {
+					ROOT = {
+						owns_state = 7
+						owns_state = 35
+						owns_state = 36
+					}
+					NOT = {
+						7 = {
+							is_core_of = ROOT
+						}
+						35 = {
+							is_core_of = ROOT
+						}
+						36 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					any_country = {
+						owns_state = 7
+						owns_state = 35
+						owns_state = 36
+						is_puppet_of = ROOT				
+					}
+				}
+			}
 		}
 
 		cost = 200

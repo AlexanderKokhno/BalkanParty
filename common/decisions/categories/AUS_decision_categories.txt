@@ -10,7 +10,7 @@ HRE_emperor_decisions = {
 
 	priority = 10
 
-	allowed = {
+	allowed = { 
 
 	}
 

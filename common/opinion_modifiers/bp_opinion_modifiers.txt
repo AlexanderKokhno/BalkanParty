@@ -14,5 +14,9 @@ opinion_modifiers = {
 	electors_secured_leanings = {
 		value = 100
 	}
+
+	hre_member_denied_emperors_call = {
+		value = -50
+	}
 	
 }

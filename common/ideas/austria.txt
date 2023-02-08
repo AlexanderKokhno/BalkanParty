@@ -370,8 +370,8 @@ ideas = {
 				generate_wargoal_tension = 1.00
 				join_faction_tension = 1.00
 				send_volunteers_tension = 1
-				ai_get_ally_desire_factor = -500
-				ai_join_ally_desire_factor = -500
+				ai_get_ally_desire_factor = -5000
+				ai_join_ally_desire_factor = -5000
 			}
 		}
 		HRE_emperor_idea = {

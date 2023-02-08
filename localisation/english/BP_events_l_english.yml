@@ -86,6 +86,19 @@
  austria.16.desc:0 "Austrian diplomats have been successful in convincing the Czechs. They have agreed to be restored as an Imperial Elector.
  austria.16.a:0 "The hole in the empire if filled."
 
+ austria.17.t:0 "The HRE Emperor demands a Call to Arms"
+ austria.17.desc:0 "Austrian diplomats have arrived demanding we join in their war. The situation is rather dire and they have made rathe big concessions of prestige on their part."
+ austria.17.a:0 "The Empire is in time of peril, we must help!"
+ austria.17.b:0 "We have no reason to join the fight"
+
+ austria.18.t:0 "A Prince Rejects Demands"
+ austria.18.desc:0 "Austrian diplomats haven't been successful in pressuring the prince to join our fight."
+ austria.18.a:0 "We have no need for traitors anyway!"
+
+ austria.19.t:0 "A Prince Accepts Demands"
+ austria.19.desc:0 "Austrian diplomats have been successful in convincing the prince to join the war. We eagerly await them.
+ austria.19.a:0 "To the front!"
+
 ########################################
 ##################### CZE
 #####################################

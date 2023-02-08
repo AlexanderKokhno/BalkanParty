@@ -63,6 +63,7 @@
 ###################################################### OPINION MODIFIERS ###############################################
 
  electors_secured_leanings:0 "Austrian Emperor secured the Electors"
+ hre_member_denied_emperors_call:0 "Denied the Emperor's call to Arms"
 
 
 ######################################################### DECISION CATAGORIES #############################################
