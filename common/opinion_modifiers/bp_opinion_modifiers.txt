@@ -18,5 +18,15 @@ opinion_modifiers = {
 	hre_member_denied_emperors_call = {
 		value = -50
 	}
+
+	hre_religious_league_denied = {
+		value = -100
+	}
+
+	hre_religious_league_accepted = {
+		value = 100
+	}
+
+	
 	
 }

@@ -85,6 +85,131 @@ country_event = {
 	}
 }
 
+#solidfy league alliance
+country_event = {
+	id = bp_cze.3
+	title = bp_cze.3.t
+	desc = bp_cze.3.desc
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = bp_cze.3.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+    			target = AUS
+    			value < 50
+				}
+			}
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+					target = CZE
+					value > 50
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					tag = PRE
+					tag = HOL
+				}
+			}
+		}
+		
+
+		CZE = { 
+			country_event = { hours = 2 id = bp_cze.5 } 
+			add_opinion_modifier = {
+				target = ROOT modifier = hre_religious_league_accepted
+			}
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = CZE modifier = hre_religious_league_accepted
+			}
+			add_ideas = protestant_league_member
+		}
+	}
+	option = { # Refuse
+		name = bp_cze.3.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+    			target = AUS
+    			value > 50
+				}
+			}
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+					target = CZE
+					value < 50
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					tag = FRA
+					tag = COR
+				}
+			}
+		}
+
+		CZE = {
+			add_opinion_modifier = { target = ROOT modifier = hre_religious_league_denied }
+			country_event = { hours = 2 id = bp_cze.4 }
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = CZE
+				modifier = hre_religious_league_denied
+			}
+			add_ideas = catholic_league_member
+		}
+	}
+}
+
+# league refused
+country_event = {
+	id = bp_cze.4
+	title = bp_cze.4.t
+	desc = bp_cze.4.desc
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = bp_cze.4.a
+	}
+}
+
+#league accepted
+country_event = {
+	id = bp_cze.5
+	title = bp_cze.5.t
+	desc = bp_cze.5.desc
+	picture = GFX_report_event_soviet_german_soldier_handshake
+
+	is_triggered_only = yes
+
+
+
+	option = {
+		name = bp_cze.5.a
+		add_political_power = 10
+
+
+	}
+}
+
+
 
 ####################################
 
@@ -1061,3 +1186,8 @@ country_event = {
 		clr_global_flag = CZE_became_czech
 	}
 }
+
+
+
+
+

@@ -217,13 +217,24 @@
  CZE_BOH_to_arms_desc:0 "The fervor can only last for so long. We must strike while the iron is hot, we have already secured control over the main segment of the army."
  CZE_BOH_join_hre:0 "Join the HRE"
  CZE_BOH_join_hre_desc:0 "How can Bohemia be without the empire? We must join it, as an elector!"
+
  CZE_BOH_approach_AUS:0 "Approach Austria"
  CZE_BOH_approach_AUS_desc:0 "Who can we approach but the emporor? We must show that we can be the closest of allies, and utilize the power of the Viennan throne."
+
  CZE_BOH_approach_PRE:0 "Approach Prussia"
  CZE_BOH_approach_PRE_desc:0 "We must not delude into thinking the Austrians can be trusted. The only way forward is to seize empororship for ourselves. And who better to approach than the long time Austrian Rivals, Prussia?"
  CZE_BOH_end_interregnum:0 "End the Interregnum"
  CZE_BOH_end_interregnum_desc:0 "The situation has stabilized enough for us to choose a king."
-
+ CZE_BOH_diplomatic_effort:0 "Increase diplomatic Efforts"
+ CZE_BOH_diplomatic_effort_desc:0 "To secure support for the upcoming conflict we need to secure allies. We must improve relations with as many countires as possible."
+ CZE_BOH_prepare_for_leagues:0 "Prepare for the league War"
+ CZE_BOH_prepare_for_leagues_desc:0 ""
+ CZE_BOH_establish_protestant_grand_church:0 "Empower the Protestant Church"
+ CZE_BOH_establish_protestant_grand_church_desc:0 ""
+ CZE_BOH_solidify_the_leagues:0 "Solidify the Leagues"
+ CZE_BOH_solidify_the_leagues_desc:0 ""
+ CZE_BOH_fire_the_league_war:0 "Fire the League War"
+ CZE_BOH_fire_the_league_war_desc:0 ""
 ################### MNT
 
   MNT_focus_1:0 "March on Podgorica"

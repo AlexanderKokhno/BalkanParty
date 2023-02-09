@@ -865,6 +865,7 @@ country_event = {
 				}
 			}
 		}
+		add_political_power = 50
 		add_to_war = {
     	targeted_alliance = AUS
     	hostility_reason = asked_to_join
@@ -904,6 +905,7 @@ country_event = {
 				}
 			}
 		}
+		add_political_power = 25
 		AUS = {
 			add_opinion_modifier = { target = ROOT modifier = hre_member_denied_emperors_call }
 			country_event = { hours = 2 id = austria.18 }

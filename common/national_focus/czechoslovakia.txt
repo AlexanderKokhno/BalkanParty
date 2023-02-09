@@ -2261,13 +2261,9 @@
 
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 70
-				is_ally_with = AUS
-			}
+			factor = 20
 		}
 		search_filters = {   }
 		mutually_exclusive = { focus = CZE_BOH_approach_PRE}
@@ -2290,13 +2286,144 @@
 
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 50
 		}
 		search_filters = {   }
 		prerequisite = { focus = CZE_BOH_join_hre}
 		mutually_exclusive = { focus = CZE_BOH_approach_AUS }		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			PRE = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = hre_religious_league_accepted
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = PRE
+					modifier = hre_religious_league_accepted
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = CZE_BOH_diplomatic_effort
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = CZE_BOH_approach_PRE
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 20
+		}
+		search_filters = {   }
+		prerequisite = { focus = CZE_BOH_approach_PRE}
+		prerequisite = { focus = CZE_BOH_end_interregnum}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = CZE_BOH_prepare_for_leagues
+		icon = GFX_goal_generic_military_sphere
+		relative_position_id = CZE_BOH_diplomatic_effort
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 20
+		}
+		search_filters = {   }
+		prerequisite = { focus = CZE_BOH_diplomatic_effort}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}
+	focus = {
+		id = CZE_BOH_establish_protestant_grand_church
+		icon = GFX_focus_SOV_rebuild_the_savior_cathedral
+		relative_position_id = CZE_BOH_prepare_for_leagues
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			20
+		}
+		search_filters = {   }
+		prerequisite = { focus = CZE_BOH_prepare_for_leagues }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = BOH_empowered_protestant_church
+			news_event = bp_event.2
+
+		}
+	}
+	focus = {
+		id = CZE_BOH_solidify_the_leagues 
+		icon = GFX_focus_generic_strike_at_democracy2
+		relative_position_id = CZE_BOH_establish_protestant_grand_church
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			30
+		}
+		search_filters = {   }
+		prerequisite = { focus = CZE_BOH_establish_protestant_grand_church}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = protestant_league_member
+			every_country = {
+				limit = {
+					AND = {
+						NOT = {
+							tag = AUS
+						}
+						OR = {
+							has_idea = HRE_autonomous_neutrality_idea
+						}
+					}
+				}
+				country_event = {
+					id = bp_cze.3
+					days = 5
+					random_hours = 72
+					random_days = 5
+				}	
+			}
+
+		}
+	}
+	focus = {
+		id = CZE_BOH_fire_the_league_war
+		icon = GFX_focus_spa_eliminate_the_carlists
+		relative_position_id = CZE_BOH_solidify_the_leagues
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 30
+		}
+		search_filters = {   }
+		prerequisite = { focus = CZE_BOH_solidify_the_leagues}
+		
 		available_if_capitulated = yes
 
 		completion_reward = {

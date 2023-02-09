@@ -556,6 +556,40 @@ ideas = {
 				political_power_factor = -0.05
 			}
 		}
+		protestant_league_member = {
+			picture = POL_ideology_drift_defence
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.05
+				weekly_manpower = 1000
+			}
+		}
+		catholic_league_member = {
+			picture = MEX_church_power_5
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				weekly_manpower = 1000
+			}
+		}
+		BOH_empowered_protestant_church = {
+
+			picture = SPR_appropriate_church_riches
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 500
+				war_support_factor = 0.05
+				stability_factor = 0.1
+				army_morale_factor = 0.05
+				neutrality_drift = 0.05
+			}
+		}
 
 	}
 

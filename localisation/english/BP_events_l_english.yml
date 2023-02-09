@@ -9,6 +9,11 @@
  bp_event.1.a:0 "We must make a choice"
  bp_event.1.b:0 "Here come the Germans"
 
+ bp_event.2.t:0 "The Bohemians empower the Protestant Church"
+ bp_event.2.desc:0 "The Bohemian electorate has recently empowered the protestant church. While it is claimed such actions are irrelevent to national policy, one cannot but notice the religious ties that are being established throughout the empire."
+ bp_event.2.a:0 "We shall shed Catholic blood"
+ bp_event.2.b:0 "The clouds of war grow heavy, the Bohemians are plotting."
+
 
 ################################
 ############ AUS

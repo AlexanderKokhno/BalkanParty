@@ -8,6 +8,8 @@ news_event = {
   
   is_triggered_only = yes
   major = yes
+
+  picture = GFX_news_event_por_salazar_franco
   
   option = {
     trigger = {
@@ -23,5 +25,34 @@ news_event = {
       }
     }
     name = bp_event.1.b
+  }
+}
+
+news_event = {
+  id = bp_event.2
+  title = bp_event.2.t
+  desc = bp_event.2.desc
+
+  is_triggered_only = yes
+  major = yes
+
+  picture = GFX_news_event_generic_parliament
+
+  option = {
+    trigger = {
+      OR = {
+        tag = CZE
+      }
+    }
+    name = bp_event.2.a
+  }
+
+  option = {
+    trigger = {
+      NOT = {
+        tag = CZE
+      }
+    }
+    name = bp_event.2.b
   }
 }
