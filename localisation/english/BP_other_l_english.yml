@@ -54,6 +54,9 @@
  AUS_GER_anti_commie_tooltip:0 "Gain a causes beli on all commies"
  AUS_COM_anti_fascist_tooltip:0 "Gain a causes beli on all fascists"
  aus_create_hre_tooltip:0 "Turn back the hands of time, the pages of the history books... the Holy Roman Empire has returned!"
+ CZE_get_pp_in_preperation_for_leagues_tooltip:0 "Any country outside the HRE with 100 relations to Bohemia will be invited to the leagues."
+ CZE_start_the_league_war_tooltip:0 "Fracture the empire, start the fire of religious war!"
+ cze_seize_emperorship_tooltip:0 "Bohemia seizes the Imperial Throne"
 
 ##################################################### PUPPETS #################################################
 

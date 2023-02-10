@@ -590,6 +590,32 @@ ideas = {
 				neutrality_drift = 0.05
 			}
 		}
+		HRE_autonomous_neutrality_NOT_idea = {
+
+			picture = ast_abandon_the_westminster_system
+			
+			removal_cost = -1
+
+		  allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			
+			modifier = {
+				fascism_acceptance = -50
+        neutrality_acceptance = 1000
+        communism_acceptance = -500
+        democratic_acceptance = -50
+				stability_factor = -0.3
+				war_support_factor = 0.3
+				ai_get_ally_desire_factor = 5000
+				ai_join_ally_desire_factor = 5000
+			}
+		}
 
 	}
 
