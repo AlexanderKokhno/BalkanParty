@@ -477,6 +477,19 @@
   SLO_survival:0 "Slovak Survival"
   SLO_survival_desc:0 "We will fight them in the cities, through forests, over mountains and rivers. We will never surrender!"
 
+  ############## SLV
+
+  SLV_political_effort:0 "Political Effort"
+  SLV_political_effort_desc:0 "The political question"
+  SLV_fascist:0 "Fascism"
+  SLV_fascist_desc:0 "The path of fascism"
+  SLV_reachout_fascist_countries:0 "Reach out to the fascist nations"
+  SLV_reachout_fascist_countries_desc:0 "If we want a successfull fascist nation, we need to collaborate with others!"
+  SLV_fascist_faction:0 "Create a fascist faction"
+  SLV_fascist_faction_desc:0 "We need a faction to collaborate with our allies!"
+  SLV_slovenian_fascism:0 "Slovenian Fascism"
+  SLV_slovenian_fascism_desc:0 "We can do this on our own!"
+
 
   
 

@@ -58,9 +58,10 @@ focus_tree = {
 	shared_focus = YUG_expand_the_split_shipyards
 	shared_focus = YUG_expand_the_serbian_shipyards
 
+################## Political effort #################
 	focus = {
-		id = 
-		icon = 
+		id = SLV_political_effort
+		icon = GFX_goal_generic_demand_territory
 		mutually_exclusive = {  }
 		x = 3
 		y = 0
@@ -81,10 +82,150 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 
 		completion_reward = {
+			add_political_power = 150
+		}
+	}
+################## Fascism #################
+
+	focus = {
+		id = SLV_fascist
+		icon = GFX_goal_support_fascism
+		mutually_exclusive = {  }
+		prerequisite = { focus = SLV_political_effort }
+		relative_position_id = SLV_political_effort
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			Add_ideas = nationalism
+		}
+	}
+################## Slovenian Fascism #################
+	focus = {
+		id = SLV_slovenian_fascism
+		icon = GFX_focus_generic_military_mission
+		mutually_exclusive = { focus = SLV_reachout_croatia }
+		prerequisite = { focus = SLV_fascist }
+		relative_position_id = SLV_fascist
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_government = fascism
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			Add_ideas = militarism_focus
+		}
+	}
+################## "International Fascism" #################
+	focus = {
+		id = SLV_reachout_fascist_countries
+		icon = GFX_focus_generic_diplomatic_treaty
+		mutually_exclusive = { focus = SLV_slovenian_fascism }
+		prerequisite = { focus = SLV_fascist }
+		relative_position_id = SLV_fascist
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_government = fascism
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			SLV = { add_opinion_modifier = { target = CRO modifier = large_increase} }
+			CRO= { add_opinion_modifier = { target = SLV modifier = large_increase} }
+
+			SLV = { add_opinion_modifier = { target = SLO modifier = large_increase} }
+			SLO = { add_opinion_modifier = { target = SLV modifier = large_increase} }
+		}
+	}
+
+	focus = {
+		id = SLV_fascist_faction
+		icon = GFX_goal_generic_major_alliance
+		mutually_exclusive = {  }
+		prerequisite = { focus = SLV_reachout_fascist_countries }
+		relative_position_id = SLV_reachout_fascist_countries
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_faction = "The Fascist Alliance"
+			add_to_faction = CRO
+			add_to_faction = SLO
 		}
 	}
 }
