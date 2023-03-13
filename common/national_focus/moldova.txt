@@ -51,14 +51,160 @@ focus_tree = {
 #		}
 #	} 
 
-
+###########################
+###### Reach out to the west
+###########################
 
 	focus = {
-		id = 
-		icon = 
-		mutually_exclusive = {  }
-		x = 3
+		id = MOL_west
+		icon = GFX_focus_generic_balkan_diplomacy
+		mutually_exclusive = { focus = MOL_east }
+		x = 10
 		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			
+		}
+	}
+
+###############################
+########## Internationalist Communism
+##############################
+
+	focus = {
+		id = MOL_internationalist_communism
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
+		mutually_exclusive = { focus = MOL_ROM_reunion_path }
+		prerequisite = {focus = MOL_west}
+		x = 5
+		y = 1
+		relative_position_id = MOL_west
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+	}
+
+#########################
+############# Join Romania
+########################
+
+	focus = {
+		id = MOL_ROM_reunion_path
+		icon = GFX_focus_rom_preserve_romania
+		mutually_exclusive = {focus = MOL_internationalist_communism }
+		prerequisite = {focus = MOL_west}
+		x = -5
+		y = 1
+		relative_position_id = MOL_west
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+####################################
+####### Reach out to the East
+################################
+
+	focus = {
+		id = MOL_east
+		icon = GFX_focus_SOV_reinforce_southern_naval_bases
+		mutually_exclusive = { focus = MOL_west }
+		x = 25
+		y = 0
+
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+	}
+
+#########################
+######### Ukranian Fascism
+######################## fas
+
+	focus = {
+		id = MOL_ukrainian_fascism
+		icon = GFX_focus_POL_ukrainian_army
+		mutually_exclusive = { focus = MOL_invite_the_tartars }
+		prerequisite = {focus = MOL_east}
+		x = -5
+		y = 1
+		relative_position_id = MOL_east
 
 		cost = 10
 
@@ -80,7 +226,94 @@ focus_tree = {
 
 
 		completion_reward = {
-			
 		}
 	}
+
+##############################
+######### Criman Khanate
+###############################
+
+	focus = {
+		id = MOL_invite_the_tartars
+		icon = GFX_focus_SOV_bukharan_republic
+		mutually_exclusive = { focus = MOL_ukrainian_fascism }
+		prerequisite = {focus = MOL_east}
+		x = 5
+		y = 1
+		relative_position_id = MOL_east
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = MOL_KHAN_recruit_the_right
+		icon = GFX_focus_generic_manpower
+		relative_position_id = MOL_invite_the_tartars
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = MOL_invite_the_tartars }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}
+	focus = {
+		id = MOL_KHAN_arrest_commies
+		icon = GFX_focus_mex_arrest_general_cedillo
+		relative_position_id = MOL_invite_the_tartars
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = MOL_invite_the_tartars }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}
+	focus = {
+		id = MOL_KHAN_legalize_the_slave_trade
+		icon = GFX_focus_SOV_penal_battalions
+		relative_position_id = MOL_KHAN_arrest_commies
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = MOL_KHAN_recruit_the_right }
+		prerequisite = { focus = MOL_KHAN_arrest_commies}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}                                                                          
 }
