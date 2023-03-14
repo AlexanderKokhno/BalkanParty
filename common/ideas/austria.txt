@@ -639,6 +639,21 @@ ideas = {
 				political_power_factor = 0.1
 			}
 		}
+		AUS_aeiou_idea = {
+			picture = FRA_la_deluge
+
+			allowed = {
+				AUS = {
+					controls_state = 4
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.25
+			}
+		}
 		
 	}
 	# TECHNOLOGY

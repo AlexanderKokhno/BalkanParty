@@ -853,7 +853,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_political_power = 100
 
 		}
 	}
@@ -863,13 +863,16 @@ focus_tree = {
 		relative_position_id = AUS_imperial_ascendancy
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {   }
 		prerequisite = { focus = AUS_imperial_ascendancy}
 		
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 10
+		}
+		avaliable = {
+			
 		}
 		completion_reward = {
 
@@ -929,7 +932,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = AUS_aeiou_idea
 
 		}
 	}
@@ -3719,7 +3722,7 @@ focus_tree = {
 			transfer_state = 53
 			add_state_core = 39
 			add_state_core = 52
-			add_state_core = 53]
+			add_state_core = 53
 			add_political_power = 50
 			add_named_threat = { threat = 5 name = generic.15.t }
 		}

@@ -51,6 +51,8 @@
  HOL_revolt_desc:0 "The Dutch people have not taken kindly to their new overlords. While the land remains that of [ROOT.GetName], the people are not."
  AUS_hre_authority_I:0 ""
  AUS_hre_authority_I_desc:0 ""
+ AUS_aeiou_idea:0 "A.E.I.O.U."
+ AUS_aeiou_idea_desc:0 "'A.E.I.O.U.' (sometimes A.E.I.O.V.) was a symbolic device coined by Emperor Frederick III (1415–1493) and historically used as a motto by the Habsburgs. One note in his notebook (discovered in 1666), though not in the same hand, explains it in German and Latin as 'All the world is subject to Austria' (Alles Erdreich ist Österreich untertan or Austriae est imperare orbi universo)."
 
 ############ CZE
 
