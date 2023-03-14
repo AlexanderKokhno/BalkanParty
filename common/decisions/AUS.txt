@@ -107,4 +107,44 @@ HRE_emperor_decisions = {
 			}
 		}
 	}
+
+	AUS_hre_unification = {
+
+		available = {
+      has_completed_focus = AUS_a_roman_empire
+			AND = {
+
+			}
+		}
+
+		cost = 1000
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		visible = {
+      OR = {
+        has_completed_focus = AUS_declare_HRE
+      }
+		}
+
+		complete_effect = {
+			AUS = {
+				annex_country = { target = HOL transfer_troops = no }
+				add_timed_idea = { idea = HOL_revolt days = 365 }
+			}
+			7 = {
+				add_core_of = AUS
+			}
+			35 = {
+				add_core_of = AUS
+			}
+			36 = {
+				add_core_of = AUS
+			}
+		}
+	}
 }

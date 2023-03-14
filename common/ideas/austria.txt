@@ -643,9 +643,7 @@ ideas = {
 			picture = FRA_la_deluge
 
 			allowed = {
-				AUS = {
-					controls_state = 4
-				}
+
 			}
 
 			removal_cost = -1

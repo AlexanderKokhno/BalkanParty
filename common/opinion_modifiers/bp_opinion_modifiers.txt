@@ -27,6 +27,10 @@ opinion_modifiers = {
 		value = 100
 	}
 
+	hre_roman_empire_declared = {
+		value = -200
+	}
+
 	
 	
 }
