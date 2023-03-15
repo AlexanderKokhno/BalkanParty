@@ -684,22 +684,6 @@ country_event = {
 	}
 }
 
-news_event = {
-	id = austria_news.101
-	title = austria_news.101.t
-	desc = austria_news.101.desc
-	picture = GFX_news_event_german_soldiers
-	
-
-	is_triggered_only = yes
-	
-	option = {
-		name = austria_news.101.a
-		trigger = {
-			TAG = AUS
-		}
-	}
-}
 
 
 ################################

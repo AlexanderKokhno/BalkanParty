@@ -10,9 +10,21 @@
  bp_event.1.b:0 "Here come the Germans"
 
  bp_event.2.t:0 "The Bohemians empower the Protestant Church"
- bp_event.2.desc:0 "The Bohemian electorate has recently empowered the protestant church. While it is claimed such actions are irrelevent to national policy, one cannot but notice the religious ties that are being established throughout the empire."
+ bp_event.2.desc:0 "The Bohemian electorate has recently empowered the protestant church. While it is claimed such actions are irrelevant to national policy, one cannot but notice the religious ties that are being established throughout the empire."
  bp_event.2.a:0 "We shall shed Catholic blood"
  bp_event.2.b:0 "The clouds of war grow heavy, the Bohemians are plotting."
+
+ bp_event.3.t:0 "Austria Restores the Holy Roman Empire"
+ bp_event.3.desc:0 "The Austrians have turned back the clock, to centuries gone by. Once more shall the European stage be graced with Prussian might and Habsburg squabbles. From Corsica to Konigsberg now stretches this great realm, but can it hold itself together?"
+ bp_event.3.a:0 "We shall shed Catholic blood"
+ bp_event.3.b:0 "The clouds of war grow heavy, the Bohemians are plotting."
+
+ austria_news.101.t:0 "Austria forms Germany"
+ austria_news.101.desc:0 "Austria has enjoyed triumph after triumph, without any to successfully stop them. They now a major homogamy in the north, with their influence reaching far down south. What is to become of the Balkans with such a giant amidst them?"
+ austria_news.101.a:0 "We're Unstoppable"
+ austria_news.101.b:0 "There goes any chance of freedom"
+ austria_news.101.c:0 "The big brother gets bigger"
+ austria_news.101.d:0 "This charade has gone on for long enough!"
 
 
 ################################
@@ -81,12 +93,6 @@
  austria.100.desc:0 "Deutschland, Deutschland über alles, \nüber alles in der Welt, \nWenn es stets zu Schutz und Trutze \nbrüderlich zusammen hält, \nVon der Maas bis an die Memel, \nvon der Etsch bis an den [Little] Belt, \nDeutschland, Deutschland über alles, \nüber alles in der Welt!"
  austria.100.a:0 "Erika!"
 
- austria_news.101.t:0 "Austria forms Germany"
- austria_news.101.desc:0 "Austria has enjoyed triumph after triumph, without any to successfully stop them. They now a major homogamy in the north, with their influence reaching far down south. What is to become of the Balkans with such a giant amidst them?"
- austria_news.101.a:0 "We're Unstoppable"
- austria_news.101.b:0 "There goes any chance of freedom"
- austria_news.101.c:0 "The big brother gets bigger"
- austria_news.101.d:0 "This charade has gone on for long enough!"
 
 
  austria.14.t:0 "The HRE Emperor demands restoration of the Electorate of Bohemia"

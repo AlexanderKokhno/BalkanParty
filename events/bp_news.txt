@@ -56,3 +56,77 @@ news_event = {
     name = bp_event.2.b
   }
 }
+
+#HRE is proclaimed
+news_event = {      
+  id = bp_event.3
+  title = bp_event.3.t    
+  desc = bp_event.3.desc
+  
+  is_triggered_only = yes
+  major = yes
+
+  picture = GFX_news_event_ITA_grand_council
+  
+  option = {
+    trigger = {
+      tag = AUS
+    }
+    name = bp_event.3.a
+  }
+  
+  option = {
+    trigger = {
+      NOT = {
+        tag = AUS
+      }
+    }
+    name = bp_event.3.b
+  }
+}
+
+# GER is formed by AUS
+news_event = {
+	id = austria_news.101
+	title = austria_news.101.t
+	desc = austria_news.101.desc
+	picture = GFX_news_event_german_soldiers
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = austria_news.101.a
+		trigger = {
+			TAG = AUS
+		}
+	}
+	option = {
+		name = austria_news.101.d
+		trigger = {
+      NOT = {
+        TAG = AUS	
+      }
+      is_puppet_of = AUS
+		}
+	}
+	option = {
+		name = austria_news.101.d
+		trigger = {
+      NOT = {
+     		TAG = AUS   
+      }
+      is_in_faction_with = AUS
+		}
+	}
+	option = {
+		name = austria_news.101.d
+		trigger = {
+				NOT = {
+					TAG = AUS
+					is_puppet_of = AUS
+					is_in_faction_with = AUS
+				}
+		}
+	}
+}

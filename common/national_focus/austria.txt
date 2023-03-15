@@ -218,6 +218,8 @@ focus_tree = {
 				create_faction = "Holy Roman Empire"
 				add_ideas = AUS_hre_authority_I		
 
+				news_event = { hours = 1 id = bp_event.3 }
+
 				WUR = {
 					transfer_state = 50
 					add_state_core = 50
@@ -924,7 +926,8 @@ focus_tree = {
 				limit = {
 					is_in_faction_with = CZE
 				}
-				CZE = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }								
+				CZE = { add_opinion_modifier = { target = AUS modifier = 
+				 } }								
 			}
 			WUR = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
 			MEK = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
@@ -1969,7 +1972,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_political_power = 100
 
 		}
 	}
@@ -1986,7 +1989,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_stability = 0.1
 
 		}
 	}	
@@ -2267,7 +2270,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			modify_building_resources = {
+					building = industrial_complex
+					resource = steel
+					amount = 1
+			}
 
 		}
 	}
@@ -2284,11 +2291,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			modify_building_resources = {
-					building = industrial_complex
-					resource = steel
-					amount = 1
-			}
+			add_stability = -0.1
 
 		}
 	}	
@@ -4038,121 +4041,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GER_first_vienna_award
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = AUS_GER_ss }
-
-		x = 0
-		y = 1
-		relative_position_id = AUS_GER_ss
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}	
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GER_end_of_czechoslovakia
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = GER_first_vienna_award }
-		available = { 
-			is_subject = no
-			has_army_manpower = { size > 749999 }
-			NOT = { has_war_with = CZE }
-		}
-
-		bypass = {
-			OR = {
-				CZE = { is_puppet_of = GER }
-				CZE = { is_in_faction_with = GER }
-				has_war_with = CZE
-				NOT = { country_exists = CZE }
-				any_other_country = {
-					is_in_faction_with = GER
-					CZE = {
-						is_puppet_of = PREV
-					}
-				}
-			}
-		}
-
-		x = 0
-		y = 1
-		relative_position_id = GER_first_vienna_award
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			if = {
-				limit = { 
-					country_exists = CZE 
-					CZE = {
-						NOT = {
-							is_subject_of = HUN
-							is_in_faction_with = POL
-						}
-						has_war = no
-					}
-					NOT = { POL = { has_guaranteed = CZE } }
-				}
-				set_global_flag = end_of_czechoslovakia
-				CZE = { country_event = germany.53 }
-			}
-			if = {
-				limit = { 
-					OR = {
-						CZE = {
-							is_subject_of = HUN
-						}
-						HUN = {
-							owns_state = 9#Prague - AH annexed CZE
-						}
-					}
-				}
-				add_state_claim = 9
-				add_state_claim = 75
-				create_wargoal = {
-					type = take_state_focus
-					target = CZE
-					generator = { 9 75 }
-				}
-			}
-			if = {
-				limit = { 
-					OR = { #If Poland has done Miedzymorze or Baltic Alliance
-						CZE = {
-							is_in_faction_with = POL
-						}
-						CZE = {
-							has_war = yes
-						}
-						POL = { has_guaranteed = CZE }
-					}
-				}
-				add_state_claim = 9
-				add_state_claim = 75
-				create_wargoal = {
-					type = take_state_focus
-					target = CZE
-					generator = { 9 75 }
-				}
-			}
-			if = {
-				limit = { NOT = { country_exists = CZE } }
-				country_event = { id = germany.55 hours = 6 }
-			}
-			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
-			custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
-		}
-	}
-
 
 
 	focus = {
@@ -4183,8 +4071,8 @@ focus_tree = {
 			}
 		}
 
-		x = 2
-		y = 1
+		x = 0
+		y = 3
 		relative_position_id = AUS_GER_ss
 		cost = 10
 		ai_will_do = {
@@ -4267,96 +4155,8 @@ focus_tree = {
 
 
 
-	focus = {
-		id = GER_danzig_vs_slovakia
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = GER_end_of_czechoslovakia }
-		available = {
-			is_subject = no
-			OR = {
-				SLO = {
-					exists = yes
-					is_in_faction_with = GER
-				}
-				owns_state = 70
-			}
-			NOT = { owns_state = 85 }
-			NOT = { has_war_with = POL }
-			POL = { owns_state = 72 }
-		}
 
 
-		x = 0
-		y = 1
-		relative_position_id = GER_end_of_czechoslovakia
-		cost = 10
-		ai_will_do = {
-			factor = 0
-		}	
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			POL = {
-				country_event = { id = germany.80 days = 1 }
-			}
-		}
-	}
-
-	focus = {
-		id = GER_poland_friend
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = GER_danzig_vs_slovakia }
-		available = {
-			NOT = { has_global_flag = sov_yes_pact }
-			NOT = { has_war_with = POL }
-			POL = {
-				custom_trigger_tooltip = {
-					tooltip = GER_alone_or_peace_faction_tt
-					is_alone_or_in_faction_at_peace_with_GER = yes
-				}
-			}
-		}
-		bypass = {
-			is_in_faction_with = POL
-			is_alone_or_in_faction_at_peace_with_GER = no
-		}
-		x = 0
-		y = 1
-		relative_position_id = GER_danzig_vs_slovakia
-		cost = 10
-		ai_will_do = {
-			factor = 0
-		}	
-		completion_reward = {
-			POL = {
-				add_opinion_modifier = { target = GER modifier = ger_pol_diplomacy_focus }
-				if = {
-					limit = {
-						GER = {
-							has_government = fascism
-						}
-					}
-					add_timed_idea = { idea = AUS_fascist_influence days = 1095 }
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = communism
-						}
-					}
-					add_timed_idea = { idea = communist_influence days = 1095 }
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = democratic
-						}
-					}
-					add_timed_idea = { idea = democratic_influence days = 1095 }
-				}
-				country_event = { id = generic.1 }
-			}
-		}
-	}
 
 
 
@@ -4576,7 +4376,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_GER_mandatory_military_service }
 		icon = GFX_focus_GRE_a_land_of_mountains
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = AUS_GER_mandatory_military_service
 		cost = 10
 		ai_will_do = {
@@ -4926,172 +4726,12 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = GER_soviet_treaty
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = GER_army_innovation }
-		available = {
-			NOT = { has_completed_focus = GER_anti_soviet_pact }
-			OR = {
-				NOT = { has_completed_focus = GER_bulwark_against_bolshevism }
-				NOT = { has_completed_focus = GER_the_great_red_menace }
-			}
-		}
-		#cancel = { 
-		#	OR = {
-		#		has_war_with = SOV
-		#		NOT = { country_exists = SOV }
-		#	} 
-		#}
-		bypass = { 
-			OR = {
-				has_war_with = SOV
-				NOT = { country_exists = SOV }
-				has_completed_focus = GER_bulwark_against_bolshevism
-				has_completed_focus = GER_the_great_red_menace
-			}
-		}
 
-		x = 0
-		y = 2
-		relative_position_id = GER_army_innovation
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			SOV = {
-				country_event = { id = germany.75 days = 1 }
-				custom_effect_tooltip = needs_approval
-				# Actual reward effects added in event if Soviets approve
-				effect_tooltip = {
-					# Trade influence with the USSR? Or simply let the opinion mod do the work
-					give_SOV_armor_research_bonuses = yes
-				}
-			}
-
-			if = {
-				limit = { 
-					has_dlc = "No Step Back"
-				}
-				if = {
-					limit = {
-						has_tech = basic_medium_tank_chassis
-					}
-					effect_tooltip = {
-						create_equipment_variant = {
-							name = "Panzer III Ausf. A"
-							type = medium_tank_chassis_1
-							parent_version = 0
-							modules = {
-								main_armament_slot = tank_high_velocity_cannon
-								turret_type_slot = tank_medium_three_man_tank_turret
-								suspension_type_slot = tank_bogie_suspension
-								armor_type_slot = tank_welded_armor
-								engine_type_slot = tank_gasoline_engine
-								special_type_slot_1 = tank_radio_1
-								special_type_slot_2 = smoke_launchers
-							}
-							upgrades = {
-								tank_nsb_engine_upgrade = 6
-								tank_nsb_armor_upgrade = 3
-							}
-							icon = "GFX_GER_basic_medium_tank_medium"
-						}
-						create_equipment_variant = {
-							name = "Panzer IV Ausf. A"
-							type = medium_tank_chassis_1
-							parent_version = 1
-							modules = {
-								main_armament_slot = tank_close_support_gun
-								turret_type_slot = tank_medium_three_man_tank_turret
-								suspension_type_slot = tank_bogie_suspension
-								armor_type_slot = tank_welded_armor
-								engine_type_slot = tank_gasoline_engine
-								special_type_slot_1 = tank_radio_1
-								special_type_slot_2 = smoke_launchers
-							}
-							upgrades = {
-								tank_nsb_engine_upgrade = 6
-								tank_nsb_armor_upgrade = 2
-							}
-							icon = "GFX_GER_basic_medium_tank_medium"
-						}
-					}
-				}
-				else = {
-					custom_effect_tooltip = GER_soviet_treaty_research_nsb_tt
-					effect_tooltip = {
-						create_equipment_variant = {
-							name = "Panzer III Ausf. A"
-							type = medium_tank_chassis_1
-							parent_version = 0
-							modules = {
-								main_armament_slot = tank_high_velocity_cannon
-								turret_type_slot = tank_medium_three_man_tank_turret
-								suspension_type_slot = tank_bogie_suspension
-								armor_type_slot = tank_welded_armor
-								engine_type_slot = tank_gasoline_engine
-								special_type_slot_1 = tank_radio_1
-								special_type_slot_2 = smoke_launchers
-							}
-							upgrades = {
-								tank_nsb_engine_upgrade = 6
-								tank_nsb_armor_upgrade = 3
-							}
-							icon = "GFX_GER_basic_medium_tank_medium"
-						}
-						create_equipment_variant = {
-							name = "Panzer IV Ausf. A"
-							type = medium_tank_chassis_1
-							parent_version = 1
-							modules = {
-								main_armament_slot = tank_close_support_gun
-								turret_type_slot = tank_medium_three_man_tank_turret
-								suspension_type_slot = tank_bogie_suspension
-								armor_type_slot = tank_welded_armor
-								engine_type_slot = tank_gasoline_engine
-								special_type_slot_1 = tank_radio_1
-								special_type_slot_2 = smoke_launchers
-							}
-							upgrades = {
-								tank_nsb_engine_upgrade = 6
-								tank_nsb_armor_upgrade = 2
-							}
-							icon = "GFX_GER_basic_medium_tank_medium"
-						}	
-					}
-				}
-				add_tech_bonus = {
-					name = armor_bonus
-					bonus = 1.0
-					uses = 2
-					category = armor
-				}
-			}
-			else = {
-				effect_tooltip = {
-					add_tech_bonus = {
-						name = med_armor_bonus
-						ahead_reduction = 1
-						category = cat_medium_armor
-					}
-					add_tech_bonus = {
-						name = armor_bonus
-						bonus = 1.0
-						uses = 2
-						category = armor
-					}
-				}
-			}
-		}
-	}
 
 	focus = {
 		id = GER_air_innovation_2
 		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = GER_strategic_air_effort focus = GER_tactical_air_effort focus = GER_soviet_treaty }
+		prerequisite = { focus = GER_strategic_air_effort focus = GER_tactical_air_effort focus = GER_army_innovation }
 		x = 0
 		y = 2
 		relative_position_id = GER_strategic_air_effort
@@ -5128,10 +4768,10 @@ focus_tree = {
 	focus = {
 		id = GER_army_innovation_2
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = GER_soviet_treaty }
+		prerequisite = { focus = GER_army_innovation }
 		x = 0
 		y = 2
-		relative_position_id = GER_soviet_treaty
+		relative_position_id = GER_army_innovation
 		cost = 10
 		ai_will_do = {
 			factor = 1
