@@ -440,214 +440,71 @@ focus_tree = {
 				add_to_faction = LUX
 				add_to_faction = DNZ
 				add_to_faction = FRA
+
+
 				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = WUR
-							autonomy_state = bp_hre_prince
-						}
+					set_autonomy = {
+						target = COR
+						autonomy_state = bp_hre_prince
 					}
-					else = {
-						puppet = WUR
+					set_autonomy = {
+						target = TOS
+						autonomy_state = bp_hre_prince
+					}
+					set_autonomy = {
+						target = SPM
+						autonomy_state = bp_hre_prince
+					}
+					set_autonomy = {
+						target = LBV
+						autonomy_state = bp_hre_prince
+					}
+					set_autonomy = {
+						target = SWI
+						autonomy_state = bp_hre_prince
+					}
+					set_autonomy = {
+						target = LUX
+						autonomy_state = bp_hre_prince
+					}
+					set_autonomy = {
+						target = HOL
+						autonomy_state = bp_hre_prince
+					}
+					set_autonomy = {
+						target = HAN
+						autonomy_state = bp_hre_prince
+					}
+					set_autonomy = {
+						target = MEK
+						autonomy_state = bp_hre_prince
+					}
+					set_autonomy = {
+						target = WUR
+						autonomy_state = bp_hre_prince
 					}
 				}
+
 				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = MEK
-							autonomy_state = bp_hre_prince
-						}
+					set_autonomy = {
+						target = FRA
+						autonomy_state = bp_hre_elector
 					}
-					else = {
-						puppet = MEK
+					set_autonomy = {
+						target = BAY
+						autonomy_state = bp_hre_elector
 					}
-				}
-				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = HAN
-							autonomy_state = bp_hre_prince
-						}
+					set_autonomy = {
+						target = DNZ
+						autonomy_state = bp_hre_elector
 					}
-					else = {
-						puppet = HAN
+					set_autonomy = {
+						target = PRE
+						autonomy_state = bp_hre_elector
 					}
-				}
-				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = HOL
-							autonomy_state = bp_hre_prince
-						}
-					}
-					else = {
-						puppet = HOL
-					}
-				}
-				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = LUX
-							autonomy_state = bp_hre_prince
-						}
-					}
-					else = {
-						puppet = LUX
-					}
-				}
-				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = SWI
-							autonomy_state = bp_hre_prince
-						}
-					}
-					else = {
-						puppet = SWI
-					}
-				}
-				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = LBV
-							autonomy_state = bp_hre_prince
-						}
-					}
-					else = {
-						puppet = LBV
-					}
-				}
-				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = SPM
-							autonomy_state = bp_hre_prince
-						}
-					}
-					else = {
-						puppet = SPM
-					}
-				}
-				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = TOS
-							autonomy_state = bp_hre_prince
-						}
-					}
-					else = {
-						puppet = TOS
-					}
-				}
-				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = COR
-							autonomy_state = bp_hre_prince
-						}
-					}
-					else = {
-						puppet = COR
-					}
-				}
-				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = SAX
-							autonomy_state = bp_hre_elector
-						}
-					}
-					else = {
-						puppet = SAX
-					}
-				}
-				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = PRE
-							autonomy_state = bp_hre_elector
-						}
-					}
-					else = {
-						puppet = PRE
-					}
-				}
-				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = DNZ
-							autonomy_state = bp_hre_elector
-						}
-					}
-					else = {
-						puppet = DNZ
-					}
-				}
-				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = BAY
-							autonomy_state = bp_hre_elector
-						}
-					}
-					else = {
-						puppet = BAY
-					}
-				}
-				AUS = {
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						set_autonomy = {
-							target = FRA
-							autonomy_state = bp_hre_elector
-						}
-					}
-					else = {
-						puppet = FRA
+					set_autonomy = {
+						target = SAX
+						autonomy_state = bp_hre_elector
 					}
 				}
 			}
@@ -897,7 +754,28 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			PAP = {
+				transfer_state = 2
+				transfer_state = 157
+				transfer_state = 161
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.5
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_ideas = HRE_autonomous_neutrality_idea
+				add_ideas = HRE_elector_idea
+			}
+			AUS = {
+				set_autonomy = {
+					target = PAP
+					autonomy_state = bp_hre_elector
+				}
+			}
+			custom_effect_tooltip = AUS_bring_in_pap_tooltip
 
 		}
 	}

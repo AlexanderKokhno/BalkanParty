@@ -154,6 +154,15 @@ country_event = {
 				}
 			}
 			modifier = {
+				factor = 1.5
+				PAP = {
+					OR = {
+						is_in_faction_with = AUS
+						is_puppet_of = AUS
+					}
+				}
+			}
+			modifier = {
 				factor = 2
 				OR = {
 					tag = FRA

@@ -2451,11 +2451,23 @@
 
 		completion_reward = {
 			add_ideas = protestant_league_member
+			AUS = {
+				add_ideas = catholic_league_member
+			}
+			PAP = {
+				add_ideas = catholic_league_member
+			}
 			every_country = {
 				limit = {
 					AND = {
 						NOT = {
 							tag = AUS
+						}
+						NOT ={
+							tag = PAP
+						}
+						NOT = {
+							tag = CZE
 						}
 						OR = {
 							has_idea = HRE_autonomous_neutrality_idea

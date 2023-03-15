@@ -57,7 +57,8 @@
  CZE_get_pp_in_preperation_for_leagues_tooltip:0 "Any country outside the HRE with 100 relations to Bohemia will be invited to the leagues."
  CZE_start_the_league_war_tooltip:0 "Fracture the empire, start the fire of religious war!"
  cze_seize_emperorship_tooltip:0 "Bohemia seizes the Imperial Throne"
- AUS_a_roman_empire_tooltip:0 "ENTER TOOLTIP"
+ AUS_bring_in_pap_tooltip:0 "The introduction of the Holy See into the Holy Roman Empire will incline those seeking to join the League Wars in the favour of the Catholics."
+ AUS_a_roman_empire_tooltip:0 "Unlocks a decision to unify the Holy Roman Empire into a single entity."
  
 
 ##################################################### PUPPETS #################################################
