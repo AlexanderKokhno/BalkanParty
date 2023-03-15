@@ -168,6 +168,7 @@ focus_tree = {
 			set_politics = {
 				ruling_party = fascism
 			}
+			add_ideas = AUS_GER_army_disloyalty
 			add_war_support = 0.05
 			set_cosmetic_tag = AUS_GER_greater_aus_cos_tag
 			create_faction = "Austrian Co-Prosperity Bloc"
