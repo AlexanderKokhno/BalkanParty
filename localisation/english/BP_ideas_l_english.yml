@@ -38,6 +38,8 @@
 
  HRE_emperor_idea:0 "Holy Roman Emperor"
  HRE_emperor_idea_desc:0 "[ROOT.GetName] holds the title of Emperor in the Holy Roman Empire."
+ AUS_multicultural_tensions:0 "Multicultural Tensions"
+ AUS_multicultural_tensions_desc:0 "Not only does the empire stretch from Italia to North Francia to East Prussia, so is the feeling of mutual hatred between thnicities shared."
  HRE_elector_idea:0 "Imperial Elector Status"
  Prussian_army_idea:0 "Prussian Army"
  HRE_autonomous_neutrality_idea:0 "Imperial autonomy from the Emperor."

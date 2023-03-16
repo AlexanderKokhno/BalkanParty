@@ -1196,7 +1196,9 @@ focus_tree = {
 
 		completion_reward = {
 
-
+			remove_ideas = AUS_multicultural_tensions
+			add_manpower = -10000
+			add_political_power = -100
 		}
 	}
 	focus = {
@@ -3634,6 +3636,40 @@ focus_tree = {
 			add_state_core = 53
 			add_political_power = 50
 			add_named_threat = { threat = 5 name = generic.15.t }
+		}
+	}
+	focus = {
+		id = AUS_GER_purge_party
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		mutually_exclusive = {  }
+		prerequisite = {
+			focus = AUS_GER_greater_austria
+		}
+		relative_position_id = AUS_GER_greater_austria
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			custom_effect_tooltip = AUS_GER_purge_party_tooltip
 		}
 	}
 

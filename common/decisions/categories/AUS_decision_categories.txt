@@ -6,7 +6,6 @@
 
 HRE_emperor_decisions = {
 
-  icon = GFX_decision_category_eng_appeal_to_imperial_loyalists
 
   picture = GFX_decision_cat_generic_hre
 
@@ -40,4 +39,17 @@ SS_AUS_recruitment = {
 	visible = {
 		has_idea = heinrich_himmler
 	}
+}
+
+AUS_GER_party_purge_and_army_reform = {
+	allowed = {
+		original_tag = AUS
+	}
+	visible = {
+		has_completed_focus = AUS_GER_greater_austria
+	}
+	priority = 5
+
+
+	icon = GFX_decision_category_military_operation
 }

@@ -204,6 +204,22 @@ ideas = {
 				war_support_factor = -0.05
 			}
 		}		
+		AUS_GER_placated_army = {
+			picture = chi_incompetent_officers
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.05
+				max_planning = -0.1
+				political_power_factor = -0.15
+			}
+		}
 		AUS_GER_ss_idea = {
 			
 			picture = generic_secret_police
@@ -415,6 +431,21 @@ ideas = {
 				stability_factor = 0.30
 				war_support_factor = 0.20
 				political_power_factor = 0.50
+			}
+		}
+		AUS_multicultural_tensions = {
+			picture = chi_army_corruption
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = -0.2
+				party_popularity_stability_factor = -0.5
+				consumer_goods_factor = 0.05
 			}
 		}
 		AUS_ostend_corp = {
