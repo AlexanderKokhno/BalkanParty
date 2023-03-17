@@ -51,13 +51,15 @@
  austria.13.tooltip:0 "The Turks join our faction"
  austria.100.tooltip:0 "Form Deutschland"
 
- AUS_GER_anti_commie_tooltip:0 "Gain a causes beli on all commies"
- AUS_COM_anti_fascist_tooltip:0 "Gain a causes beli on all fascists"
+ AUS_GER_anti_commie_tooltip:0 "Gain a casus belli on all commies"
+ AUS_COM_anti_fascist_tooltip:0 "Gain a casus belli on all fascists"
+ Anti_democrat_tooltip:0 "Gain a casus belli on democrats"
  aus_create_hre_tooltip:0 "Turn back the hands of time, the pages of the history books... the Holy Roman Empire has returned!"
  CZE_get_pp_in_preperation_for_leagues_tooltip:0 "Any country outside the HRE with 100 relations to Bohemia will be invited to the leagues."
  CZE_start_the_league_war_tooltip:0 "Fracture the empire, start the fire of religious war!"
  cze_seize_emperorship_tooltip:0 "Bohemia seizes the Imperial Throne"
  AUS_bring_in_pap_tooltip:0 "The introduction of the Holy See into the Holy Roman Empire will incline those seeking to join the League Wars in the favour of the Catholics."
+ AUS_HRE_balance_of_power:0 "Guarantee all nations that have a high opinion of Austria or Austria has of them."
  AUS_a_roman_empire_tooltip:0 "Unlocks a decision to unify the Holy Roman Empire into a single entity."
  AUS_GER_purge_party_tooltip:0 "A series of decisions will allow us to curtail the sprawl of the party and reign in the army's loyalty to us!"
  
@@ -66,6 +68,7 @@
 
  bp_hre_prince:0 "Imperial Prince"
  bp_hre_elector:0 "Imperial Elector"
+ bp_hre_pu:0 "Personal Union"
 
 ###################################################### OPINION MODIFIERS ###############################################
 
@@ -86,6 +89,9 @@
  call_hre_to_arms_desc:0 "The Emperor is in danger, we must mobilize the empire to save us. Just as we protect them, they must protect us."
  AUS_hre_annex_hol:0 "Integrate the Lowlands"
  AUS_hre_annex_hol_desc:0 ""
+ AUS_HRE_PU_Bavaria:0 "Enforce Personal Union on Bavaria"
+ AUS_HRE_PU_Bavaria_desc:0 ""
+ AUS_HRE_PU_Swabia:0 "Enforce Personal Union on Swabia-Wuremburg"
 
  AUS_GER_purge_the_party_of_rivals:0 "Purge the Party of Rivals"
  AUS_GER_approach_army:0 "Approach the Army"

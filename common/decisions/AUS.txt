@@ -137,6 +137,72 @@ HRE_emperor_decisions = {
 	}
 }
 
+AUS_HRE_spread_habsburgs_category = {
+	AUS_HRE_PU_Bavaria = {
+		avaliable = {
+			has_completed_focus = AUS_control_swabia
+		}
+		visible = {
+			has_completed_focus = AUS_declare_HRE
+		}
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor 100
+		}
+		modifier = {
+			ROOT = {
+				set_autonomy = {
+						target = BAY
+						autonomy_state = bp_hre_pu
+					}
+			}
+		}
+	}
+	AUS_HRE_PU_Swabia = {
+		avaliable = {
+			has_completed_focus = AUS_control_swabia
+		}
+		visible = {
+			has_completed_focus = AUS_declare_HRE
+		}
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			ROOT = {
+				set_autonomy = {
+					target = WUR
+					autonomy_state = bp_hre_pu
+				}
+			}
+		}
+	}
+	AUS_HRE_PU_FRA_BUR = {
+		available = {
+			has_completed_focus = AUS_reclaim_burgundy
+		}
+		visible = {
+			has_completed_focus = AUS_declare_HRE
+		}
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			ROOT = {
+				set_autonomy = {
+					target = FRA
+					autonomy_state = bp_hre_pu
+				}
+			}
+		}
+	}
+}
+
 AUS_GER_party_purge_and_army_reform = {
 	AUS_GER_purge_the_party_of_rivals = {
 
