@@ -755,19 +755,23 @@ focus_tree = {
 
 		completion_reward = {
 			PAP = {
-				transfer_state = 2
-				transfer_state = 157
-				transfer_state = 161
-				add_popularity = {
-					ideology = neutrality
-					popularity = 0.5
-				}
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-				}
 				add_ideas = HRE_autonomous_neutrality_idea
 				add_ideas = HRE_elector_idea
+			}
+			hidden_effect = {
+				PAP = {
+					transfer_state = 2
+					transfer_state = 157
+					transfer_state = 161
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.5
+					}
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+				}
 			}
 			AUS = {
 				set_autonomy = {
