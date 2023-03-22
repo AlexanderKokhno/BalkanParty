@@ -94,6 +94,11 @@
   SER_nationalist_guard_IDEA:0 "Nationalist Guard"
   SER_nationalist_guard_IDEA_desc:0 ""
 
+  SER_war_effort_economy_I_idea:0 "Serbian War Effort"
+  SER_war_effort_economy_I_idea_desc:0 ""
+  SER_war_effort_economy_II_idea:0 "Serbian War Effort"
+  SER_war_effort_economy_II_idea_desc:0 ""
+
 
 ############# SLO
   SLO_fortification_focus:0 "Slovak Fortification Program"

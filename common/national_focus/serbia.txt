@@ -1522,11 +1522,11 @@ focus_tree = {
 
 	focus = {
 		id = SER_YUG_SARTID_investments
-		icon = 
+		icon = GFX_focus_spa_the_spanish_miracle
 		relative_position_id = SER_guarantee
 		x = 0
 		y = 5
-		cost = 10
+		cost = 15
 		search_filters = {   }
 		prerequisite = { focus = SER_YUG_SARTID_investments focus = SER_serbian_industry}
 		
@@ -1537,17 +1537,78 @@ focus_tree = {
 		}
 
 
-	completion_reward = {
-		random_owned_controlled_state = {
-			prioritize = { 109 103 }
-			add_resource = {
-				type = steel
-				amount = 12
+		completion_reward = {
+			add_political_power = -100
+			random_owned_controlled_state = {
+				prioritize = { 109 103 107 }
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+				add_resource = {
+					type = chromium
+					amount = 10
+				}
+				add_resource = {
+					type = tungsten
+					amount = 10
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			modify_building_resources = {
+				building = industrial_complex
+				resource = steel
+				amount = 1
 			}
 		}
 	}
+	focus = {
+		id = SER_war_effort_economy_I
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = SER_YUG_SARTID_investments
+		x = 2
+		y = 1
+		cost = 5
+		search_filters = {   }
+		prerequisite = { focus = }
+		
+		available_if_capitulated = yes
+				
+		ai_will_do = {
+			factor = 10
+		}
 
+		completion_reward = {
+			add_ideas = SER_war_effort_economy_I_idea
 
+		}
+	}
+		id = SER_war_effort_economy_II
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = SER_war_effort_economy_I
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = SER_war_effort_economy_I }
+		
+		available_if_capitulated = yes
+				
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SER_war_effort_economy_I_idea
+				add_idea = SER_war_effort_economy_II_idea
+			}
+
+		}
 	}
 	
 
