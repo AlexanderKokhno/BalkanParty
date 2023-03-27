@@ -191,8 +191,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SLV_elect_commie
-		icon = GFX_goal_support_communism
+		id = SLV_elect_peterii
+		icon = GFX_focus_SOV_panslavic_nationalism
 		mutually_exclusive = { focus = SLV_elect_democrat }
 		prerequisite = { focus = SLV_elect_king }
 		relative_position_id = SLV_elect_king

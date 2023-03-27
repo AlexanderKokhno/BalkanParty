@@ -489,7 +489,17 @@
   ############## SLV
 
   SLV_political_effort:0 "Political Effort"
-  SLV_political_effort_desc:0 "The political question"
+  SLV_political_effort_desc:0 "The Political Question"
+  SLV_monarchy:0 "Monarchy"
+  SlV_monarchy_desc:0 "The People must elect a King!"
+  SLV_elect_king:0 "Elect a King"
+  SLV_elect_king_desc:0 "We are on a good way to become a monarchy, but who will be our leader?"
+  SLV_elect_democrat:0 "The Democratic King"
+  SLV_elect_democrat_desc:0 "We need to become a democracy!"
+  SLV_elect_peterii:0 "Peter II"
+  SLV_elect_peterii_desc:0 "We need to invite Peter II, maybe we'll unite Yugoslavia?"
+  SLV_elect_theguy:0 "A Citizen"
+  SLV_elect_theguy_desc:0 "We don't have any good candidates, we shall pick one of our citizens!"
   SLV_fascist:0 "Fascism"
   SLV_fascist_desc:0 "The path of fascism"
   SLV_reachout_fascist_countries:0 "Reach out to the fascist nations"
