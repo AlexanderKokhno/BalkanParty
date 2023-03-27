@@ -1097,10 +1097,17 @@ focus_tree = {
 		search_filters = {   }
 		prerequisite = { focus = AUS_decline_of_hungary}
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
-		avaliable = {
+		available = {
 			OR = {
+				AND = {
+					AUS = {
+						owns_state = 43
+						owns_state = 154
+						owns_state = 155
+					}
+				}
 				AND = {
 					HUN = {
 						is_puppet_of = AUS
@@ -2196,6 +2203,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = COM_guarantees_tooltip
 			every_country = {
 				limit = {
 					has_government = communism
@@ -2885,22 +2893,6 @@ focus_tree = {
 				}
 				set_state_flag = GER_industrial_effort_2IC
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2IC
-			}
 		}
 	}
 
@@ -2964,22 +2956,7 @@ focus_tree = {
 				}
 				set_state_flag = GER_industrial_effort_2_2IC
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2_2IC
-			}
+
 		}
 	}
 
@@ -3174,21 +3151,7 @@ focus_tree = {
 				}
 				add_ideas = war_economy
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
+
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -4342,10 +4305,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -4357,10 +4320,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}

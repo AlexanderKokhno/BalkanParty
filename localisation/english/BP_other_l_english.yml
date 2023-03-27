@@ -42,6 +42,11 @@
 
 ##################################################### TOOLTIP ###########################################
 
+ AUS_GER_anti_commie_tooltip:0 "Gain a casus belli on all commies"
+ AUS_COM_anti_fascist_tooltip:0 "Gain a casus belli on all fascists"
+ Anti_democrat_tooltip:0 "Gain a casus belli on democrats"
+ COM_guarantees_tooltip:0 "Guarantee all fellow communist nations"
+
  austria.3.tooltip:0 "Gain a wargoal to seize Slovenia."
  austria.4.tooltip:0 "Integrate Slovenia"
  austria.6.tooltip:0 "Gain a wargoal to subjugate Hungary."
@@ -51,9 +56,7 @@
  austria.13.tooltip:0 "The Turks join our faction"
  austria.100.tooltip:0 "Form Deutschland"
 
- AUS_GER_anti_commie_tooltip:0 "Gain a casus belli on all commies"
- AUS_COM_anti_fascist_tooltip:0 "Gain a casus belli on all fascists"
- Anti_democrat_tooltip:0 "Gain a casus belli on democrats"
+
  aus_create_hre_tooltip:0 "Turn back the hands of time, the pages of the history books... the Holy Roman Empire has returned!"
  CZE_get_pp_in_preperation_for_leagues_tooltip:0 "Any country outside the HRE with 100 relations to Bohemia will be invited to the leagues."
  CZE_start_the_league_war_tooltip:0 "Fracture the empire, start the fire of religious war!"
