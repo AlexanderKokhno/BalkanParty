@@ -11,6 +11,8 @@
   SER_kings_party_long:0 "Party of Prince Paul of Yugoslavia"
   AUS_KPO_party:0 "KPO"
   AUS_KPO_party_long:0 "Kommunistische Partei Österreichs"
+  SLV_thepatriots_party:0 "The Patriots"
+  SLV_thepatriots_party_long:0 "The Patriots"
 #################################################### COUNTRIES ##########################################
   SER_YUG_KING_neutrality:0 "Kingdom of Yugoslavia"
   SER_YUG_KING_neutrality_ADJ:0 "Yugoslavian"

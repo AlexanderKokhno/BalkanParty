@@ -1,5 +1,13 @@
 ideas = {
 	# MILITARY
+	country = {
+		monarchism_rise = {
+			picture = HUN_hungarian_monarchy
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+	}
 
 
 	political_advisor = {

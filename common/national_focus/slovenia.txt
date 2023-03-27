@@ -89,6 +89,171 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
+####################Monarchy############################
+	focus = {
+		id = SLV_monarchy
+		icon = GFX_focus_generic_monarchy_2
+		mutually_exclusive = {  }
+		prerequisite = { focus = SLV_political_effort }
+		relative_position_id = SLV_political_effort
+		x = -5
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			Add_ideas = monarchism_rise
+			set_party_name = { ideology = neutrality long_name = SLV_thepatriots_party_long name = SLV_thepatriots_party }
+		}
+	}
+	focus = {
+		id = SLV_elect_king
+		icon = GFX_focus_hun_elect_a_king
+		mutually_exclusive = {  }
+		prerequisite = { focus = SLV_monarchy }
+		relative_position_id = SLV_monarchy
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			neutrality > 0.4
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = SLV_elect_democrat
+		icon = GFX_goal_support_democracy
+		mutually_exclusive = { focus = SLV_elect_commie }
+		mutually_exclusive = { focus = SLV_elect_theguy }
+		prerequisite = { focus = SLV_elect_king }
+		relative_position_id = SLV_elect_king
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_elect_commie
+		icon = GFX_goal_support_communism
+		mutually_exclusive = { focus = SLV_elect_democrat }
+		prerequisite = { focus = SLV_elect_king }
+		relative_position_id = SLV_elect_king
+		x = -3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_elect_theguy
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		mutually_exclusive = { focus = SLV_elect_democrat }
+		prerequisite = { focus = SLV_elect_king }
+		relative_position_id = SLV_elect_king
+		x = 3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
 ################## Fascism #################
 
 	focus = {
@@ -97,7 +262,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		prerequisite = { focus = SLV_political_effort }
 		relative_position_id = SLV_political_effort
-		x = 1
+		x = 5
 		y = 1
 
 		cost = 10
