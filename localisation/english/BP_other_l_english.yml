@@ -97,6 +97,8 @@
  AUS_HRE_PU_Bavaria:0 "Enforce Personal Union on Bavaria"
  AUS_HRE_PU_Bavaria_desc:0 ""
  AUS_HRE_PU_Swabia:0 "Enforce Personal Union on Swabia-Wuremburg"
+ AUS_HRE_PU_FRA_BUR:0 "Inherit the crown of Burgundy"
+ AUS_HRE_PU_FRA_BUR_desc:0 ""
 
  AUS_GER_purge_the_party_of_rivals:0 "Purge the Party of Rivals"
  AUS_GER_approach_army:0 "Approach the Army"

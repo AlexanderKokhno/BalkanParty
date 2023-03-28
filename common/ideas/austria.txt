@@ -430,7 +430,7 @@ ideas = {
 				party_popularity_stability_factor = 0.5
 				stability_factor = 0.30
 				war_support_factor = 0.20
-				political_power_factor = 0.50
+				political_power_factor = 0.25
 			}
 		}
 		AUS_multicultural_tensions = {

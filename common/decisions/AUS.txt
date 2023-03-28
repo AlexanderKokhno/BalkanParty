@@ -150,7 +150,10 @@ AUS_HRE_spread_habsburgs_category = {
 		ai_will_do = {
 			factor 100
 		}
-		modifier = {
+		available = {
+			has_completed_focus = AUS_duchy_of_bavaria
+		}
+		complete_effect = {
 			ROOT = {
 				set_autonomy = {
 						target = BAY
@@ -171,7 +174,10 @@ AUS_HRE_spread_habsburgs_category = {
 		ai_will_do = {
 			factor = 100
 		}
-		modifier = {
+		available = {
+			has_completed_focus = AUS_control_swabia
+		}
+		complete_effect = {
 			ROOT = {
 				set_autonomy = {
 					target = WUR
@@ -192,11 +198,31 @@ AUS_HRE_spread_habsburgs_category = {
 		ai_will_do = {
 			factor = 100
 		}
-		modifier = {
+		complete_effect = {
 			ROOT = {
 				set_autonomy = {
 					target = FRA
 					autonomy_state = bp_hre_pu
+				}
+			}
+			FRA = {
+				add_state_core = { 18 16 785 }
+				transfer_state = {18 16 785}
+				start_civil_war = {	
+					ideology = neutrality
+
+					size = 0.75
+					capital = 16
+					states = { 17 28 }
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.5
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.5
+					}
+					
 				}
 			}
 		}
