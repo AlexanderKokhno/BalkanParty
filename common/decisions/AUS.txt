@@ -206,14 +206,18 @@ AUS_HRE_spread_habsburgs_category = {
 				}
 			}
 			FRA = {
-				add_state_core = { 18 16 785 }
-				transfer_state = {18 16 785}
+				add_state_core = 18
+				add_state_core = 16
+				add_state_core = 785
+				transfer_state = 18
+				transfer_state = 16
+				transfer_state = 785
 				start_civil_war = {	
 					ideology = neutrality
 
 					size = 0.75
 					capital = 16
-					states = { 17 28 }
+					states = { 17 28 18 16}
 					add_popularity = {
 						ideology = neutrality
 						popularity = 0.5
@@ -224,6 +228,7 @@ AUS_HRE_spread_habsburgs_category = {
 					}
 					
 				}
+				
 			}
 		}
 	}

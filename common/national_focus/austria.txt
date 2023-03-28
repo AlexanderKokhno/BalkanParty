@@ -1821,10 +1821,13 @@ focus_tree = {
 		completion_reward = {
 			every_country = {
 				limit = {
-					
+					has_government = neutrality
+
 				}
+				add_political_power = 50
 				
 			}
+			custom_effect_tooltip = AUS_spread_the_von_habsburgs_tooltip
 
 		}
 	}
@@ -1886,7 +1889,7 @@ focus_tree = {
 			custom_effect_tooltip = Anti_democrat_tooltip
 			every_country = {
 				limit = {
-					has_government = democracy
+					has_government = democratic
 					NOT = { is_in_faction_with = ROOT }
 				}
 				ROOT = {
