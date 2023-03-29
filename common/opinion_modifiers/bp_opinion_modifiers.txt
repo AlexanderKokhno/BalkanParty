@@ -31,6 +31,10 @@ opinion_modifiers = {
 		value = -200
 	}
 
+	deal_with_brandenburg_pre_pissed = {
+		value = -500
+	}
+
 	
 	
 }

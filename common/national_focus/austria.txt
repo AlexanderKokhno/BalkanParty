@@ -1561,6 +1561,9 @@ focus_tree = {
 		prerequisite = { focus = }
 		
 		available_if_capitulated = yes
+		available = {
+			has_completed_focus = AUS_declare_HRE
+		}
 
 		completion_reward = {
 
@@ -1608,11 +1611,56 @@ focus_tree = {
 		}
 		search_filters = {   }
 		prerequisite = { focus = AUS_duchy_of_bavaria }
+		available = {
+			PRE = {
+				owns_state = 62
+				owns_state = 60
+				owns_state = 66
+			}
+
+			}
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_political_power = -100
+			add_war_support = 0.2
+			add_stability = -0.05
+			MEK = {
+				transfer_state = 62
+			}
+			HAN = {
+				transfer_state = 60
+			}
+			SAX = {
+				transfer_state = 66
+			}
+			AUS = {
+				transfer_state = 67
+				
+			}
+			PRE = { 
+				add_opinion_modifier = { target = AUS modifier = deal_with_brandenburg_pre_pissed }
+				add_ideas = protestant_league_member
+				add_political_power = 300
+				add_war_support = 1
+				add_stability = 1
+				add_command_power = 200
+				set_capital = {state = 763}
+				763 = {
+					add_extra_state_shared_building_slots = 10
+					add_building_construction = {
+						type = arms_factory
+						level = 10
+						instant_build = yes
+					}
+				}
+				add_victory_points = {
+					province = 6332
+					value = 20
+				}
+				
+			}
 
 		}
 	}
@@ -1774,6 +1822,10 @@ focus_tree = {
 		}
 		search_filters = {   }
 		prerequisite = { focus = }
+		available = {
+			has_completed_focus = AUS_declare_HRE
+
+		}
 		
 		available_if_capitulated = yes
 

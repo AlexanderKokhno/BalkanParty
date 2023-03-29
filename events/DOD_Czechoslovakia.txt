@@ -119,6 +119,12 @@ country_event = {
 					tag = HOL
 				}
 			}
+			modifier = [
+				factor = -1000
+				OR = {
+					has_idea = catholic_league_member
+				}
+			]
 		}
 		
 
@@ -139,6 +145,13 @@ country_event = {
 		name = bp_cze.3.b
 		ai_chance = {
 			base = 50
+			modifier = [
+				factor = -1000
+				OR = {
+					has_idea = protestant_league_member
+					has_opinion_modifier = deal_with_brandenburg_pre_pissed
+				}
+			]
 			modifier = {
 				factor = 1.5
 				has_opinion = {
