@@ -2,84 +2,84 @@ ideas = {
   country = {
     SER_memories_of_YUG_1 = {
 			
-		picture = generic_victors_of_ww1
-		allowed = {
-			always = no
-		}
+			picture = generic_victors_of_ww1
+			allowed = {
+				always = no
+			}
 
-		allowed_civil_war = {
-			always = no
-		}
+			allowed_civil_war = {
+				always = no
+			}
 
-		removal_cost = -1
-		
-		modifier = {
-			party_popularity_stability_factor = -0.5
-			stability_factor = -0.1
-			war_support_factor = 0.1
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = -0.5
+				stability_factor = -0.1
+				war_support_factor = 0.1
+			}
 		}
-	}
     SER_36_paramilitaries = {
 		
-		picture = YUG_local_militias
+			picture = YUG_local_militias
 
-		allowed = {
-			always = no
-		}
+			allowed = {
+				always = no
+			}
 
-		allowed_civil_war = {
-			always = no
-		}
+			allowed_civil_war = {
+				always = no
+			}
 
-		removal_cost = -1
-		
-		modifier = {
-			stability_factor = -0.05
-			war_support_factor = 0.05
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+			}
 		}
-	}
-	SER_paramilitaries = {
-		
-		picture = YUG_all_yugoslavian_regiments
+		SER_paramilitaries = {
+			
+			picture = YUG_all_yugoslavian_regiments
 
-		allowed = {
-			always = no
-		}
+			allowed = {
+				always = no
+			}
 
-		allowed_civil_war = {
-			always = no
-		}
+			allowed_civil_war = {
+				always = no
+			}
 
-		removal_cost = -1
-		
-		modifier = {
-			max_planning = 0.05
-			defence = 0.05
-			weekly_manpower = 500
-			conscription_factor = 0.1
+			removal_cost = -1
+			
+			modifier = {
+				max_planning = 0.05
+				defence = 0.05
+				weekly_manpower = 500
+				conscription_factor = 0.1
+			}
 		}
-	}
-	SER_nationalist_guard_IDEA = {
-		
-		picture = YUG_all_yugoslavian_regiments
+		SER_nationalist_guard_IDEA = {
+			
+			picture = YUG_all_yugoslavian_regiments
 
-		allowed = {
-			always = no
-		}
+			allowed = {
+				always = no
+			}
 
-		allowed_civil_war = {
-			always = no
-		}
+			allowed_civil_war = {
+				always = no
+			}
 
-		removal_cost = -1
-		
-		modifier = {
-			max_planning = 0.05
-			army_defence_factor = 0.05
-			army_attack_factor = 0.05
-			fascism_drift = 0.025
+			removal_cost = -1
+			
+			modifier = {
+				max_planning = 0.05
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				fascism_drift = 0.025
+			}
 		}
-	}
     SER_king_influence = {
 			
 			picture = HUN_hungarian_monarchy_democratic
@@ -117,48 +117,108 @@ ideas = {
 			stability_factor = 0.1
 		}
 	}
-	SER_war_effort_economy_I_idea = {
-		
-		picture = SOV_third_five_year_plan_military
+		SER_war_effort_economy_I_idea = {
+			
+			picture = SOV_third_five_year_plan_military
 
-		allowed = {
-			always = no
-		}
+			allowed = {
+				always = no
+			}
 
-		allowed_civil_war = {
-			always = no
-		}
+			allowed_civil_war = {
+				always = no
+			}
 
-		removal_cost = -1
-		
-		modifier = {
-			conversion_cost_civ_to_mil_factor = 0.5
-			repair_speed_arms_factory_factor = 0.25
-			consumer_goods_factor = 0.1
-			industrial_capacity_factory = 0.25
+			removal_cost = -1
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = 0.5
+				repair_speed_arms_factory_factor = 0.25
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.25
+			}
 		}
-	}
-	SER_war_effort_economy_II_idea = {
-		
-		picture = SOV_third_five_year_plan_military
+		SER_war_effort_economy_II_idea = {
+			
+			picture = SOV_third_five_year_plan_military
 
-		allowed = {
-			always = no
-		}
+			allowed = {
+				always = no
+			}
 
-		allowed_civil_war = {
-			always = no
-		}
+			allowed_civil_war = {
+				always = no
+			}
 
-		removal_cost = -1
-		
-		modifier = {
-			conversion_cost_civ_to_mil_factor = 0.75
-			repair_speed_arms_factory_factor = 0.5
-			consumer_goods_factor = 0.3
-			industrial_capacity_factory = 0.15
-			industrial_capacity_dockyard = 0.1
+			removal_cost = -1
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = 0.75
+				repair_speed_arms_factory_factor = 0.5
+				consumer_goods_factor = 0.3
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.1
+			}
 		}
-	}
+		SER_COM_constitution_idea = {
+			picture = generic_constitutional_guarantees
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				
+				stability_factor = 0.1
+				war_support_factor = -0.05
+				political_power_factor = 0.05
+			}
+		}
+		SER_COM_militia_idea = {
+			
+			picture = YUG_all_yugoslavian_regiments
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_planning = 0.05
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				communism_drift = 0.03
+
+			}
+		}
+		SER_COM_pheasants_idea = {
+			
+			picture = YUG_all_yugoslavian_regiments
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_planning = 0.05
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				communism_drift = 0.03
+				
+			}
+		}
   }
 }

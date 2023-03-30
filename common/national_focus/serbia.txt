@@ -329,7 +329,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_ideas = SER_COM_constitution_idea
 
 		}
 	}	
@@ -350,7 +350,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_popularity = { 
+				ideology = communism
+				popularity = 0.2
+			}
 
 		}
 	}	
@@ -371,7 +374,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = SER_COM_militia_idea
 
 		}
 	}	
@@ -392,7 +395,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_ideas = SER_COM_pheasants_idea
 
 		}
 	}

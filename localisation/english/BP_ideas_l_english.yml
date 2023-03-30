@@ -99,6 +99,13 @@
   SER_war_effort_economy_II_idea:0 "Serbian War Effort"
   SER_war_effort_economy_II_idea_desc:0 ""
 
+  SER_COM_constitution_idea:0 "Socialist Constitution"
+  SER_COM_constitution_idea_desc:0 ""
+  SER_COM_militia_idea:0 "Socialist Militia of Belgrade"
+  SER_COM_militia_idea_desc:0 ""
+  SER_COM_pheasants_idea:0 ""
+  SER_COM_pheasants_idea_desc:0 ""
+
 
 ############# SLO
   SLO_fortification_focus:0 "Slovak Fortification Program"
