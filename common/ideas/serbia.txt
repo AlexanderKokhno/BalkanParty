@@ -200,7 +200,7 @@ ideas = {
 		}
 		SER_COM_pheasants_idea = {
 			
-			picture = YUG_all_yugoslavian_regiments
+			picture = prc_low_popular_support3
 
 			allowed = {
 				always = no
@@ -213,11 +213,15 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				max_planning = 0.05
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
-				communism_drift = 0.03
+				conscription = 0.1
 				
+			}
+		}
+		Heavy_Investments = {
+			picture = SPR_relocate_the_gold_reserves
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.25
 			}
 		}
   }

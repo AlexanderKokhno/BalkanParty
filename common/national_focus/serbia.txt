@@ -1133,8 +1133,8 @@ focus_tree = {
 		focus = {
 		id = SER_industrialization_program
 		icon = GFX_goal_generic_construction
-		x = -2
-		y = 0
+		x = 14
+		y = 3
 
 		cost = 10
 
@@ -1170,7 +1170,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = SER_industrialization_program }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = SER_industrialization_program
 
 		cost = 10
@@ -1205,7 +1205,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = SER_expand_the_mining_industry }
 		x = -3
-		y = 1
+		y = 2
 		relative_position_id = SER_expand_the_mining_industry
 
 		cost = 10
@@ -1370,7 +1370,7 @@ focus_tree = {
 		prerequisite = { focus = SER_expand_the_mining_industry }
 		mutually_exclusive = { focus = SER_develop_military_industry }
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = SER_expand_the_mining_industry
 
 		cost = 10
@@ -1445,7 +1445,7 @@ focus_tree = {
 		prerequisite = { focus = SER_expand_the_mining_industry }
 		mutually_exclusive = { focus = SER_develop_civilian_industry }
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = SER_expand_the_mining_industry
 
 		cost = 10
@@ -1526,7 +1526,7 @@ focus_tree = {
 	focus = {
 		id = SER_YUG_SARTID_investments
 		icon = GFX_focus_spa_the_spanish_miracle
-		relative_position_id = SER_guarantee
+		relative_position_id = SER_industrialization_program
 		x = 0
 		y = 5
 		cost = 15
@@ -1574,13 +1574,13 @@ focus_tree = {
 
 	focus = {
 		id = SER_war_effort_economy_I
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_SOV_merge_plants
 		relative_position_id = SER_YUG_SARTID_investments
 		x = 2
 		y = 1
 		cost = 5
 		search_filters = {   }
-		prerequisite = { focus = }
+		prerequisite = { focus = SER_YUG_SARTID_investments}
 		
 		available_if_capitulated = yes
 				
@@ -1595,7 +1595,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SER_war_effort_economy_II
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_SOV_merge_plants
 		relative_position_id = SER_war_effort_economy_I
 		x = 0
 		y = 1
@@ -1620,8 +1620,8 @@ focus_tree = {
 
 ######### infrastructure
 	focus = {
-		id = 
-		icon = 
+		id = SER_infrastructure_I
+		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = SER_YUG_SARTID_investments
 		x = 0
 		y = 1
@@ -1641,14 +1641,14 @@ focus_tree = {
 		}
 	}
 		focus = {
-		id = 
-		icon = 
-		relative_position_id = 
-		x = 
-		y = 
+		id = SER_infrastructure_II
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = SER_infrastructure_I
+		x = 0
+		y = 1
 		cost = 10
 		search_filters = {   }
-		prerequisite = { focus = }
+		prerequisite = { focus = SER_infrastructure_I}
 		
 		available_if_capitulated = yes
 				
@@ -1662,14 +1662,14 @@ focus_tree = {
 		}
 	}
 		focus = {
-		id = 
-		icon = 
-		relative_position_id = 
-		x = 
-		y = 
+		id = SER_infrastructure_III
+		icon = GFX_focus_POL_warsaw_main_station
+		relative_position_id = SER_infrastructure_II
+		x = 0
+		y = 1
 		cost = 10
 		search_filters = {   }
-		prerequisite = { focus = }
+		prerequisite = { focus = SER_infrastructure_II}
 		
 		available_if_capitulated = yes
 				
@@ -1683,14 +1683,14 @@ focus_tree = {
 		}
 	}
 		focus = {
-		id = 
-		icon = 
-		relative_position_id = 
-		x = 
-		y = 
+		id = SER_infrastructure_IV
+		icon = GFX_focus_generic_energy
+		relative_position_id = SER_infrastructure_III
+		x = 0
+		y = 1
 		cost = 10
 		search_filters = {   }
-		prerequisite = { focus = }
+		prerequisite = { focus = SER_infrastructure_III}
 		
 		available_if_capitulated = yes
 				
@@ -1706,8 +1706,8 @@ focus_tree = {
 
 ########### factories
 	focus = {
-		id = 
-		icon = 
+		id = SER_factories_I
+		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = SER_YUG_SARTID_investments
 		x = -2
 		y = 1
@@ -1727,14 +1727,14 @@ focus_tree = {
 		}
 	}
 		focus = {
-		id = 
-		icon = 
-		relative_position_id = 
-		x = 
-		y = 
+		id = SER_factories_II
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = SER_factories_I
+		x = 0
+		y = 1
 		cost = 10
 		search_filters = {   }
-		prerequisite = { focus = }
+		prerequisite = { focus = SER_factories_I}
 		
 		available_if_capitulated = yes
 				
@@ -1748,14 +1748,14 @@ focus_tree = {
 		}
 	}
 		focus = {
-		id = 
-		icon = 
-		relative_position_id = 
-		x = 
-		y = 
+		id = SER_factories_III
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = SER_factories_II
+		x = 0
+		y = 1
 		cost = 10
 		search_filters = {   }
-		prerequisite = { focus = }
+		prerequisite = { focus = SER_factories_II}
 		
 		available_if_capitulated = yes
 				
@@ -1764,7 +1764,37 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_timed_idea = { 
+				idea = Heavy_Investments
+				days = 90 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = SER
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 
 		}
 	}
