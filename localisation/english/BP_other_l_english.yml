@@ -102,6 +102,10 @@
  AUS_HRE_PU_Swabia:0 "Enforce Personal Union on Swabia-Wuremburg"
  AUS_HRE_PU_FRA_BUR:0 "Inherit the crown of Burgundy"
  AUS_HRE_PU_FRA_BUR_desc:0 ""
+ AUS_HRE_PU_Milan:0 "Seize the Crown of Milan"
+ AUS_HRE_PU_Milan_desc:0 ""
+ AUS_HRE_PU_Naples:0 "Conquer the Crown of Naples"
+ AUS_HRE_PU_Naples_desc:0 ""
 
  AUS_GER_purge_the_party_of_rivals:0 "Purge the Party of Rivals"
  AUS_GER_approach_army:0 "Approach the Army"

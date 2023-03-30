@@ -688,6 +688,13 @@ focus_tree = {
 				transfer_state = 92
 				transfer_state = 97
 				transfer_state = 98
+				add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 20000
+    			producer = TTS
+				}
+				add_command_power = 200
+				add_political_power = 200
 			}
 			AUS = {
 				declare_war_on = {
@@ -1482,11 +1489,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			remove_from_faction = LBV
-			declare_war_on = {
-    		target = LBV
-    		type = puppet_wargoal_focus
-			}
+			unlock_decision_tooltip = AUS_HRE_PU_Milan
 		}
 	}
 	focus = {
@@ -1504,7 +1507,30 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			TTS = {
+				every_state = {
+					limit = { 
+						is_core_of = TTS
+					}
+					TTS = {
+						transfer_state = PREV
+					}
+				}
+				add_command_power = 200
+				add_political_power = 200
+				add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 20000
+    			producer = TTS
+				}
+			}
+			ROOT = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = TTS
+				}
+			}
+			unlock_decision_tooltip = AUS_HRE_PU_Naples
 
 		}
 	}
@@ -1527,6 +1553,10 @@ focus_tree = {
 			create_wargoal = {
     		type = annex_everything
     		target = SER
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BOS
 			}
 		}
 	}
@@ -1671,10 +1701,10 @@ focus_tree = {
 			PRE = {
 				owns_state = 62
 				owns_state = 60
-				owns_state = 66
+				owns_state = 64
 			}
 
-			}
+		}
 		
 		available_if_capitulated = yes
 
@@ -1689,7 +1719,7 @@ focus_tree = {
 				transfer_state = 60
 			}
 			SAX = {
-				transfer_state = 66
+				transfer_state = 64
 			}
 			AUS = {
 				transfer_state = 67

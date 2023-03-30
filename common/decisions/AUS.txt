@@ -193,7 +193,7 @@ AUS_HRE_spread_habsburgs_category = {
 		visible = {
 			has_completed_focus = AUS_declare_HRE
 		}
-		cost = 100
+		cost = 150
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 100
@@ -229,6 +229,52 @@ AUS_HRE_spread_habsburgs_category = {
 					
 				}
 				
+			}
+		}
+	}
+	AUS_HRE_PU_Milan = {
+		available = {
+			has_completed_focus = AUS_duchy_of_milan
+		}
+		visible = {
+			has_completed_focus = AUS_declare_HRE
+		}
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = LBV
+					autonomy_state = bp_hre_pu
+				}
+			}
+		}
+	}
+	AUS_HRE_PU_Naples = {
+		available = {
+			has_completed_focus = AUS_king_of_naples
+			TTS = {
+				is_puppet_of = AUS
+			}
+		}
+		visible = {
+			has_completed_focus = AUS_declare_HRE
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = TTS
+					autonomy_state = bp_hre_pu
+				}
 			}
 		}
 	}
