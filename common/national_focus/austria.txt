@@ -870,8 +870,7 @@ focus_tree = {
 				limit = {
 					is_in_faction_with = CZE
 				}
-				CZE = { add_opinion_modifier = { target = AUS modifier = 
-				 } }								
+				CZE = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared} }								
 			}
 			WUR = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
 			MEK = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }

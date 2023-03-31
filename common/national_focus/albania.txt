@@ -307,7 +307,7 @@ focus_tree = {
 	focus = {
 		id = 
 		icon = 
-		relative_position_id = 
+		relative_position_id = ALB_CCP_demand_payment
 
 		x = 0
 		y = 1

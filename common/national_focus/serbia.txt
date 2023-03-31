@@ -227,11 +227,11 @@ focus_tree = {
 
 		completion_reward = {
 			add_popularity = {
-				ideology = democracy
+				ideology = democratic
 				popularity = 0.1
 			}
 			set_politics = {
-				ruling_party = democracy
+				ruling_party = democratic
 				elections_allowed = no
 			}
 
@@ -279,6 +279,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.05
+			
 
 		}
 	}
