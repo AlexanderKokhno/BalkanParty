@@ -217,7 +217,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ALB_CCP_accept_huge_loans
-		icon = 
+		icon = GFX_focus_ITA_devaluate_the_lire
 		relative_position_id = ALB_CCP_chi_investments
 
 		x = -2
@@ -247,7 +247,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ALB_CCP_legalize_the_communist_party
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_focus_ITA_il_sol_dell_avvenire
 		relative_position_id = ALB_CCP_chi_investments
 		x = 2
 		y = 1
@@ -275,8 +275,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 
-		icon = 
+		id = ALB_CCP_demand_payment
+		icon = GFX_focus_mex_privatisation
 		relative_position_id = ALB_CCP_chi_investments
 		x = 0
 		y = 2

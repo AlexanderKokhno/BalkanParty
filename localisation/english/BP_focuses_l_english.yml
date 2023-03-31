@@ -19,6 +19,8 @@
   ALB_CCP_accept_huge_loans_desc:0 ""
   ALB_CCP_legalize_the_communist_party:0 "Legalize the Communist Party"
   ALB_CCP_legalize_the_communist_party_desc:0 ""
+  ALB_CCP_demand_payment:0 "The Debt Deadline"
+  ALB_CCP_demand_payment_desc:0 ""
 
 ########################################## AUS
   AUS_election_of_1936:0 "Election of 1936"
