@@ -13,7 +13,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1100 }
+	continuous_focus_position = { x = 2000 y = 2000 }
 
 #	focus = {
 #		id = ROM_
@@ -324,10 +324,10 @@ focus_tree = {
 		mutually_exclusive = { focus = SLV_yugoslavia }
 		prerequisite = { focus = SLV_convincethepeople }
 		relative_position_id = SLV_convincethepeople
-		x = 1
+		x = 3
 		y = 1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -356,8 +356,203 @@ focus_tree = {
 		mutually_exclusive = { focus = SLV_greaterslovenia }
 		prerequisite = { focus = SLV_convincethepeople }
 		relative_position_id = SLV_convincethepeople
+		x = -3
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_colonize_the_unknown
+		icon = GFX_focus_generic_truck
+		mutually_exclusive = {  }
+		prerequisite = { focus = SLV_greaterslovenia }
+		relative_position_id = SLV_greaterslovenia
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_strike_on_croatia
+		icon = GFX_focus_YUG_banovina_of_croatia
+		mutually_exclusive = {  }
+		prerequisite = { focus = SLV_colonize_the_unknown }
+		relative_position_id = SLV_colonize_the_unknown
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_strike_on_bosnia
+		icon = GFX_focus_YUG_safeguard_bosnia
+		mutually_exclusive = {  }
+		prerequisite = { focus = SLV_colonize_the_unknown }
+		relative_position_id = SLV_colonize_the_unknown
+		x = 3
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_strike_on_austria
+		icon = GFX_focus_POL_polish_revanchism
+		mutually_exclusive = {  }
+		prerequisite = { focus = SLV_colonize_the_unknown }
+		relative_position_id = SLV_colonize_the_unknown
 		x = -1
 		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_strike_on_hungary
+		icon = GFX_focus_hun_assassinate_horthy
+		mutually_exclusive = {  }
+		prerequisite = { focus = SLV_colonize_the_unknown }
+		relative_position_id = SLV_colonize_the_unknown
+		x = -3
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_we_are_the_greatest
+		icon = GFX_focus_smiling_buddha
+		mutually_exclusive = {  }
+		prerequisite = { focus = SLV_strike_on_hungary }
+		prerequisite = { focus = SLV_strike_on_austria }
+		prerequisite = { focus = SLV_strike_on_croatia }
+		prerequisite = { focus = SLV_strike_on_bosnia }
+		relative_position_id = SLV_colonize_the_unknown
+		x = 0
+		y = 2
 
 		cost = 10
 

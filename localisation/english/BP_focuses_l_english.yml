@@ -549,7 +549,26 @@
   SLV_fascist_faction_desc:0 "We need a faction to collaborate with our allies!"
   SLV_slovenian_fascism:0 "Slovenian Fascism"
   SLV_slovenian_fascism_desc:0 "We can do this on our own!"
-
+  SLV_thelookforaking:0 "The Look for a King"
+  SLV_thelookforaking_desc:0 "We need to Look for a Good King for our People!"
+  SLV_convincethepeople:0 "Convince the People"
+  SLV_convincethepeople_desc:0 "We need to convince our people to our new king!"
+  SLV_greaterslovenia:0 "Greater Slovenia"
+  SLV_greaterslovenia_desc:0 "We shall create the greater Slovenia!"
+  SLV_yugoslavia:0 "Yugoslavia"
+  SLV_yugoslavia_desc:0 "We shall create Yugoslavia"
+  SLV_colonize_the_unknown:0 "Colonize the Unknown"
+  SLV_colonize_the_unknown_desc:0 "We shall colonize our neighbouring land!"
+  SLV_strike_on_croatia:0 "Strike on Croatia"
+  SLV_strike_on_croatia_desc:0 "We shall integrate Croatia into our Empire"
+  SLV_strike_on_bosnia:0 "Stike on Bosnia"
+  SLV_strike_on_bosnia_desc:0 "We shall integrate Bosnia into our Empire"
+  SLV_strike_on_austria:0 "Strike on Austria"
+  SLV_strike_on_austria_desc:0 "We shall integrate Austria into our Empire"
+  SLV_strike_on_hungary:0 "Strike on Hungary"
+  SLV_strike_on_hungary_desc:0 "We shall integrate Hungary into our Empire"
+  SLV_we_are_the_greatest:0 "We are the Greatest!"
+  SLV_we_are_the_greatest_desc:0 "We need to properly integrate our occupied land!"
 
   
 
