@@ -220,6 +220,33 @@ ideas = {
 				political_power_factor = -0.15
 			}
 		}
+		AUS_GER_purge_party_I = {
+			picture = SOV_purged_junior_army_officers
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.05
+			}
+		}
+		AUS_GER_purge_party_II = {
+			picture = tfv_can_conscription_crisis			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.025
+				war_support_factor = 0.01
+			}
+		}
 		AUS_GER_ss_idea = {
 			
 			picture = generic_secret_police
