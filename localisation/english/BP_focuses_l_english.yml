@@ -1,5 +1,24 @@
 ﻿l_english: 
 
+########################################### ALB
+  ALB_ZOG_stand_zog:0 "Stand with King Zog"
+  ALB_ZOG_stand_zog_desc:0 ""
+
+  ALB_F_ZOG_integrate_the_right:0 "Integrate the Right"
+  ALB_F_ZOG_integrate_the_right_desc:0 ""
+
+  ALB_N_ZOG_balance_the_parties:0 "Balance the Parties"
+  ALB_N_ZOG_balance_the_parties_desc:0 ""
+
+  ALB_D_ZOG_draft_a_constitution:0 "Draft a Constitution"
+  ALB_D_ZOG_draft_a_constitution_desc:0 ""
+
+  ALB_CCP_chi_investments:0 "Chinese Investments"
+  ALB_CCP_chi_investments_desc:0 ""
+  ALB_CCP_accept_huge_loans:0 "Accept Generous Chinese Loans"
+  ALB_CCP_accept_huge_loans_desc:0 ""
+  ALB_CCP_legalize_the_communist_party:0 "Legalize the Communist Party"
+  ALB_CCP_legalize_the_communist_party_desc:0 ""
 
 ########################################## AUS
   AUS_election_of_1936:0 "Election of 1936"

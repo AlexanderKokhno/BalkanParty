@@ -51,19 +51,20 @@ focus_tree = {
 #		}
 #	} 
 
-
-
+#####################################################
+###################### Stand with King Zog
+###################################################
 	focus = {
-		id = 
-		icon = 
-		mutually_exclusive = {  }
-		x = 3
+		id = ALB_ZOG_stand_zog
+		icon = GFX_focus_generic_home_defense
+		mutually_exclusive = { focus = ALB_CCP_chi_investments }
+		x = 10
 		y = 0
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 15
 		}
 
 		available = {
@@ -82,4 +83,285 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+############################### fascist
+	focus = {
+		id = ALB_F_ZOG_integrate_the_right
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		mutually_exclusive = { focus = ALB_N_ZOG_balance_the_parties }
+		mutually_exclusive = { focus = ALB_D_ZOG_draft_a_constitution}
+		relative_position_id = ALB_ZOG_stand_zog
+		x = -5
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_ZOG_stand_zog}
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+	}
+
+######################### Balance parties
+	focus = {
+		id = ALB_N_ZOG_balance_the_parties
+		icon = GFX_goal_generic_neutrality_focus
+		mutually_exclusive = { focus = ALB_F_ZOG_integrate_the_right }
+		mutually_exclusive = {focus = ALB_D_ZOG_draft_a_constitution}
+		relative_position_id = ALB_ZOG_stand_zog
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_ZOG_stand_zog}
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+	}
+############################ democracy
+	focus = {
+		id = ALB_D_ZOG_draft_a_constitution
+		icon = GFX_focus_generic_treaty
+		mutually_exclusive = { focus = ALB_F_ZOG_integrate_the_right }
+		mutually_exclusive = { focus = ALB_N_ZOG_balance_the_parties}
+		relative_position_id = ALB_ZOG_stand_zog
+		x = 5
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_ZOG_stand_zog}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+	}
+
+#################################################
+################# Glory to the CCP
+##################################################
+
+	focus = {
+		id = ALB_CCP_chi_investments
+		icon = GFX_focus_spa_the_spanish_miracle
+		mutually_exclusive = { focus = ALB_ZOG_stand_zog }
+		x = 20
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ALB_CCP_accept_huge_loans
+		icon = 
+		relative_position_id = ALB_CCP_chi_investments
+
+		x = -2
+		y = 1
+
+		cost = 10
+		prerequisite = {focus = ALB_CCP_chi_investments}
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ALB_CCP_legalize_the_communist_party
+		icon = GFX_focus_generic_join_comintern
+		relative_position_id = ALB_CCP_chi_investments
+		x = 2
+		y = 1
+
+		cost = 10
+		prerequisite = {focus = ALB_CCP_chi_investments}
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = 
+		icon = 
+		relative_position_id = ALB_CCP_chi_investments
+		x = 0
+		y = 2
+
+		cost = 10
+		prerequisite = {focus = ALB_CCP_accept_huge_loans}
+		prerequisite = {focus = ALB_CCP_legalize_the_communist_party}
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = 
+		icon = 
+		relative_position_id = 
+
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = 
+		icon = 
+		relative_position_id = 
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = {focus = }
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+	}
+
 }
