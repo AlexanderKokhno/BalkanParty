@@ -112,7 +112,7 @@ focus_tree = {
 		mutually_exclusive = {focus = AUS_Archduke_Robert_of_Austria_Este}
 		mutually_exclusive = { focus = AUS_GER_greater_austria}
 		prerequisite = { focus = AUS_election_of_1936}
-		
+
 		ai_will_do = {
 			factor = 10
 		}
@@ -125,13 +125,13 @@ focus_tree = {
 					ideology = communism
 					name = AUS_KPO_party
 					long_name = AUS_KPO_party_long
-				}	
-			}	
+				}
+			}
 			add_ideas = AUS_KPO_election_unrest
 			add_popularity = {
 				ideology = communism
 				popularity = 0.1
-			}	
+			}
 			set_politics = {
 				ruling_party = communism
 			}
@@ -164,7 +164,7 @@ focus_tree = {
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.15
-			}		
+			}	
 			set_politics = {
 				ruling_party = fascism
 			}
@@ -172,7 +172,7 @@ focus_tree = {
 			add_war_support = 0.05
 			set_cosmetic_tag = AUS_GER_greater_aus_cos_tag
 			create_faction = "Austrian Co-Prosperity Bloc"
-		}		
+		}
 	}
 
 
@@ -1643,7 +1643,7 @@ focus_tree = {
 			factor = 10
 		}
 		search_filters = {   }
-		prerequisite = { focus = }
+		prerequisite = { }
 		
 		available_if_capitulated = yes
 		available = {
@@ -1911,7 +1911,7 @@ focus_tree = {
 			factor = 10
 		}
 		search_filters = {   }
-		prerequisite = { focus = }
+		prerequisite = { }
 		available = {
 			has_completed_focus = AUS_declare_HRE
 
@@ -2546,7 +2546,7 @@ focus_tree = {
 ################ INDUSTY COM
 ##############################################
 	focus = {
-		id = AUS_people's_industry
+		id = AUS_peoples_industry
 		icon = GFX_focus_ITA_the_italian_republic
 		relative_position_id = AUS_KPO_nationalist_socialism
 		x = 4
@@ -2569,12 +2569,12 @@ focus_tree = {
 	focus = {
 		id = AUS_KPO_collectivize_industries
 		icon = GFX_focus_eng_liberate_the_home_of_marx
-		relative_position_id = AUS_people's_industry
+		relative_position_id = AUS_peoples_industry
 		x = 0
 		y = 1
 		cost = 10
 		search_filters = {   }
-		prerequisite = { focus = AUS_people's_industry}
+		prerequisite = { focus = AUS_peoples_industry }
 		
 		available_if_capitulated = yes
 
