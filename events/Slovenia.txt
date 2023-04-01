@@ -1,0 +1,41 @@
+####################
+##Slovenian Events##
+####################
+
+add_namespace = slovenia
+
+country_event = {
+    id = slovenia.1
+    title = "Looking for a King"
+    desc = "slovenia.1.d"
+    picture =
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Crown Franc Rupnik"
+        ai_chance = { factor = 50}
+        retire_country_leader = yes
+        create_country_leader = {
+	        name = "Franc Rupnik"
+	        desc = "The Farmer"
+	        picture = "Portrait_Yugoslavia_Peter_II.dds"
+	        expire = "1965.1.1"
+	        ideology = despotism
+	        traits = { }
+        }
+    }
+    option = {
+        name = "Crown Marko Podobnik"
+        ai_chance = { factor = 50}
+        retire_country_leader = yes
+        create_country_leader = {
+	        name = "Marko Podobnik"
+	        desc = "The Businessman"
+	        picture = "Portrait_Yugoslavia_Peter_II.dds"
+	        expire = "1965.1.1"
+	        ideology = oligarchism
+	        traits = { }
+        }
+    }
+}

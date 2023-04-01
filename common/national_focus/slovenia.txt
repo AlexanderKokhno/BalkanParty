@@ -187,13 +187,17 @@ focus_tree = {
 
 
 		completion_reward = {
-
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
 		}
 	}
 	focus = {
 		id = SLV_elect_peterii
 		icon = GFX_focus_SOV_panslavic_nationalism
 		mutually_exclusive = { focus = SLV_elect_democrat }
+		mutually_exclusive = { focus = SLV_elect_theguy }
 		prerequisite = { focus = SLV_elect_king }
 		relative_position_id = SLV_elect_king
 		x = -3
@@ -219,7 +223,10 @@ focus_tree = {
 
 
 		completion_reward = {
-
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
 		}
 	}
 	focus = {
@@ -251,7 +258,11 @@ focus_tree = {
 
 
 		completion_reward = {
-
+			Add_ideas = who_is_this
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
 		}
 	}
 	focus = {

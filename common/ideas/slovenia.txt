@@ -1,10 +1,15 @@
 ideas = {
-	# MILITARY
 	country = {
 		monarchism_rise = {
 			picture = HUN_hungarian_monarchy
 			modifier = {
 				neutrality_drift = 0.1
+			}
+		}
+		who_is_this = {
+			picture = GFX_focus_LIT_king_of_poland
+			modifier = {
+				stability_factor = -0.15
 			}
 		}
 	}
