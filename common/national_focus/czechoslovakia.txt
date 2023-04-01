@@ -10,7 +10,7 @@
 			has_dlc = "Death or Dishonor"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1100 }
@@ -4592,7 +4592,7 @@
 	}
 
 	focus = {
-		id = CZE_cruiser__catchup_1
+		id = CZE_cruiser_catchup_1
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = CZE_shipbuilding_legacy }
 		x = 0
@@ -4705,5 +4705,5 @@
 			}
 		}
 	}
-
+}
 }

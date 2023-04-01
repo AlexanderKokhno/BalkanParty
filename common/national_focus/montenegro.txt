@@ -1462,6 +1462,7 @@ add_state_core = 45
 			}
 		}
 	}
+	focus = {
 		id = MNT_focus_15
 		icon = GFX_goal_generic_cavalry
 		x = 13

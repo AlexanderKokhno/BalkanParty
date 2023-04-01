@@ -202,7 +202,7 @@ focus_tree = {
 				72 = {
 					any_province_building_level = {
 						province = {
-							all_provinces - yes
+							all_provinces = yes
 							limit_to_border = yes
 						}
 						building = bunker
@@ -1157,34 +1157,4 @@ focus_tree = {
 		}
 	}
 #############################
-
-	focus = {
-		id = 
-		icon = 
-		mutually_exclusive = {  }
-		x = 3
-		y = 0
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-		}
-	}
 }
