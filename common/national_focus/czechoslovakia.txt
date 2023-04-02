@@ -2316,7 +2316,7 @@
 		icon = GFX_focus_generic_diplomatic_treaty
 		relative_position_id = CZE_BOH_approach_PRE
 		x = 1
-		y = 2
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 20
@@ -2338,7 +2338,7 @@
 		icon = GFX_goal_generic_military_sphere
 		relative_position_id = CZE_BOH_diplomatic_effort
 		x = 0
-		y = -1
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 20
@@ -2417,7 +2417,7 @@
 		icon = GFX_focus_SOV_rebuild_the_savior_cathedral
 		relative_position_id = CZE_BOH_diplomatic_effort
 		x = 0
-		y = 1
+		y = 2
 		cost = 5
 		ai_will_do = {
 			20
@@ -2438,7 +2438,7 @@
 		icon = GFX_focus_generic_strike_at_democracy2
 		relative_position_id = CZE_BOH_diplomatic_effort
 		x = 0
-		y = 2
+		y = 3
 		cost = 5
 		ai_will_do = {
 			30
@@ -2506,6 +2506,10 @@
 
 		completion_reward = {
 			custom_effect_tooltip = CZE_start_the_league_war_tooltip
+			set_autonomy = {
+				target = CZE
+				autonomy_state = autonomy_free
+			}
 			AUS = {
 				create_faction = "Catholic League"
 				every_country = {
@@ -2530,11 +2534,15 @@
 					limit = {
 						has_idea = protestant_league_member
 					}
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_free
+					}
 					add_to_faction = PREV
 				}
 				every_country = {
 					limit = {
-						HRE_autonomous_neutrality_idea
+						has_idea = HRE_autonomous_neutrality_idea
 					}
 					swap_ideas = {
     				remove_idea = HRE_autonomous_neutrality_idea
@@ -2577,6 +2585,7 @@
 
 		completion_reward = {
 			custom_effect_tooltip = cze_seize_emperorship_tooltip
+			set_country_flag = CZE_BOH
 
 			add_political_power = 200
 			add_ideas = HRE_emperor_idea
@@ -2587,6 +2596,7 @@
 			hidden_effect = {
 				create_faction = "Holy Roman Empire"
 				add_ideas = AUS_hre_authority_I
+				set_cosmetic_tag = CZE_BOHrevolt
 
 				add_to_faction = WUR
 				add_to_faction = SAX
@@ -2603,7 +2613,7 @@
 				add_to_faction = LUX
 				add_to_faction = DNZ
 				add_to_faction = FRA
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2617,7 +2627,7 @@
 						puppet = WUR
 					}
 				}
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2631,7 +2641,7 @@
 						puppet = MEK
 					}
 				}
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2645,7 +2655,7 @@
 						puppet = HAN
 					}
 				}
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2659,7 +2669,7 @@
 						puppet = HOL
 					}
 				}
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2673,7 +2683,7 @@
 						puppet = LUX
 					}
 				}
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2687,7 +2697,7 @@
 						puppet = SWI
 					}
 				}
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2701,7 +2711,7 @@
 						puppet = LBV
 					}
 				}
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2715,7 +2725,7 @@
 						puppet = SPM
 					}
 				}
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2729,7 +2739,7 @@
 						puppet = TOS
 					}
 				}
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2743,7 +2753,7 @@
 						puppet = COR
 					}
 				}
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2757,7 +2767,7 @@
 						puppet = SAX
 					}
 				}
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2771,7 +2781,7 @@
 						puppet = PRE
 					}
 				}
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2785,7 +2795,7 @@
 						puppet = DNZ
 					}
 				}
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2799,7 +2809,7 @@
 						puppet = BAY
 					}
 				}
-				AUS = {
+				ROOT = {
 					if = {
 						limit = {
 							has_dlc = "Together for Victory"
@@ -2815,6 +2825,7 @@
 				}
 			}
 		}
+	}
 
 	#######################################
 	######### STRATEGY DECISIONS ##########

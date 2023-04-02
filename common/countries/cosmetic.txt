@@ -29,6 +29,11 @@ CZE_BOH = {
 	color_ui = rgb { 215 150 40 }	
 }
 
+CZE_BOH_AUS_subject = {
+	color = rgb { 215 150 40 }
+	color_ui = rgb { 215 150 40 }	
+}
+
 
 
 MAL_UK = {

@@ -67,19 +67,17 @@ country_event = {
 					autonomy_state = bp_hre_elector
 				}
 			}
-			else = {
-				puppet = CZE
-			}
 		}
 		CZE = {
 			add_ideas = HRE_autonomous_neutrality_idea
 			add_ideas = HRE_elector_idea
+			set_cosmetic_tag = CZE_BOH_AUS_subject
 		}
 	}
 	option = {
 		name = bp_cze.2.b
 		ai_chance = {
-			factor = 1
+			factor = 0
 		}
 		
 	}

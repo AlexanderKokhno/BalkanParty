@@ -143,8 +143,8 @@
 
   AUS_promote_Blagoje:0 "Promote Blagoje Nešković"
   AUS_promote_Blagoje_desc:0 "Promote Blagoje Nešković to the head of state security."
-  AUS_people's_industry:0 "Industry of the People"
-  AUS_people's_industry_desc:0 "The means of production belong to the people, run by the people. The government must invest into this."
+  AUS_peoples_industry:0 "Industry of the People"
+  AUS_peoples_industry_desc:0 "The means of production belong to the people, run by the people. The government must invest into this."
   AUS_COM_coup:0 "Storm Belgrade"
   AUS_COM_coup_desc:0 "The state security is in our hand! We must quickly storm the capital and enforce a communist government. Glory to comrade Blagoje Nešković"
   AUS_COM_constitution:0 "Socialist Republic Constitution"
@@ -260,6 +260,8 @@
  CZE_BOH_solidify_the_leagues_desc:0 ""
  CZE_BOH_fire_the_league_war:0 "Fire the League War"
  CZE_BOH_fire_the_league_war_desc:0 ""
+ CZE_BOH_league_war_victory:0 "League War Victory!"
+ CZE_BOH_league_war_victory_desc:0 ""
 ################### MNT
 
   MNT_focus_1:0 "March on Podgorica"
@@ -342,8 +344,8 @@
 
   SER_promote_Blagoje:0 "Promote Blagoje Nešković"
   SER_promote_Blagoje_desc:0 "Promote Blagoje Nešković to the head of state security."
-  SER_people's_industry:0 "Industry of the People"
-  SER_people's_industry_desc:0 "The means of production belong to the people, run by the people. The government must invest into this."
+  SER_peoples_industry:0 "Industry of the People"
+  SER_peoples_industry_desc:0 "The means of production belong to the people, run by the people. The government must invest into this."
   SER_COM_coup:0 "Storm Belgrade"
   SER_COM_coup_desc:0 "The state security is in our hand! We must quickly storm the capital and enforce a communist government. Glory to comrade Blagoje Nešković"
   SER_COM_constitution:0 "Socialist Republic Constitution"
