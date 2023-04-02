@@ -73,9 +73,9 @@
 
 ##################################################### PUPPETS #################################################
 
- bp_hre_prince:0 "Imperial Prince"
- bp_hre_elector:0 "Imperial Elector"
- bp_hre_pu:0 "Personal Union"
+ BP_hre_prince:0 "Imperial Prince"
+ BP_hre_elector:0 "Imperial Elector"
+ BP_hre_pu:0 "Personal Union"
 
 ###################################################### OPINION MODIFIERS ###############################################
 

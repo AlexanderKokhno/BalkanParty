@@ -2,12 +2,12 @@
 
 #######################################
 
-add_namespace = bp_cze
+add_namespace = BP_cze
 
 country_event = {
-	id = bp_cze.1
-	title = bp_cze.1.t
-	desc = bp_cze.1.desc
+	id = BP_cze.1
+	title = BP_cze.1.t
+	desc = BP_cze.1.desc
 	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
@@ -18,21 +18,21 @@ country_event = {
 		tag = CZE
 	}
 	option = {
-		name = bp_cze.1.a
+		name = BP_cze.1.a
 		ai_chance = {
 			factor = 20
 		}
 
 	}
 	option = {
-		name = bp_cze.1.b
+		name = BP_cze.1.b
 		ai_chance = {
 			factor = 50
 		}
 
 	}
 	option = {
-		name = bp_cze.1.c
+		name = BP_cze.1.c
 		ai_chance = {
 			factor = 30
 		}
@@ -41,9 +41,9 @@ country_event = {
 }
 
 country_event = {
-	id = bp_cze.2
-	title = bp_cze.2.t
-	desc = bp_cze.2.desc
+	id = BP_cze.2
+	title = BP_cze.2.t
+	desc = BP_cze.2.desc
 	picture = GFX_report_event_cze_divided_nation
 	
 	is_triggered_only = yes
@@ -52,7 +52,7 @@ country_event = {
 
 
 	option = {
-		name = bp_cze.2.a
+		name = BP_cze.2.a
 		ai_chance = {
 			factor = 50
 		}
@@ -64,7 +64,7 @@ country_event = {
 				}
 				set_autonomy = {
 					target = CZE
-					autonomy_state = bp_hre_elector
+					autonomy_state = BP_hre_elector
 				}
 			}
 			else = {
@@ -77,7 +77,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = bp_cze.2.b
+		name = BP_cze.2.b
 		ai_chance = {
 			factor = 1
 		}
@@ -87,15 +87,15 @@ country_event = {
 
 #solidfy league alliance
 country_event = {
-	id = bp_cze.3
-	title = bp_cze.3.t
-	desc = bp_cze.3.desc
+	id = BP_cze.3
+	title = BP_cze.3.t
+	desc = BP_cze.3.desc
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 
 	option = { # Accept
-		name = bp_cze.3.a
+		name = BP_cze.3.a
 		ai_chance = {
 			base = 50
 			modifier = {
@@ -129,7 +129,7 @@ country_event = {
 		
 
 		CZE = { 
-			country_event = { hours = 2 id = bp_cze.5 } 
+			country_event = { hours = 2 id = BP_cze.5 } 
 			add_opinion_modifier = {
 				target = ROOT modifier = hre_religious_league_accepted
 			}
@@ -142,7 +142,7 @@ country_event = {
 		}
 	}
 	option = { # Refuse
-		name = bp_cze.3.b
+		name = BP_cze.3.b
 		ai_chance = {
 			base = 50
 			modifier = [
@@ -186,7 +186,7 @@ country_event = {
 
 		CZE = {
 			add_opinion_modifier = { target = ROOT modifier = hre_religious_league_denied }
-			country_event = { hours = 2 id = bp_cze.4 }
+			country_event = { hours = 2 id = BP_cze.4 }
 		}
 		ROOT = {
 			add_opinion_modifier = {
@@ -200,23 +200,23 @@ country_event = {
 
 # league refused
 country_event = {
-	id = bp_cze.4
-	title = bp_cze.4.t
-	desc = bp_cze.4.desc
+	id = BP_cze.4
+	title = BP_cze.4.t
+	desc = BP_cze.4.desc
 	picture = GFX_report_event_german_troops
 
 	is_triggered_only = yes
 
 	option = {
-		name = bp_cze.4.a
+		name = BP_cze.4.a
 	}
 }
 
 #league accepted
 country_event = {
-	id = bp_cze.5
-	title = bp_cze.5.t
-	desc = bp_cze.5.desc
+	id = BP_cze.5
+	title = BP_cze.5.t
+	desc = BP_cze.5.desc
 	picture = GFX_report_event_soviet_german_soldier_handshake
 
 	is_triggered_only = yes
@@ -224,7 +224,7 @@ country_event = {
 
 
 	option = {
-		name = bp_cze.5.a
+		name = BP_cze.5.a
 		add_political_power = 10
 
 

@@ -7,5 +7,5 @@ tags={
 	"Map"
 	"Gameplay"
 }
-name="Balkan Party"
+name="Balkan Party COPY"
 supported_version="1.12.6"

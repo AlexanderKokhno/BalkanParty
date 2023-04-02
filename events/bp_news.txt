@@ -1,10 +1,10 @@
-add_namespace = bp_event
+add_namespace = BP_event
 
 #HRE emperor calls princes to arms
 news_event = {      
-  id = bp_event.1
-  title = bp_event.1.t    
-  desc = bp_event.1.desc
+  id = BP_event.1
+  title = BP_event.1.t    
+  desc = BP_event.1.desc
   
   is_triggered_only = yes
   major = yes
@@ -15,7 +15,7 @@ news_event = {
     trigger = {
       has_idea = HRE_autonomous_neutrality_idea
     }
-    name = bp_event.1.a
+    name = BP_event.1.a
   }
   
   option = {
@@ -24,14 +24,14 @@ news_event = {
         has_idea = HRE_autonomous_neutrality_idea
       }
     }
-    name = bp_event.1.b
+    name = BP_event.1.b
   }
 }
 
 news_event = {
-  id = bp_event.2
-  title = bp_event.2.t
-  desc = bp_event.2.desc
+  id = BP_event.2
+  title = BP_event.2.t
+  desc = BP_event.2.desc
 
   is_triggered_only = yes
   major = yes
@@ -44,7 +44,7 @@ news_event = {
         tag = CZE
       }
     }
-    name = bp_event.2.a
+    name = BP_event.2.a
   }
 
   option = {
@@ -53,15 +53,15 @@ news_event = {
         tag = CZE
       }
     }
-    name = bp_event.2.b
+    name = BP_event.2.b
   }
 }
 
 #HRE is proclaimed
 news_event = {      
-  id = bp_event.3
-  title = bp_event.3.t    
-  desc = bp_event.3.desc
+  id = BP_event.3
+  title = BP_event.3.t    
+  desc = BP_event.3.desc
   
   is_triggered_only = yes
   major = yes
@@ -72,7 +72,7 @@ news_event = {
     trigger = {
       tag = AUS
     }
-    name = bp_event.3.a
+    name = BP_event.3.a
   }
   
   option = {
@@ -81,7 +81,7 @@ news_event = {
         tag = AUS
       }
     }
-    name = bp_event.3.b
+    name = BP_event.3.b
   }
 }
 

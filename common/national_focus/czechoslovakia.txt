@@ -2227,7 +2227,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			AUS = { country_event = { hours = 1 id = bp_cze.2 } }
+			AUS = { country_event = { hours = 1 id = BP_cze.2 } }
 
 		}
 	}
@@ -2247,7 +2247,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = { id = bp_cze.1 }
+			country_event = { id = BP_cze.1 }
 
 		}
 	}
@@ -2429,7 +2429,7 @@
 
 		completion_reward = {
 			add_ideas = BOH_empowered_protestant_church
-			news_event = bp_event.2
+			news_event = BP_event.2
 
 		}
 	}
@@ -2480,7 +2480,7 @@
 					}
 				}
 				country_event = {
-					id = bp_cze.3
+					id = BP_cze.3
 					days = 5
 					random_hours = 72
 					random_days = 5
@@ -2610,7 +2610,7 @@
 						}
 						set_autonomy = {
 							target = WUR
-							autonomy_state = bp_hre_prince
+							autonomy_state = BP_hre_prince
 						}
 					}
 					else = {
@@ -2624,7 +2624,7 @@
 						}
 						set_autonomy = {
 							target = MEK
-							autonomy_state = bp_hre_prince
+							autonomy_state = BP_hre_prince
 						}
 					}
 					else = {
@@ -2638,7 +2638,7 @@
 						}
 						set_autonomy = {
 							target = HAN
-							autonomy_state = bp_hre_prince
+							autonomy_state = BP_hre_prince
 						}
 					}
 					else = {
@@ -2652,7 +2652,7 @@
 						}
 						set_autonomy = {
 							target = HOL
-							autonomy_state = bp_hre_prince
+							autonomy_state = BP_hre_prince
 						}
 					}
 					else = {
@@ -2666,7 +2666,7 @@
 						}
 						set_autonomy = {
 							target = LUX
-							autonomy_state = bp_hre_prince
+							autonomy_state = BP_hre_prince
 						}
 					}
 					else = {
@@ -2680,7 +2680,7 @@
 						}
 						set_autonomy = {
 							target = SWI
-							autonomy_state = bp_hre_prince
+							autonomy_state = BP_hre_prince
 						}
 					}
 					else = {
@@ -2694,7 +2694,7 @@
 						}
 						set_autonomy = {
 							target = LBV
-							autonomy_state = bp_hre_prince
+							autonomy_state = BP_hre_prince
 						}
 					}
 					else = {
@@ -2708,7 +2708,7 @@
 						}
 						set_autonomy = {
 							target = SPM
-							autonomy_state = bp_hre_prince
+							autonomy_state = BP_hre_prince
 						}
 					}
 					else = {
@@ -2722,7 +2722,7 @@
 						}
 						set_autonomy = {
 							target = TOS
-							autonomy_state = bp_hre_prince
+							autonomy_state = BP_hre_prince
 						}
 					}
 					else = {
@@ -2736,7 +2736,7 @@
 						}
 						set_autonomy = {
 							target = COR
-							autonomy_state = bp_hre_prince
+							autonomy_state = BP_hre_prince
 						}
 					}
 					else = {
@@ -2750,7 +2750,7 @@
 						}
 						set_autonomy = {
 							target = SAX
-							autonomy_state = bp_hre_elector
+							autonomy_state = BP_hre_elector
 						}
 					}
 					else = {
@@ -2764,7 +2764,7 @@
 						}
 						set_autonomy = {
 							target = PRE
-							autonomy_state = bp_hre_elector
+							autonomy_state = BP_hre_elector
 						}
 					}
 					else = {
@@ -2778,7 +2778,7 @@
 						}
 						set_autonomy = {
 							target = DNZ
-							autonomy_state = bp_hre_elector
+							autonomy_state = BP_hre_elector
 						}
 					}
 					else = {
@@ -2792,7 +2792,7 @@
 						}
 						set_autonomy = {
 							target = BAY
-							autonomy_state = bp_hre_elector
+							autonomy_state = BP_hre_elector
 						}
 					}
 					else = {
@@ -2806,7 +2806,7 @@
 						}
 						set_autonomy = {
 							target = FRA
-							autonomy_state = bp_hre_elector
+							autonomy_state = BP_hre_elector
 						}
 					}
 					else = {

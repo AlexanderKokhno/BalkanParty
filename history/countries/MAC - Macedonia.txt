@@ -79,4 +79,8 @@ set_popularities = {
 	communism = 100
 }
 
+<<<<<<< Updated upstream
 recruit_character = BP_MAC_mihajlo_apostolski
+=======
+recruit_character = BP_MAC_mihajlo_apostolski
+>>>>>>> Stashed changes

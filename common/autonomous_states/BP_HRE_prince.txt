@@ -1,5 +1,5 @@
 autonomy_state = {
-	id = bp_hre_prince
+	id = BP_hre_prince
 	
 	is_puppet = yes
 	

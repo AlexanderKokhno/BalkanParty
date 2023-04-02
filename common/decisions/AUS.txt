@@ -28,7 +28,7 @@ HRE_emperor_decisions = {
 			add_stability = -0.05
       add_war_support = -0.05
       add_political_power = -300
-			news_event = bp_event.1
+			news_event = BP_event.1
 			every_country = {
 				limit = {
 					has_idea = HRE_autonomous_neutrality_idea
@@ -157,7 +157,7 @@ AUS_HRE_spread_habsburgs_category = {
 			ROOT = {
 				set_autonomy = {
 						target = BAY
-						autonomy_state = bp_hre_pu
+						autonomy_state = BP_hre_pu
 					}
 			}
 		}
@@ -181,7 +181,7 @@ AUS_HRE_spread_habsburgs_category = {
 			ROOT = {
 				set_autonomy = {
 					target = WUR
-					autonomy_state = bp_hre_pu
+					autonomy_state = BP_hre_pu
 				}
 			}
 		}
@@ -202,7 +202,7 @@ AUS_HRE_spread_habsburgs_category = {
 			ROOT = {
 				set_autonomy = {
 					target = FRA
-					autonomy_state = bp_hre_pu
+					autonomy_state = BP_hre_pu
 				}
 			}
 			FRA = {
@@ -249,7 +249,7 @@ AUS_HRE_spread_habsburgs_category = {
 			ROOT = {
 				set_autonomy = {
 					target = LBV
-					autonomy_state = bp_hre_pu
+					autonomy_state = BP_hre_pu
 				}
 			}
 		}
@@ -273,7 +273,7 @@ AUS_HRE_spread_habsburgs_category = {
 			ROOT = {
 				set_autonomy = {
 					target = TTS
-					autonomy_state = bp_hre_pu
+					autonomy_state = BP_hre_pu
 				}
 			}
 		}
