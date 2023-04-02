@@ -8,7 +8,7 @@ country_event = {
     id = slovenia.1
     title = "Looking for a King"
     desc = "slovenia.1.d"
-    picture =
+    picture = GFX_slovenia1_pic
 
     is_triggered_only = yes
 

@@ -167,7 +167,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -190,6 +190,14 @@ focus_tree = {
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no
+			}
+			set_capital = {
+ 				state = 853
+  				remember_old_capital = no
+			}
+			add_victory_points = {
+    			province = 9627
+    			value = 7
 			}
 		}
 	}
@@ -203,7 +211,7 @@ focus_tree = {
 		x = -3
 		y = 1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -227,6 +235,18 @@ focus_tree = {
 				ruling_party = neutrality
 				elections_allowed = no
 			}
+						set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_capital = {
+ 				state = 853
+  				remember_old_capital = no
+			}
+			add_victory_points = {
+    			province = 9627
+    			value = 7
+			}
 		}
 	}
 	focus = {
@@ -238,7 +258,7 @@ focus_tree = {
 		x = 3
 		y = 1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -262,6 +282,18 @@ focus_tree = {
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no
+			}
+						set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_capital = {
+ 				state = 853
+  				remember_old_capital = no
+			}
+			add_victory_points = {
+    			province = 9627
+    			value = 7
 			}
 		}
 	}
@@ -294,7 +326,7 @@ focus_tree = {
 
 
 		completion_reward = {
-
+			country_event = slovenia.1
 		}
 	}
 	focus = {
@@ -326,7 +358,7 @@ focus_tree = {
 
 
 		completion_reward = {
-
+			remove_ideas = who_is_this
 		}
 	}
 	focus = {
@@ -422,7 +454,8 @@ focus_tree = {
 
 
 		completion_reward = {
-
+			transfer_state = 160
+			add_state_core = 160
 		}
 	}
 	focus = {

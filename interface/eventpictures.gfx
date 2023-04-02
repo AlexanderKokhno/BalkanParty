@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_slovenia1_pic"
+        texturefile = "gfx/event_pictures/slovenia.1_pic.dds"
+    }
+}
