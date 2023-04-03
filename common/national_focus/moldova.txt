@@ -15,6 +15,10 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1100 }
 
+	shared_focus = ROM_expand_the_air_force
+	shared_focus = ROM_army_maneuvers
+	shared_focus = ROM_expand_the_galati_shipyards
+
 #	focus = {
 #		id = ROM_
 #		icon = GFX_

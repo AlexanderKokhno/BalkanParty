@@ -318,6 +318,35 @@
   MNT_focus_29_desc:0 "Bosnia is a major as they might align themselves with Serbia. We need to strike before it is too late."
   MNT_focus_30:0 "Celebrate our Victory"
   MNT_focus_30_desc:0 "This day will go down in history as the day we have defeated the Serbian armies and retook our long lost lands."
+
+############# MOL
+
+
+  MOL_west:0 "Reach out to the West"
+  MOL_west_desc:0 ""
+  MOL_east:0 "Reach out to the East"
+  MOL_east_desc:0 ""
+
+  MOL_internationalist_communism:0 "Internationalist Communism"
+  MOL_internationalist_communism_desc:0 ""
+
+  MOL_ROM_reunion_path:0 "Towards reunion with Romania"
+  MOL_ROM_reunion_path_desc:0 ""
+
+  MOL_ukrainian_fascism:0 "Ukrainian Fascism"
+  MOL_ukrainian_fascism_desc:0 ""
+
+  MOL_invite_the_tartars:0 "Invite the Tartars"
+  MOL_invite_the_tartars_desc:0 ""
+  MOL_KHAN_recruit_the_right:0 "Recruit the Right"
+  MOL_KHAN_recruit_the_right_desc:0 ""
+  MOL_KHAN_arrest_commies:0 "Arrest Communists"
+  MOL_KHAN_arrest_commies_desc:0 ""
+  MOL_KHAN_legalize_the_slave_trade:0 "Legalize the Slave Trade"
+  MOL_KHAN_legalize_the_slave_trade_desc:0 ""
+
+
+
 ############# SER
 
   SER_acknowledge_neighbors:0 "Acknowledge our Neighbors"
