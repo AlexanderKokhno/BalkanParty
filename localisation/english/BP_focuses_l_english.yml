@@ -393,6 +393,8 @@
   SER_COM_trotskyite_model_desc:0 "The list of communist countries is incomplete. YOU CAN HELP BY EXPANDING IT."
   SER_COM_anti_fascism:0 "Anti Fascism Policy"
   SER_COM_anti_fascism_desc:0 "Fascism is a grave threat to our very existence, we must be the vanguard of the socialist cause that stands against it."
+  SER_COM_Tito:0 "Comrade Tito"
+  SER_COM_Tito_desc:0 ""
 
 
 
