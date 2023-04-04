@@ -96,7 +96,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		prerequisite = { focus = SLV_political_effort }
 		relative_position_id = SLV_political_effort
-		x = -5
+		x = -6
 		y = 1
 
 		cost = 10
@@ -157,6 +157,7 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
+##################Democratic################
 	focus = {
 		id = SLV_elect_democrat
 		icon = GFX_goal_support_democracy
@@ -201,6 +202,7 @@ focus_tree = {
 			}
 		}
 	}
+#############Peter II################
 	focus = {
 		id = SLV_elect_peterii
 		icon = GFX_focus_SOV_panslavic_nationalism
@@ -208,7 +210,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SLV_elect_theguy }
 		prerequisite = { focus = SLV_elect_king }
 		relative_position_id = SLV_elect_king
-		x = -3
+		x = -5
 		y = 1
 
 		cost = 5
@@ -249,13 +251,14 @@ focus_tree = {
 			}
 		}
 	}
+###########A Citizen############
 	focus = {
 		id = SLV_elect_theguy
 		icon = GFX_focus_usa_guarantee_the_american_dream
 		mutually_exclusive = { focus = SLV_elect_democrat }
 		prerequisite = { focus = SLV_elect_king }
 		relative_position_id = SLV_elect_king
-		x = 3
+		x = 5
 		y = 1
 
 		cost = 5
@@ -361,45 +364,14 @@ focus_tree = {
 			remove_ideas = who_is_this
 		}
 	}
+###########Greater Slovenia Path####################
 	focus = {
 		id = SLV_greaterslovenia
 		icon = GFX_goal_generic_major_war
 		mutually_exclusive = { focus = SLV_yugoslavia }
 		prerequisite = { focus = SLV_convincethepeople }
 		relative_position_id = SLV_convincethepeople
-		x = 3
-		y = 1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = SLV_yugoslavia
-		icon = GFX_focus_invite_yugoslavia
-		mutually_exclusive = { focus = SLV_greaterslovenia }
-		prerequisite = { focus = SLV_convincethepeople }
-		relative_position_id = SLV_convincethepeople
-		x = -3
+		x = 5
 		y = 1
 
 		cost = 5
@@ -621,6 +593,201 @@ focus_tree = {
 
 		}
 	}
+##############Yugoslavia Path###############
+	focus = {
+		id = SLV_yugoslavia
+		icon = GFX_focus_invite_yugoslavia
+		mutually_exclusive = { focus = SLV_greaterslovenia }
+		prerequisite = { focus = SLV_convincethepeople }
+		relative_position_id = SLV_convincethepeople
+		x = -5
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_prepare_for_unification
+		icon = GFX_focus_BUL_the_unification_of_the_balkans
+		mutually_exclusive = { focus = }
+		prerequisite = { focus = SLV_yugoslavia }
+		relative_position_id = SLV_yugoslavia
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+###########By Peace###########
+	focus = {
+		id = SLV_by_peace
+		icon = GFX_focus_generic_treaty
+		mutually_exclusive = { focus = SLV_by_war }
+		prerequisite = { focus = SLV_prepare_for_unification }
+		relative_position_id = SLV_prepare_for_unification
+		x = 3s
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_rig_votes
+		icon = GFX_focus_usa_voter_registration_act
+		mutually_exclusive = { focus =  }
+		prerequisite = { focus = SLV_by_peace }
+		relative_position_id = SLV_by_peace
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_start_negotiations
+		icon = GFX_focus_generic_diplomatic_treaty
+		mutually_exclusive = { focus =  }
+		prerequisite = { focus = SLV_by_peace }
+		relative_position_id = SLV_by_peace
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+###########By War#############
+	focus = {
+		id = SLV_by_war
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		mutually_exclusive = { focus = SLV_by_peace }
+		prerequisite = { focus = SLV_prepare_for_unification }
+		relative_position_id = SLV_prepare_for_unification
+		x = -3
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
 ################## Fascism #################
 
 	focus = {
@@ -629,7 +796,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		prerequisite = { focus = SLV_political_effort }
 		relative_position_id = SLV_political_effort
-		x = 5
+		x = 6
 		y = 1
 
 		cost = 10
