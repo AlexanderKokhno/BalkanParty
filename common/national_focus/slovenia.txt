@@ -724,12 +724,333 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SLV_contigency_plans
+		icon = GFX_focus_usa_voter_registration_act
+		mutually_exclusive = { focus =  }
+		prerequisite = { focus = SLV_rig_votes }
+		relative_position_id = SLV_rig_votes
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
 		id = SLV_start_negotiations
 		icon = GFX_focus_generic_diplomatic_treaty
 		mutually_exclusive = { focus =  }
 		prerequisite = { focus = SLV_by_peace }
 		relative_position_id = SLV_by_peace
 		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_encourage_them
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { focus =  }
+		prerequisite = { focus = SLV_start_negotiations }
+		relative_position_id = SLV_start_negotiations
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_the_slow_and_steady_process
+		icon = GFX_focus_ETH_invest_in_the_north
+		mutually_exclusive = { focus =  }
+		prerequisite = { focus = SLV_encourage_them }
+		prerequisite = { focus = SLV_contigency_plans }
+		relative_position_id = SLV_encourage_them
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_to_yugoslavia
+		icon = GFX_focus_ETH_invest_in_the_north
+		mutually_exclusive = { focus =  }
+		prerequisite = { focus = SLV_the_slow_and_steady_process }
+		relative_position_id = SLV_the_slow_and_steady_process
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_referendum_croatia
+		icon = GFX_focus_YUG_banovina_of_croatia
+		mutually_exclusive = { focus =  }
+		prerequisite = { focus = SLV_to_yugoslavia }
+		relative_position_id = SLV_to_yugoslavia
+		x = -5
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_referendum_bosnia
+		icon = GFX_focus_YUG_safeguard_bosnia
+		mutually_exclusive = { focus =  }
+		prerequisite = { focus = SLV_to_yugoslavia }
+		relative_position_id = SLV_to_yugoslavia
+		x = -3
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_referendum_montenegro
+		icon = GFX_goal_generic_small_arms
+		mutually_exclusive = { focus =  }
+		prerequisite = { focus = SLV_to_yugoslavia }
+		relative_position_id = SLV_to_yugoslavia
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_referendum_serbia
+		icon = GFX_focus_YUG_dissolve_serbia
+		mutually_exclusive = { focus =  }
+		prerequisite = { focus = SLV_to_yugoslavia }
+		relative_position_id = SLV_to_yugoslavia
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_referendum_kosovo
+		icon = GFX_goal_generic_small_arms
+		mutually_exclusive = { focus =  }
+		prerequisite = { focus = SLV_to_yugoslavia }
+		relative_position_id = SLV_to_yugoslavia
+		x = 3
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SLV_referendum_macedonia
+		icon = GFX_focus_BUL_support_macedonian_organizations
+		mutually_exclusive = { focus =  }
+		prerequisite = { focus = SLV_to_yugoslavia }
+		relative_position_id = SLV_to_yugoslavia
+		x = 5
 		y = 1
 
 		cost = 5
