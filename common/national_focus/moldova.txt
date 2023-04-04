@@ -302,6 +302,10 @@ focus_tree = {
 
 		}
 	}
+
+###### Slaves
+
+
 	focus = {
 		id = MOL_KHAN_legalize_the_slave_trade
 		icon = GFX_focus_SOV_penal_battalions
@@ -319,5 +323,43 @@ focus_tree = {
 
 
 		}
-	}                                                                          
+	}
+
+######### Army
+
+	focus = {
+		id = MOL_KHAN_restructure_the_army
+		icon = MOL_KHAN_arrest_commies
+		relative_position_id = MOL_KHAN_legalize_the_slave_trade
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = MOL_KHAN_recruit_the_right }
+		prerequisite = { focus = MOL_KHAN_arrest_commies}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}  
+	focus = {
+		id = MOL_KHAN_horde_divisions
+		icon = 
+		relative_position_id = MOL_KHAN_restructure_the_army
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus =  MOL_KHAN_restructure_the_army}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}                                                                  
 }
