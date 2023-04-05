@@ -606,6 +606,19 @@
   SLV_strike_on_hungary_desc:0 "We shall integrate Hungary into our Empire"
   SLV_we_are_the_greatest:0 "We are the Greatest!"
   SLV_we_are_the_greatest_desc:0 "We need to properly integrate our occupied land!"
+  SLV_prepare_for_unification:0 "Prepare for Unification"
+  SLV_prepare_for_unification_desc:0 "We need to prepare for unification of Yugoslavia!"
+  SLV_by_war:0 "By War"
+  SLV_by_war_desc:0 "We are gonna force them to join us!"
+  SLV_by_peace:0 "By Peace"
+  SLV_by_peace_desc:0 "We need to negotiate the terms."
+  SLV_rig_votes:0 "Rig their Elections"
+  SLV_rig_votes_desc:0 "We are going to rig their elections."
+  SLV_start_negotiations:0 "Start Negotiations"
+  SLV_start_negotiations_desc:0 "We need to negotiate with them."
+  SLV_encourage_them:0 "Encourage Them"
+  SLV_encourage_them_desc:0 "We need to encourage them!"
+  SLV_contigency_plans:0 "Contigency Plans"
 
   
 

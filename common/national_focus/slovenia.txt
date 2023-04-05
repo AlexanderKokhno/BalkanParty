@@ -796,7 +796,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -816,7 +816,7 @@ focus_tree = {
 
 
 		completion_reward = {
-
+			add_political_power = 150
 		}
 	}
 ###########By Peace###########
@@ -829,7 +829,7 @@ focus_tree = {
 		x = 6
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -849,13 +849,13 @@ focus_tree = {
 
 
 		completion_reward = {
-
+			add_stability = 0.1
 		}
 	}
 	focus = {
 		id = SLV_rig_votes
 		icon = GFX_focus_usa_voter_registration_act
-		mutually_exclusive = { focus =  }
+		mutually_exclusive = { focus = SLV_start_negotiations }
 		prerequisite = { focus = SLV_by_peace }
 		relative_position_id = SLV_by_peace
 		x = 1
@@ -919,7 +919,7 @@ focus_tree = {
 	focus = {
 		id = SLV_start_negotiations
 		icon = GFX_focus_generic_diplomatic_treaty
-		mutually_exclusive = { focus =  }
+		mutually_exclusive = { focus = SLV_rig_votes }
 		prerequisite = { focus = SLV_by_peace }
 		relative_position_id = SLV_by_peace
 		x = -1
@@ -1247,7 +1247,7 @@ focus_tree = {
 		x = -6
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -1267,13 +1267,14 @@ focus_tree = {
 
 
 		completion_reward = {
-
+			add_war_support = 0.1
+			army_experience = 25
 		}
 	}
 	focus = {
 		id = SLV_pit_them_against_eachother
 		icon = GFX_goal_continuous_def_against_influence
-		mutually_exclusive = { focus =  }
+		mutually_exclusive = { focus = SLV_draw_up_plans }
 		prerequisite = { focus = SLV_by_war }
 		relative_position_id = SLV_by_war
 		x = 1
@@ -1337,7 +1338,7 @@ focus_tree = {
 	focus = {
 		id = SLV_draw_up_plans
 		icon = GFX_focus_spa_the_war_of_vengeance
-		mutually_exclusive = { focus =  }
+		mutually_exclusive = { focus = SLV_pit_them_against_eachother }
 		prerequisite = { focus = SLV_by_war }
 		relative_position_id = SLV_by_war
 		x = -1
