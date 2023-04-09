@@ -34,7 +34,9 @@ opinion_modifiers = {
 	deal_with_brandenburg_pre_pissed = {
 		value = -500
 	}
-
+	established_embassy = { 
+		value = 50
+	}
 	
 	
 }

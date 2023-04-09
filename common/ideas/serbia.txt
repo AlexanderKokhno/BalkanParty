@@ -134,7 +134,7 @@ ideas = {
 			modifier = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				repair_speed_arms_factory_factor = 0.25
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.01
 				industrial_capacity_factory = 0.25
 			}
 		}
@@ -155,7 +155,7 @@ ideas = {
 			modifier = {
 				conversion_cost_civ_to_mil_factor = 0.75
 				repair_speed_arms_factory_factor = 0.5
-				consumer_goods_factor = 0.3
+				consumer_goods_factor = 0.03
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.1
 			}
@@ -214,6 +214,9 @@ ideas = {
 			
 			modifier = {
 				conscription = 0.1
+				consumer_goods_factor = 0.02
+				war_support_factor = -0.05
+				stability_factor = -0.05
 				
 			}
 		}
@@ -222,6 +225,50 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.25
+			}
+		}
+		SER_state_security_forces_idea = {
+			
+			picture = generic_secret_police
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				agency_upgrade_time = -0.25
+				encryption_factor = 0.5
+				female_random_operative_chance = 0.3
+				operation_cost = 0.5
+				
+			}
+		}
+		SER_cultural_exchange_idea = {
+			
+			picture = generic_flexible_foreign_policy2
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				civilian_intel_to_others = 50
+				stability_weekly = 0.0025
+				guarantee_cost = -0.5
+				required_garrison_factor = -0.25
+				
 			}
 		}
   }

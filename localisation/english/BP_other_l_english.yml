@@ -45,32 +45,36 @@
 
 ##################################################### TOOLTIP ###########################################
 
- AUS_GER_anti_commie_tooltip:0 "Gain a casus belli on all commies"
- AUS_COM_anti_fascist_tooltip:0 "Gain a casus belli on all fascists"
- Anti_democrat_tooltip:0 "Gain a casus belli on democrats"
- COM_guarantees_tooltip:0 "Guarantee all fellow communist nations"
+ AUS_GER_anti_commie_tooltip:0 "§HGain a casus belli on all commies§H"
+ AUS_COM_anti_fascist_tooltip:0 "§HGain a casus belli on all fascists§H"
+ Anti_democrat_tooltip:0 "§HGain a casus belli on democrats§H"
+ COM_guarantees_tooltip:0 "§HGuarantee all fellow communist nations§H"
 
- austria.3.tooltip:0 "Gain a wargoal to seize Slovenia."
- austria.4.tooltip:0 "Integrate Slovenia"
- austria.6.tooltip:0 "Gain a wargoal to subjugate Hungary."
- austria.7.tooltip:0 "Gain a Hungarian puppet."
- austria.7.tooltip.youwillbesubject:0 "YOU WILL BECOME A SUBJECT"
- austria.10.tooltip:0 "Croatia joins our faction"
- austria.13.tooltip:0 "The Turks join our faction"
- austria.100.tooltip:0 "Form Deutschland"
+ austria.3.tooltip:0 "§HGain a wargoal to seize Slovenia.§H"
+ austria.4.tooltip:0 "§HIntegrate Slovenia§H"
+ austria.6.tooltip:0 "§HGain a wargoal to subjugate Hungary.§H"
+ austria.7.tooltip:0 "§HGain a Hungarian puppet.§H"
+ austria.7.tooltip.youwillbesubject:0 "§RYOU WILL BECOME A SUBJECT§R"
+ austria.10.tooltip:0 "§HCroatia joins our faction§H"
+ austria.13.tooltip:0 "§HThe Turks join our faction§H"
+ austria.100.tooltip:0 "§HForm Deutschland§H"
 
 
- aus_create_hre_tooltip:0 "Turn back the hands of time, the pages of the history books... the Holy Roman Empire has returned!"
- CZE_get_pp_in_preperation_for_leagues_tooltip:0 "Any country outside the HRE with 100 relations to Bohemia will be invited to the leagues."
- CZE_start_the_league_war_tooltip:0 "Fracture the empire, start the fire of religious war!"
- cze_seize_emperorship_tooltip:0 "Bohemia seizes the Imperial Throne"
- AUS_bring_in_pap_tooltip:0 "The introduction of the Holy See into the Holy Roman Empire will incline those seeking to join the League Wars in the favour of the Catholics."
- AUS_HRE_balance_of_power:0 "Guarantee all nations that have a high opinion of Austria or Austria has of them."
- AUS_a_roman_empire_tooltip:0 "Unlocks a decision to unify the Holy Roman Empire into a single entity."
- AUS_GER_purge_party_tooltip:0 "A series of decisions will allow us to curtail the sprawl of the party and reign in the army's loyalty to us!"
- AUS_spread_the_von_habsburgs_tooltip:0 "Send a small gift to all neutrality minded nations"
- AUS_invest_in_the_provinces_tooltip:0 "Add building slots in any states owned by Austria, her puppets or allies in the regions of Western Balkans & Northern Balkans"
+ aus_create_hre_tooltip:0 "§HTurn back the hands of time, the pages of the history books... the Holy Roman Empire has returned!§H"
+ CZE_get_pp_in_preperation_for_leagues_tooltip:0 "§HAny country outside the HRE with 100 relations to Bohemia will be invited to the leagues.§H"
+ CZE_start_the_league_war_tooltip:0 "§HFracture the empire, start the fire of religious war!§H"
+ cze_seize_emperorship_tooltip:0 "§HBohemia seizes the Imperial Throne§H"
+ AUS_bring_in_pap_tooltip:0 "§HThe introduction of the Holy See into the Holy Roman Empire will incline those seeking to join the League Wars in the favour of the Catholics."
+ AUS_HRE_balance_of_power:0 "Guarantee all nations that have a high opinion of Austria or Austria has of them.§H"
+ AUS_a_roman_empire_tooltip:0 "§HUnlocks a decision to unify the Holy Roman Empire into a single entity.§H"
+ AUS_GER_purge_party_tooltip:0 "§HA series of decisions will allow us to curtail the sprawl of the party and reign in the army's loyalty to us!§H"
+ AUS_spread_the_von_habsburgs_tooltip:0 "§HSend a small gift to all neutrality minded nations§H"
+ AUS_invest_in_the_provinces_tooltip:0 "§HAdd building slots in any states owned by Austria, her puppets or allies in the regions of Western Balkans & Northern Balkans§H"
  
+
+##################################################### BONUS NAMES ###########################################
+
+ industry_bonus_name:0 "Industrial Research Effort"
 
 ##################################################### PUPPETS #################################################
 
@@ -84,6 +88,7 @@
  hre_member_denied_emperors_call:0 "Denied the Emperor's call to Arms"
  hre_roman_empire_declared:0 "Emperor Proclamation for Unification"
  deal_with_brandenburg_pre_pissed:0 "Brandenburg dealt with!"
+ established_embassy:0 "Embassy Established"
 
 
 ######################################################### DECISION CATAGORIES #############################################

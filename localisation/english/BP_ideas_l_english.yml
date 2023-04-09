@@ -102,13 +102,18 @@
   SER_war_effort_economy_II_idea_desc:0 ""
   Heavy_Investments:0 "Heavy Investments"
   Heavy_Investments_desc:0 "I hate compound interest, I hate compound interest, I hate compound interest!"
+  SER_state_security_forces_idea:0 "State Security Forces"
+  SER_state_security_forces_idea_desc:0 ""
+  SER_cultural_exchange_idea:0 "Cultural Exchange Program"
+  SER_cultural_exchange_idea_desc:0 ""
 
   SER_COM_constitution_idea:0 "Socialist Constitution"
   SER_COM_constitution_idea_desc:0 ""
   SER_COM_militia_idea:0 "Socialist Militia of Belgrade"
   SER_COM_militia_idea_desc:0 ""
-  SER_COM_pheasants_idea:0 ""
+  SER_COM_pheasants_idea:0 "Pheasant Army"
   SER_COM_pheasants_idea_desc:0 ""
+  
 
 
 ############# SLO

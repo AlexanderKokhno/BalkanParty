@@ -1,0 +1,114 @@
+##################
+#Serbian events
+#################
+
+add_namespace = serbia
+
+#################### SER DEM
+
+# Culture exchange proposal
+country_event = {
+	id = serbia.1
+	title = serbia.1.t
+	desc = serbia.1.desc
+	picture = GFX_report_event_SWI_cantons_flags_soldiers
+	is_triggered_only = yes
+
+
+	option = { # Accept
+		name = serbia.1.a
+		ai_chance = {
+			base = 30
+
+			modifier = {
+				add = 50
+				is_in_faction_with = SER
+			}
+      modifier = {
+				factor = 1.5
+				has_opinion = {
+					target = SER
+					value > 50
+				}
+			}
+		}
+    ROOT = { 
+      add_opinion_modifier = { target = SER modifier = established_embassy } 
+      add_ideas = SER_cultural_exchange_idea
+    }
+		SER = {
+			add_opinion_modifier = { target = ROOT modifier = established_embassy } 
+			country_event = { hours = 2 id = serbia.3 }
+      add_ideas = SER_cultural_exchange_idea
+
+		}
+	}
+	option = { # Refuse
+		name = serbia.1.b
+		ai_chance = {
+			base = 10
+
+
+			modifier = {
+				factor = 2
+				tag = CRO
+			}
+      modifier = {
+				factor = 1.5
+				has_opinion = {
+					target = SER
+					value < 50
+				}
+			}
+
+		}
+    ROOT = {
+      add_political_power = 50
+      add_war_support = 0.05
+    }
+		SER = {
+			country_event = { hours = 2 id = serbia.2 }
+      
+		}
+	}
+}
+
+# Country Refuses Culture exchange
+country_event = {
+	id = serbia.2
+	title = serbia.2.t
+	desc = serbia.2.desc
+	picture = GFX_report_event_hungary_refused
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.2.a
+    AUS = {
+      add_political_power = -25
+      add_stability = -0.01
+    }
+
+	}
+}
+
+#Country accepts culture exchange
+country_event = {
+	id = serbia.3
+	title = serbia.3.t
+	desc = serbia.3.desc
+	picture = GFX_report_event_tur_opposition_party
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = serbia.3.a
+    AUS = {
+      add_political_power = 50
+      add_stability = 0.01
+    }
+
+
+	}
+}

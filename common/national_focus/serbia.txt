@@ -64,7 +64,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_political_power = 100
 
 		}
 	}
@@ -85,7 +85,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_war_support = 0.05
 
 		}
 	}
@@ -107,7 +107,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_ideas = SER_state_security_forces_idea
+			add_stability = -0.05
 
 		}
 	}
@@ -178,7 +179,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			SLV = { add_opinion_modifier = { target = SER modifier = established_embassy } }
+			CRO = { add_opinion_modifier = { target = SER modifier = established_embassy } }
+			BOS = { add_opinion_modifier = { target = SER modifier = established_embassy } }
+			MNT = { add_opinion_modifier = { target = SER modifier = established_embassy } }
+			KOS = { add_opinion_modifier = { target = SER modifier = established_embassy } }
+			MAC = { add_opinion_modifier = { target = SER modifier = established_embassy } }
+			SER = { add_opinion_modifier = { target = SLV modifier = established_embassy } }
+			SER = { add_opinion_modifier = { target = CRO modifier = established_embassy } }
+			SER = { add_opinion_modifier = { target = BOS modifier = established_embassy } }
+			SER = { add_opinion_modifier = { target = MNT modifier = established_embassy } }
+			SER = { add_opinion_modifier = { target = KOS modifier = established_embassy } }
+			SER = { add_opinion_modifier = { target = MAC modifier = established_embassy } }
 
 		}
 	}
@@ -200,8 +212,36 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
-
+			SLV = {
+				country_event = {
+					id = serbia.1
+				}
+			}
+			CRO = {
+				country_event = {
+					id = serbia.1
+				}
+			}
+			BOS = {
+				country_event = {
+					id = serbia.1
+				}
+			}
+			KOS = {
+				country_event = {
+					id = serbia.1
+				}
+			}
+			MNT = {
+				country_event = {
+					id = serbia.1
+				}
+			}
+			MAC = {
+				country_event = {
+					id = serbia.1
+				}
+			}
 		}
 	}
 
@@ -254,7 +294,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_tech_bonus = {
+				name = industry_bonus_name
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
 
 		}
 	}
@@ -1430,12 +1475,13 @@ focus_tree = {
 	focus = {
 		id = SER_YUG_SARTID_investments
 		icon = GFX_focus_spa_the_spanish_miracle
-		relative_position_id = SER_industrialization_program
+		relative_position_id = SER_expand_the_university_of_zagreb
 		x = 0
-		y = 5
+		y = 1
 		cost = 15
 		search_filters = {   }
-		prerequisite = { focus = SER_YUG_SARTID_investments focus = SER_serbian_industry}
+		prerequisite = { focus = SER_expand_the_university_of_zagreb }
+		prerequisite = { focus = SER_serbian_industry focus = SER_YUG_industrial_investments }
 		
 		available_if_capitulated = yes
 				
@@ -1540,7 +1586,21 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size < 4
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 
 		}
 	}
@@ -1561,7 +1621,21 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size < 4
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 
 		}
 	}
@@ -1582,7 +1656,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			build_railway = {
+				level = 3
+				controller_priority = {
+					base = 1
+					modifier = {
+							tag = SER
+							add = 2
+					}
+				}
+				fallback = yes
+				path = { 803 108 107 764 45 }
+				start_state = 803
+				target_state = 45
+			}
 
 		}
 	}
@@ -1674,7 +1761,19 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = -30
-
+			107 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 
 
 		}

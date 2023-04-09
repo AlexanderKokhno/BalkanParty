@@ -136,6 +136,22 @@
  bp_cze.2.a:0 "The missing lamb returns to the flock."
  bp_cze.2.b:0 "They demand to be an elector once more? Preposterous!"
 
+
+######################################
+################### SER
+###################################
+
+ serbia.1.t:0 "Serbia Proposes a Cultural Exchange Program"
+ serbia.1.desc:0 "Delegates from Serbia have arrived today, preaching about establishing a cultural exchange program. To have the "mighty" serbs step down to us mere mortals? They most assuredly have some kind of scheme behind this."
+ serbia.1.a:0 "The simple sight of a Serb before my eyes sickens me!"
+ serbia.1.b:0 "Know Thy Enemy"
+ serbia.2.t:0 "Cultural Exchange Program rejected"
+ serbia.2.desc:0 "A country has rejected our proposal of a cultural exchange program. Unfortunate, but no hard feelings are to be found."
+ serbia.2.a:0 "They don't understand they are missing out."
+ serbia.3.t:0 "Cultural Exchange Program Accepted"
+ serbia.3.desc:0 "A country has accepted out proposal of a cultural exchange program. We glady welcome them."
+ serbia.3.a:0 "I wonder how the weather over there is?"
+
 ########################################
 ##################### SLV
 #####################################
