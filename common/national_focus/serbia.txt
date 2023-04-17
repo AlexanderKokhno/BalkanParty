@@ -880,6 +880,19 @@ focus_tree = {
 				popularity = 0.2
 			}	
 			add_war_support = 0.1
+			add_state_core = 102
+			add_state_core = 735
+			add_state_core = 852
+			add_state_core = 163
+			add_state_core = 103
+			add_state_core = 804
+			add_state_core = 104
+			add_state_core = 109
+			add_state_core = 105
+			add_state_core = 802
+			add_state_core = 106
+			add_state_core = 803
+			add_state_core = 853
 		}
 	}
 
@@ -1829,7 +1842,30 @@ focus_tree = {
 
 		}
 	}
-	
+
+############## research slot
+
+	focus = {
+		id = SER_final_research_slot
+		icon = GFX_focus_research
+		relative_position_id = SER_infrastructure_IV
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = SER_infrastructure_IV focus = SER_factories_III focus = SER_war_effort_economy_II}
+		
+		available_if_capitulated = yes
+				
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+
+		}
+	}
 
 ################################################
 ################ INDUSTY COM
