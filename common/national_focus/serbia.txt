@@ -893,6 +893,7 @@ focus_tree = {
 			add_state_core = 106
 			add_state_core = 803
 			add_state_core = 853
+			news_event = { hours = 1 id = bp_event.5 }
 		}
 	}
 

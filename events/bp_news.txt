@@ -130,3 +130,47 @@ news_event = {
 		}
 	}
 }
+
+#YUG is proclaimed
+news_event = {      
+  id = bp_event.5
+  title = bp_event.5.t    
+  desc = bp_event.5.desc
+  
+  is_triggered_only = yes
+  major = yes
+
+  picture = GFX_news_event_ITA_grand_council
+  
+  option = {
+    trigger = {
+      OR = {
+        tag = SER
+        tag = BOS
+        tag = CRO
+        tag = MNT
+        tag = MAC
+        tag = SLV
+        tag = KOS
+      }
+    }
+    name = bp_event.5.a
+  }
+  
+  option = {
+    trigger = {
+      NOT = {
+        OR = {
+          tag = SER
+          tag = BOS
+          tag = CRO
+          tag = MNT
+          tag = MAC
+          tag = SLV
+          tag = KOS
+        }
+      }
+    }
+    name = bp_event.5.b
+  }
+}

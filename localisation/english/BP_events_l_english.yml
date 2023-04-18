@@ -26,6 +26,11 @@
  austria_news.101.c:0 "The big brother gets bigger"
  austria_news.101.d:0 "This charade has gone on for long enough!"
 
+ bp_event.5.t:0 "Yugoslavia Proclaimed"
+ bp_event.5.desc:0 "A regional power in the former Yugoslav area has grown in strength enough to proclaim themselves the true heirs of Yugoslavia. While they certainly are a force to be considered, the rest of the Yugoslav lands will hardly unify while they still carry a rifle in hand."
+ bp_event.5.a:0 "Well, we'll all be together - in the grave."
+ bp_event.5.b:0 "Ah, the powder keg is rolling!"
+
 
 ################################
 ############ AUS
