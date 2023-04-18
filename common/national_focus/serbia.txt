@@ -971,6 +971,105 @@ focus_tree = {
 			}
 		}
 	}
+################ reconquest
+
+	focus = {
+		id = SER_YUG_reconquest_south
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = {   }
+		relative_position_id = SER_proclaim_YUG
+
+		prerequisite = { focus = SER_proclaim_YUG}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}
+
+	focus = {
+		id = SER_YUG_puppet_north
+		icon = GFX_focus_CZE_german_puppet
+
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+		relative_position_id = SER_proclaim_YUG
+
+		prerequisite = { focus = SER_proclaim_YUG}
+		mutually_exclusive = { focus = SER_YUG_reclaim_north }
+		
+		ai_will_do = {
+			factor = 20
+		}
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}
+	focus = {
+		id = SER_YUG_reclaim_north
+		icon = GFX_goal_generic_more_territorial_claims
+
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = {   }
+		relative_position_id = SER_proclaim_YUG
+
+		prerequisite = { focus = SER_proclaim_YUG }
+		mutually_exclusive = { focus = SER_YUG_puppet_north}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}
+	focus = {
+		id = SER_YUG_remove_regional_nationalism
+		icon = GFX_focus_POL_riot_of_37
+
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+		relative_position_id = SER_YUG_puppet_north
+
+		prerequisite = { focus = SER_YUG_reclaim_north focus = SER_YUG_puppet_north}
+		prerequisite = { focus = SER_YUG_reconquest_south}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}
+
 ############### SER YUG INDUSTRY
 	focus = {
 		id = SER_YUG_industrial_investments

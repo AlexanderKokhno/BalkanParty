@@ -427,6 +427,14 @@
   SER_YUG_fascist_gov_desc:0 "With Prince Paul relegated from state politics, it is time to install a proper, nationalist government."
   SER_YUG_secure_civ_front:0 ""
   SER_YUG_secure_civ_front_desc:0 ""
+  SER_YUG_reconquest_south:0 "Reclaim the South"
+  SER_YUG_reconquest_south_desc:0 ""
+  SER_YUG_puppet_north:0 "Offer Autonomy to the North"
+  SER_YUG_puppet_north_desc:0 ""
+  SER_YUG_reclaim_north:0 "Reclaim the North"
+  SER_YUG_reclaim_north_desc:0 ""
+  SER_YUG_remove_regional_nationalism:0 "Cleanse Regional Nationalism"
+  SER_YUG_remove_regional_nationalism_desc:0 ""
   
 
   SER_YUG_industrial_investments:0 "Yugoslavian Industrial Investments"
