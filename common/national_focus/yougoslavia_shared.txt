@@ -1,19 +1,777 @@
-
+########################################################################################
+########################################### army
+##########################################################################################
 shared_focus = {
-  id = YUG_modernize_the_air_force
-  icon = GFX_goal_generic_air_doctrine
+  id = YUG_shared_fund_army
+  icon = GFX_focus_BUL_support_macedonian_organizations
   x = 30
   y = 0
 
-	offset = {
-		x = 13
+  offset = {
+		x = 0
 		y = 0
 		trigger = {
 			 tag = SER 
 		}
 	}
 
-  cost = 10
+  cost = 5
+  search_filters = {   }
+  prerequisite = { }
+  
+  ai_will_do = {
+    factor = 10
+  }
+
+  available_if_capitulated = yes
+
+  completion_reward = {
+
+
+  }
+}
+
+
+shared_focus = {
+  id = YUG_shared_army_modernization
+  icon = GFX_goal_generic_army_doctrines
+  x = 2
+  y = 1
+  prerequisite = {focus = YUG_shared_fund_army}
+  relative_position_id = YUG_shared_fund_army
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 10
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+
+
+  completion_reward = {
+    army_experience = 25
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_motorize_the_cavalry
+  icon = GFX_goal_generic_cavalry
+  prerequisite = { focus = YUG_shared_army_modernization }
+  x = 4
+  y = 1
+  relative_position_id =  YUG_shared_army_modernization
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 50
+    modifier = {
+      factor = 1.2
+      is_in_faction_with = GER
+    }
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_RESEARCH }
+      
+  ai_will_do = {
+    factor = 10
+  }
+
+
+  completion_reward = {
+    add_tech_bonus = {
+      name = YUG_motorize_the_cavalry
+      bonus = 3.0
+      technology = motorised_infantry
+    }
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_motorized_logistics
+  icon = GFX_goal_generic_army_motorized
+  prerequisite = { focus = YUG_shared_motorize_the_cavalry }
+  x = 2
+  y = 1
+  relative_position_id = YUG_shared_motorize_the_cavalry
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 40
+    modifier = {
+      factor = 1.2
+      is_in_faction_with = GER
+    }
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+  completion_reward = {
+    add_tech_bonus = {
+      name = YUG_motorized_logistics
+      bonus = 1.0
+      uses = 2
+      category = hospital_tech
+      category = logistics_tech
+    }
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_armored_cavalry
+  icon = GFX_goal_generic_build_tank
+  prerequisite = { focus = YUG_shared_motorize_the_cavalry }
+  x = 0
+  y = 1
+  relative_position_id = YUG_shared_motorize_the_cavalry
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 40
+    modifier = {
+      factor = 1.5
+      is_in_faction_with = GER
+    }
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+  completion_reward = {
+    add_tech_bonus = {
+      name = YUG_armored_cavalry
+      bonus = 1.0
+      uses = 1
+      category = cat_mechanized_equipment
+    }
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_tank_conversions
+  icon = GFX_goal_generic_production2
+  prerequisite = { focus = YUG_shared_armored_cavalry }
+  mutually_exclusive = { focus = YUG_shared_modern_tanks }
+  x = -1
+  y = 1
+  relative_position_id = YUG_shared_armored_cavalry
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 50
+    modifier = {
+      factor = 1.5
+      is_in_faction_with = GER
+    }
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+
+  completion_reward = {
+    add_ideas = YUG_idea_tank_conversions
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_modern_tanks
+  icon = GFX_goal_generic_army_tanks
+  prerequisite = { focus = YUG_shared_armored_cavalry }
+  mutually_exclusive = { focus = YUG_shared_tank_conversions }
+  x = 1
+  y = 1
+  relative_position_id = YUG_shared_armored_cavalry
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 25
+    modifier = {
+      factor = 3
+      is_in_faction_with = GER
+    }
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+  completion_reward = {
+    add_tech_bonus = {
+      name = YUG_modern_tanks
+      bonus = 1.0
+      uses = 1
+      category = armor
+    }
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_tank_licenses
+  icon = GFX_focus_generic_license_production
+  prerequisite = { focus = YUG_shared_modern_tanks focus = YUG_shared_tank_conversions}
+  x = 0
+  y = 2
+  relative_position_id = YUG_shared_armored_cavalry
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 60
+    modifier = {
+      factor = 1.2
+      is_in_faction_with = GER
+    }
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+
+  completion_reward = {
+    add_ideas = YUG_tank_licenses
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_small_arms
+  icon = GFX_goal_generic_small_arms
+  prerequisite = { focus = YUG_shared_army_modernization }
+  x = -1
+  y = 1
+  relative_position_id = YUG_shared_army_modernization
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 70
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+  completion_reward = {
+    add_tech_bonus = {
+      name = YUG_small_arms
+      bonus = 1.00
+      uses = 1
+      category = infantry_weapons
+    }
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_domestic_artillery_production
+  icon = GFX_goal_generic_construct_military
+  prerequisite = { focus = YUG_shared_small_arms }
+  x = 0
+  y = 1
+  relative_position_id = YUG_shared_small_arms
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 70
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+  completion_reward = {
+    add_tech_bonus = {
+      name = YUG_domestic_artillery_production
+      bonus = 1.00
+      uses = 1
+      category = artillery
+    }
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_anti_tank_defenses
+  icon = GFX_goal_generic_army_artillery2
+  prerequisite = { focus = YUG_shared_domestic_artillery_production }
+  x = 0
+  y = 1
+  relative_position_id = YUG_shared_domestic_artillery_production
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 60
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+  completion_reward = {
+    add_tech_bonus = {
+      name = YUG_anti_tank_defenses
+      bonus = 3.0
+      uses = 1
+      category = cat_anti_tank
+    }
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_mountain_brigades
+  icon = GFX_goal_generic_special_forces
+  prerequisite = { focus = YUG_shared_army_modernization }
+  x = 1
+  y = 1
+  relative_position_id = YUG_shared_army_modernization
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 70
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+  completion_reward = {
+    add_tech_bonus = {
+      name = YUG_mountain_brigades
+      bonus = 3.0
+      uses = 1
+      category = mountaineers_tech
+    }
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_independent_engineer_regiments
+  icon = GFX_goal_generic_production
+  prerequisite = { focus = YUG_shared_mountain_brigades }
+  x = 0
+  y = 1
+  relative_position_id = YUG_shared_mountain_brigades
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 50
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+  completion_reward = {
+    add_tech_bonus = {
+      name = YUG_independent_engineer_regiments
+      bonus = 3.0
+      uses = 1
+      category = engineers_tech
+    }
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_motorized_recon_companies
+  icon = GFX_goal_generic_military_sphere
+  prerequisite = { focus = YUG_shared_independent_engineer_regiments }
+  x = 0
+  y = 1
+  relative_position_id = YUG_shared_independent_engineer_regiments
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 40
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+  completion_reward = {
+    add_tech_bonus = {
+      name = YUG_motorized_recon_companies
+      bonus = 3.0
+      uses = 1
+      category = recon_tech
+    }
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_form_parachute_battalions
+  icon = GFX_focus_generic_paratrooper
+  prerequisite = { focus = YUG_shared_motorized_recon_companies }
+  x = 0
+  y = 1
+  relative_position_id = YUG_shared_motorized_recon_companies
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 10
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+  completion_reward = {
+    add_tech_bonus = {
+      name = YUG_form_parachute_battalions
+      bonus = 3.0
+      uses = 1
+      category = para_tech
+    }
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_army_maneuvers
+  icon = GFX_goal_generic_army_doctrines
+  prerequisite = { focus = YUG_shared_army_modernization }
+  x = -4
+  y = 1
+  relative_position_id = YUG_shared_army_modernization
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 70
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+  completion_reward = {
+    add_doctrine_cost_reduction = {
+      name = YUG_army_maneuvers
+      cost_reduction = 0.5
+      uses = 1
+      category = land_doctrine
+    }
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_supremacy_of_offense
+  icon = GFX_goal_generic_major_war
+  prerequisite = { focus = YUG_shared_army_maneuvers }
+  mutually_exclusive = { focus = YUG_shared_supremacy_of_defense }
+  x = -1
+  y = 1
+  relative_position_id = YUG_shared_army_maneuvers
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 30
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+  completion_reward = {
+    add_doctrine_cost_reduction = {
+      name = YUG_supremacy_of_offense
+      cost_reduction = 0.5
+      uses = 2
+      category = cat_mobile_warfare
+      category = cat_superior_firepower
+    }
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_supremacy_of_defense
+  icon = GFX_goal_generic_position_armies
+  prerequisite = { focus = YUG_shared_army_maneuvers }
+  mutually_exclusive = { focus = YUG_shared_supremacy_of_offense }
+  x = 1
+  y = 1
+  relative_position_id = YUG_shared_army_maneuvers
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 60
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+  completion_reward = {
+    add_doctrine_cost_reduction = {
+      name = YUG_supremacy_of_defense
+      cost_reduction = 0.5
+      uses = 2
+      category = cat_grand_battle_plan
+      category = cat_mass_assault
+    }
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_artillery_regiments
+  icon = GFX_goal_generic_army_artillery
+  prerequisite = { focus = YUG_shared_supremacy_of_offense focus = YUG_shared_supremacy_of_defense }
+  x = 0
+  y = 2
+  relative_position_id = YUG_shared_army_maneuvers
+
+  cost = 5
+
+  ai_will_do = {
+    factor = 70
+  }
+
+  available = {
+
+  }
+
+  bypass = {
+
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+
+
+  completion_reward = {
+    add_ideas = YUG_artillery_regiments
+  }
+}
+
+shared_focus = {
+  id = YUG_shared_medal_for_extreme_bravery
+  icon = GFX_goal_generic_build_tank
+  prerequisite = { focus = YUG_shared_artillery_regiments }
+  x = 0
+  y = 1
+  relative_position_id = YUG_shared_artillery_regiments
+
+  cost = 5
+  
+  allow_branch = {
+    has_dlc = "By Blood Alone"
+  }
+  
+  ai_will_do = {
+    factor = 70
+  }
+
+  available = {
+    any_neighbor_country = {
+      is_major = yes
+      has_war_with = ROOT
+    }
+  }
+
+  bypass = {
+
+  }
+
+  continue_if_invalid = yes
+  available_if_capitulated = no
+
+
+
+  completion_reward = {
+    custom_effect_tooltip = yug_extreme_bravery_medal
+  }
+}
+
+########################################
+################# Airforce
+#####################################
+shared_focus = {
+  id = YUG_shared_modernize_the_air_force
+  icon = GFX_goal_generic_air_doctrine
+  x = 14
+  y = 0
+  relative_position_id = YUG_shared_fund_army
+
+
+
+  cost = 5
 
   ai_will_do = {
     factor = 60
@@ -48,15 +806,15 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_local_developers
+  id = YUG_shared_local_developers
   icon = GFX_goal_generic_air_production
-  prerequisite = { focus = YUG_modernize_the_air_force }
-  mutually_exclusive = { focus = YUG_purchase_foreign }
+  prerequisite = { focus = YUG_shared_modernize_the_air_force }
+  mutually_exclusive = { focus = YUG_shared_purchase_foreign }
   x = -2
   y = 1
-  relative_position_id = YUG_modernize_the_air_force
+  relative_position_id = YUG_shared_modernize_the_air_force
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 60
@@ -82,14 +840,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_ikarus
-  icon = GFX_focus_YUG_ikarus
-  prerequisite = { focus = YUG_local_developers }
+  id = YUG_shared_ikarus
+  icon = GFX_focus_YUG_shared_ikarus
+  prerequisite = { focus = YUG_shared_local_developers }
   x = -2
   y = 1
-  relative_position_id = YUG_local_developers
+  relative_position_id = YUG_shared_local_developers
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 50
@@ -128,14 +886,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_rogozarski
-  icon = GFX_focus_YUG_rogozarski
-  prerequisite = { focus = YUG_local_developers }
+  id = YUG_shared_rogozarski
+  icon = GFX_focus_YUG_shared_rogozarski
+  prerequisite = { focus = YUG_shared_local_developers }
   x = 0
   y = 1
-  relative_position_id = YUG_local_developers
+  relative_position_id = YUG_shared_local_developers
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 50
@@ -173,14 +931,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_zmaj
-  icon = GFX_focus_YUG_zmaj
-  prerequisite = { focus = YUG_local_developers }
+  id = YUG_shared_zmaj
+  icon = GFX_focus_YUG_shared_zmaj
+  prerequisite = { focus = YUG_shared_local_developers }
   x = 2
   y = 1
-  relative_position_id = YUG_local_developers
+  relative_position_id = YUG_shared_local_developers
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 50
@@ -218,14 +976,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_the_ik_3
+  id = YUG_shared_the_ik_3
   icon = GFX_goal_generic_air_fighter2
-  prerequisite = { focus = YUG_ikarus focus = YUG_rogozarski focus = YUG_zmaj }
+  prerequisite = { focus = YUG_shared_ikarus focus = YUG_shared_rogozarski focus = YUG_shared_zmaj }
   x = 0
   y = 2
-  relative_position_id = YUG_local_developers
+  relative_position_id = YUG_shared_local_developers
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 50
@@ -276,14 +1034,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_heavy_fighter_project
+  id = YUG_shared_heavy_fighter_project
   icon = GFX_goal_generic_air_fighter
-  prerequisite = { focus = YUG_the_ik_3 }
+  prerequisite = { focus = YUG_shared_the_ik_3 }
   x = -1
   y = 3
-  relative_position_id = YUG_local_developers
+  relative_position_id = YUG_shared_local_developers
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 40
@@ -314,14 +1072,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_bomber_project
+  id = YUG_shared_bomber_project
   icon = GFX_goal_generic_air_bomber
-  prerequisite = { focus = YUG_the_ik_3 }
+  prerequisite = { focus = YUG_shared_the_ik_3 }
   x = 1
   y = 3
-  relative_position_id = YUG_local_developers
+  relative_position_id = YUG_shared_local_developers
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 20
@@ -352,15 +1110,15 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_purchase_foreign
+  id = YUG_shared_purchase_foreign
   icon = GFX_goal_generic_intelligence_exchange
-  prerequisite = { focus = YUG_modernize_the_air_force }
-  mutually_exclusive = { focus = YUG_local_developers }
+  prerequisite = { focus = YUG_shared_modernize_the_air_force }
+  mutually_exclusive = { focus = YUG_shared_local_developers }
   x = 2
   y = 1
-  relative_position_id = YUG_modernize_the_air_force
+  relative_position_id = YUG_shared_modernize_the_air_force
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 60
@@ -417,14 +1175,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_license_production
+  id = YUG_shared_license_production
   icon = GFX_focus_generic_license_production
-  prerequisite = { focus = YUG_purchase_foreign }
+  prerequisite = { focus = YUG_shared_purchase_foreign }
   x = 0
   y = 1
-  relative_position_id = YUG_purchase_foreign
+  relative_position_id = YUG_shared_purchase_foreign
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 50
@@ -450,15 +1208,15 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_fighter_license
+  id = YUG_shared_fighter_license
   icon = GFX_goal_generic_air_fighter
-  prerequisite = { focus = YUG_license_production }
-  mutually_exclusive = { focus = YUG_bomber_license }
+  prerequisite = { focus = YUG_shared_license_production }
+  mutually_exclusive = { focus = YUG_shared_bomber_license }
   x = -1
   y = 2
-  relative_position_id = YUG_purchase_foreign
+  relative_position_id = YUG_shared_purchase_foreign
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 50
@@ -534,15 +1292,15 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_bomber_license
+  id = YUG_shared_bomber_license
   icon = GFX_goal_generic_air_bomber
-  prerequisite = { focus = YUG_license_production }
-  mutually_exclusive = { focus = YUG_fighter_license }
+  prerequisite = { focus = YUG_shared_license_production }
+  mutually_exclusive = { focus = YUG_shared_fighter_license }
   x = 1
   y = 2
-  relative_position_id = YUG_purchase_foreign
+  relative_position_id = YUG_shared_purchase_foreign
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 25
@@ -624,14 +1382,14 @@ shared_focus = {
 ##########################################################################################
 
 shared_focus = {
-  id = YUG_expand_the_split_shipyards
+  id = YUG_shared_expand_the_split_shipyards
   icon = GFX_goal_generic_construct_naval_dockyard
-  mutually_exclusive = { focus = YUG_expand_the_serbian_shipyards }
-  relative_position_id = YUG_modernize_the_air_force
+  mutually_exclusive = { focus = YUG_shared_expand_the_serbian_shipyards }
+  relative_position_id = YUG_shared_modernize_the_air_force
   x = 6
   y = 0
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 1
@@ -673,14 +1431,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_contest_the_adriatic
+  id = YUG_shared_contest_the_adriatic
   icon = GFX_goal_generic_navy_doctrines_tactics
-  prerequisite = { focus = YUG_expand_the_split_shipyards }
+  prerequisite = { focus = YUG_shared_expand_the_split_shipyards }
   x = 0
   y = 1
-  relative_position_id = YUG_expand_the_split_shipyards
+  relative_position_id = YUG_shared_expand_the_split_shipyards
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 20
@@ -713,14 +1471,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_replace_the_dalmacija
+  id = YUG_shared_replace_the_dalmacija
   icon = GFX_goal_generic_navy_cruiser
-  prerequisite = { focus = YUG_contest_the_adriatic }
+  prerequisite = { focus = YUG_shared_contest_the_adriatic }
   x = -1
   y = 2
-  relative_position_id = YUG_expand_the_split_shipyards
+  relative_position_id = YUG_shared_expand_the_split_shipyards
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 20
@@ -753,14 +1511,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_naval_bombers
+  id = YUG_shared_naval_bombers
   icon = GFX_goal_generic_air_naval_bomber
-  prerequisite = { focus = YUG_contest_the_adriatic focus = YUG_coastal_defense }
+  prerequisite = { focus = YUG_shared_contest_the_adriatic focus = YUG_shared_coastal_defense }
   x = 1
   y = 2
-  relative_position_id = YUG_expand_the_split_shipyards
+  relative_position_id = YUG_shared_expand_the_split_shipyards
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 30
@@ -793,14 +1551,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_heavy_cruiser_project
+  id = YUG_shared_heavy_cruiser_project
   icon = GFX_goal_generic_navy_battleship
-  prerequisite = { focus = YUG_replace_the_dalmacija }
+  prerequisite = { focus = YUG_shared_replace_the_dalmacija }
   x = -1
   y = 3
-  relative_position_id = YUG_expand_the_split_shipyards
+  relative_position_id = YUG_shared_expand_the_split_shipyards
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 20
@@ -833,14 +1591,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_modern_destroyers
+  id = YUG_shared_modern_destroyers
   icon = GFX_goal_generic_navy_anti_submarine
-  prerequisite = { focus = YUG_naval_bombers }
+  prerequisite = { focus = YUG_shared_naval_bombers }
   x = 1
   y = 3
-  relative_position_id = YUG_expand_the_split_shipyards
+  relative_position_id = YUG_shared_expand_the_split_shipyards
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 20
@@ -873,14 +1631,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_expand_the_serbian_shipyards
+  id = YUG_shared_expand_the_serbian_shipyards
   icon = GFX_goal_generic_construct_naval_dockyard
-  mutually_exclusive = { focus = YUG_expand_the_split_shipyards }
+  mutually_exclusive = { focus = YUG_shared_expand_the_split_shipyards }
   x = 3
   y = 0
-  relative_position_id = YUG_expand_the_split_shipyards
+  relative_position_id = YUG_shared_expand_the_split_shipyards
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 1
@@ -922,14 +1680,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_coastal_defense
+  id = YUG_shared_coastal_defense
   icon = GFX_focus_generic_coastal_fort
-  prerequisite = { focus = YUG_expand_the_serbian_shipyards }
+  prerequisite = { focus = YUG_shared_expand_the_serbian_shipyards }
   x = -1
   y = 1
-  relative_position_id = YUG_expand_the_serbian_shipyards
+  relative_position_id = YUG_shared_expand_the_serbian_shipyards
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 30
@@ -1049,14 +1807,14 @@ shared_focus = {
 }
 
 shared_focus = {
-  id = YUG_expand_the_submarine_fleet
+  id = YUG_shared_expand_the_submarine_fleet
   icon = GFX_goal_generic_navy_submarine
-  prerequisite = { focus = YUG_coastal_defense }
+  prerequisite = { focus = YUG_shared_coastal_defense }
   x = 0
   y = 2
-  relative_position_id = YUG_expand_the_serbian_shipyards
+  relative_position_id = YUG_shared_expand_the_serbian_shipyards
 
-  cost = 10
+  cost = 5
 
   ai_will_do = {
     factor = 20
