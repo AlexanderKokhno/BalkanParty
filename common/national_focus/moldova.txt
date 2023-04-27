@@ -266,6 +266,12 @@ focus_tree = {
 
 
 		completion_reward = {
+			set_cosmetic_tag = MOL_CKHAN_cosmetic
+			137 = { transfer_state_to = MOL  add_core_of = MOL}
+			196 = { transfer_state_to = MOL add_core_of = MOL}
+			197 = { transfer_state_to = MOL add_core_of = MOL}
+			192 = { transfer_state_to = MOL add_core_of = MOL}
+			123 = { transfer_state_to = MOL add_core_of = MOL}
 		}
 	}
 	focus = {
@@ -281,7 +287,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_popularity = {
+    		ideology = fascism
+    		popularity = 0.1
+			}
+			add_war_support = 0.05
 
 		}
 	}
