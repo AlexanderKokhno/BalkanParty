@@ -26,7 +26,16 @@ shared_focus = {
   available_if_capitulated = yes
 
   completion_reward = {
-
+    add_timed_idea = { 
+      idea = Heavy_Investments
+      days = 90 
+    }
+    add_manpower = 50000
+    add_equipment_to_stockpile = {
+      type = infantry_equipment_1
+      amount = 10000
+    }
+    add_war_support = 0.05
 
   }
 }
@@ -841,7 +850,7 @@ shared_focus = {
 
 shared_focus = {
   id = YUG_shared_ikarus
-  icon = GFX_focus_YUG_shared_ikarus
+  icon = GFX_focus_YUG_ikarus
   prerequisite = { focus = YUG_shared_local_developers }
   x = -2
   y = 1
@@ -887,7 +896,7 @@ shared_focus = {
 
 shared_focus = {
   id = YUG_shared_rogozarski
-  icon = GFX_focus_YUG_shared_rogozarski
+  icon = GFX_focus_YUG_rogozarski
   prerequisite = { focus = YUG_shared_local_developers }
   x = 0
   y = 1
@@ -932,7 +941,7 @@ shared_focus = {
 
 shared_focus = {
   id = YUG_shared_zmaj
-  icon = GFX_focus_YUG_shared_zmaj
+  icon = GFX_focus_YUG_zmaj
   prerequisite = { focus = YUG_shared_local_developers }
   x = 2
   y = 1

@@ -132,7 +132,10 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_war_support = 0.05
-			add_ideas = Heavy_Investments
+			add_timed_idea = { 
+				idea = Heavy_Investments
+				days = 30 
+			}
 
 
 		}
@@ -2187,7 +2190,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			set_technology = {
+    		artillery1 = 1
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 2000
+			}
 
 		}
 	}
