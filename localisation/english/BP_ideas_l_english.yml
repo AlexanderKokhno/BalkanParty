@@ -95,6 +95,10 @@
   SER_king_spirit_desc:0 ""
   SER_nationalist_guard_IDEA:0 "Nationalist Guard"
   SER_nationalist_guard_IDEA_desc:0 ""
+  SER_YUG_state_security_forces_idea:0 "Yugoslavian State Security Forces"
+  SER_YUG_state_security_forces_idea_desc:0 ""
+  SER_YUG_state_security_forces_idea_II:0 "Yugoslavian State Security Forces"
+  SER_YUG_state_security_forces_idea_II_desc:0 ""
 
   SER_war_effort_economy_I_idea:0 "Serbian War Effort"
   SER_war_effort_economy_I_idea_desc:0 ""

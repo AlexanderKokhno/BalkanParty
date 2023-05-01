@@ -1079,7 +1079,7 @@ focus_tree = {
 		id = SER_YUG_industrial_investments
 		icon = GFX_focus_generic_industry_3
 		relative_position_id = SER_proclaim_YUG
-		x = -2
+		x = -3
 		y = 1
 		cost = 10
 		search_filters = {   }
@@ -1101,7 +1101,7 @@ focus_tree = {
 		id = SER_YUG_state_security_forces
 		icon = GFX_focus_generic_military_dictatorship
 		relative_position_id = SER_proclaim_YUG
-		x = 0
+		x = 4
 		y = 1
 		cost = 10
 		search_filters = {   }
@@ -1113,7 +1113,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = { SER_YUG_state_security_forces_idea}
 
 		}
 	}
@@ -1134,6 +1134,12 @@ focus_tree = {
 		
 
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -50
+			swap_ideas = { 
+  			remove_idea = SER_YUG_state_security_forces_idea
+  			add_idea = SER_YUG_state_security_forces_idea_II
+			}
 
 
 		}
@@ -2233,10 +2239,14 @@ focus_tree = {
 		available_if_capitulated = yes
 				
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 
 		completion_reward = {
+			army_attack_factor = 0.2
+			army_defence_factor = 0.2
+			army_attack_against_major_factor = 0.1
+			army_attack_against_minor_factor = -0.1
 
 
 		}

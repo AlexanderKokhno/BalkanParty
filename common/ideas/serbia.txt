@@ -243,7 +243,7 @@ ideas = {
 			
 			modifier = {
 				agency_upgrade_time = -0.25
-				encryption_factor = 0.5
+				encryption_factor = 0.25
 				female_random_operative_chance = 0.3
 				operation_cost = 0.5
 				
@@ -268,6 +268,48 @@ ideas = {
 				stability_weekly = 0.0025
 				guarantee_cost = -0.5
 				required_garrison_factor = -0.25
+				
+			}
+		}
+		SER_YUG_state_security_forces_idea = {
+			
+			picture = generic_secret_police
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				operative_slot = 1
+				
+			}
+		}
+		SER_YUG_state_security_forces_idea_II = {
+			
+			picture = generic_secret_police
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.25
+				encryption = 1
+				operation_cost = 0.5
+				political_power_gain = -0.05
 				
 			}
 		}
