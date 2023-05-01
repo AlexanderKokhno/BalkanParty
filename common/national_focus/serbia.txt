@@ -981,8 +981,8 @@ focus_tree = {
 		id = SER_YUG_reconquest_south
 		icon = GFX_focus_BUL_condemn_macedonian_organizations
 
-		x = -2
-		y = 1
+		x = -1
+		y = 2
 		cost = 10
 		search_filters = {   }
 		relative_position_id = SER_proclaim_YUG
@@ -1005,13 +1005,13 @@ focus_tree = {
 		id = SER_YUG_puppet_north
 		icon = GFX_focus_CZE_german_puppet
 
-		x = 0
+		x = -1
 		y = 1
 		cost = 10
 		search_filters = {   }
-		relative_position_id = SER_proclaim_YUG
+		relative_position_id = SER_YUG_reconquest_south
 
-		prerequisite = { focus = SER_proclaim_YUG}
+		prerequisite = { focus = SER_YUG_reconquest_south}
 		mutually_exclusive = { focus = SER_YUG_reclaim_north }
 		
 		ai_will_do = {
@@ -1029,13 +1029,13 @@ focus_tree = {
 		id = SER_YUG_reclaim_north
 		icon = GFX_goal_generic_more_territorial_claims
 
-		x = 2
+		x = 1
 		y = 1
 		cost = 10
 		search_filters = {   }
-		relative_position_id = SER_proclaim_YUG
+		relative_position_id = SER_YUG_reconquest_south
 
-		prerequisite = { focus = SER_proclaim_YUG }
+		prerequisite = { focus = SER_YUG_reconquest_south }
 		mutually_exclusive = { focus = SER_YUG_puppet_north}
 		
 		ai_will_do = {
@@ -1057,10 +1057,69 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {   }
-		relative_position_id = SER_YUG_puppet_north
+		relative_position_id = SER_YUG_reclaim_north
 
-		prerequisite = { focus = SER_YUG_reclaim_north focus = SER_YUG_puppet_north}
-		prerequisite = { focus = SER_YUG_reconquest_south}
+		prerequisite = { focus = SER_YUG_reclaim_north }
+
+		available = {
+			ROOT = {
+				controls_state = 105
+				controls_state = 106
+				controls_state = 802
+				controls_state = 736
+				controls_state = 102
+				controls_state = 853
+				controls_state = 852
+				controls_state = 103
+				controls_state = 163
+				controls_state = 109
+				controls_state = 104
+				controls_state = 804
+
+			}
+		}
+
+		
+		ai_will_do = {
+			factor = 20
+		}
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.5
+			}		
+			105 = { add_manpower = -50000}
+			106 = { add_manpower = -50000}
+			802 = { add_manpower = -50000}
+			736 = { add_manpower = -50000}
+			102 = { add_manpower = -50000}
+			853 = { add_manpower = -50000}
+			852 = { add_manpower = -50000}
+			103 = { add_manpower = -50000}
+			163 = { add_manpower = -50000}
+			109 = { add_manpower = -50000}
+			104 = { add_manpower = -50000}
+			804 = { add_manpower = -50000}
+
+		}
+	}
+
+	focus = {
+		id = SER_YUG_road_to_brotherhood_union
+		icon = GFX_focus_YUG_dissolve_serbia
+
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+		relative_position_id =  SER_YUG_puppet_north
+
+		prerequisite = { focus =  SER_YUG_puppet_north }
+
 		
 		ai_will_do = {
 			factor = 20
@@ -1194,7 +1253,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = SER_god_artillery_idea
 
 		}
 	}
@@ -2243,10 +2302,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_attack_factor = 0.2
-			army_defence_factor = 0.2
-			army_attack_against_major_factor = 0.1
-			army_attack_against_minor_factor = -0.1
+			add_ideas = SER_army_of_Belgrade_idea
 
 
 		}

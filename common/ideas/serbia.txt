@@ -313,5 +313,47 @@ ideas = {
 				
 			}
 		}
+		SER_army_of_Belgrade_idea = {
+			
+			picture = YUG_serbian_general_staff
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			army_attack_factor = 0.2
+			army_defence_factor = 0.2
+			army_attack_against_major_factor = 0.1
+			army_attack_against_minor_factor = -0.1
+				
+			}
+		}
+		SER_god_artillery_idea = {
+			
+			picture = generic_artillery_regiments
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_artillery_attack_factor = 0.25
+				army_artillery_defence_factor = 0.25
+				
+			}
+		}
   }
 }
