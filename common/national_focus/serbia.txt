@@ -54,7 +54,7 @@ focus_tree = {
 		relative_position_id = SER_acknowledge_neighbors
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {   }
 		prerequisite = { focus = SER_acknowledge_neighbors}
 		
@@ -66,6 +66,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 100
+			set_rule = { can_create_factions = yes }
 
 		}
 	}
@@ -285,9 +286,9 @@ focus_tree = {
 		id = SER_serbian_industry
 		icon = GFX_focus_generic_industry_1
 		relative_position_id = SER_force_free_elections
-		x = 2
+		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {   }
 		prerequisite = {  focus = SER_force_free_elections}
 				
@@ -410,7 +411,7 @@ focus_tree = {
 		relative_position_id = SER_COM_constitution
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {   }
 		prerequisite = { focus = SER_COM_constitution}
 				
@@ -898,6 +899,7 @@ focus_tree = {
 			add_state_core = 803
 			add_state_core = 853
 			news_event = { hours = 1 id = bp_event.5 }
+			set_rule = { can_create_factions = yes }
 		}
 	}
 
@@ -1140,7 +1142,7 @@ focus_tree = {
 		relative_position_id = SER_proclaim_YUG
 		x = -3
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {   }
 		prerequisite = { focus = SER_proclaim_YUG }
 		ai_will_do = {
@@ -1149,7 +1151,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_tech_bonus = {
+				name = industry_bonus_name
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
 
 		}
 	}
@@ -1339,7 +1346,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SER_expand_the_mining_industry
 
-		cost = 10
+		cost = 5
 
 
 
@@ -1442,7 +1449,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SER_rare_minerals_exploitation
 
-		cost = 10
+		cost = 5
 
 
 
@@ -1499,6 +1506,7 @@ focus_tree = {
 		id = SER_develop_civilian_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = SER_expand_the_mining_industry }
+		prerequisite = { focus = SER_YUG_industrial_investments focus = SER_serbian_industry}
 		mutually_exclusive = { focus = SER_develop_military_industry }
 		x = -1
 		y = 2
@@ -1574,6 +1582,7 @@ focus_tree = {
 		id = SER_develop_military_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = SER_expand_the_mining_industry }
+		prerequisite = { focus = SER_YUG_industrial_investments focus = SER_serbian_industry}
 		mutually_exclusive = { focus = SER_develop_civilian_industry }
 		x = 1
 		y = 2
@@ -1659,11 +1668,19 @@ focus_tree = {
 		icon = GFX_focus_spa_the_spanish_miracle
 		relative_position_id = SER_expand_the_university_of_zagreb
 		x = 0
-		y = 1
+		y = 2
 		cost = 15
 		search_filters = {   }
-		prerequisite = { focus = SER_expand_the_university_of_zagreb }
-		prerequisite = { focus = SER_serbian_industry focus = SER_YUG_industrial_investments }
+		
+		available = {
+			OR = {
+				has_completed_focus = SER_expand_the_university_of_zagreb
+				has_completed_focus = SER_peoples_industry
+			}
+			NOT = {
+				has_completed_focus = SER_seize_means_of_production
+			}
+		}
 		
 		available_if_capitulated = yes
 				
@@ -1730,7 +1747,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_merge_plants
 		relative_position_id = SER_war_effort_economy_I
 		x = 0
-		y = 1
+		y = 3
 		cost = 10
 		search_filters = {   }
 		prerequisite = { focus = SER_war_effort_economy_I }
@@ -1965,7 +1982,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = SER_factories_II
 		x = 0
-		y = 1
+		y = 2
 		cost = 10
 		search_filters = {   }
 		prerequisite = { focus = SER_factories_II}
@@ -2048,17 +2065,27 @@ focus_tree = {
 		cost = 10
 		search_filters = {   }
 		prerequisite = { focus = SER_peoples_industry}
-		prerequisite = { focus = SER_expand_the_university_of_zagreb}
 		prerequisite = { focus = SER_COM_coup}
 		
 		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_completed_focus = SER_YUG_SARTID_investments
+			}
+		}
 				
 		ai_will_do = {
 			factor = 10
 		}
 
 		completion_reward = {
-
+			add_political_power = 50
+			add_stability = -0.05
+			add_command_power = -200
+			add_equipment_to_stockpile = {
+      	type = infantry_equipment_1
+      	amount = -500
+    	}
 
 		}
 	}	
@@ -2121,7 +2148,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_research_slot = 1
 
 		}
 	}

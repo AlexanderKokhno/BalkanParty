@@ -2308,6 +2308,7 @@
 					modifier = hre_religious_league_accepted
 				}
 			}
+			set_rule = { can_create_factions = yes }
 
 		}
 	}

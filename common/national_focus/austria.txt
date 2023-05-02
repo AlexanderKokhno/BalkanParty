@@ -172,6 +172,7 @@ focus_tree = {
 			add_war_support = 0.05
 			set_cosmetic_tag = AUS_GER_greater_aus_cos_tag
 			create_faction = "Austrian Co-Prosperity Bloc"
+			set_rule = { can_create_factions = yes }
 		}
 	}
 
@@ -214,6 +215,7 @@ focus_tree = {
 			custom_effect_tooltip = aus_create_hre_tooltip
 
 			add_political_power = 200
+			set_rule = { can_create_factions = yes }
 			
 			hidden_effect = {
 				create_faction = "Holy Roman Empire"
@@ -2464,6 +2466,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_faction = "Austrian Socialist Bloc"
+			set_rule = { can_create_factions = yes }
 			add_political_power = 100
 		}
 	}
