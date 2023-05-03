@@ -391,10 +391,14 @@
   SER_COM_peasant_army_desc:0 "The workers, while ready to fight, are far more useful in the factories, they can be used as a reserve. The peasants will go into the fray first."
   SER_COM_trotskyite_model:0 "Trotskyite Model"
   SER_COM_trotskyite_model_desc:0 "The list of communist countries is incomplete. YOU CAN HELP BY EXPANDING IT."
-  SER_COM_anti_fascism:0 "Anti Fascism Policy"
-  SER_COM_anti_fascism_desc:0 "Fascism is a grave threat to our very existence, we must be the vanguard of the socialist cause that stands against it."
+  SER_COM_unified_front:0 "Unified Front"
+  SER_COM_unified_front_desc:0 ""
+  SER_COM_protect_comrades:0 "Protect Fellow Comrades"
+  SER_COM_protect_comrades_desc:0 ""
   SER_COM_Tito:0 "Comrade Tito"
   SER_COM_Tito_desc:0 ""
+  SER_COM_anti_fascism:0 "Anti Fascism Policy"
+  SER_COM_anti_fascism_desc:0 "Fascism is a grave threat to our very existence, we must be the vanguard of the socialist cause that stands against it."
 
 
 

@@ -33,7 +33,7 @@ focus_tree = {
 
 		x = 8
 		y = 0
-		cost = 10
+		cost = 5
 		search_filters = {   }
 		mutually_exclusive = {focus = SER_revive_YUG}
 		
@@ -502,7 +502,7 @@ focus_tree = {
 		relative_position_id = SER_COM_trotskyite_model
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {   }
 		prerequisite = { focus = SER_COM_trotskyite_model}
 		
@@ -512,6 +512,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			create_faction = "Unified Front"
+			set_rule = { can_create_factions = yes }
+			add_political_power = 50
 
 
 		}
@@ -688,7 +691,7 @@ focus_tree = {
 		relative_position_id = SER_revive_YUG
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {   }
 		prerequisite = { focus = SER_revive_YUG}
 		ai_will_do = {
@@ -718,7 +721,7 @@ focus_tree = {
 		relative_position_id = SER_revive_YUG
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 30
 		}
@@ -738,7 +741,7 @@ focus_tree = {
 		relative_position_id = SER_revive_YUG
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {   }
 		prerequisite = { focus = SER_revive_YUG}
 		ai_will_do = {
@@ -1891,7 +1894,7 @@ focus_tree = {
 		relative_position_id = SER_infrastructure_II
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {   }
 		prerequisite = { focus = SER_infrastructure_II}
 		
@@ -1907,15 +1910,16 @@ focus_tree = {
 				controller_priority = {
 					base = 1
 					modifier = {
-							tag = SER
-							add = 2
+						tag = SER
+						add = 2
 					}
 				}
 				fallback = yes
-				path = { 803 108 107 764 45 }
+
 				start_state = 803
 				target_state = 45
 			}
+			add_ideas = SER_infrastructure_I_idea
 
 		}
 	}
@@ -1936,7 +1940,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			swap_ideas = {
+				remove_idea = SER_infrastructure_I_idea
+				add_idea = SER_infrastructure_II_idea
+			}
 
 		}
 	}

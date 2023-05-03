@@ -355,5 +355,43 @@ ideas = {
 				
 			}
 		}
+		SER_infrastructure_I_idea = {
+			
+			picture = generic_build_infrastructure
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				
+			}
+		}
+		SER_infrastructure_II_idea = {
+			
+			picture = generic_build_infrastructure
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				command_power_gain = -0.02
+			}
+		}
   }
 }
