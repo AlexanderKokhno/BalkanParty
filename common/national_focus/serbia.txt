@@ -13,7 +13,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1500 }
+	continuous_focus_position = { x = 50 y = 2000 }
 
 ####################################################################
 #################### SHARED 
@@ -286,7 +286,7 @@ focus_tree = {
 		id = SER_serbian_industry
 		icon = GFX_focus_generic_industry_1
 		relative_position_id = SER_force_free_elections
-		x = 0
+		x = 2
 		y = 1
 		cost = 5
 		search_filters = {   }
@@ -477,8 +477,8 @@ focus_tree = {
 		id = SER_COM_trotskyite_model
 		icon = GFX_focus_fra_loyalty_trotzky
 		relative_position_id = SER_COM_coup
-		x = 1
-		y = 3
+		x = 0
+		y = 5
 		cost = 10
 		search_filters = {   }
 		prerequisite = { focus = SER_COM_expand_party}
@@ -497,14 +497,121 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SER_COM_anti_fascism
-		icon = GFX_focus_generic_anti_fascist_diplomacy
+		id = SER_COM_unified_front
+		icon = GFX_focus_generic_join_comintern
 		relative_position_id = SER_COM_trotskyite_model
-		x = 2
+		x = 1
 		y = 1
 		cost = 10
 		search_filters = {   }
 		prerequisite = { focus = SER_COM_trotskyite_model}
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+
+
+		}
+	}	
+	focus = {
+		id = SER_COM_protect_comrades
+		icon = GFX_goal_support_communism
+		relative_position_id = SER_COM_unified_front
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = SER_COM_unified_front}
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+
+
+		}
+	}	
+
+##################################### Tito
+	focus = {
+		id = SER_COM_Tito
+		icon = GFX_goal_unknown
+		relative_position_id = SER_COM_coup
+		x = -2
+		y = 5
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = SER_COM_expand_party}
+		mutually_exclusive = { focus = SER_COM_trotskyite_model }
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}
+
+		focus = {
+		id = SER_COM_do_something
+		icon = GFX_goal_unknown
+		relative_position_id = SER_COM_Tito
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = SER_COM_Tito}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}
+	focus = {
+		id = SER_COM_do_something_2
+		icon = GFX_goal_unknown
+		relative_position_id = SER_COM_do_something
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = SER_COM_do_something}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}
+##### shared COM
+
+	focus = {
+		id = SER_COM_anti_fascism
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = SER_COM_trotskyite_model
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = SER_COM_trotskyite_model focus = SER_COM_Tito}
 		
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -549,90 +656,6 @@ focus_tree = {
 
 		}
 	}	
-	focus = {
-		id = SER_COM_unified_front
-		icon = GFX_focus_generic_join_comintern
-		relative_position_id = SER_COM_trotskyite_model
-		x = 0
-		y = 1
-		cost = 10
-		search_filters = {   }
-		prerequisite = { focus = SER_COM_trotskyite_model}
-		
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-
-
-		}
-	}	
-	focus = {
-		id = SER_COM_protect_comrades
-		icon = GFX_goal_support_communism
-		relative_position_id = SER_COM_unified_front
-		x = 0
-		y = 1
-		cost = 10
-		search_filters = {   }
-		prerequisite = { focus = SER_COM_unified_front}
-		
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-
-
-		}
-	}	
-	focus = {
-		id = SER_COM_2222222
-		icon = GFX_goal_unknown
-		relative_position_id = SER_COM_trotskyite_model
-		x = -2
-		y = 1
-		cost = 10
-		search_filters = {   }
-		prerequisite = { focus = SER_COM_trotskyite_model}
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available_if_capitulated = yes
-
-		completion_reward = {
-
-
-		}
-	}
-##################################### Tito
-	focus = {
-		id = SER_COM_Tito
-		icon = GFX_goal_unknown
-		relative_position_id = SER_COM_coup
-		x = -1
-		y = 3
-		cost = 10
-		search_filters = {   }
-		prerequisite = { focus = SER_COM_expand_party}
-		prerequisite = {focus = SER_COM_peasant_army}
-		mutually_exclusive = { focus = SER_COM_trotskyite_model }
-
-		ai_will_do = {
-			factor = 100
-		}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-
-
-		}
-	}
 
 #####################################################################################
 ########################################## Yugoslavian Revival
@@ -640,7 +663,7 @@ focus_tree = {
 	focus = {
 		id = SER_revive_YUG
 		icon = GFX_focus_invite_yugoslavia
-		x = 20
+		x = 23
 		y = 0
 		cost = 10
 		search_filters = {   }
@@ -908,7 +931,7 @@ focus_tree = {
 		id = SER_YUG_national_guard
 		icon = GFX_focus_generic_military_mission
 		relative_position_id = SER_execute_civilian_traitors
-		x = 0
+		x = 2
 		y = 2
 		cost = 10
 		search_filters = {   }
@@ -985,7 +1008,7 @@ focus_tree = {
 
 		x = -1
 		y = 2
-		cost = 10
+		cost = 5
 		search_filters = {   }
 		relative_position_id = SER_proclaim_YUG
 
@@ -998,7 +1021,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			create_wargoal = { type = annex_everything target = KOS }
+			create_wargoal = { type = annex_everything target = MAC }
+			create_wargoal = { type = annex_everything target = MNT }
 
 		}
 	}
@@ -1018,6 +1043,16 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				add = -19
+				SER = {
+					NOT = {
+						controls_state = 105
+						controls_state = 106
+						controls_state = 802
+					}
+				}
+			}
 		}
 	
 		available_if_capitulated = yes
@@ -1033,7 +1068,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {   }
 		relative_position_id = SER_YUG_reconquest_south
 
@@ -1042,12 +1077,24 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				add = -19
+				SER = {
+					NOT = {
+						controls_state = 105
+						controls_state = 106
+						controls_state = 802
+					}
+				}
+			}
 		}
 	
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			create_wargoal = { type = annex_everything target = SLV }
+			create_wargoal = { type = annex_everything target = CRO }
+			create_wargoal = { type = annex_everything target = BOS }
 
 		}
 	}
@@ -1092,7 +1139,7 @@ focus_tree = {
 			add_political_power = 100
 			add_popularity = {
 				ideology = fascism
-				popularity = 0.5
+				popularity = 0.05
 			}		
 			105 = { add_manpower = -50000}
 			106 = { add_manpower = -50000}
@@ -1167,7 +1214,7 @@ focus_tree = {
 		id = SER_YUG_state_security_forces
 		icon = GFX_focus_generic_military_dictatorship
 		relative_position_id = SER_proclaim_YUG
-		x = 4
+		x = 2
 		y = 1
 		cost = 10
 		search_filters = {   }
@@ -1217,7 +1264,7 @@ focus_tree = {
 		id = SER_guarantee
 		icon = GFX_goal_tripartite_pact
 		relative_position_id = SER_acknowledge_neighbors
-		x = 6
+		x = 8
 		y = 2
 		cost = 5
 		search_filters = {   }
@@ -1242,7 +1289,7 @@ focus_tree = {
 		id = SER_god_artillery
 		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
 		relative_position_id = SER_rally_paramilitaries
-		x = 2
+		x = 4
 		y = 4
 		cost = 10
 
@@ -1271,7 +1318,7 @@ focus_tree = {
 		focus = {
 		id = SER_industrialization_program
 		icon = GFX_goal_generic_construction
-		x = 14
+		x = 16
 		y = 3
 
 		cost = 10
