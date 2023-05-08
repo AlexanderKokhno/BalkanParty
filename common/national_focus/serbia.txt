@@ -655,7 +655,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_ideas = SER_vanguard_against_fascism_idea
 
 		}
 	}	

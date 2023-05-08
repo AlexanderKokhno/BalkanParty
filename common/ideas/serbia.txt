@@ -393,5 +393,28 @@ ideas = {
 				command_power_gain = -0.02
 			}
 		}
+		SER_vanguard_against_fascism_idea = {
+			
+			picture = SPR_anti_fascist_crusade
+
+			allowed = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				fascism_drift = -0.05
+
+			}
+		}
   }
 }
