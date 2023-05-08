@@ -129,7 +129,16 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/glory_to_von_habsburg.dds"			
 	}
 
+################## YUG
 
+	SpriteType = {
+	name = "GFX_goal_yugoslavia_sfr"
+	texturefile = "gfx/interface/goals/Yugoslavia_SFR.dds"			
+	}
+
+
+
+################### SAMPLE
 	SpriteType = {
 	name = "GFX_goal_continuous_air_production"
 	texturefile = "gfx/interface/goals/goal_continuous_air_production.dds"			

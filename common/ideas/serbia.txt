@@ -418,7 +418,7 @@ ideas = {
 		}
 		SER_YUG_road_to_brotherhood_union_idea = {
 			
-			picture = generic_morale_bonus
+			picture = tur_coordinated_balkan_armed_forces
 
 			allowed = {
 				always = no
@@ -431,7 +431,34 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				
+				autonomy_gain = -5
+				stability_weekly = 0.005
+				political_power_gain = -0.2
+				war_support_weekly = 0.005
+			}
+		}
+		SER_COM_TITO_economic_idea = {
+			
+			picture = FRA_market_dynamism
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				repair_speed_arms_factory_factor = 0.25
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				stability_weekly = -0.001
+				line_change_production_efficiency_factor = 0.25
+				global_building_slots_factor = 0.25
 			}
 		}
   }

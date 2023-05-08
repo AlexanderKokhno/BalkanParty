@@ -570,7 +570,7 @@ focus_tree = {
 ##################################### Tito
 	focus = {
 		id = SER_COM_Tito
-		icon = GFX_goal_unknown
+		icon = GFX_goal_yugoslavia_sfr
 		relative_position_id = SER_COM_coup
 		x = -2
 		y = 5
@@ -618,7 +618,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SER_COM_do_something_2
+		id = SER_COM_TITO_economic_system
 		icon = GFX_goal_unknown
 		relative_position_id = SER_COM_do_something
 		x = 0
@@ -633,7 +633,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = SER_COM_TITO_economic_idea
 
 		}
 	}
