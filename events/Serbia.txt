@@ -4,9 +4,8 @@
 
 add_namespace = serbia
 
-#################### SER DEM
+#################### SER EXCHANGE PROPOSAL
 
-# Culture exchange proposal
 country_event = {
 	id = serbia.1
 	title = serbia.1.t
@@ -108,6 +107,109 @@ country_event = {
       add_political_power = 50
       add_stability = 0.01
     }
+
+
+	}
+}
+
+########### SER PUPPET NORTH
+
+country_event = {
+	id = serbia.4
+	title = serbia.4.t
+	desc = serbia.4.desc
+	picture = GFX_report_event_SWI_cantons_flags_soldiers
+	is_triggered_only = yes
+
+
+	option = { # Accept
+		name = serbia.4.a
+		ai_chance = {
+			base = 30
+
+			modifier = {
+				add = 50
+				is_in_faction_with = SER
+			}
+      		modifier = {
+				factor = 1.5
+				has_opinion = {
+					target = SER
+					value > 50
+				}
+			}
+		}
+		SER = {
+			puppet = {
+    			target = ROOT
+			}
+			country_event = { hours = 2 id = serbia.6 }
+
+		}
+	}
+	option = { # Refuse
+		name = serbia.4.b
+		ai_chance = {
+			base = 10
+
+
+			modifier = {
+				factor = 1.5
+				tag = CRO
+			}
+      		modifier = {
+				factor = 1.5
+				has_opinion = {
+					target = SER
+					value < 50
+				}
+			}
+
+		}
+		ROOT = {
+		add_political_power = 50
+		add_war_support = 0.05
+		}
+		SER = {
+			country_event = { hours = 2 id = serbia.5 }
+			create_wargoal = { 
+				type = annex_everything 
+				target = ROOT 
+			}
+      
+		}
+	}
+}
+
+# Country Refuses 
+country_event = {
+	id = serbia.5
+	title = serbia.5.t
+	desc = serbia.5.desc
+	picture = GFX_report_event_hungary_refused
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.5.a
+
+
+	}
+}
+
+#Country accepts 
+country_event = {
+	id = serbia.6
+	title = serbia.6.t
+	desc = serbia.6.desc
+	picture = GFX_report_event_tur_opposition_party
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = serbia.6.a
+
 
 
 	}

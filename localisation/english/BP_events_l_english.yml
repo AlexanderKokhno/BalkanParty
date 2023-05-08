@@ -148,14 +148,24 @@
 
  serbia.1.t:0 "Serbia Proposes a Cultural Exchange Program"
  serbia.1.desc:0 "Delegates from Serbia have arrived today, preaching about establishing a cultural exchange program. To have the "mighty" serbs step down to us mere mortals? They most assuredly have some kind of scheme behind this."
- serbia.1.a:0 "The simple sight of a Serb before my eyes sickens me!"
- serbia.1.b:0 "Know Thy Enemy"
+ serbia.1.a:0 "Know Thy Enemy"
+ serbia.1.b:0 "The simple sight of a Serb before my eyes sickens me!"
  serbia.2.t:0 "Cultural Exchange Program rejected"
  serbia.2.desc:0 "A country has rejected our proposal of a cultural exchange program. Unfortunate, but no hard feelings are to be found."
  serbia.2.a:0 "They don't understand they are missing out."
  serbia.3.t:0 "Cultural Exchange Program Accepted"
- serbia.3.desc:0 "A country has accepted out proposal of a cultural exchange program. We glady welcome them."
+ serbia.3.desc:0 "A country has accepted our proposal of a cultural exchange program. We glady welcome them."
  serbia.3.a:0 "I wonder how the weather over there is?"
+ serbia.4.t:0 "Yugoslavia Proposes Autonomus Membership"
+ serbia.4.desc:0 "Delegates from Yugoslavia have arrived today, suprisingly perhaps, with not a decleration of war, but a proposition. They propose that instead of a war of seize our land, we can become an autonomus territory. They preach of Yugoslav brotherhood, yet hold a whip in hand."
+ serbia.4.a:0 "They wouldn't possibly strip us of that autonomy, right?"
+ serbia.4.b:0 "Even death is preferable to the Serbian boot!"
+ serbia.5.t:0 "Autonomus Status Rejected"
+ serbia.5.desc:0 "A country has rejected our proposal of autonomus status as part of Yugoslavia. They have begun to mobalize for war."
+ serbia.5.a:0 "Well, we simply have to shoot them, then"
+ serbia.6.t:0 "Autonomus Status Accepted"
+ serbia.6.desc:0 "A country has accepted our proposal of autonomus status as part of Yugoslavia."
+ serbia.6.a:0 "Perhaps there is an intelligent politician over there"
 
 ########################################
 ##################### SLV

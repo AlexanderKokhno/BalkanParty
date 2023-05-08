@@ -592,7 +592,26 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			set_cosmetic_tag = SER_YUG_TITO
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}	
+			add_war_support = 0.1
+			add_state_core = 102
+			add_state_core = 735
+			add_state_core = 852
+			add_state_core = 163
+			add_state_core = 103
+			add_state_core = 804
+			add_state_core = 104
+			add_state_core = 109
+			add_state_core = 105
+			add_state_core = 802
+			add_state_core = 106
+			add_state_core = 803
+			add_state_core = 853
+			news_event = { hours = 1 id = bp_event.5 }
 
 		}
 	}
@@ -1099,7 +1118,21 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			SLV = {
+				country_event = {
+					id = serbia.4
+				}
+			}
+			CRO = {
+				country_event = {
+					id = serbia.4
+				}
+			}
+			BOS = {
+				country_event = {
+					id = serbia.4
+				}
+			}
 
 		}
 	}
@@ -2210,7 +2243,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 
 		}
 	}
@@ -2231,7 +2271,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 
 		}
 	}
@@ -2273,7 +2320,36 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size < 4
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size < 4
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 
 		}
 	}
@@ -2294,7 +2370,36 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size < 4
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size < 4
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 
 		}
 	}
@@ -2318,7 +2423,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 
 		}
 	}
@@ -2339,7 +2451,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 
 		}
 	}
@@ -2363,7 +2482,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_research_slot = 1
 
 		}
 	}

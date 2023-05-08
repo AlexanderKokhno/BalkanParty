@@ -16,6 +16,9 @@
 #################################################### COUNTRIES ##########################################
   SER_YUG_KING_neutrality:0 "Kingdom of Yugoslavia"
   SER_YUG_KING_neutrality_ADJ:0 "Yugoslavian"
+  SER_YUG_TITO_neutrality_DEF:0 "Kingdom of Yugoslavia"
+  SER_YUG_TITO_neutrality:0 "Kingdom of Yugoslavia"
+  SER_YUG_TITO_neutrality_ADJ:0 "Yugoslavian"
   SER_YUG_KING_neutrality_DEF:0 "Kingdom of Yugoslavia"
   AUS_GER_greater_aus_cos_tag:0 "Größeres Österreich"
   AUS_GER_greater_aus_cos_tag_ADJ:0 "Größeres Österreichisch"
