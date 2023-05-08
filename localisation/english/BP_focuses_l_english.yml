@@ -377,6 +377,8 @@
 
   SER_promote_Blagoje:0 "Promote Blagoje Nešković"
   SER_promote_Blagoje_desc:0 "Promote Blagoje Nešković to the head of state security."
+  SER_COM_invite_Tito:0 "Invite Tito"
+  SER_COM_invite_Tito_desc:0 "They say communism knows no borders. I guess that means who shouldn't shoot Croats on sight."
   SER_peoples_industry:0 "Industry of the People"
   SER_peoples_industry_desc:0 "The means of production belong to the people, run by the people. The government must invest into this."
   SER_COM_coup:0 "Storm Belgrade"

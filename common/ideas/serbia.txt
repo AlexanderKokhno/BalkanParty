@@ -135,7 +135,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				repair_speed_arms_factory_factor = 0.25
 				consumer_goods_factor = 0.01
-				industrial_capacity_factory = 0.25
+				industrial_capacity_factory = 0.15
 			}
 		}
 		SER_war_effort_economy_II_idea = {
@@ -156,7 +156,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.75
 				repair_speed_arms_factory_factor = 0.5
 				consumer_goods_factor = 0.03
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.3
 				industrial_capacity_dockyard = 0.1
 			}
 		}
@@ -414,6 +414,24 @@ ideas = {
 				army_core_defence_factor = 0.05
 				fascism_drift = -0.05
 
+			}
+		}
+		SER_YUG_road_to_brotherhood_union_idea = {
+			
+			picture = generic_morale_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
 			}
 		}
   }

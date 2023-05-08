@@ -258,6 +258,7 @@ focus_tree = {
 		icon = GFX_focus_generic_self_management
 		relative_position_id = SER_acknowledge_neighbors
 		mutually_exclusive = { focus = SER_promote_Blagoje}
+		mutually_exclusive = { focus = SER_COM_invite_Tito}
 		x = 1
 		y = 4
 		cost = 10
@@ -316,6 +317,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_ally_bukharinists
 		relative_position_id = SER_acknowledge_neighbors
 		mutually_exclusive = { focus = SER_force_free_elections}
+		mutually_exclusive = { focus = SER_COM_invite_Tito}
 		x = -2
 		y = 4
 		cost = 10
@@ -334,6 +336,30 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SER_COM_invite_Tito
+		icon = GFX_focus_invite_yugoslavia
+		relative_position_id = SER_acknowledge_neighbors
+		x = -5
+		y = 4
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = SER_state_security_forces}
+		mutually_exclusive = { focus = SER_promote_Blagoje }
+
+###### only avaliable if CRO not Tito!
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}
+
 
 	focus = {
 		id = SER_peoples_industry
@@ -343,7 +369,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {   }
-		prerequisite = { focus = SER_promote_Blagoje}
+		prerequisite = { focus = SER_promote_Blagoje focus = SER_COM_invite_Tito}
 		
 		available_if_capitulated = yes
 				
@@ -364,7 +390,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {   }
-		prerequisite = { focus = SER_promote_Blagoje}
+		prerequisite = { focus = SER_promote_Blagoje focus = SER_COM_invite_Tito}
 		
 		available_if_capitulated = yes
 				
@@ -488,6 +514,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
 		
 		available_if_capitulated = yes
 
@@ -555,7 +582,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-		
+
+		available = {
+			NOT = {
+				has_completed_focus = SER_promote_Blagoje
+			}
+		}
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -934,7 +967,7 @@ focus_tree = {
 		id = SER_YUG_national_guard
 		icon = GFX_focus_generic_military_mission
 		relative_position_id = SER_execute_civilian_traitors
-		x = 2
+		x = 1
 		y = 2
 		cost = 10
 		search_filters = {   }
@@ -1010,12 +1043,17 @@ focus_tree = {
 		icon = GFX_focus_BUL_condemn_macedonian_organizations
 
 		x = -1
-		y = 2
+		y = 6
 		cost = 5
 		search_filters = {   }
 		relative_position_id = SER_proclaim_YUG
 
-		prerequisite = { focus = SER_proclaim_YUG}
+		available = {
+			OR = {
+				has_completed_focus = SER_proclaim_YUG
+				has_completed_focus = SER_COM_Tito
+			}
+		}
 		
 		ai_will_do = {
 			factor = 20
@@ -1180,7 +1218,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			custom_effect_tooltip = SER_YUG_road_to_brotherhood_union_tooltip
+			every_country = {
+				limit = {
+					is_puppet_of = SER
+				}
+				PREV = {
+					add_ideas = SER_YUG_road_to_brotherhood_union_idea
+				}
+			}
 
 		}
 	}
@@ -1217,7 +1263,7 @@ focus_tree = {
 		id = SER_YUG_state_security_forces
 		icon = GFX_focus_generic_military_dictatorship
 		relative_position_id = SER_proclaim_YUG
-		x = 2
+		x = 0
 		y = 1
 		cost = 10
 		search_filters = {   }
@@ -1728,7 +1774,7 @@ focus_tree = {
 				has_completed_focus = SER_peoples_industry
 			}
 			NOT = {
-				has_completed_focus = SER_seize_means_of_production
+				has_completed_focus = SER_promote_Blagoje
 			}
 		}
 		
@@ -2124,7 +2170,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		available = {
 			NOT = {
-				has_completed_focus = SER_YUG_SARTID_investments
+				OR = { 
+					has_completed_focus = SER_YUG_SARTID_investments	
+					has_completed_focus = SER_COM_invite_Tito
+				}
+				
 			}
 		}
 				
