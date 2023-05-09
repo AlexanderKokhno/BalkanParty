@@ -89,6 +89,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = AUS_Saal_Schutz
 			add_ideas = HRE_emperor_idea
+			promote_character = AUS_HRE_Archduke_Robert_of_Austria_Este
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.1

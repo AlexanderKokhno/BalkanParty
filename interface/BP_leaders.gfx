@@ -1,9 +1,10 @@
 spriteTypes = {
 
 	spriteType = {
-		name = GFX_portrait_Archduke_Robert_of_Austria_Este.dds
-		texturefile = "gfx/leaders/Archduke_Robert_of_Austria_Este.dds"
+		name = GFX_portrait_Archduke_Robert_of_Austria_Este
+		texturefile = "gfx/leaders/AUS/Archduke_Robert_of_Austria_Este.dds"
 	}
+
 
   spriteType = {
 		name = GFX_portrait_YUN_cheng_peng

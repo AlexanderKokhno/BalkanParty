@@ -6,6 +6,9 @@
   
 #################################################### CHARACTERS ##############################################
   SER_YUG_king_char:0 "Prince Paul"
+  AUS_HRE_Archduke_Robert_of_Austria_Este:0 "Archduke Robert of Austria Este"
+  AUS_HRE_Archduke_Robert_of_Austria_Este_desc:0 "he was the second son of Karl I, last Emperor of Austria-Hungary, and Princess Zita of Bourbon-Parma. He was also known as Robert Karl Erzherzog von Österreich."
+
 #################################################### POLITICAL PARTIES #############################################
   SER_kings_party:0 "King's Party"
   SER_kings_party_long:0 "Party of Prince Paul of Yugoslavia"

@@ -35,9 +35,12 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = AUS_kurt_schuschnigg
+promote_character = AUS_kurt_schuschnigg
+
 recruit_character = AUS_HRE_Archduke_Robert_of_Austria_Este
 
-recruit_character = AUS_kurt_schuschnigg
+
 recruit_character = AUS_karl_renner
 recruit_character = AUS_arthur_seyss-inquart
 recruit_character = AUS_alfred_klahr
