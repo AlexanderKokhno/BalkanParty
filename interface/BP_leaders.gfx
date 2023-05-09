@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = GFX_portrait_Archduke_Robert_of_Austria_Este.dds
+		texturefile = "gfx/leaders/Archduke_Robert_of_Austria_Este.dds"
+	}
+
+  spriteType = {
+		name = GFX_portrait_YUN_cheng_peng
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+	}
+
+	}

@@ -1,0 +1,15 @@
+characters = {
+	AUS_HRE_Archduke_Robert_of_Austria_Este={
+		name=AUS_HRE_Archduke_Robert_of_Austria_Este
+		portraits={
+			civilian={
+				large=GFX_portrait_Archduke_Robert_of_Austria_Este.dds
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}
