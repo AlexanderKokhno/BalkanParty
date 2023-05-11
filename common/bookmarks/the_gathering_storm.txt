@@ -104,7 +104,7 @@ bookmarks = {
 			focuses = {
 				SER_acknowledge_neighbors
 				SER_revive_YUG
-				SER_guarantee
+				SER_COM_coup
 			}
 		}
 

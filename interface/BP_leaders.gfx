@@ -5,6 +5,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/AUS/Archduke_Robert_of_Austria_Este.dds"
 	}
 
+  spriteType = {
+		name = GFX_portrait_blagoje_neskovic
+		texturefile = "gfx/leaders/SER/Blagoje_Neskovic.dds"
+	}
 
   spriteType = {
 		name = GFX_portrait_YUN_cheng_peng

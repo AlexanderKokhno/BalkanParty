@@ -247,6 +247,7 @@ focus_tree = {
 					id = serbia.1
 				}
 			}
+			remove_ideas = SER_memories_of_YUG_1
 		}
 	}
 
@@ -332,7 +333,7 @@ focus_tree = {
 		completion_reward = {
 			effect_tooltip = {
 				set_party_name = {
-					ideology = neutrality
+					ideology = communism
 					name = SER_Blagoje_party
 					long_name = SER_Blagoje_party_long
 				}	
@@ -341,24 +342,7 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.20
 			}	
-			set_politics = {
-				ruling_party = communism
-			}
-					
-			start_civil_war = {	
-				ideology = fascism
-				size = 0.4
-				capital = 45
-				states = { 746 }
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.5
-				}
-				add_popularity = {
-					ideology = democratic
-					popularity = 0.5
-				}
-			}
+
 			
 
 		}
@@ -383,7 +367,22 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			effect_tooltip = {
+				set_party_name = {
+					ideology = communism
+					name = SER_YUG_tito_party
+					long_name = SER_YUG_tito_party_long
+				}	
+			}	
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}	
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}	
+			add_stability = -0.05
 
 		}
 	}
@@ -423,19 +422,42 @@ focus_tree = {
 		available_if_capitulated = yes
 				
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 
 		completion_reward = {
-
-			add_popularity = {
-				ideology = communism
-				popularity = 0.1
-			}
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = no
 			}
+					
+			start_civil_war = {	
+				ideology = fascism
+				size = 0.3
+				capital = 108
+				states = { 45 803 }
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.5
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.5
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = SER_promote_Blagoje
+				}
+				promote_character = SER_COM_blagoje_neskovic
+				remove_ideas = SER_memories_of_YUG_1
+			}
+			if = {
+				limit = {
+					has_completed_focus = SER_COM_invite_Tito
+				}
+				promote_character = SER_YUG_josip_broz_tito
+			}
+
 		}
 	}	
 	focus = {
@@ -649,6 +671,7 @@ focus_tree = {
 			add_state_core = 803
 			add_state_core = 853
 			news_event = { hours = 1 id = bp_event.5 }
+			remove_ideas = SER_memories_of_YUG_1
 
 		}
 	}
@@ -883,8 +906,8 @@ focus_tree = {
 			start_civil_war = {	
 				ideology = democratic
 				size = 0.3
-				capital = 45
-				states = { 746 }
+				capital = 108
+				states = { 45 803 }
 				add_popularity = {
 					ideology = democratic
 					popularity = 0.75
@@ -1015,6 +1038,7 @@ focus_tree = {
 			add_state_core = 853
 			news_event = { hours = 1 id = bp_event.5 }
 			set_rule = { can_create_factions = yes }
+			remove_ideas = SER_memories_of_YUG_1
 		}
 	}
 
