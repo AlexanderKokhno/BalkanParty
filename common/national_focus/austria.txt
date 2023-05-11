@@ -98,6 +98,13 @@ focus_tree = {
 				ruling_party = neutrality
 				elections_allowed = no
 			}
+			effect_tooltip = {
+				set_party_name = {
+					ideology = neutrality
+					name = AUS_HRE_party
+					long_name = AUS_HRE_party_long
+				}	
+			}	
 
 		}
 	}
@@ -222,6 +229,7 @@ focus_tree = {
 				create_faction = "Holy Roman Empire"
 				add_ideas = AUS_hre_authority_I		
 				add_ideas = AUS_multicultural_tensions
+
 
 				news_event = { hours = 1 id = bp_event.3 }
 

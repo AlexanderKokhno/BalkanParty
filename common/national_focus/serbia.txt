@@ -330,7 +330,35 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.05
+			effect_tooltip = {
+				set_party_name = {
+					ideology = neutrality
+					name = SER_Blagoje_party
+					long_name = SER_Blagoje_party_long
+				}	
+			}	
+			add_popularity = {
+				ideology = communism
+				popularity = 0.20
+			}	
+			set_politics = {
+				ruling_party = communism
+			}
+					
+			start_civil_war = {	
+				ideology = fascism
+				size = 0.4
+				capital = 45
+				states = { 746 }
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.5
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.5
+				}
+			}
 			
 
 		}
@@ -562,7 +590,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			custom_effect_tooltip = COM_guarantees_tooltip
+			every_country = {
+				limit = {
+					has_government = communism
+					NOT = { is_in_faction_with = ROOT }
+				}
+				ROOT = {
+					give_guarantee = PREV
+				}
+			}
 
 		}
 	}	

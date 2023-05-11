@@ -12,8 +12,12 @@
 #################################################### POLITICAL PARTIES #############################################
   SER_kings_party:0 "King's Party"
   SER_kings_party_long:0 "Party of Prince Paul of Yugoslavia"
+  SER_Blagoje_party:0 ""
+  SER_Blagoje_party_long:0 ""
   AUS_KPO_party:0 "KPO"
   AUS_KPO_party_long:0 "Kommunistische Partei Österreichs"
+  AUS_HRE_party:0 "CSP"
+  AUS_HRE_party_long:0 "Christlichsoziale Partei"
   SLV_thepatriots_party:0 "The Patriots"
   SLV_thepatriots_party_long:0 "The Patriots"
 #################################################### COUNTRIES ##########################################
