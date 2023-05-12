@@ -1317,9 +1317,8 @@ focus_tree = {
 				limit = {
 					is_puppet_of = SER
 				}
-				PREV = {
 					add_ideas = SER_YUG_road_to_brotherhood_union_idea
-				}
+
 			}
 
 		}
