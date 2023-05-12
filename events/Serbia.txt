@@ -50,7 +50,7 @@ country_event = {
 
 			modifier = {
 				factor = 2
-				tag = CRO
+				tag = SLO
 			}
       modifier = {
 				factor = 1.5
@@ -83,7 +83,7 @@ country_event = {
 
 	option = {
 		name = serbia.2.a
-    AUS = {
+    SER = {
       add_political_power = -25
       add_stability = -0.01
     }
@@ -103,7 +103,7 @@ country_event = {
 
 	option = {
 		name = serbia.3.a
-    AUS = {
+    SER = {
       add_political_power = 50
       add_stability = 0.01
     }
@@ -157,7 +157,7 @@ country_event = {
 				factor = 1.5
 				tag = CRO
 			}
-      		modifier = {
+      modifier = {
 				factor = 1.5
 				has_opinion = {
 					target = SER
@@ -211,6 +211,365 @@ country_event = {
 		name = serbia.6.a
 
 
+
+	}
+}
+
+############# BUL ALLIANCE
+
+# BUL alliance offer
+country_event = {
+	id = serbia.7
+	title = serbia.7.t
+	desc = serbia.7.desc
+	picture = GFX_report_event_gre_allied_diplomacy
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = serbia.7.a
+		ai_chance = {
+			base = 70
+			modifier = {
+				add = -50
+				SER = { has_army_size = { size < 15 } }
+			}
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				add = -400
+				AND = {
+					SLO = {
+						has_government = communism
+					}		
+					SER = {
+						has_government = fascism
+					}			
+				}
+			}
+			modifier = {
+				add = 100
+				SER = { has_army_manpower = { size > 199999 } }
+			}
+			modifier = {
+				add = 200
+				is_in_faction_with = SER
+			}
+		}
+		SER = {
+			country_event = { hours = 2 id = serbia.9 }
+		}
+	}
+	option = { # Refuse
+		name = serbia.7.b
+		ai_chance = {
+			base = 30
+			modifier = {
+				SER = { has_army_manpower = { size > 199999 } }
+				factor = 0.1
+			}
+			modifier = {
+				SER = { has_army_manpower = { size > 249999 } }
+				add = -70
+			}
+			modifier = {
+				add = 50
+				SER = { has_army_manpower = { size < 149999 } }
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { is_in_faction = yes }
+			}
+			modifier = {
+				factor = 5
+				is_in_faction = yes
+			}
+
+		}
+		SER = {
+			country_event = { hours = 2 id = serbia.8 }
+		}
+
+	}
+}
+
+# BUL refuses
+country_event = {
+	id = serbia.8
+	title = serbia.8.t
+	desc = serbia.8.desc
+	picture = GFX_report_event_hungary_refused
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.8.a
+		custom_effect_tooltip = serbia.8.tooltip
+		add_political_power = -25
+	}
+}
+
+#BUL accepts
+country_event = {
+	id = serbia.9
+	title = serbia.9.t
+	desc = serbia.9.desc
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = serbia.9.a
+		custom_effect_tooltip = serbia.9.tooltip
+		add_political_power = 25
+		add_war_support = 0.05
+		SER = {
+			
+			add_to_faction = SLO
+		}
+
+	}
+}
+
+
+####### CZE ALLIANCE
+
+# CZE alliance offer
+country_event = {
+	id = serbia.10
+	title = serbia.10.t
+	desc = serbia.10.desc
+	picture = GFX_report_event_gre_allied_diplomacy
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = serbia.10.a
+		ai_chance = {
+			base = 70
+			modifier = {
+				add = -50
+				SER = { has_army_size = { size < 10 } }
+			}
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				add = -400
+				AND = {
+					SLO = {
+						has_government = communism
+					}		
+					SER = {
+						has_government = fascism
+					}			
+				}
+			}
+			modifier = {
+				add = 100
+				SER = { has_army_manpower = { size > 199999 } }
+			}
+			modifier = {
+				add = 200
+				is_in_faction_with = SER
+			}
+		}
+		SER = {
+			country_event = { hours = 2 id = serbia.12 }
+		}
+	}
+	option = { # Refuse
+		name = serbia.10.b
+		ai_chance = {
+			base = 30
+			modifier = {
+				SER = { has_army_manpower = { size > 199999 } }
+				factor = 0.1
+			}
+			modifier = {
+				SER = { has_army_manpower = { size > 249999 } }
+				add = -70
+			}
+			modifier = {
+				add = 50
+				SER = { has_army_manpower = { size < 149999 } }
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { is_in_faction = yes }
+			}
+			modifier = {
+				factor = 5
+				is_in_faction = yes
+			}
+
+		}
+		SER = {
+			add_opinion_modifier = { target = ROOT modifier = GER_anschluss_rejected }
+			country_event = { hours = 2 id = serbia.11 }
+		}
+	}
+}
+
+# CZE refuses
+country_event = {
+	id = serbia.11
+	title = serbia.11.t
+	desc = serbia.11.desc
+	picture = GFX_report_event_hungary_refused
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.11.a
+		custom_effect_tooltip = serbia.11.tooltip
+		add_political_power = -25
+	}
+}
+
+#CZE accepts
+country_event = {
+	id = serbia.12
+	title = serbia.12.t
+	desc = serbia.12.desc
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = serbia.12.a
+		custom_effect_tooltip = serbia.12.tooltip
+		add_political_power = 25
+		add_war_support = 0.05
+		SER = {
+			
+			add_to_faction = SLO
+		}
+
+	}
+}
+
+
+###### SLO ALLIANCE
+
+# SLO alliance offer
+country_event = {
+	id = serbia.13
+	title = serbia.13.t
+	desc = serbia.13.desc
+	picture = GFX_report_event_gre_allied_diplomacy
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = serbia.13.a
+		ai_chance = {
+			base = 70
+			modifier = {
+				add = -50
+				SER = { has_army_size = { size < 10 } }
+			}
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				add = -400
+				AND = {
+					SLO = {
+						has_government = communism
+					}		
+					SER = {
+						has_government = fascism
+					}			
+				}
+			}
+			modifier = {
+				add = 100
+				SER = { has_army_manpower = { size > 199999 } }
+			}
+			modifier = {
+				add = 200
+				is_in_faction_with = SER
+			}
+		}
+		SER = {
+			country_event = { hours = 2 id = serbia.15 }
+		}
+	}
+	option = { # Refuse
+		name = serbia.13.b
+		ai_chance = {
+			base = 30
+			modifier = {
+				SER = { has_army_manpower = { size > 199999 } }
+				factor = 0.1
+			}
+			modifier = {
+				SER = { has_army_manpower = { size > 249999 } }
+				add = -70
+			}
+			modifier = {
+				add = 50
+				SER = { has_army_manpower = { size < 149999 } }
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { is_in_faction = yes }
+			}
+			modifier = {
+				factor = 5
+				is_in_faction = yes
+			}
+
+		}
+		SER = {
+			add_opinion_modifier = { target = ROOT modifier = GER_anschluss_rejected }
+			country_event = { hours = 2 id = serbia.14 }
+		}
+	}
+}
+
+# SLO refuses
+country_event = {
+	id = serbia.14
+	title = serbia.14.t
+	desc = serbia.14.desc
+	picture = GFX_report_event_hungary_refused
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.14.a
+		custom_effect_tooltip = serbia.14.tooltip
+		add_political_power = -25
+	}
+}
+
+#SLO accepts
+country_event = {
+	id = serbia.15
+	title = serbia.15.t
+	desc = serbia.15.desc
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = serbia.15.a
+		custom_effect_tooltip = serbia.15.tooltip
+		add_political_power = 25
+		add_war_support = 0.05
+		SER = {
+			
+			add_to_faction = SLO
+		}
 
 	}
 }

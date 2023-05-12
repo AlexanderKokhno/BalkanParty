@@ -1324,6 +1324,120 @@ focus_tree = {
 		}
 	}
 
+### SLAV
+
+	focus = {
+		id = SER_YUG_take_BUL
+		icon = GFX_focus_generic_attack_bulgaria
+
+		x = 0
+		y = 1
+		cost = 35
+		search_filters = {   }
+		relative_position_id =  SER_YUG_remove_regional_nationalism
+
+		prerequisite = { focus =  SER_YUG_road_to_brotherhood_union focus = SER_YUG_remove_regional_nationalism }
+
+		
+		ai_will_do = {
+			factor = 20
+		}
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = BUL }
+
+		}
+	}
+
+		focus = {
+		id = SER_YUG_take_BUL_2
+		icon = GFX_focus_BUL_consolidate_the_third_bulgarian_state
+
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = {   }
+		relative_position_id =  SER_YUG_take_BUL
+
+		prerequisite = { focus =  SER_YUG_take_BUL }
+
+		
+		ai_will_do = {
+			factor = 20
+		}
+	
+		available_if_capitulated = yes
+
+		available = {
+			ROOT = {
+				controls_state = 48
+				controls_state = 212
+				controls_state = 211
+				controls_state = 801
+			}
+		}
+
+		completion_reward = {
+			48 = { add_manpower = -50000 add_compliance = 50}
+			212 = { add_manpower = -50000 add_compliance = 50}
+			211 = { add_manpower = -50000 add_compliance = 50}
+			801 = { add_manpower = -50000 add_compliance = 50}
+
+
+		}
+	}
+
+	focus = {
+		id = SER_YUG_ally_BUL
+		icon = GFX_focus_BUL_balkan_federation_of_socialist_republics
+
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+		relative_position_id =  SER_YUG_road_to_brotherhood_union
+
+		prerequisite = { focus =  SER_YUG_road_to_brotherhood_union focus = SER_YUG_remove_regional_nationalism }
+
+		
+		ai_will_do = {
+			factor = 20
+		}
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}
+		focus = {
+		id = SER_YUG_ally_SLO_CZE
+		icon = GFX_focus_SOV_panslavic_nationalism
+
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {   }
+		relative_position_id =  SER_YUG_ally_BUL
+
+		prerequisite = { focus =  SER_YUG_ally_BUL focus = SER_YUG_take_BUL }
+
+		
+		ai_will_do = {
+			factor = 20
+		}
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+	}
+
 ############### SER YUG INDUSTRY
 	focus = {
 		id = SER_YUG_industrial_investments

@@ -436,6 +436,8 @@
   SER_YUG_fascist_gov_desc:0 "With Prince Paul relegated from state politics, it is time to install a proper, nationalist government."
   SER_YUG_secure_civ_front:0 "Secure the Civilian Front"
   SER_YUG_secure_civ_front_desc:0 ""
+
+
   SER_YUG_reconquest_south:0 "Reclaim the South"
   SER_YUG_reconquest_south_desc:0 ""
   SER_YUG_puppet_north:0 "Offer Autonomy to the North"
@@ -446,7 +448,14 @@
   SER_YUG_remove_regional_nationalism_desc:0 ""
   SER_YUG_road_to_brotherhood_union:0 "The Road to a Brotherhood Reunion"
   SER_YUG_road_to_brotherhood_union_desc:0 ""
-  
+  SER_YUG_take_BUL:0 "Seize Bulgaria"
+  SER_YUG_take_BUL_desc:0 ""
+  SER_YUG_take_BUL_2:0 "Pacify the Bulgarian Region"
+  SER_YUG_take_BUL_2_desc:0 ""
+  SER_YUG_ally_BUL:0 "Ally Bulgaria"
+  SER_YUG_ally_BUL_desc:0 ""
+  SER_YUG_ally_SLO_CZE:0 "Ally the Czecho-slovaks"
+  SER_YUG_ally_SLO_CZE_desc:0 ""
 
   SER_YUG_industrial_investments:0 "Yugoslavian Industrial Investments"
   SER_YUG_industrial_investments_desc:0 "The Yugoslav industry is critically small "
