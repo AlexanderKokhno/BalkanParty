@@ -300,14 +300,14 @@ country_event = {
 	id = serbia.8
 	title = serbia.8.t
 	desc = serbia.8.desc
-	picture = GFX_report_event_hungary_refused
+	picture = GFX_report_event_german_troops
 
 	is_triggered_only = yes
 
 	option = {
 		name = serbia.8.a
 		custom_effect_tooltip = serbia.8.tooltip
-		add_political_power = -25
+		create_wargoal = { type = annex_everything target = BUL }
 	}
 }
 

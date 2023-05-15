@@ -1449,7 +1449,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			BUL = {
+				country_event = {
+					id = serbia.7
+				}
+			}
 
 		}
 	}
@@ -1473,7 +1477,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			CZE = {
+				country_event = {
+					id = serbia.10
+				}
+			}
+			SLO = {
+				country_event = {
+					id = serbia.13
+				}
+			}
 
 		}
 	}
