@@ -569,7 +569,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = SER_COM_trotskyite_model_idea
 
 		}
 	}
@@ -678,7 +678,7 @@ focus_tree = {
 
 		focus = {
 		id = SER_COM_TITO_tito_soviet_split
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_proclaim_rival_government
 		relative_position_id = SER_COM_Tito
 		x = -1
 		y = 1
@@ -692,19 +692,27 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = SER_COM_TITO_tito_soviet_split_idea
+			every_country = {
+				limit = {
+					has_government = communism
+					NOT = { is_in_faction_with = ROOT }
+				}
+				PREV = { add_opinion_modifier = { target = ROOT modifier = tito_stalin_split } }
+				ROOT = { add_opinion_modifier = { target = PREV modifier = tito_stalin_split } }
+			}
 
 		}
 	}
 	focus = {
 		id = SER_COM_TITO_economic_system
-		icon = GFX_goal_unknown
-		relative_position_id = SER_COM_do_something
+		icon = GFX_focus_SOV_merge_plants
+		relative_position_id = SER_COM_TITO_tito_soviet_split
 		x = 0
 		y = 1
 		cost = 10
 		search_filters = {   }
-		prerequisite = { focus = SER_COM_do_something}
+		prerequisite = { focus = SER_COM_TITO_tito_soviet_split}
 		
 		ai_will_do = {
 			factor = 10
@@ -718,7 +726,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SER_COM_TITO_resistance_organisation
-		icon = GFX_goal_unknownGFX_focus_ETH_freedom_at_gunpoint
+		icon = GFX_focus_ETH_freedom_at_gunpoint
 		relative_position_id = SER_COM_Tito
 		x = -2
 		y = 3

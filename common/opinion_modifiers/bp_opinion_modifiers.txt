@@ -37,6 +37,10 @@ opinion_modifiers = {
 	established_embassy = { 
 		value = 50
 	}
+
+	tito_stalin_split = {
+		value = -100
+	}
 	
 	
 }
