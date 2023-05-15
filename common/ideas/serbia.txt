@@ -117,349 +117,370 @@ ideas = {
 			stability_factor = 0.1
 		}
 	}
-		SER_war_effort_economy_I_idea = {
+	SER_war_effort_economy_I_idea = {
+		
+		picture = SOV_third_five_year_plan_military
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = no
+		}
+
+		removal_cost = -1
+		
+		modifier = {
+			conversion_cost_civ_to_mil_factor = 0.5
+			repair_speed_arms_factory_factor = 0.25
+			consumer_goods_factor = 0.01
+			industrial_capacity_factory = 0.15
+		}
+	}
+	SER_war_effort_economy_II_idea = {
+		
+		picture = SOV_third_five_year_plan_military
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = no
+		}
+
+		removal_cost = -1
+		
+		modifier = {
+			conversion_cost_civ_to_mil_factor = 0.75
+			repair_speed_arms_factory_factor = 0.5
+			consumer_goods_factor = 0.03
+			industrial_capacity_factory = 0.3
+			industrial_capacity_dockyard = 0.1
+		}
+	}
+	SER_COM_constitution_idea = {
+		picture = generic_constitutional_guarantees
+
+		allowed_civil_war = {
+			always = no
+		}
+
+		removal_cost = -1
+
+		modifier = {
 			
-			picture = SOV_third_five_year_plan_military
+			stability_factor = 0.1
+			war_support_factor = -0.05
+			political_power_factor = 0.05
+		}
+	}
+	SER_COM_militia_idea = {
+		
+		picture = YUG_all_yugoslavian_regiments
 
-			allowed = {
-				always = no
-			}
+		allowed = {
+			always = no
+		}
 
-			allowed_civil_war = {
-				always = no
-			}
+		allowed_civil_war = {
+			always = no
+		}
 
-			removal_cost = -1
+		removal_cost = -1
+		
+		modifier = {
+			max_planning = 0.05
+			army_defence_factor = 0.05
+			army_attack_factor = 0.05
+			communism_drift = 0.03
+
+		}
+	}
+	SER_COM_pheasants_idea = {
+		
+		picture = prc_low_popular_support3
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = no
+		}
+
+		removal_cost = -1
+		
+		modifier = {
+			conscription = 0.1
+			consumer_goods_factor = 0.02
+			war_support_factor = -0.05
+			stability_factor = -0.05
 			
-			modifier = {
-				conversion_cost_civ_to_mil_factor = 0.5
-				repair_speed_arms_factory_factor = 0.25
-				consumer_goods_factor = 0.01
-				industrial_capacity_factory = 0.15
+		}
+	}
+	Heavy_Investments = {
+		picture = SPR_relocate_the_gold_reserves
+		removal_cost = -1
+		modifier = {
+			consumer_goods_factor = 0.25
+		}
+	}
+	SER_state_security_forces_idea = {
+		
+		picture = generic_secret_police
+
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = no
+		}
+
+		removal_cost = -1
+		
+		modifier = {
+			agency_upgrade_time = -0.25
+			encryption_factor = 0.25
+			female_random_operative_chance = 0.3
+			operation_cost = 0.5
+			
+		}
+	}
+	SER_cultural_exchange_idea = {
+		
+		picture = generic_flexible_foreign_policy2
+
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = no
+		}
+
+		removal_cost = -1
+		
+		modifier = {
+			civilian_intel_to_others = 50
+			stability_weekly = 0.0025
+			guarantee_cost = -0.5
+			required_garrison_factor = -0.25
+			
+		}
+	}
+	SER_YUG_state_security_forces_idea = {
+		
+		picture = generic_secret_police
+
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		
+		modifier = {
+			operative_slot = 1
+			
+		}
+	}
+	SER_YUG_state_security_forces_idea_II = {
+		
+		picture = generic_secret_police
+
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		
+		modifier = {
+			operative_slot = 1
+			agency_upgrade_time = -0.25
+			encryption = 1
+			operation_cost = 0.5
+			political_power_gain = -0.05
+			
+		}
+	}
+	SER_army_of_Belgrade_idea = {
+		
+		picture = YUG_serbian_general_staff
+
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		
+		modifier = {
+		army_attack_factor = 0.2
+		army_defence_factor = 0.2
+		army_attack_against_major_factor = 0.1
+		army_attack_against_minor_factor = -0.1
+			
+		}
+	}
+	SER_god_artillery_idea = {
+		
+		picture = generic_artillery_regiments
+
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		
+		modifier = {
+			army_artillery_attack_factor = 0.25
+			army_artillery_defence_factor = 0.25
+			
+		}
+	}
+	SER_infrastructure_I_idea = {
+		
+		picture = generic_build_infrastructure
+
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		
+		modifier = {
+			
+			
+		}
+	}
+	SER_infrastructure_II_idea = {
+		
+		picture = generic_build_infrastructure
+
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		
+		modifier = {
+			
+			command_power_gain = -0.02
+		}
+	}
+	SER_vanguard_against_fascism_idea = {
+		
+		picture = SPR_anti_fascist_crusade
+
+		allowed = {
+			NOT = {
+				has_government = fascism
 			}
 		}
-		SER_war_effort_economy_II_idea = {
-			
-			picture = SOV_third_five_year_plan_military
 
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				conversion_cost_civ_to_mil_factor = 0.75
-				repair_speed_arms_factory_factor = 0.5
-				consumer_goods_factor = 0.03
-				industrial_capacity_factory = 0.3
-				industrial_capacity_dockyard = 0.1
-			}
+		allowed_civil_war = {
+			always = yes
 		}
-		SER_COM_constitution_idea = {
-			picture = generic_constitutional_guarantees
 
-			allowed_civil_war = {
-				always = no
-			}
+		removal_cost = -1
+		
+		modifier = {
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+			fascism_drift = -0.05
 
-			removal_cost = -1
-
-			modifier = {
-				
-				stability_factor = 0.1
-				war_support_factor = -0.05
-				political_power_factor = 0.05
-			}
 		}
-		SER_COM_militia_idea = {
-			
-			picture = YUG_all_yugoslavian_regiments
+	}
+	SER_YUG_road_to_brotherhood_union_idea = {
+		
+		picture = tur_coordinated_balkan_armed_forces
 
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				max_planning = 0.05
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
-				communism_drift = 0.03
-
-			}
+		allowed = {
+			always = no
 		}
-		SER_COM_pheasants_idea = {
-			
-			picture = prc_low_popular_support3
 
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				conscription = 0.1
-				consumer_goods_factor = 0.02
-				war_support_factor = -0.05
-				stability_factor = -0.05
-				
-			}
+		allowed_civil_war = {
+			always = no
 		}
-		Heavy_Investments = {
-			picture = SPR_relocate_the_gold_reserves
-			removal_cost = -1
-			modifier = {
-				consumer_goods_factor = 0.25
-			}
+
+		removal_cost = -1
+		
+		modifier = {
+			autonomy_gain = -5
+			stability_weekly = 0.005
+			political_power_gain = -0.2
+			war_support_weekly = 0.005
 		}
-		SER_state_security_forces_idea = {
-			
-			picture = generic_secret_police
+	}
+	SER_COM_TITO_economic_idea = {
+		
+		picture = FRA_market_dynamism
 
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				agency_upgrade_time = -0.25
-				encryption_factor = 0.25
-				female_random_operative_chance = 0.3
-				operation_cost = 0.5
-				
-			}
+		allowed = {
+			always = no
 		}
-		SER_cultural_exchange_idea = {
-			
-			picture = generic_flexible_foreign_policy2
 
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				civilian_intel_to_others = 50
-				stability_weekly = 0.0025
-				guarantee_cost = -0.5
-				required_garrison_factor = -0.25
-				
-			}
+		allowed_civil_war = {
+			always = no
 		}
-		SER_YUG_state_security_forces_idea = {
-			
-			picture = generic_secret_police
 
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				operative_slot = 1
-				
-			}
+		removal_cost = -1
+		
+		modifier = {
+			repair_speed_arms_factory_factor = 0.25
+			consumer_goods_factor = 0.1
+			industrial_capacity_factory = 0.2
+			industrial_capacity_dockyard = 0.2
+			stability_weekly = -0.001
+			line_change_production_efficiency_factor = 0.25
+			global_building_slots_factor = 0.25
 		}
-		SER_YUG_state_security_forces_idea_II = {
-			
-			picture = generic_secret_police
+	}
+	SER_COM_TITO_resistance_organisation_idea = {
+		
+		picture = tur_disorganised_armed_forces
 
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				operative_slot = 1
-				agency_upgrade_time = -0.25
-				encryption = 1
-				operation_cost = 0.5
-				political_power_gain = -0.05
-				
-			}
+		allowed = {
+			always = yes
 		}
-		SER_army_of_Belgrade_idea = {
-			
-			picture = YUG_serbian_general_staff
 
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-			army_attack_factor = 0.2
-			army_defence_factor = 0.2
-			army_attack_against_major_factor = 0.1
-			army_attack_against_minor_factor = -0.1
-				
-			}
+		allowed_civil_war = {
+			always = yes
 		}
-		SER_god_artillery_idea = {
+
+		removal_cost = -1
+		
+		modifier = {
+			resistance_damage_to_garrison_on_our_occupied_states = 0.25
+			resistance_growth_on_our_occupied_states = 0.25
+			resistance_target_on_our_occupied_states = 0.25
 			
-			picture = generic_artillery_regiments
-
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				army_artillery_attack_factor = 0.25
-				army_artillery_defence_factor = 0.25
-				
-			}
 		}
-		SER_infrastructure_I_idea = {
-			
-			picture = generic_build_infrastructure
-
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				
-				
-			}
-		}
-		SER_infrastructure_II_idea = {
-			
-			picture = generic_build_infrastructure
-
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				
-				command_power_gain = -0.02
-			}
-		}
-		SER_vanguard_against_fascism_idea = {
-			
-			picture = SPR_anti_fascist_crusade
-
-			allowed = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				army_core_attack_factor = 0.05
-				army_core_defence_factor = 0.05
-				fascism_drift = -0.05
-
-			}
-		}
-		SER_YUG_road_to_brotherhood_union_idea = {
-			
-			picture = tur_coordinated_balkan_armed_forces
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				autonomy_gain = -5
-				stability_weekly = 0.005
-				political_power_gain = -0.2
-				war_support_weekly = 0.005
-			}
-		}
-		SER_COM_TITO_economic_idea = {
-			
-			picture = FRA_market_dynamism
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				repair_speed_arms_factory_factor = 0.25
-				consumer_goods_factor = 0.1
-				industrial_capacity_factory = 0.2
-				industrial_capacity_dockyard = 0.2
-				stability_weekly = -0.001
-				line_change_production_efficiency_factor = 0.25
-				global_building_slots_factor = 0.25
-			}
-		}
+	}
   }
 }
