@@ -1449,6 +1449,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			create_faction = "Slavic Union"
+			set_rule = { can_create_factions = yes }
 			BUL = {
 				country_event = {
 					id = serbia.7

@@ -245,7 +245,7 @@ ideas = {
 				agency_upgrade_time = -0.25
 				encryption_factor = 0.25
 				female_random_operative_chance = 0.3
-				operation_cost = 0.5
+				operation_cost = -0.25
 				
 			}
 		}
@@ -370,6 +370,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.1
 				
 				
 			}
@@ -389,7 +391,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				
+				production_speed_infrastructure_factor = 0.15
+				production_speed_rail_way_factor = 0.15
 				command_power_gain = -0.02
 			}
 		}

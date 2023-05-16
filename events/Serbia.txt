@@ -238,20 +238,10 @@ country_event = {
 				add = 50
 				is_historical_focus_on = yes
 			}
-			modifier = {
-				add = -400
-				AND = {
-					SLO = {
-						has_government = communism
-					}		
-					SER = {
-						has_government = fascism
-					}			
-				}
-			}
+
 			modifier = {
 				add = 100
-				SER = { has_army_manpower = { size > 199999 } }
+				SER = { has_army_manpower = { size > 99999 } }
 			}
 			modifier = {
 				add = 200
@@ -328,7 +318,7 @@ country_event = {
 		add_war_support = 0.05
 		SER = {
 			
-			add_to_faction = SLO
+			add_to_faction = BUL
 		}
 
 	}
@@ -352,23 +342,13 @@ country_event = {
 			base = 70
 			modifier = {
 				add = -50
-				SER = { has_army_size = { size < 10 } }
+				SER = { has_army_size = { size < 15 } }
 			}
 			modifier = {
 				add = 50
 				is_historical_focus_on = yes
 			}
-			modifier = {
-				add = -400
-				AND = {
-					SLO = {
-						has_government = communism
-					}		
-					SER = {
-						has_government = fascism
-					}			
-				}
-			}
+
 			modifier = {
 				add = 100
 				SER = { has_army_manpower = { size > 199999 } }
@@ -448,7 +428,7 @@ country_event = {
 		add_war_support = 0.05
 		SER = {
 			
-			add_to_faction = SLO
+			add_to_faction = CZE
 		}
 
 	}
@@ -472,26 +452,16 @@ country_event = {
 			base = 70
 			modifier = {
 				add = -50
-				SER = { has_army_size = { size < 10 } }
+				SER = { has_army_size = { size < 15 } }
 			}
 			modifier = {
 				add = 50
 				is_historical_focus_on = yes
 			}
-			modifier = {
-				add = -400
-				AND = {
-					SLO = {
-						has_government = communism
-					}		
-					SER = {
-						has_government = fascism
-					}			
-				}
-			}
+
 			modifier = {
 				add = 100
-				SER = { has_army_manpower = { size > 199999 } }
+				SER = { has_army_manpower = { size > 99999 } }
 			}
 			modifier = {
 				add = 200

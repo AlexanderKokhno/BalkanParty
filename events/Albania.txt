@@ -1,0 +1,31 @@
+##################
+#Albanian events
+#################
+
+add_namespace = albania
+
+#################### DEBT DEADLINE
+
+country_event = {
+	id = albania.1
+	title = albania.1.t
+	desc = albania.1.desc
+	picture = GFX_report_event_hitler_china
+	
+	is_triggered_only = yes
+
+	option = {
+		name = albania.1.a
+		ai_chance = {
+			factor = 20
+		}
+		
+	}
+	option = {
+		name = albania.1.b
+		ai_chance = {
+			factor = 50
+		}
+		
+	}
+}
