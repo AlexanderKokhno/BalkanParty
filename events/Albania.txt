@@ -9,8 +9,8 @@ add_namespace = albania
 country_event = {
 	id = albania.1
 	title = albania.1.t
-	desc = albania.1.desc
 	picture = GFX_report_event_hitler_china
+  desc = albania.1.desc
 	
 	is_triggered_only = yes
 
