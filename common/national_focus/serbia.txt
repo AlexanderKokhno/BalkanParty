@@ -359,7 +359,13 @@ focus_tree = {
 		prerequisite = { focus = SER_state_security_forces}
 		mutually_exclusive = { focus = SER_promote_Blagoje }
 
-###### only avaliable if CRO not Tito!
+		available = {
+			NOT = {
+				CRO = {
+					has_completed_focus = CRO_assassination_attempt_ante_pavelic_successful
+				}
+			}
+		}
 		ai_will_do = {
 			factor = 100
 		}

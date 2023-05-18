@@ -228,6 +228,18 @@
   AUS_autoban:0 "Austrian Autoban"
   AUS_autoban_desc:0 "As proper germans, we need proper roads"
 
+
+######################### CRO
+
+ CRO_assassination_attempt_ante_pavelic:0 "Assassination Attempt"
+ CRO_assassination_attempt_ante_pavelic_desc:0 ""
+ CRO_assassination_attempt_ante_pavelic_failed:0 "Ante Pavelic Lives"
+ CRO_assassination_attempt_ante_pavelic_failed_desc:0 ""
+ CRO_assassination_attempt_ante_pavelic_hospital:0 "Ante Pavelic hospitalized"
+ CRO_assassination_attempt_ante_pavelic_hospital_desc:0 ""
+ CRO_assassination_attempt_ante_pavelic_successful:0 "Ante Pavelic Killed."
+ CRO_assassination_attempt_ante_pavelic_successful_desc:0 ""
+
 ##################### CZE
 
  CZE_Bohemian_memories:0 "Memories of the Bohemian Electorate"

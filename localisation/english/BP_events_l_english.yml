@@ -138,6 +138,20 @@
  austria.19.desc:0 "Austrian diplomats have been successful in convincing the prince to join the war. We eagerly await them.
  austria.19.a:0 "To the front!"
 
+
+########################################
+#####################
+#######################################
+
+
+ croatia.1.t:0 "Assassination Attempt on Ante Pavelic!"
+ croatia.1.desc:0 "LORE GOES HERE"
+ croatia.1.a:0 "FSC"
+ croatia.1.b:0 "NEU"
+ croatia.1.c:0 "COM"
+
+
+
 ########################################
 ##################### CZE
 #####################################

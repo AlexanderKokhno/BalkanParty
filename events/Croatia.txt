@@ -1,0 +1,41 @@
+##################
+#Croatia events
+#################
+
+add_namespace = croatia
+
+#################### AUS GER
+
+country_event = {
+	id = croatia.1
+	title = croatia.1.t
+	desc = croatia.1.desc
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = CRO
+	}
+	option = {
+		name = croatia.1.a
+		ai_chance = {
+			factor = 50
+		}
+		complete_national_focus = CRO_assassination_attempt_ante_pavelic_failed
+	}
+	option = {
+		name = croatia.1.b
+		ai_chance = {
+			factor = 50
+		}
+		complete_national_focus = CRO_assassination_attempt_ante_pavelic_hospital
+	}
+	option = {
+		name = croatia.1.c
+		ai_chance = {
+			factor = 50
+		}
+		complete_national_focus = CRO_assassination_attempt_ante_pavelic_successful
+	}
+}
