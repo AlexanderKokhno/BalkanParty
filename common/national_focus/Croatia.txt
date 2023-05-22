@@ -92,6 +92,8 @@ focus_tree = {
 		cost = 5
 		search_filters = {   }
 		prerequisite = { focus = CRO_assassination_attempt_ante_pavelic}
+		mutually_exclusive = { focus = CRO_assassination_attempt_ante_pavelic_hospital}
+		mutually_exclusive = { focus = CRO_assassination_attempt_ante_pavelic_successful}
 		ai_will_do = {
 			factor = 200
 		}
@@ -114,6 +116,8 @@ focus_tree = {
 		cost = 5
 		search_filters = {   }
 		prerequisite = { focus = CRO_assassination_attempt_ante_pavelic}
+		mutually_exclusive = { focus = CRO_assassination_attempt_ante_pavelic_failed}
+		mutually_exclusive = { focus = CRO_assassination_attempt_ante_pavelic_successful}
 		ai_will_do = {
 			factor = 200
 		}
@@ -136,6 +140,8 @@ focus_tree = {
 		cost = 5
 		search_filters = {   }
 		prerequisite = { focus = CRO_assassination_attempt_ante_pavelic}
+		mutually_exclusive = { focus = CRO_assassination_attempt_ante_pavelic_failed}
+		mutually_exclusive = { focus = }CRO_assassination_attempt_ante_pavelic_hospital
 		ai_will_do = {
 			factor = 200
 		}
