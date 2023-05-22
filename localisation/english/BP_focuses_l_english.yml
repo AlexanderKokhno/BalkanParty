@@ -22,6 +22,12 @@
   ALB_CCP_demand_payment:0 "The Debt Deadline"
   ALB_CCP_demand_payment_desc:0 ""
 
+  ALB_anti_com_meeting:0 "Bashkimi Politik Assembly"
+  ALB_anti_com_meeting_desc:0 "Bashkimi Politik = Political Union"
+
+  ALB_COM_assult_meating:0 "Assult the Bashkimi Politik Assembly"
+  ALB_COM_assult_meating_desc:0 ""
+
 ########################################## AUS
   AUS_election_of_1936:0 "Election of 1936"
   AUS_election_of_1936_desc:0 ""
