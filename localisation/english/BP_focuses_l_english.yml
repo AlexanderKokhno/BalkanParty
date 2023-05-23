@@ -558,8 +558,7 @@
 
   SER_artillery:0 "Serbian Artillery"
   SER_artillery_desc:0 "Artillery is the backbone of any solid infantry force."
-  SER_army_of_Belgrade:0 "Army of Belgrade"
-  SER_army_of_Belgrade_desc:0 "Soldiers of the serbian army, keep your heads held high! Overrun, you fall one by one! For Belgrade and the Fatherland! Soldiers, heroes, die for your land, your lives are gone, erased by your command! Until your last dying breath!"
+
 
 ################ SLO
 
@@ -681,6 +680,11 @@
   YUG_shared_supremacy_of_defense_desc:1 "Hemmed in by enemies on all sides, we must hold out long enough for our allies to take the heat off us. The development of new military doctrines must focus on the defense of our homeland."
   YUG_shared_artillery_regiments:0 "Artillery Regiments"
   YUG_shared_artillery_regiments_desc:1 "By introducing powerful artillery regiments to our divisions their overall fighting strength will be greatly increased."
+  YUG_shared_medal_for_extreme_bravery:0 "Medals for Extreme Bravery"
+  YUG_shared_medal_for_extreme_bravery_desc:0 ""
+
+  SER_army_of_Belgrade:0 "Army of [ROOT.Capital.GetCapitalVictoryPointName]"
+  SER_army_of_Belgrade_desc:0 "Soldiers of the serbian army, keep your heads held high! Overrun, you fall one by one! For Belgrade and the Fatherland! Soldiers, heroes, die for your land, your lives are gone, erased by your command! Until your last dying breath!"
 
  YUG_shared_modernize_the_air_force:0 "Modernize the Air Force"
  YUG_shared_modernize_the_air_force_desc:1 "Our air force is horribly outdated. If we are to have any reasonable chance of defending the airspace over our own territory, much less bring the fight to the enemy, we require a drastic program of modernization."

@@ -384,6 +384,12 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+			add_popularity = { 
+				ideology = communism 
+				popularity = -0.05
+			}
 
 		}
 	}
@@ -421,6 +427,10 @@ focus_tree = {
 			802 = {
 				add_core_of = ALB
 			}
+			add_popularity = { 
+				ideology = fascism 
+				popularity = 0.05
+			}
 
 		}
 	}
@@ -455,6 +465,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ALB_raise_wages_bust_unions_idea
+			add_popularity = { 
+				ideology = communism 
+				popularity = -0.05
+			}
 
 		}
 	}

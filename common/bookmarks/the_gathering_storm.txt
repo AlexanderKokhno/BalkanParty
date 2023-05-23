@@ -145,11 +145,12 @@ bookmarks = {
 		"CRO"={
 			minor = yes
 			history = 
-			ideology = neutrality
+			ideology = fascism
 			ideas = {
 
 			}
 			focuses = {
+				CRO_assassination_attempt_ante_pavelic
 
 			}
 		}
@@ -205,6 +206,8 @@ bookmarks = {
 
 			}
 			focuses = {
+				ALB_ZOG_stand_zog
+				ALB_CCP_chi_investments
 
 			}
 		}
