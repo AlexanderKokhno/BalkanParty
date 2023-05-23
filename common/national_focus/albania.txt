@@ -388,6 +388,77 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ALB_KOS_guard
+		icon = GFX_focus_ITA_albanian_fascist_militia
+
+
+		relative_position_id = ALB_anti_com_meeting
+		x = -1
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_anti_com_meeting}
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_ideas = ALB_KOS_guard_idea
+			802 = {
+				add_core_of = ALB
+			}
+
+		}
+	}
+
+	focus = {
+		id = ALB_raise_wages_bust_unions
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+
+
+		relative_position_id = ALB_anti_com_meeting
+		x = 1
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_anti_com_meeting}
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_ideas = ALB_raise_wages_bust_unions_idea
+
+		}
+	}
+
 ############################ COM
 
 	focus = {

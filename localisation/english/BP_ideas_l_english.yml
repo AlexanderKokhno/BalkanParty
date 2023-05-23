@@ -1,5 +1,13 @@
 ﻿l_english: 
 
+############ ALB
+
+ ALB_raise_wages_bust_unions_idea:0 "Pacification of Union activity with higher wages and police"
+ ALB_raise_wages_bust_unions_idea_desc:0 ""
+ ALB_KOS_guard_idea:0 "Kosovite Guard"
+ ALB_KOS_guard_idea_desc:0 ""
+
+
 ############ AUS
 
  AUS_KPO_election_unrest:0 "Electoral Unrest"

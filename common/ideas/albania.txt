@@ -1,2 +1,45 @@
 ideas = {
+  country = {
+    ALB_raise_wages_bust_unions_idea = {
+			
+			picture = FRA_factory_strikes
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+    ALB_KOS_guard_idea = {
+			
+			picture = chi_army_corruption3
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+        targeted_modifier = {
+          tag = KOS
+          attack_bonus_against = 0.1
+          defense_bonus_against = 0.1
+        }
+        war_support_factor = 0.05
+
+			}
+		}
+  }
+
 }
