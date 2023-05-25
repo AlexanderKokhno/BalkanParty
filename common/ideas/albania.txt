@@ -42,6 +42,55 @@ ideas = {
 
 			}
 		}
+    ALB_funds_for_the_anti_commie_coalition_idea = {
+			
+			picture = ger_mefo_bills_payment
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+
+        consumer_goods_factor = -0.03
+        political_power_gain = 0.2
+        neutrality_drift = 0.05
+        democratic_drift = 0.05
+        fascism_drift = 0.05
+        command_power_factor = -1
+        
+
+			}
+		}
+    ALB_king_flees_country_idea = {
+			
+			picture = can_patriation
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+        political_power_factor = -0.2
+        war_support_factor = 0.05
+        stability_factor = -0.1
+        communism_drift = 0.1
+        
+
+			}
+		}
   }
 
 }

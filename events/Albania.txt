@@ -19,6 +19,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
+		add_ideas = ALB_king_flees_country_idea
 		
 	}
 	option = {
@@ -26,6 +27,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
+		add_ideas = ALB_funds_for_the_anti_commie_coalition_idea
 		
 	}
 }
