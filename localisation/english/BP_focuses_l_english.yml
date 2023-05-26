@@ -6,9 +6,15 @@
 
   ALB_F_ZOG_integrate_the_right:0 "Integrate the Right"
   ALB_F_ZOG_integrate_the_right_desc:0 ""
+  ALB_national_guard:0 "Nationalist Guard of Albania"
+  ALB_national_guard_desc:0 ""
 
   ALB_N_ZOG_balance_the_parties:0 "Balance the Parties"
   ALB_N_ZOG_balance_the_parties_desc:0 ""
+  ALB_retire_old_guard_loyalists:0 "Retire Old Guard Loyalists"
+  ALB_retire_old_guard_loyalists_desc:0 ""
+  ALB_N_reform_law:0 "State Law Reform"
+  ALB_N_reform_law_desc:0 ""
 
   ALB_D_ZOG_draft_a_constitution:0 "Draft a Constitution"
   ALB_D_ZOG_draft_a_constitution_desc:0 ""

@@ -90,7 +90,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ALB_N_ZOG_balance_the_parties }
 
 		relative_position_id = ALB_ZOG_stand_zog
-		x = -5
+		x = -6
 		y = 1
 
 		cost = 10
@@ -113,6 +113,36 @@ focus_tree = {
 
 
 		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ALB_national_guard
+		icon = GFX_focus_ITA_albanian_fascist_militia
+
+
+		relative_position_id = ALB_N_ZOG_balance_the_parties
+		x = -3
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_N_ZOG_balance_the_parties focus = ALB_F_ZOG_integrate_the_right}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
 		}
 	}
 
@@ -150,7 +180,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = gihgjbnjhdfv
+		id = ALB_retire_old_guard_loyalists
 		icon = GFX_goal_unknown
 
 
@@ -178,6 +208,8 @@ focus_tree = {
 
 		}
 	}
+
+
 
 	focus = {
 		id = ALB_N_reform_law 
