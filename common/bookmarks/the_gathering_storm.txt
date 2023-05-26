@@ -67,7 +67,7 @@ bookmarks = {
 		}
 
 		"AUS"={
-			history = 
+			history = "AUS_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 				AUS_Saal_Schutz
@@ -144,7 +144,7 @@ bookmarks = {
 		}
 		"CRO"={
 			minor = yes
-			history = 
+			history = "CRO_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 
@@ -156,7 +156,7 @@ bookmarks = {
 		}
 		"BOS"={
 			minor = yes
-			history = 
+			history = "BOS_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 
@@ -167,7 +167,7 @@ bookmarks = {
 		}
 		"KOS"={
 			minor = yes
-			history = 
+			history = "KOS_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 
@@ -178,7 +178,7 @@ bookmarks = {
 		}
 		"MAC"={
 			minor = yes
-			history = 
+			history = "MAC_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 
@@ -189,7 +189,7 @@ bookmarks = {
 		}		
 		"SLV"={
 			minor = yes
-			history = 
+			history = "SLV_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 
@@ -200,7 +200,7 @@ bookmarks = {
 		}
 		"ALB"={
 			minor = yes
-			history = 
+			history = "ALB_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 
@@ -213,7 +213,7 @@ bookmarks = {
 		}
 		"SLO"={
 			minor = yes
-			history = 
+			history = "SLO_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 
@@ -224,7 +224,7 @@ bookmarks = {
 		}		
 		"MOL"={
 			minor = yes
-			history = 
+			history = "MOL_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 
@@ -235,7 +235,7 @@ bookmarks = {
 		}		
 		"TRA"={
 			minor = yes
-			history = 
+			history = "TRA_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 
@@ -247,7 +247,7 @@ bookmarks = {
 
 		"KUR"={
 			minor = yes
-			history = 
+			history = "KUR_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 

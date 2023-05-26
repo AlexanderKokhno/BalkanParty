@@ -149,6 +149,97 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = gihgjbnjhdfv
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_N_ZOG_balance_the_parties
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_N_ZOG_balance_the_parties}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ALB_N_reform_law 
+		icon = GFX_focus_generic_court
+
+
+		relative_position_id = ALB_N_ZOG_balance_the_parties
+		x = 2
+		y = 2
+
+		cost = 10
+		prerequisite = { focus = ALB_D_ZOG_draft_a_constitution}
+		prerequisite = { focus = ALB_N_ZOG_balance_the_parties}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = 
+		icon = 
+
+
+		relative_position_id = 
+		x = 2
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = }
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
 
 #################################################
 ################# CCP
@@ -202,10 +293,10 @@ focus_tree = {
 
 		relative_position_id = ALB_CCP_chi_investments
 		x = -3
-		y = 1
+		y = 2
 
 		cost = 5
-		prerequisite = { focus = ALB_CCP_chi_investments}
+		prerequisite = { focus = ALB_CCP_chi_investments focus = ALB_N_ZOG_balance_the_parties}
 
 		ai_will_do = {
 			factor = 10
@@ -240,12 +331,12 @@ focus_tree = {
 		relative_position_id = ALB_CCP_chi_investments
 
 		x = 0
-		y = 1
+		y = 2
 
 		cost = 10
 		prerequisite = {focus = ALB_CCP_chi_investments}
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 
 		available = {
@@ -282,7 +373,7 @@ focus_tree = {
 		icon = GFX_focus_ITA_il_sol_dell_avvenire
 		relative_position_id = ALB_CCP_chi_investments
 		x = 3
-		y = 1
+		y = 2
 
 		cost = 10
 		prerequisite = {focus = ALB_CCP_chi_investments}
@@ -350,6 +441,7 @@ focus_tree = {
 				ideology = neutrality
 				popularity = -0.25
 			}
+			promote_character = ALB_no_government
 		}
 	}
 
@@ -371,6 +463,7 @@ focus_tree = {
 		}
 
 		available = {
+			has_idea = ALB_funds_for_the_anti_commie_coalition_idea
 
 		}
 
@@ -491,7 +584,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			has_idea = ALB_king_flees_country_idea
 		}
 
 		bypass = {

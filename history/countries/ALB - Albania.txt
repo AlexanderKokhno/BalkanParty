@@ -9,6 +9,11 @@ set_technology = {
 }
 
 recruit_character = ALB_king_zog
+promote_character = ALB_king_zog
+
+recruit_character = ALB_no_government
+
+
 recruit_character = ALB_enver_hoxha
 recruit_character = ALB_xhemal_aranitasi
 recruit_character = ALB_eqrem_belishi
