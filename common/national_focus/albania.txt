@@ -181,7 +181,8 @@ focus_tree = {
 
 	focus = {
 		id = ALB_retire_old_guard_loyalists
-		icon = GFX_goal_unknown
+		icon = ``GFX_goal_unknown``
+
 
 
 		relative_position_id = ALB_N_ZOG_balance_the_parties
@@ -633,3 +634,451 @@ focus_tree = {
 		}
 	}
 }
+
+########### Fortifications
+
+	focus = {
+		id = ALB_fortification_planning_I
+		icon = GFX_goal_unknown
+
+
+
+		x = 30
+		y = 1
+
+		cost = 10
+		mutually_exclusive = { focus = ALB_industrial_planning_I}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALB_fortification_planning_II
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_fortification_planning_I
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_fortification_planning_I}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ALB_fortification_planning_III
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_fortification_planning_II
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_fortification_planning_II}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALB_fortification_planning_IV
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_fortification_planning_III
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_fortification_planning_III}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+############### CHOICE INDUSTRY 
+
+focus = {
+		id = ALB_fortification_effort_I
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_fortification_planning_I
+		x = 2
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_fortification_planning_I}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALB_fortification_effort_II
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_fortification_planning_III
+		x = 2
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_fortification_planning_III}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALB_fortification_effort_III
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_fortification_planning_IV
+		x = 2
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_fortification_planning_IV}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALB_state_education_grants
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_fortification_planning_II
+		x = 3
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_fortification_planning_II}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ALB_industry_effort_I
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_fortification_effort_I
+		x = 2
+		y = 0
+
+		cost = 10
+		prerequisite = { focus = ALB_fortification_planning_I}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALB_industry_effort_II
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_fortification_effort_II
+		x = 2
+		y = 0
+
+		cost = 10
+		prerequisite = { focus = ALB_fortification_planning_III}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALB_industry_effort_III
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_fortification_effort_III
+		x = 2
+		y = 0
+
+		cost = 10
+		prerequisite = { focus = ALB_fortification_planning_IV}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+############ INDUSTRY
+
+
+focus = {
+		id = ALB_industrial_planning_I
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_fortification_planning_I
+		x = 6
+		y = 0
+
+		cost = 10
+		mutually_exclusive = { focus = ALB_fortification_planning_I}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALB_industrial_planning_I
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_industrial_planning_I
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_industrial_planning_I}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALB_industrial_planning_III
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_industrial_planning_II
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_industrial_planning_II}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALB_industrial_planning_IV
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_industrial_planning_III
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_industrial_planning_III}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}

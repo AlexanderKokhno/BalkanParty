@@ -1,0 +1,70 @@
+
+
+/////////// STANDARD FOCUS TEMPLATE
+
+	focus = {
+		id = 
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = 
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = }
+
+    allow_branch = {
+
+    }
+    
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+
+///////// ADVANCED FOCUS TEMPLATE
+
+	focus = {
+		id = 
+		icon = GFX_goal_unknown
+		mutually_exclusive = { focus =  }
+
+		relative_position_id = 
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = }
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
