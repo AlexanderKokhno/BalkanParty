@@ -633,18 +633,18 @@ focus_tree = {
 
 		}
 	}
-}
+
 
 ########### Fortifications
 
 	focus = {
 		id = ALB_fortification_planning_I
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_air_defense
 
 
 
-		x = 30
-		y = 1
+		x = 25
+		y = 0
 
 		cost = 10
 		mutually_exclusive = { focus = ALB_industrial_planning_I}
@@ -668,7 +668,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ALB_fortification_planning_II
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_fortify_city
 
 
 		relative_position_id = ALB_fortification_planning_I
@@ -698,7 +698,7 @@ focus_tree = {
 
 	focus = {
 		id = ALB_fortification_planning_III
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_little_entente
 
 
 		relative_position_id = ALB_fortification_planning_II
@@ -727,7 +727,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ALB_fortification_planning_IV
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ITA_grande_rivolta_rurale
 
 
 		relative_position_id = ALB_fortification_planning_III
@@ -759,7 +759,7 @@ focus_tree = {
 
 focus = {
 		id = ALB_fortification_effort_I
-		icon = GFX_goal_unknown
+		icon = GFX_goal_fortify_the_westwall
 
 
 		relative_position_id = ALB_fortification_planning_I
@@ -767,7 +767,7 @@ focus = {
 		y = 1
 
 		cost = 10
-		prerequisite = { focus = ALB_fortification_planning_I}
+		prerequisite = { focus = ALB_fortification_planning_I focus = ALB_industrial_planning_I}
 		
 		ai_will_do = {
 			factor = 10
@@ -789,7 +789,7 @@ focus = {
 	}
 	focus = {
 		id = ALB_fortification_effort_II
-		icon = GFX_goal_unknown
+		icon = GFX_goal_fortify_the_westwall
 
 
 		relative_position_id = ALB_fortification_planning_III
@@ -797,7 +797,7 @@ focus = {
 		y = 1
 
 		cost = 10
-		prerequisite = { focus = ALB_fortification_planning_III}
+		prerequisite = { focus = ALB_fortification_planning_III focus = ALB_industrial_planning_III}
 		ai_will_do = {
 			factor = 10
 		}
@@ -818,7 +818,7 @@ focus = {
 	}
 	focus = {
 		id = ALB_fortification_effort_III
-		icon = GFX_goal_unknown
+		icon = GFX_goal_fortify_the_westwall
 
 
 		relative_position_id = ALB_fortification_planning_IV
@@ -826,7 +826,7 @@ focus = {
 		y = 1
 
 		cost = 10
-		prerequisite = { focus = ALB_fortification_planning_IV}
+		prerequisite = { focus = ALB_fortification_planning_IV focus = ALB_industrial_planning_IV}
 		ai_will_do = {
 			factor = 10
 		}
@@ -847,7 +847,7 @@ focus = {
 	}
 	focus = {
 		id = ALB_state_education_grants
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 
 
 		relative_position_id = ALB_fortification_planning_II
@@ -855,7 +855,7 @@ focus = {
 		y = 1
 
 		cost = 10
-		prerequisite = { focus = ALB_fortification_planning_II}
+		prerequisite = { focus = ALB_fortification_planning_II focus = ALB_industrial_planning_II}
 		ai_will_do = {
 			factor = 10
 		}
@@ -871,13 +871,14 @@ focus = {
 
 
 		completion_reward = {
+			add_research_slot = 1
 
 		}
 	}
 
 	focus = {
 		id = ALB_industry_effort_I
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 
 
 		relative_position_id = ALB_fortification_effort_I
@@ -885,7 +886,7 @@ focus = {
 		y = 0
 
 		cost = 10
-		prerequisite = { focus = ALB_fortification_planning_I}
+		prerequisite = { focus = ALB_fortification_planning_I focus = ALB_industrial_planning_I}
 		ai_will_do = {
 			factor = 10
 		}
@@ -901,12 +902,19 @@ focus = {
 
 
 		completion_reward = {
-
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = ALB_industry_effort_II
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 
 
 		relative_position_id = ALB_fortification_effort_II
@@ -914,7 +922,7 @@ focus = {
 		y = 0
 
 		cost = 10
-		prerequisite = { focus = ALB_fortification_planning_III}
+		prerequisite = { focus = ALB_fortification_planning_III focus = ALB_industrial_planning_III}
 		ai_will_do = {
 			factor = 10
 		}
@@ -930,12 +938,19 @@ focus = {
 
 
 		completion_reward = {
-
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = ALB_industry_effort_III
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 
 
 		relative_position_id = ALB_fortification_effort_III
@@ -943,7 +958,7 @@ focus = {
 		y = 0
 
 		cost = 10
-		prerequisite = { focus = ALB_fortification_planning_IV}
+		prerequisite = { focus = ALB_fortification_planning_IV focus = ALB_industrial_planning_IV}
 		ai_will_do = {
 			factor = 10
 		}
@@ -959,6 +974,22 @@ focus = {
 
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 
 		}
 	}
@@ -968,7 +999,7 @@ focus = {
 
 focus = {
 		id = ALB_industrial_planning_I
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_tank_production
 
 
 		relative_position_id = ALB_fortification_planning_I
@@ -992,12 +1023,13 @@ focus = {
 
 
 		completion_reward = {
+			add_ideas = ALB_industrial_planning_I_idea
 
 		}
 	}
 	focus = {
-		id = ALB_industrial_planning_I
-		icon = GFX_goal_unknown
+		id = ALB_industrial_planning_II
+		icon = GFX_focus_generic_industry_2
 
 
 		relative_position_id = ALB_industrial_planning_I
@@ -1026,7 +1058,7 @@ focus = {
 	}
 	focus = {
 		id = ALB_industrial_planning_III
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_merge_plants
 
 
 		relative_position_id = ALB_industrial_planning_II
@@ -1050,13 +1082,16 @@ focus = {
 
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = ALB_industrial_planning_I_idea
+				add_idea = ALB_industrial_planning_I_idea_II
+			}
 
 		}
 	}
 	focus = {
 		id = ALB_industrial_planning_IV
-		icon = GFX_goal_unknown
-
+		icon = GFX_focus_mex_privatisation
 
 		relative_position_id = ALB_industrial_planning_III
 		x = 0
@@ -1082,3 +1117,4 @@ focus = {
 
 		}
 	}
+}

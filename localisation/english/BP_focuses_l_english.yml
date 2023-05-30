@@ -38,13 +38,13 @@
   ALB_COM_assult_meating:0 "Assault the Bashkimi Politik Assembly"
   ALB_COM_assult_meating_desc:0 ""
 
-  ALB_fortification_planning_I:0 "FILLER"
+  ALB_fortification_planning_I:0 "Ministry of State Defense"
   ALB_fortification_planning_I_desc:0 ""
-  ALB_fortification_planning_II:0 "FILLER"
+  ALB_fortification_planning_II:0 "Defence in Depth Planning"
   ALB_fortification_planning_II_desc:0 ""
-  ALB_fortification_planning_III:0 "FILLER"
+  ALB_fortification_planning_III:0 "Reserve Expansion"
   ALB_fortification_planning_III_desc:0 ""
-  ALB_fortification_planning_IV:0 "FILLER"
+  ALB_fortification_planning_IV:0 "Flexible Supply line Doctrine"
   ALB_fortification_planning_IV_desc:0 ""
 
   ALB_fortification_effort_I:0 "Fortification Effort"
@@ -62,13 +62,13 @@
   ALB_industry_effort_III:0 "State Enterprise"
   ALB_industry_effort_III_desc:0 ""
 
-  ALB_industrial_planning_I:0 "FILLER"
+  ALB_industrial_planning_I:0 "Ministry of Strategic Resources"
   ALB_industrial_planning_I_desc:0 ""
-  ALB_industrial_planning_II:0 "FILLER"
+  ALB_industrial_planning_II:0 "Expansion of Production Capabilities"
   ALB_industrial_planning_II_desc:0 ""
-  ALB_industrial_planning_III:0 "FILLER"
+  ALB_industrial_planning_III:0 "Integration of Industrial Sub-Sectors"
   ALB_industrial_planning_III_desc:0 ""
-  ALB_industrial_planning_IV:0 "FILLER"
+  ALB_industrial_planning_IV:0 "State Industry Subsidiaries"
   ALB_industrial_planning_IV_desc:0 ""
 
 ########################################## AUS

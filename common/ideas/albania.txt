@@ -95,6 +95,46 @@ ideas = {
 
 			}
 		}
+    ALB_industrial_planning_I_idea = {
+			
+			picture = SOV_third_five_year_plan
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+
+        
+
+			}
+		}
+    ALB_industrial_planning_I_idea_II = {
+			
+			picture = SOV_third_five_year_plan
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+
+        
+
+			}
+		}
   }
 
 }
