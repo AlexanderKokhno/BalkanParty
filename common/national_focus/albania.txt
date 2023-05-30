@@ -646,7 +646,7 @@ focus_tree = {
 		x = 25
 		y = 0
 
-		cost = 10
+		cost = 5
 		mutually_exclusive = { focus = ALB_industrial_planning_I}
 		ai_will_do = {
 			factor = 10
@@ -663,6 +663,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_ideas = ALB_fortification_planning_I_idea
 
 		}
 	}
@@ -692,6 +693,10 @@ focus_tree = {
 
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = ALB_fortification_planning_I_idea
+				add_idea = ALB_fortification_planning_II_idea
+			}
 
 		}
 	}
@@ -722,6 +727,9 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_ideas = ALB_fortification_planning_III_idea
+			add_manpower = 100000
+			army_experience = 50
 
 		}
 	}
@@ -751,6 +759,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_ideas = ALB_fortification_planning_IV_idea
 
 		}
 	}
@@ -766,7 +775,7 @@ focus = {
 		x = 2
 		y = 1
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = ALB_fortification_planning_I focus = ALB_industrial_planning_I}
 		
 		ai_will_do = {
@@ -796,7 +805,7 @@ focus = {
 		x = 2
 		y = 1
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = ALB_fortification_planning_III focus = ALB_industrial_planning_III}
 		ai_will_do = {
 			factor = 10
@@ -825,7 +834,7 @@ focus = {
 		x = 2
 		y = 1
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = ALB_fortification_planning_IV focus = ALB_industrial_planning_IV}
 		ai_will_do = {
 			factor = 10
@@ -1053,7 +1062,11 @@ focus = {
 
 
 		completion_reward = {
-
+			modify_building_resources = {
+					building = industrial_complex
+					resource = steel
+					amount = 1
+			}
 		}
 	}
 	focus = {
@@ -1114,7 +1127,7 @@ focus = {
 
 
 		completion_reward = {
-
+			add_ideas = ALB_industrial_planning_IV_idea
 		}
 	}
 }
