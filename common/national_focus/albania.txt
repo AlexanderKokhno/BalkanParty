@@ -793,6 +793,20 @@ focus = {
 
 
 		completion_reward = {
+			44 = {
+				add_building_construction = { type = bunker province = 9780 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3896 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11762 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 9875 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6900 level = 2 instant_build = yes }
+
+			}
+
+			805 = {
+				add_building_construction = { type = bunker province = 13235 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 13234 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 914 level = 2 instant_build = yes }
+			}
 
 		}
 	}
@@ -822,6 +836,20 @@ focus = {
 
 
 		completion_reward = {
+			44 = {
+				add_building_construction = { type = bunker province = 9780 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3896 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11762 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 9875 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6900 level = 2 instant_build = yes }
+
+			}
+
+			805 = {
+				add_building_construction = { type = bunker province = 13235 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 13234 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 914 level = 2 instant_build = yes }
+			}
 
 		}
 	}
@@ -851,6 +879,20 @@ focus = {
 
 
 		completion_reward = {
+			44 = {
+				add_building_construction = { type = bunker province = 9780 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 3896 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 11762 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9875 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 6900 level = 3 instant_build = yes }
+
+			}
+
+			805 = {
+				add_building_construction = { type = bunker province = 13235 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 13234 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 914 level = 3 instant_build = yes }
+			}
 
 		}
 	}
@@ -866,7 +908,7 @@ focus = {
 		cost = 10
 		prerequisite = { focus = ALB_fortification_planning_II focus = ALB_industrial_planning_II}
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 
