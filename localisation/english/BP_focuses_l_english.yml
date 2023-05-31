@@ -71,6 +71,13 @@
   ALB_industrial_planning_IV:0 "State Industry Subsidiaries"
   ALB_industrial_planning_IV_desc:0 ""
 
+  ALB_invest_in_army:0 "Invest into the Army"
+  ALB_invest_in_army_desc:0 ""
+  ALB_war_plan_committee:0 "War Plan Committee"
+  ALB_war_plan_committee_desc:0 ""
+  ALB_plan_GRE:0 "Greek Plan"
+  ALB_plan_GRE_desc:0 ""
+
 ########################################## AUS
   AUS_election_of_1936:0 "Election of 1936"
   AUS_election_of_1936_desc:0 ""

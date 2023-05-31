@@ -14,9 +14,7 @@
 		cost = 10
 		prerequisite = { focus = }
 
-    allow_branch = {
 
-    }
     
 		ai_will_do = {
 			factor = 10
@@ -55,6 +53,11 @@
 
 		}
 
+    allow_branch = {
+
+
+    }
+		
 		bypass = {
 
 		}
