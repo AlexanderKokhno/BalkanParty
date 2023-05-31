@@ -258,6 +258,98 @@ ideas = {
 
 			}
 		}
+   	ALB_war_plan_committee_idea = {
+			
+			picture = YUG_federal_defense_council
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				
+        max_command_power = 20
+
+			}
+		}
+		war_plan_GRE_idea = {
+			
+			picture = gre_martyrs_of_the_anatolian_catastrophe
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			targeted_modifier = {
+				tag = GRE
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+
+			modifier = {
+				
+				
+
+			}
+		}
+		war_plan_BUL_idea = {
+			
+			picture = bul_bulgarian_irredentism
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = BUL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			modifier = {
+				
+				
+
+			}
+		}
+		war_plan_SER_idea = {
+			
+			picture = YUG_local_militias
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = SER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			modifier = {
+				
+				
+
+			}
+		}
   }
 
 }

@@ -27,6 +27,15 @@
  ALB_fortification_planning_IV_idea:0 "Versatile Supply Lines"
  ALB_fortification_planning_IV_idea_desc:0 ""
 
+ ALB_war_plan_committee_idea:0 "War Plan Committee"
+ ALB_war_plan_committee_idea_desc:0 ""
+ war_plan_GRE_idea:0 "War Plan Greece"
+ war_plan_GRE_idea_desc:0 ""
+ war_plan_BUL_idea:0 "War Plan Bulgaria"
+ war_plan_BUL_idea_desc:0 ""
+ war_plan_SER_idea:0 "War Plan Serbia"
+ war_plan_SER_idea_desc:0 ""
+
 
 
 ############ AUS

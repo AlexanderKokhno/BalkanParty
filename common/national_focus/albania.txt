@@ -1182,7 +1182,7 @@ focus = {
 
 
 
-		x = 35
+		x = 40
 		y = 0
 
 		cost = 5
@@ -1207,7 +1207,7 @@ focus = {
 ###################### PLANS
 	focus = {
 		id = ALB_war_plan_committee
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 
 
 		relative_position_id = ALB_invest_in_army
@@ -1229,16 +1229,17 @@ focus = {
 
 
 		completion_reward = {
-
+			add_ideas = ALB_war_plan_committee_idea
+			
 		}
 	}
 	focus = {
 		id = ALB_plan_GRE
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_attack_greece
 
 
 		relative_position_id = ALB_war_plan_committee
-		x = -1
+		x = -2
 		y = 1
 
 		cost = 5
@@ -1247,7 +1248,11 @@ focus = {
 
     
 		ai_will_do = {
-			factor = 10
+			factor = 5
+			modifier = {
+    		factor = 5
+    		has_war_with = GRE
+  		}
 		}
 
 
@@ -1257,12 +1262,13 @@ focus = {
 
 
 		completion_reward = {
-
+			add_ideas = war_plan_GRE_idea
+			create_wargoal = { type = puppet_wargoal_focus target = GRE }
 		}
 	}
 	focus = {
 		id = ALB_plan_BUL
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_attack_bulgaria
 
 
 		relative_position_id = ALB_war_plan_committee
@@ -1275,7 +1281,11 @@ focus = {
 
     
 		ai_will_do = {
-			factor = 10
+			factor = 5
+			modifier = {
+    		factor = 5
+    		has_war_with = BUL
+  		}
 		}
 
 
@@ -1285,7 +1295,8 @@ focus = {
 
 
 		completion_reward = {
-
+			add_ideas = war_plan_BUL_idea
+			create_wargoal = { type = puppet_wargoal_focus target = BUL }
 		}
 	}
 	focus = {
@@ -1294,7 +1305,7 @@ focus = {
 
 
 		relative_position_id = ALB_war_plan_committee
-		x = 1
+		x = 2
 		y = 1
 
 		cost = 5
@@ -1302,7 +1313,11 @@ focus = {
 
 
 		ai_will_do = {
-			factor = 10
+			factor = 5
+			modifier = {
+    		factor = 5
+    		has_war_with = SER
+  		}
 		}
 
 
@@ -1312,6 +1327,8 @@ focus = {
 
 
 		completion_reward = {
+			add_ideas = war_plan_SER_idea
+			create_wargoal = { type = puppet_wargoal_focus target = SER }
 
 		}
 	}

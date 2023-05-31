@@ -77,6 +77,10 @@
   ALB_war_plan_committee_desc:0 ""
   ALB_plan_GRE:0 "Greek Plan"
   ALB_plan_GRE_desc:0 ""
+  ALB_plan_BUL:0 "Bulgarian Plan"
+  ALB_plan_BUL_desc:0 ""
+  ALB_plan_SER:0 "Serbian Plan"
+  ALB_plan_SER_desc:0 ""
 
 ########################################## AUS
   AUS_election_of_1936:0 "Election of 1936"
