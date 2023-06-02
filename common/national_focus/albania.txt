@@ -644,10 +644,11 @@ focus_tree = {
 
 
 		x = 25
-		y = 0
+		y = 1
 
 		cost = 5
 		mutually_exclusive = { focus = ALB_industrial_planning_I}
+		prerequisite = { focus = ALB_invest_in_army}
 		ai_will_do = {
 			factor = 10
 		}
@@ -1059,6 +1060,7 @@ focus = {
 
 		cost = 10
 		mutually_exclusive = { focus = ALB_fortification_planning_I}
+		prerequisite = { focus = ALB_invest_in_army}
 		ai_will_do = {
 			factor = 10
 		}
@@ -1178,7 +1180,7 @@ focus = {
 
 	focus = {
 		id = ALB_invest_in_army
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SWI_issue_war_bonds
 
 
 
@@ -1200,6 +1202,11 @@ focus = {
 
 
 		completion_reward = {
+			add_timed_idea = { 
+				idea = Heavy_Investments
+				days = 30
+			}
+		
 
 		}
 	}
