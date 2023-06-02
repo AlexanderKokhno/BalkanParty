@@ -335,13 +335,42 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = MON_KHAN_slave_trade_export_decisions
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = MOL_KHAN_legalize_the_slave_trade
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = MOL_KHAN_legalize_the_slave_trade}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
 ######### Army
 
 	focus = {
 		id = MOL_KHAN_restructure_the_army
 		icon = MOL_KHAN_arrest_commies
 		relative_position_id = MOL_KHAN_legalize_the_slave_trade
-		x = 1
+		x = 2
 		y = 1
 		cost = 10
 		search_filters = {   }
@@ -357,7 +386,7 @@ focus_tree = {
 	}  
 	focus = {
 		id = MOL_KHAN_horde_divisions
-		icon = 
+		icon = GFX_goal_unknown
 		relative_position_id = MOL_KHAN_restructure_the_army
 		x = 0
 		y = 1

@@ -227,6 +227,7 @@ bookmarks = {
 			history = "MOL_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
+				MOL_romanian_nationalists
 
 			}
 			focuses = {

@@ -119,6 +119,12 @@
  Filler_neutrality:0 "Filler Neutrality"
  Filler_neutrality_desc:0 ""
 
+
+############## MOL
+
+ MOL_romanian_nationalists:0 "Romanian Nationalists"
+ MOL_romanian_nationalists_desc:0 ""
+
 ########### SER
 
   SER_paramilitaries:0 "Serbian Paramilitaries"

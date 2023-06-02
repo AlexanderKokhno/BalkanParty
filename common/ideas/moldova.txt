@@ -1,2 +1,25 @@
 ideas = {
+
+  country = {
+    MOL_romanian_nationalists = {
+			
+			picture = ROM_preserve_greater_romania
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.1
+        stability_factor = -0.1
+        fascism_drift = 0.05
+
+			}
+		}
+  }
 }

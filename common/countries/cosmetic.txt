@@ -35,7 +35,7 @@ CZE_BOH_AUS_subject = {
 }
 
 MOL_CKHAN_cosmetic = {
-	color = rgb { 0 0 0}
+	color = rgb { 171 181 208}
 	color_ui = rgb { 0 0 0 }
 }
 
