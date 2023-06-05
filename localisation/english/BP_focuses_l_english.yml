@@ -37,6 +37,16 @@
 
   ALB_COM_assult_meating:0 "Assault the Bashkimi Politik Assembly"
   ALB_COM_assult_meating_desc:0 ""
+  ALB_COM_mob_rallies:0 "Mob Rallies"
+  ALB_COM_mob_rallies_desc:0 ""
+  ALB_COM_secure_naval_support:0 "Secure Support Within the Navy"
+  ALB_COM_secure_naval_support_desc:0 ""
+  ALB_COM_distrubute_arms_to_the_proletariat:0 "Distribute Arms to the Proletariat"
+  ALB_COM_distrubute_arms_to_the_proletariat_desc:0 ""
+  ALB_COM_LOWER_YUG_COM_spread:0 "Arm the Proletariate of the South-West Balkan Peninsula"
+  ALB_COM_LOWER_YUG_COM_spread_desc:0 ""
+  ALB_COM_GRE_COM_spread:0 "Arm the Greek Proletariat"
+  ALB_COM_GRE_COM_spread_desc:0 ""
 
   ALB_fortification_planning_I:0 "Ministry of National Defence"
   ALB_fortification_planning_I_desc:0 ""

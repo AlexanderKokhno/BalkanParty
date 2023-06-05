@@ -634,6 +634,178 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ALB_COM_mob_rallies
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_COM_assult_meating
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_COM_assult_meating}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALB_COM_secure_naval_support
+		icon = GFX_focus_generic_cruiser2
+
+
+		relative_position_id = ALB_COM_assult_meating
+		x = 2
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_COM_assult_meating}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = 
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_COM_mob_rallies
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_COM_mob_rallies}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALB_COM_distrubute_arms_to_the_proletariat
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+
+
+		relative_position_id = ALB_COM_secure_naval_support
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_COM_mob_rallies focus = ALB_COM_secure_naval_support}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ALB_COM_LOWER_YUG_COM_spread
+		icon = GFX_focus_YUG_dissolve_serbia
+
+
+		relative_position_id = ALB_COM_distrubute_arms_to_the_proletariat
+		x = 0
+		y = 1
+
+		cost = 15
+		prerequisite = { focus = ALB_COM_distrubute_arms_to_the_proletariat}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ALB_COM_GRE_COM_spread
+		icon =GFX_focus_generic_befriend_greece
+
+
+		relative_position_id = ALB_COM_distrubute_arms_to_the_proletariat
+		x = 2
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_COM_distrubute_arms_to_the_proletariat}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+
 
 ########### Fortifications
 
