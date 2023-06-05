@@ -47,6 +47,10 @@
   ALB_COM_LOWER_YUG_COM_spread_desc:0 ""
   ALB_COM_GRE_COM_spread:0 "Arm the Greek Proletariat"
   ALB_COM_GRE_COM_spread_desc:0 ""
+  ALB_COM_propaganda:0 "Spread Propaganda"
+  ALB_COM_propaganda_desc:0 ""
+  ALB_COM_election_day:0 "Election Day"
+  ALB_COM_election_day_desc:0 ""
 
   ALB_fortification_planning_I:0 "Ministry of National Defence"
   ALB_fortification_planning_I_desc:0 ""

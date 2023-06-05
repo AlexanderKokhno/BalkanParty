@@ -181,7 +181,7 @@ focus_tree = {
 
 	focus = {
 		id = ALB_retire_old_guard_loyalists
-		icon = ``GFX_goal_unknown``
+		icon = GFX_focus_usa_guarantee_the_american_dream
 
 
 
@@ -636,7 +636,7 @@ focus_tree = {
 
 	focus = {
 		id = ALB_COM_mob_rallies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
 
 
 		relative_position_id = ALB_COM_assult_meating
@@ -691,13 +691,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 
-		icon = GFX_goal_unknown
+		id = ALB_COM_propaganda
+		icon = GFX_goal_generic_propaganda
 
 
 		relative_position_id = ALB_COM_mob_rallies
 		x = 0
-		y = 1
+		y = 2
 
 		cost = 10
 		prerequisite = { focus = ALB_COM_mob_rallies}
@@ -720,7 +720,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ALB_COM_distrubute_arms_to_the_proletariat
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		icon = GFX_focus_ETH_freedom_at_gunpoint
 
 
 		relative_position_id = ALB_COM_secure_naval_support
@@ -728,7 +728,8 @@ focus_tree = {
 		y = 1
 
 		cost = 10
-		prerequisite = { focus = ALB_COM_mob_rallies focus = ALB_COM_secure_naval_support}
+		prerequisite = { focus = ALB_COM_mob_rallies }
+		prerequisite = { focus = ALB_COM_secure_naval_support}
 
 
 		
@@ -787,6 +788,45 @@ focus_tree = {
 
 		cost = 10
 		prerequisite = { focus = ALB_COM_distrubute_arms_to_the_proletariat}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ALB_COM_election_day
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_CCP_demand_payment
+		x = 0
+		y = 5
+
+		cost = 10
+
+
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = ALB_COM_propaganda
+					has_completed_focus = ALB_COM_LOWER_YUG_COM_spread
+					has_completed_focus = ALB_COM_GRE_COM_spread
+				}
+			}
+		}
 
 
 		
