@@ -32,8 +32,12 @@
   ALB_anti_com_meeting_desc:0 "Bashkimi Politik = Political Union"
   ALB_raise_wages_bust_unions:0 "Higher Wages and Union Busting"
   ALB_raise_wages_bust_unions_desc:0 ""
+  ALB_anti_union_propaganda:0 "Anti Unionist Propaganda"
+  ALB_anti_union_propaganda_desc:0 ""
   ALB_KOS_guard:0 "Kosovite Guard"
   ALB_KOS_guard_desc:0 ""
+  ALB_accept_greek_private_paramilitarist_organizations:0 "Accept Greek Private Paramilitarist Organizations"
+  ALB_accept_greek_private_paramilitarist_organizations_desc:0 ""
 
   ALB_COM_assult_meating:0 "Assault the Bashkimi Politik Assembly"
   ALB_COM_assult_meating_desc:0 ""

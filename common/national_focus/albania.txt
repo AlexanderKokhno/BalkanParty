@@ -87,7 +87,7 @@ focus_tree = {
 	focus = {
 		id = ALB_F_ZOG_integrate_the_right
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		mutually_exclusive = { focus = ALB_N_ZOG_balance_the_parties }
+
 
 		relative_position_id = ALB_ZOG_stand_zog
 		x = -6
@@ -146,23 +146,33 @@ focus_tree = {
 		}
 	}
 
+###################################################
 ######################### Balance parties
+#####################################################
+
 	focus = {
 		id = ALB_N_ZOG_balance_the_parties
 		icon = GFX_goal_generic_neutrality_focus
-		mutually_exclusive = { focus = ALB_F_ZOG_integrate_the_right }
+
 
 		relative_position_id = ALB_ZOG_stand_zog
 		x = 0
 		y = 1
 
 		cost = 10
-		prerequisite = { focus = ALB_ZOG_stand_zog}
+
 		ai_will_do = {
 			factor = 10
 		}
 
 		available = {
+			OR = {
+				AND = {
+					has_completed_focus = ALB_accept_greek_private_paramilitarist_organizations
+					has_completed_focus = ALB_anti_union_propaganda
+					has_completed_focus = ALB_COM_election_day
+				}
+			}
 
 		}
 
@@ -562,6 +572,35 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ALB_accept_greek_private_paramilitarist_organizations
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_KOS_guard
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_KOS_guard}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
 		id = ALB_raise_wages_bust_unions
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 
@@ -596,6 +635,38 @@ focus_tree = {
 				popularity = -0.05
 			}
 
+		}
+	}
+
+	focus = {
+		id = ALB_anti_union_propaganda
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_raise_wages_bust_unions
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_raise_wages_bust_unions}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_popularity = { 
+				ideology = communism 
+				popularity = -0.05
+			}
 		}
 	}
 
@@ -806,6 +877,8 @@ focus_tree = {
 		}
 	}
 
+#####################
+
 	focus = {
 		id = ALB_COM_election_day
 		icon = GFX_goal_unknown
@@ -815,11 +888,15 @@ focus_tree = {
 		x = 0
 		y = 5
 
-		cost = 10
+		cost = 5
 
 
 		available = {
 			OR = {
+				AND = {
+					has_completed_focus = ALB_anti_union_propaganda
+					has_completed_focus = ALB_accept_greek_private_paramilitarist_organizations
+				}
 				AND = {
 					has_completed_focus = ALB_COM_propaganda
 					has_completed_focus = ALB_COM_LOWER_YUG_COM_spread
