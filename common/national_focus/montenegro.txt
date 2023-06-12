@@ -89,8 +89,8 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_political_power = 175
-            add_popularity = { ideology = fascism popularity = 0.25 }
+			add_political_power = 75
+            add_popularity = { ideology = fascism popularity = 0.1 }
 			set_politics = {
 	ruling_party = fascism
 	elections_allowed = no
@@ -131,8 +131,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_popularity = { ideology = fascism popularity = 0.25 }
-			add_war_support = 0.25
-			add_stability = 0.25
+			add_war_support = 0.1
+			add_stability = 0.05
 			add_political_power = 75
 		
 	
@@ -241,14 +241,14 @@ focus_tree = {
 			}
 		}
 	}
-			focus = {
+	focus = {
 		id = MNT_focus_24
 		icon = GFX_focus_secret_rearmament
 		x = 12
 		y = 2
 			    prerequisite = { focus = MNT_focus_23 }
         relative_position_id = HOL_the_western_possessions
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 2
@@ -273,11 +273,14 @@ focus_tree = {
 
         type = infantry_equipment_1
 
-        amount = 3690
+        amount = 3000
 		
 
-    }
-		
+    	}
+			add_timed_idea = { 
+				idea = Heavy_Investments
+				days = 30
+			}
 	
 		}
 	}
@@ -420,7 +423,7 @@ focus_tree = {
 
 
 		completion_reward = {
-		add_manpower = 250000
+		add_manpower = 30000
 		
 	
 		}
@@ -463,10 +466,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = ROM_invest_in_the_iar_AF1
@@ -486,7 +489,7 @@ focus_tree = {
 		prerequisite = { focus = MNT_focus_18 }
 			    prerequisite = { focus = MNT_focus_21 }
         relative_position_id = HOL_the_western_possessions
-		cost = 6
+		cost = 10
 
 		ai_will_do = {
 			factor = 2
@@ -601,15 +604,14 @@ focus = {
 
 
 		completion_reward = {
-	add_equipment_to_stockpile = {
-
+			add_equipment_to_stockpile = {
         type = infantry_equipment_1
-
-        amount = 10000
-		
-
-    }
-		
+        amount = 5000
+    	}
+			add_timed_idea = { 
+				idea = Heavy_Investments
+				days = 60
+			}
 	
 		}
 	}
@@ -704,7 +706,7 @@ focus = {
 
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 25
 			create_wargoal = { type = annex_everything target = MAC }
 
 		
@@ -739,7 +741,7 @@ focus = {
 
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 25
 			create_wargoal = { type = annex_everything target = KOS }
 
 		
@@ -774,7 +776,7 @@ focus = {
 
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 25
 			create_wargoal = { type = annex_everything target = BOS }
 
 		
@@ -797,6 +799,15 @@ focus = {
 		}
 
 		available = {
+			OR = {
+				controls_state = 802
+				controls_state = 106
+				controls_state = 803
+				controls_state = 108
+				controls_state = 107
+				controls_state = 764
+				controls_state = 45
+			}
 
 		}
 
@@ -976,7 +987,7 @@ add_state_core = 45
 
 
 		completion_reward = {
-			add_political_power = 200
+			add_political_power = 25
 			MNT = { create_wargoal = { type = puppet_wargoal_focus target = SER } }
 		
 	
@@ -1012,9 +1023,9 @@ add_state_core = 45
 
 
 		completion_reward = {
-		army_experience = 125
-		navy_experience = 125
-		air_experience = 125
+		army_experience = 75
+		navy_experience = 75
+		air_experience = 75
 		
 		custom_effect_tooltip = ROM_royal_guards_divisions_tt
 			hidden_effect = {
@@ -1453,10 +1464,10 @@ add_state_core = 45
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 2
 					instant_build = yes
 				}
 
