@@ -90,7 +90,7 @@ focus_tree = {
 
 
 		relative_position_id = ALB_ZOG_stand_zog
-		x = -6
+		x = -7
 		y = 1
 
 		cost = 10
@@ -113,6 +113,14 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_popularity = {
+					ideology = fascism
+					popularity = -0.05
+			}
+			add_popularity = {
+					ideology = neutrality
+					popularity = 0.1
+			}
 		}
 	}
 
@@ -122,7 +130,7 @@ focus_tree = {
 
 
 		relative_position_id = ALB_N_ZOG_balance_the_parties
-		x = -3
+		x = -4
 		y = 1
 
 		cost = 10
@@ -142,7 +150,7 @@ focus_tree = {
 
 
 		completion_reward = {
-
+			add_manpower = 50000
 		}
 	}
 
@@ -186,6 +194,12 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -50
+			add_popularity = {
+    		ideology = democratic
+    		popularity = 0.05
+			}
 		}
 	}
 
@@ -199,7 +213,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = ALB_N_ZOG_balance_the_parties}
 		ai_will_do = {
 			factor = 10
@@ -216,6 +230,54 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_popularity = {
+    		ideology = neutrality
+    		popularity = -0.1
+			}
+			add_timed_idea = { 
+				idea = Heavy_Investments
+				days = 14
+			}
+
+		}
+	}
+
+	focus = {
+		id = ALB_new_staff
+		icon = GFX_focus_generic_improve_the_administration
+
+
+		relative_position_id = ALB_retire_old_guard_loyalists
+		x = -2
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_retire_old_guard_loyalists}
+		prerequisite = { focus = ALB_national_guard}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+			has_completed_focus = ALB_CCP_demand_payment
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_timed_idea = { 
+				idea = ALB_new_staff_idea
+				days = 600
+			}
+			add_political_power = 50
+			add_stability = 0.05
 
 		}
 	}
@@ -233,7 +295,7 @@ focus_tree = {
 
 		cost = 10
 		prerequisite = { focus = ALB_D_ZOG_draft_a_constitution}
-		prerequisite = { focus = ALB_N_ZOG_balance_the_parties}
+		prerequisite = { focus = ALB_retire_old_guard_loyalists}
 		ai_will_do = {
 			factor = 10
 		}
@@ -249,6 +311,8 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -100
 
 		}
 	}
@@ -362,7 +426,7 @@ focus_tree = {
 			add_political_power = -50
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.20
+				popularity = 0.1
 			}	
 		}
 	}
@@ -441,7 +505,7 @@ focus_tree = {
 			add_political_power = -25
 			add_popularity = {
 				ideology = communism
-				popularity = 0.20
+				popularity = 0.1
 			}	
 		}
 	}
@@ -485,6 +549,10 @@ focus_tree = {
 				popularity = -0.25
 			}
 			promote_character = ALB_no_government
+			add_timed_idea = { 
+				idea = ALB_new_staff_idea
+				days = 600
+			}
 		}
 	}
 
@@ -640,7 +708,7 @@ focus_tree = {
 
 	focus = {
 		id = ALB_anti_union_propaganda
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 
 
 		relative_position_id = ALB_raise_wages_bust_unions
@@ -786,6 +854,10 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_popularity = { 
+				ideology = communism 
+				popularity = 0.05
+			}
 
 		}
 	}
@@ -918,6 +990,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			country_event = { id = albania.2}
 
 		}
 	}

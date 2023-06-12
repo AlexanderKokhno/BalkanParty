@@ -1023,11 +1023,11 @@ add_state_core = 45
 
 
 		completion_reward = {
-		army_experience = 75
-		navy_experience = 75
-		air_experience = 75
-		
-		custom_effect_tooltip = ROM_royal_guards_divisions_tt
+			army_experience = 75
+			navy_experience = 75
+			air_experience = 75
+			
+
 			hidden_effect = {
 				if = {
 					limit = {
@@ -1042,11 +1042,11 @@ add_state_core = 45
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
 				
-		    	   		 	infantry = { x = 1 y = 0 }
+									infantry = { x = 1 y = 0 }
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
 				
-		    	   		 	infantry = { x = 2 y = 0 }
+									infantry = { x = 2 y = 0 }
 							artillery_brigade = { x = 2 y = 1 }
 							artillery_brigade = { x = 2 y = 2 }
 						}
@@ -1065,13 +1065,10 @@ add_state_core = 45
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
 					
-			    	   		 	infantry = { x = 1 y = 0 }
-								infantry = { x = 1 y = 1 }
-								infantry = { x = 1 y = 2 }
+								infantry = { x = 1 y = 0 }
 					
-			    	   		 	infantry = { x = 2 y = 0 }
+								infantry = { x = 2 y = 0 }
 								artillery_brigade = { x = 2 y = 1 }
-								artillery_brigade = { x = 2 y = 2 }
 							}
 							support = {
 								engineer = { x = 0 y = 0 }
@@ -1079,134 +1076,29 @@ add_state_core = 45
 						}
 					}
 				}
-				random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 105 }
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
-					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = MNT
-						
-					}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 105 }
+				create_unit = {
+					division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
+					owner = MNT
+					
+				}
+				create_unit = {
+					division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
+					owner = MNT
+					
+				}
+				create_unit = {
+					division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
+					owner = MNT
+					
+				}
+				create_unit = {
+					division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
+					owner = MNT
+					
 				}
 			}			
 		}
