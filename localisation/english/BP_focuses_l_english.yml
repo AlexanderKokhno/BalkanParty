@@ -783,7 +783,7 @@
 
 ######################################## SHARED (Generic)
 
- BB_shared_military_research_institute:0 "Military Technical Institute"
+ BB_shared_military_research_institute:0 "Military Exercises"
  BB_shared_military_research_institute_desc:0 "The Military Technical Institute exists to provide the Czechoslovak armed forces with military research, development, and testing capabilities."
  BB_shared_mountain_bonus:0 "Mountain Troops"
  BB_shared_mountain_bonus_desc:0 "When so much of our border consists of hills and mountains, the need for specialized soldiers to police and defend those areas is clear."
@@ -816,7 +816,7 @@
  BB_shared_light_fighter_focus_desc:0 "The Military Aeronautical Institute has concluded that Light Fighters are the most useful and should form the core of our air force."
  BB_shared_heavy_fighter_focus:0 "Heavy Fighter Focus"
  BB_shared_heavy_fighter_focus_desc:0 "The Military Aeronautical Institute has concluded that Heavy Fighters are the most useful and should form the core of our air force."
- BB_shared_rule_the_air:0 "Rule the Air"
+ BB_shared_rule_the_air:0 "Aviation Docterin Evolution"
  BB_shared_rule_the_air_desc:0 "Our commitment to the air force has allowed us to build up a remarkable production efficiency."
  BB_shared_import_foreign_bombers:0 "Import Foreign Bombers"
  BB_shared_import_foreign_bombers_desc:0 "By importing a variety of foreign bombers to test and evaluate, our own aircraft designers will learn valuable lessons."
@@ -828,7 +828,7 @@
  BB_shared_access_to_the_sea_desc:0 "No longer are we landlocked! Now that we have a coastline we must study marine matters and come up with a plan to establish a Navy."
  BB_shared_sudden_shipyard:0 "Sudden Shipyard"
  BB_shared_sudden_shipyard_desc:0 "A Navy requires a shipyard. We did not plan for this, but large engineering projects are nothing new to us. With the proper effort a shipyard should take no time at all."
- BB_shared_shipbuilding_legacy:0 "Shipbuilding Legacy"
+ BB_shared_shipbuilding_legacy:0 "Makeshift Capitals"
  BB_shared_shipbuilding_legacy_desc:0 "While having a navy of our own is new, Skoda Works has a long history of building components for the Austro-Hungarian navy's ships. Now they can use that same experience to produce ships for our own navy."
  BB_shared_battleship_catchup_1:1 "Battleship Breakthrough"
  BB_shared_battleship_catchup_1_desc:1 "Our new need for a navy has resulting in a sudden flurry of Battleship design."
