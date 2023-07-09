@@ -1,11 +1,14 @@
-version="1.0"
+version="1"
 tags={
 	"Alternative History"
-	"Balance"
-	"National Focuses"
-	"Military"
-	"Map"
-	"Gameplay"
 }
-name="Balkan Party"
-supported_version="1.12.6"
+replace_path="history/countries"
+replace_path="history/states"
+replace_path="history/general"
+replace_path="history/units"
+replace_path="map/strategicregions"
+replace_path="map/supplyareas"
+
+
+name="BB NEW MAP TEST"
+supported_version="1.12.14"

@@ -1,8 +1,5 @@
 ################# STARTER id
 
-# BB_shared_military_research_institute
-# BB_shared_military_aeronautical_institute
-# BB_shared_access_to_the_sea
 
 
 ##################
@@ -12,7 +9,7 @@ focus_tree = {
 	id = generic_focus
 	
 	country = {
-		factor = 1
+		factor = 0
 	}
 	
 	default = yes
@@ -2319,19 +2316,14 @@ focus_tree = {
 			}			
 		}
 	}
-
-
-
-
-
 #######################################
 ##### MILITARY RESEARCH INSTITUTE #####	
 #######################################
 
-shared_focus = {
+focus = {
   id = BB_shared_military_research_institute
   icon = GFX_focus_chi_army_reform
-  x = 20
+  x = 27
   y = 0
 
   cost = 5
@@ -2359,7 +2351,7 @@ shared_focus = {
 
 
 
-shared_focus = {
+focus = {
   id = BB_shared_inf_and_artillery_advancement
   icon = GFX_goal_rhineland
   prerequisite = { focus = BB_shared_military_research_institute }
@@ -2397,7 +2389,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_inf_and_artillery_advancement_2
   icon = GFX_goal_generic_army_artillery2
   prerequisite = { focus = BB_shared_inf_and_artillery_advancement }
@@ -2435,7 +2427,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_doctrine_bonus
   icon = GFX_goal_generic_army_doctrines
   prerequisite = { focus = BB_shared_military_research_institute }
@@ -2475,7 +2467,7 @@ shared_focus = {
 
 
 
-shared_focus = {
+focus = {
   id = BB_shared_mechanization
   icon = GFX_goal_generic_production2
   prerequisite = { focus = BB_shared_military_research_institute }
@@ -2517,7 +2509,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_armour_bonus_ii
   icon = GFX_goal_generic_army_tanks
   prerequisite = { focus = BB_shared_mechanization }
@@ -2560,7 +2552,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_doctrine_bonus_2
   icon = GFX_goal_generic_army_doctrines
   prerequisite = { focus = BB_shared_doctrine_bonus }
@@ -2597,7 +2589,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_war_college
   icon = GFX_goal_generic_build_tank
   prerequisite = { focus = BB_shared_doctrine_bonus_2 }
@@ -2642,7 +2634,7 @@ shared_focus = {
 ####### AERONAUTICAL INSTITUTE ########	
 #######################################
 
-shared_focus = {
+focus = {
   id = BB_shared_military_aeronautical_institute
   icon = GFX_focus_SOV_flying_clubs
   x = 7
@@ -2672,7 +2664,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_import_foreign_fighters
   icon = GFX_goal_generic_air_fighter
   prerequisite = { focus = BB_shared_military_aeronautical_institute }
@@ -2710,7 +2702,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_light_fighter_focus
   icon = GFX_goal_generic_air_fighter2
   prerequisite = { focus = BB_shared_import_foreign_fighters }
@@ -2752,7 +2744,7 @@ shared_focus = {
 
 
 
-shared_focus = {
+focus = {
   id = BB_shared_rule_the_air
   icon = GFX_goal_generic_air_doctrine
 
@@ -2791,7 +2783,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_import_foreign_bombers
   icon = GFX_goal_generic_air_bomber
   prerequisite = { focus = BB_shared_military_aeronautical_institute }
@@ -2829,7 +2821,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_cas_focus
   icon = GFX_goal_generic_CAS
   prerequisite = { focus = BB_shared_import_foreign_bombers focus = BB_shared_import_foreign_fighters}
@@ -2867,7 +2859,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_tac_focus
   icon = GFX_goal_generic_air_bomber
   prerequisite = { focus = BB_shared_import_foreign_bombers }
@@ -2909,7 +2901,7 @@ shared_focus = {
 ######### ACCESS TO THE SEA ###########	
 #######################################
 
-shared_focus = {
+focus = {
   id = BB_shared_access_to_the_sea
   icon = GFX_goal_generic_occupy_states_coastal
   x = 7
@@ -2941,7 +2933,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_sudden_shipyard
   icon = GFX_goal_generic_construct_naval_dockyard
   prerequisite = { focus = BB_shared_access_to_the_sea }
@@ -3007,7 +2999,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_shipbuilding_legacy
   icon = GFX_goal_generic_amphibious_assault
   prerequisite = { focus = BB_shared_access_to_the_sea }
@@ -3038,7 +3030,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_battleship_catchup_1
   icon = GFX_goal_generic_navy_battleship
   prerequisite = { focus = BB_shared_shipbuilding_legacy }
@@ -3074,7 +3066,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_destroyer_catchup_1
   icon = GFX_goal_generic_navy_anti_submarine
   prerequisite = { focus = BB_shared_shipbuilding_legacy }
@@ -3110,7 +3102,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_cruiser_catchup_1
   icon = GFX_goal_generic_navy_cruiser
   prerequisite = { focus = BB_shared_shipbuilding_legacy }
@@ -3147,7 +3139,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_raiding_focus
   icon = GFX_goal_generic_navy_doctrines_tactics
   prerequisite = { focus = BB_shared_destroyer_catchup_1 }
@@ -3186,7 +3178,7 @@ shared_focus = {
   }
 }
 
-shared_focus = {
+focus = {
   id = BB_shared_capital_focus
   icon = GFX_goal_generic_navy_doctrines_tactics
   prerequisite = { focus = BB_shared_cruiser__catchup_1 }
@@ -3225,4 +3217,3 @@ shared_focus = {
   }
 }
 }
-
