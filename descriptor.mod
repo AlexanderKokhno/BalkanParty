@@ -10,5 +10,5 @@ replace_path="map/strategicregions"
 replace_path="map/supplyareas"
 
 
-name="BB NEW MAP TEST"
+name="Balkan Party"
 supported_version="1.12.14"
