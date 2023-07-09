@@ -1,21 +1,24 @@
 
 state={
-	id=331
-	name="STATE_331"
+	id=399
+	name="STATE_399"
 	provinces={
-		5009 6601 8761 11312 11352 11364 11371 11382 11488 19900 
+		4840 6955 11821 11842 11866 
 	}
 	history={
-		owner = FL4
+		owner = HOL
 		add_core_of = HOL
 		buildings = {
 			infrastructure = 4
 		}
         victory_points = {
-            11312 10 #Groningen
+            11821 20 #Utrecht
+        }
+        victory_points = {
+            11866 5 #Nieuwegein
         }
     }
-	manpower=409500
+	manpower=448500
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category = city

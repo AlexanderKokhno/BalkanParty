@@ -1,22 +1,23 @@
+
 state={
-	id=2344
-	name="STATE_2344"
+	id=451
+	name="STATE_451"
 	history={
-		owner = FL1
+		owner = HOL
 		add_core_of = HOL
-		add_core_of = LIM
 		buildings = {
 			infrastructure = 4
+			19873 = { naval_base = 1 }
 		}
 		victory_points = {
-			12256 10 #Maastricht
+			19873 2 #Middelburg
 		}
     }
 	provinces={
-		12256 19896
+		4251 19870 19871 19873 
 	}
-	manpower=377250
-	state_category=city
+	manpower=168488
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }

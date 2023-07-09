@@ -1,23 +1,25 @@
 state={
-	id=2845
-	name="STATE_2845"
+	id=2713
+	name="STATE_2713"
 	provinces={
-		1705 3044 
+		6618 6625 5879 12107 12039
 	}
-	history = {
-		owner = FL1
+	history={
+		owner = HOL
 		add_core_of = HOL
 		add_core_of = BRB
 		buildings = {
 			infrastructure = 4
 		}
 		victory_points = {
-			3044 10 #'s-Hertogenbosch
+			12039 10 #Tilburg
+		}
+		victory_points = {
+			6625 10 #Breda
 		}
 	}
-	
-	manpower=190000
-	state_category=town
+	manpower=373050
+	state_category=city
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

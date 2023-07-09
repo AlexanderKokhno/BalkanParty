@@ -1,23 +1,23 @@
+
 state={
-	id=2845
-	name="STATE_2845"
+	id=479
+	name="STATE_479"
 	provinces={
-		1705 3044 
+		8641 11994 12077 12100 12130 12151 
 	}
-	history = {
-		owner = FL1
+	history={
+		owner = HOL
 		add_core_of = HOL
 		add_core_of = BRB
 		buildings = {
 			infrastructure = 4
 		}
 		victory_points = {
-			3044 10 #'s-Hertogenbosch
+			12077 20 #Eindhoven
 		}
 	}
-	
-	manpower=190000
-	state_category=town
+	manpower=395000
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
 }
