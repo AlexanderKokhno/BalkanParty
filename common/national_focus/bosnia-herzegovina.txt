@@ -1,3 +1,17 @@
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		relative_position_id = 
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#		continue_if_invalid = yes
+#		available_if_capitulated = yes
+
+
 focus_tree = {
 	id = bosnia-herzegovina_focus
 	
@@ -15,47 +29,18 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1100 }
 
-#	focus = {
-#		id = ROM_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	} 
-
-####################################################################
-#################### SHARED 
-###############################################################
-	shared_focus = YUG_shared_modernize_the_air_force
-	shared_focus = YUG_shared_expand_the_split_shipyards
-	shared_focus = YUG_shared_expand_the_serbian_shipyards
-	shared_focus = YUG_shared_fund_army
+	focus = {
+		id = BOS_bosnian_spring_recover
+		icon = GFX_goal_generic_construction2
+		x = -3
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			
+		}
+	} 
 }
