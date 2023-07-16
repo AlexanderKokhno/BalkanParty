@@ -414,7 +414,7 @@ MAL = {
 }
 
 MNT = {
-	color = rgb { 197 3 9 }
+	color = rgb { 77  90  105 }
 	color_ui = rgb { 77  90  105 }
 }
 
