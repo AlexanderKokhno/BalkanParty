@@ -1323,11 +1323,22 @@ focus_tree = {
 
 		available = {
 
+			every_state = {
+				limit = { 
+					OR = {
+						is_core_of = SLV
+						is_core_of = CRO
+						is_core_of = BOS
 
-
+					}
+					ROOT = {
+						controls_state = PREV
+					}
+				}
 
 				
 
+			}
 		}
 
 		

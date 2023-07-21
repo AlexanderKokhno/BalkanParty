@@ -194,7 +194,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 18280
+		location = 11659
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -206,7 +206,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 12
 		}
-		location = 18280
+		location = 11659
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -220,7 +220,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 13
 		}		
-		location = 18280
+		location = 6751
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -232,7 +232,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 14
 		}		
-		location = 18280
+		location = 6751
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5

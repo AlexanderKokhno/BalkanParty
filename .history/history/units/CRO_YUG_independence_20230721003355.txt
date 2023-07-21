@@ -61,7 +61,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 20120
+		location = 20336
 		division_template = "Hrvatsko domobranstvo"
 		start_experience_factor = 0
 	}
@@ -71,7 +71,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 20120
+		location = 20336
 		division_template = "Hrvatsko domobranstvo"
 		start_experience_factor = 0
 	}
@@ -81,7 +81,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 20120
+		location = 20336
 		division_template = "Hrvatsko domobranstvo"
 		start_experience_factor = 0
 	}
@@ -91,7 +91,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 20120
+		location = 20336
 		division_template = "Hrvatsko domobranstvo"
 		start_experience_factor = 0
 	}
@@ -101,7 +101,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 20120
+		location = 20336
 		division_template = "Hrvatsko domobranstvo"
 		start_experience_factor = 0
 	}
@@ -111,7 +111,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 20120
+		location = 20336
 		division_template = "Konjièka Divizija"
 		start_experience_factor = 0
 	}
