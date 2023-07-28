@@ -7,7 +7,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
@@ -15,6 +15,36 @@ ideas = {
 				stability_factor = -0.05
 				production_speed_buildings_factor = -0.1
 			}
+		}
+	BOS_heavy_investments = {
+			picture = generic_build_infrastructure
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.3
+			}
+		}
+	}
+	BOS_communism = {
+		name = BOS_communism
+
+		removal_cost = -1
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		picture = generic_communism_drift_bonus
+		modifier = {
+		communism_acceptance = 15
 		}
 	}
 	# MILITARY
