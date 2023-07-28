@@ -99,7 +99,7 @@ focus_tree = {
 	} 
 	focus = {
 		id = BOS_invest_capital
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_BOS_sarajevo
 		prerequisite = { focus = BOS_bosnian_spring_recover}
 		x = -3
 		y = 1
@@ -126,6 +126,74 @@ focus_tree = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	} 
+	focus = {
+		id = BOS_invest_capital
+		icon = GFX_goal_BOS_sarajevo
+		prerequisite = { focus = BOS_bosnian_spring_recover}
+		x = -5
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			2814 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			2813 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			387 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			2824 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 			}
