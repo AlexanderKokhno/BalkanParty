@@ -5,11 +5,16 @@ state={
 	provinces={
 		624 4393 5290 6833 14586 14607 17321 17336 20176 
 	}
+	resources={
+		steel=8
+	}
 	history={
 		owner = BOS
 		add_core_of = BOS
 		buildings = {
 			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 0
 
 		}
 		add_core_of = YUG
