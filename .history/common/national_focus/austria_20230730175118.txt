@@ -1418,11 +1418,7 @@ focus_tree = {
 				complete_national_focus = POL_assemble_the_regency_council
 				complete_national_focus = POL_fulfil_fifth_of_november
 				complete_national_focus = POL_claiming_lithuania
-				complete_national_focus = POL_restoration_of_the_royal_sejm
-				complete_national_focus = POL_institute_royal_guards
-				complete_national_focus = POL_support_monarchism_in_LIT
-				complete_national_focus = POL_king_of_lithuania
-				complete_national_focus = POL_LIT_union
+				complete_national_focus = 
 			}
 			AUS = {
 				declare_war_on = {

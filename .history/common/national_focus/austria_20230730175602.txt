@@ -1422,7 +1422,11 @@ focus_tree = {
 				complete_national_focus = POL_institute_royal_guards
 				complete_national_focus = POL_support_monarchism_in_LIT
 				complete_national_focus = POL_king_of_lithuania
-				complete_national_focus = POL_LIT_union
+				complete_national_focus = 
+				complete_national_focus = 
+				complete_national_focus = 
+				complete_national_focus = 
+				complete_national_focus = 
 			}
 			AUS = {
 				declare_war_on = {

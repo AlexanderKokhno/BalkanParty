@@ -5,7 +5,8 @@ state={
 		19938 
 	}
 	history={
-		owner = SLO
+		owner = FL7
+		add_core_of = FL7
 		buildings = {
 			infrastructure = 2
 		}
