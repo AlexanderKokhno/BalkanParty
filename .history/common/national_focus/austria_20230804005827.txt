@@ -1195,21 +1195,15 @@ focus_tree = {
 
 		available = {
 			is_in_faction_with = FRA
+			is_in_faction_with = BAY
+			is_in_faction_with = DNZ
 			is_in_faction_with = PRE
 			is_in_faction_with = SAX
-			is_in_faction_with = HES
-			is_in_faction_with = HSN
-			is_in_faction_with = HAN
-			is_in_faction_with = VAT
-			is_in_faction_with = BAY
 			FRA = { has_opinion = { target = AUS value > 75 } }
-			PRE = { has_opinion = { target = AUS value > 75 } }
+			BAY = { has_opinion = { target = AUS value > 75 } }
+			DNZ = { has_opinion = { target = AUS value > 75 } }
+			PRE = { has_opinion = { target = AUS value > 50 } }
 			SAX = { has_opinion = { target = AUS value > 75 } }
-			HES = { has_opinion = { target = AUS value > 50 } }
-			HSN = { has_opinion = { target = AUS value > 75 } }
-			HAN = { has_opinion = { target = AUS value > 50 } }
-			VAT = { has_opinion = { target = AUS value > 50 } }
-			BAY = { has_opinion = { target = AUS value > 50 } }
 			if = {
 				limit = {
 					is_in_faction_with = CZE
@@ -1230,13 +1224,10 @@ focus_tree = {
 
 		completion_reward = {
 			 FRA = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
+			 BAY = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
+			 DNZ = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
 			 PRE = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
 			 SAX = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
-			 HES = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
-			 HSN = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
-			 HAN = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
-			 VAT = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
-			 BAY = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
 			 limit = {
 				limit = {
 					is_in_faction_with = CZE
@@ -1287,28 +1278,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			every_state = {
-				limit = { 
-					OR = {
-						is_core_of = SIL
-					}
-					NOT = {
-						OR = {
-							is_core_of = PRE
-							is_core_of = FL4
-						}
-					}
-				}
-				ROOT = {
-					transfer_state = PREV
-					add_state_core = PREV
-				}
-				PREV = {
-					
-					remove_core_of = FL4
-				}				
+			transfer_state = 67
+			transfer_state = 762
+			67 = {
+				add_core_of = AUS
+				remove_core_of = POL
 			}
-
+			762 = {
+				add_core_of = AUS
+				remove_core_of = POL
+			}
 
 		}
 	}
@@ -1327,42 +1306,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			every_state = {
-				limit = { 
-					OR = {
-						is_core_of = GAL
-					}
-				}
-				GAL = {
-					transfer_state = PREV
-				}
+			transfer_state = 88
+			transfer_state = 89
+			transfer_state = 91
+			88 = {
+				add_resistance = 100
 			}
-			every_state = {
-				limit = { 
-					AND = {
-						is_core_of = MLP
-						is_core_of = GAL
-					}
-				}
-				AUS = {
-					transfer_state = PREV
-				}
-				add_resistance = 50
+			89 = {
+				add_resistance = 100
 			}
-			ROOT = {
-				declare_war_on = {
-					target = GAL
-					type = annex_everything
-				}				
+			91 = {
+				add_resistance = 100
 			}
-			GAL = {
-				add_equipment_to_stockpile = {
-    			type = infantry_equipment
-    			amount = 7500
-    			producer = TTS
-				}
-			}
-
 
 		}
 	}
@@ -1379,31 +1334,20 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			GAL = {
-				all_core_state = {
-					is_controlled_by_ROOT_or_ally = yes
-				}
-			}
+			controls_state = 88
+			controls_state = 89
+			controls_state = 91
 		}
 		available_if_capitulated = no
 
 		completion_reward = {
-			every_state = {
-				limit = { 
-					OR = {
-						is_core_of = VLH
-						is_core_of = MZV
-						AND = {
-							is_core_of = MLP
-							is_controlled_by_ROOT_or_ally = no
-						}
-					}
-				}
-				POL = {
-					transfer_state = PREV
-				}
-			}
 			POL = {
+				transfer_state = 10
+				transfer_state = 87				
+				transfer_state = 90
+				transfer_state = 92
+				transfer_state = 97
+				transfer_state = 98
 				add_equipment_to_stockpile = {
     			type = infantry_equipment
     			amount = 20000
@@ -1411,18 +1355,6 @@ focus_tree = {
 				}
 				add_command_power = 200
 				add_political_power = 200
-				transfer_state = 46
-				transfer_state = 491
-				add_state_core = 46
-				add_state_core = 491
-				complete_national_focus = POL_assemble_the_regency_council
-				complete_national_focus = POL_fulfil_fifth_of_november
-				complete_national_focus = POL_claiming_lithuania
-				complete_national_focus = POL_restoration_of_the_royal_sejm
-				complete_national_focus = POL_institute_royal_guards
-				complete_national_focus = POL_support_monarchism_in_LIT
-				complete_national_focus = POL_king_of_lithuania
-				complete_national_focus = POL_LIT_union
 			}
 			AUS = {
 				declare_war_on = {
@@ -1475,8 +1407,6 @@ focus_tree = {
 			every_state = {
 				limit = {
 					OR = {
-						region = 4
-						region = 5
 						region = 6
 						region = 7
 						region = 8
@@ -1486,15 +1416,7 @@ focus_tree = {
 						region = 16
 						region = 19
 						region = 25
-						region = 35
-						region = 36
-						region = 40
 						region = 61
-						region = 64
-						region = 68
-						region = 69
-						region = 70
-						region = 88
 						region = 95
 					}
 				
