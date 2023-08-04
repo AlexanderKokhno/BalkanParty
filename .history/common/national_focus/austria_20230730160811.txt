@@ -1301,14 +1301,12 @@ focus_tree = {
 				}
 				ROOT = {
 					transfer_state = PREV
-					add_state_core = PREV
 				}
-				PREV = {
-					
-					remove_core_of = FL4
-				}				
 			}
-
+			PREV = {
+				add_core_of = ROOT
+				remove_core_of = FL4
+			}
 
 		}
 	}
@@ -1339,28 +1337,28 @@ focus_tree = {
 			}
 			every_state = {
 				limit = { 
-					AND = {
+					OR = {
 						is_core_of = MLP
-						is_core_of = GAL
+					}
+					NOT = {
+						OR = {
+							is_core_of = SLO
+							is_core_of = FL7
+						}
 					}
 				}
-				AUS = {
+				ROOT = {
 					transfer_state = PREV
 				}
-				add_resistance = 50
+				PREV = {
+					add_resistance = 50
+				}
 			}
 			ROOT = {
 				declare_war_on = {
 					target = GAL
 					type = annex_everything
 				}				
-			}
-			GAL = {
-				add_equipment_to_stockpile = {
-    			type = infantry_equipment
-    			amount = 7500
-    			producer = TTS
-				}
 			}
 
 
@@ -1381,7 +1379,7 @@ focus_tree = {
 		available = {
 			GAL = {
 				all_core_state = {
-					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by = ROOT
 				}
 			}
 		}
@@ -1393,17 +1391,19 @@ focus_tree = {
 					OR = {
 						is_core_of = VLH
 						is_core_of = MZV
-						AND = {
-							is_core_of = MLP
-							is_controlled_by_ROOT_or_ally = no
-						}
 					}
 				}
-				POL = {
+				GAL = {
 					transfer_state = PREV
 				}
 			}
 			POL = {
+				transfer_state = 10
+				transfer_state = 87				
+				transfer_state = 90
+				transfer_state = 92
+				transfer_state = 97
+				transfer_state = 98
 				add_equipment_to_stockpile = {
     			type = infantry_equipment
     			amount = 20000
@@ -1411,18 +1411,6 @@ focus_tree = {
 				}
 				add_command_power = 200
 				add_political_power = 200
-				transfer_state = 46
-				transfer_state = 491
-				add_state_core = 46
-				add_state_core = 491
-				complete_national_focus = POL_assemble_the_regency_council
-				complete_national_focus = POL_fulfil_fifth_of_november
-				complete_national_focus = POL_claiming_lithuania
-				complete_national_focus = POL_restoration_of_the_royal_sejm
-				complete_national_focus = POL_institute_royal_guards
-				complete_national_focus = POL_support_monarchism_in_LIT
-				complete_national_focus = POL_king_of_lithuania
-				complete_national_focus = POL_LIT_union
 			}
 			AUS = {
 				declare_war_on = {
@@ -1471,41 +1459,60 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+			ROOT = {
+				add_state_claim = 36
+				add_state_claim = 7
+				add_state_claim = 35
+				add_state_claim = 8
+				add_state_claim = 28
+				add_state_claim = 845
+				add_state_claim = 847
+				add_state_claim = 846
+				add_state_claim = 3
+				add_state_claim = 151
+				add_state_claim = 735
+				add_state_claim = 158
+				add_state_claim = 159
+				add_state_claim = 162
+				add_state_claim = 850
+				add_state_claim = 39
+				add_state_claim = 56
+				add_state_claim = 57
+				add_state_claim = 55
+				add_state_claim = 51
+				add_state_claim = 42
+				add_state_claim = 50
+				add_state_claim = 58
+				add_state_claim = 59
+				add_state_claim = 60
+				add_state_claim = 54
+				add_state_claim = 52
+				add_state_claim = 53
+				add_state_claim = 153
+				add_state_claim = 152
+				add_state_claim = 4
+				add_state_claim = 60
+				add_state_claim = 64
+				add_state_claim = 61
+				add_state_claim = 62
+				add_state_claim = 63
+				add_state_claim = 68
+				add_state_claim = 66
+				add_state_claim = 65
+				add_state_claim = 69
+				add_state_claim = 9
+				add_state_claim = 75
+				add_state_claim = 74
+				add_state_claim = 72
+				add_state_claim = 67
+				add_state_claim = 762
+				add_state_claim = 70
+				add_state_claim = 71
+				add_state_claim = 664
+				add_state_claim = 73
+				add_state_claim = 1
 
-			every_state = {
-				limit = {
-					OR = {
-						region = 4
-						region = 5
-						region = 6
-						region = 7
-						region = 8
-						region = 9
-						region = 10
-						region = 11
-						region = 16
-						region = 19
-						region = 25
-						region = 35
-						region = 36
-						region = 40
-						region = 61
-						region = 64
-						region = 68
-						region = 69
-						region = 70
-						region = 88
-						region = 95
-					}
-				
-
-				}
-				ROOT = {
-					add_state_claim = PREV
-				}
 			}
-
-
 
 		}
 	}
