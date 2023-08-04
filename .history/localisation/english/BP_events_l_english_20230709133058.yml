@@ -1,0 +1,234 @@
+﻿l_english: 
+
+##############################
+############# NEWS
+###############################
+
+ bp_event.1.t:0 "HRE Emperor issues demand for Imperial Defence"
+ bp_event.1.desc:0 "The Emperor has nor fared well in his war. In his desperation, he has made the choice to beg the empire to join his endeavor. Already, Imperial delegates have set out, through it should be several days before the results are seen."
+ bp_event.1.a:0 "We must make a choice"
+ bp_event.1.b:0 "Here come the Germans"
+
+ bp_event.2.t:0 "The Bohemians empower the Protestant Church"
+ bp_event.2.desc:0 "The Bohemian electorate has recently empowered the protestant church. While it is claimed such actions are irrelevant to national policy, one cannot but notice the religious ties that are being established throughout the empire."
+ bp_event.2.a:0 "We shall shed Catholic blood"
+ bp_event.2.b:0 "The clouds of war grow heavy, the Bohemians are plotting."
+
+ bp_event.3.t:0 "Austria Restores the Holy Roman Empire"
+ bp_event.3.desc:0 "The Austrians have turned back the clock, to centuries gone by. Once more shall the European stage be graced with Prussian might and Habsburg squabbles. From Corsica to Konigsberg now stretches this great realm, but can it hold itself together?"
+ bp_event.3.a:0 "We shall shed Catholic blood"
+ bp_event.3.b:0 "The clouds of war grow heavy, the Bohemians are plotting."
+
+ austria_news.101.t:0 "Austria forms Germany"
+ austria_news.101.desc:0 "Austria has enjoyed triumph after triumph, without any to successfully stop them. They now a major homogamy in the north, with their influence reaching far down south. What is to become of the Balkans with such a giant amidst them?"
+ austria_news.101.a:0 "We're Unstoppable"
+ austria_news.101.b:0 "There goes any chance of freedom"
+ austria_news.101.c:0 "The big brother gets bigger"
+ austria_news.101.d:0 "This charade has gone on for long enough!"
+
+ bp_event.5.t:0 "Yugoslavia Proclaimed"
+ bp_event.5.desc:0 "A regional power in the former Yugoslav area has grown in strength enough to proclaim themselves the true heirs of Yugoslavia. While they certainly are a force to be considered, the rest of the Yugoslav lands will hardly unify while they still carry a rifle in hand."
+ bp_event.5.a:0 "Well, we'll all be together - in the grave."
+ bp_event.5.b:0 "Ah, the powder keg is rolling!"
+
+################################
+################ ALB
+###############################
+
+ albania.1.t:0 "People's Republic of China demands loan repayment"
+ albania.1.desc:0 "The People's Republic of China has come to demand payment for the extensive loans taken by Albania. They claim the increased instability, politically, socially an economically makes the extension of the debt deadline unfeasible. We however, simply don't have the funds to repay the PRC. \nThe PRC has come to us with an alternative proposal, understanding that we are simply incapable of paying back our loans. Some even point out how the PRC has seemingly known this would happen, based off their reaction. King Zog is to step down and a democratic governemnt is to take power. \n\nWhile the Zog was considering these terms, a crowd of heavily armed revolutionaries from the newly leagalized communist party suorrounded his residence, forcing an acceptance. Now it only remians to be seen how the king will retire."
+ albania.1.a:0 "Zog flees the country wih the treasury"
+ albania.1.b:0 "Zog empties his and the government's coffers and gives the money to various political parties"
+
+ albania.2.t:0 "Crimson Election"
+ albania.2.desc:0 "The day started out with high tensions. Any poll booth found was under armed guard by the strongest local parties. All voters were closely observed and any voting for opposing parties were dragged and beaten out. \n\nThe Communists soon began sending their men into other sectors with opposing parties, prompting other parties to follow suit. Within hours, the streets across the country were home to countless battles. As the political violence increased, firearms began to be fired. In mere hours, local militias and armed mobs joined the fray, leading casualties to mount in the hundreds as the streets became a warzone. \n\nThe days end saw the country effectivly split into two as the political violence became a full civil war. Supports to the cause have been called upon over the border, drawing in additional combatants. \n\nThe streets run red with Crimson blood."
+ albania.2.a:0 "Bah, Mjaft me shaka, Vriti të gjithë!"
+
+
+
+
+
+################################
+############ AUS
+###############################
+
+ austria.1.t:0 "Election of 1936"
+ austria.1.desc:0 "The Time has come for a decisive choice of national policy and party. Three candidates are up for the masses to choose, or at-least so shall they believe. \n\nWill the last emperor of Austria Hungary, Archduke Robert of Austria Este, return to politics? \nShall the nationalists carry out their dreams of a Greater Austria?  \nOr perhaps... the communists will secure the election through dubious means? \n\nI consider it completely unimportant who in the party will vote, or how; but what is extraordinarily important is this — who will count the votes, and how. -Joseph Stalin; The Memoirs of Stalin's Former Secretary by Boris Bazhanov"
+ austria.1.a:0 "The Archduke will rebuild the glory of the past!"
+ austria.1.b:0 "Don't be stupid, be a smarty; come and join your Nazi Party!"
+ austria.1.c:0 "Let a KPO member guard the vote box."
+
+ austria.2.t:0 "Austria Demands Subjugation"
+ austria.2.desc:0 "Austrian diplomats have arrived demanding we fold in the face of their pressure. We are a proud people but they Austrians are mighty, their armies vast."
+ austria.2.a:0 "Unless you are forty to one, Your force will soon be undone, undone!"
+ austria.2.b:0 "If they promise to spare the people, so be it."
+
+ austria.3.t:0 "Slovenia rejects demands"
+ austria.3.desc:0 "Austrian diplomats haven't been successful in pressuring the Slovenians. They have refused to become part of greater Austria. We shall take more direct means."
+ austria.3.a:0 "So they have chosen death!"
+
+ austria.4.t:0 "Slovenia accepts demands"
+ austria.4.desc:0 "Austrian diplomats have been successful in pressuring the Slovenians. They have agreed to become part of greater Austria."
+ austria.4.a:0 "Good to see they have come to their senses."
+
+ austria.5.t:0 "Austria Demands Subjugation"
+ austria.5.desc:0 "Austrian diplomats have arrived demanding we fold in the face of their pressure. We are a proud people but they Austrians are mighty, their armies vast."
+ austria.5.a:0 "Unless you are forty to one, Your force will soon be undone, undone!"
+ austria.5.b:0 "If they promise to maintain our autonomy, so be it."
+
+ austria.6.t:0 "Hungary rejects demands"
+ austria.6.desc:0 "Austrian diplomats haven't been successful in pressuring the Hungarians. They have refused to become part of greater Austria. We shall take more direct means."
+ austria.6.a:0 "So they have chosen death!"
+
+ austria.7.t:0 "Hungary accepts demands"
+ austria.7.desc:0 "Austrian diplomats have been successful in pressuring the Hungarians. They have agreed to become part of greater Austria."
+ austria.7.a:0 "Good to see they have come to their senses."
+
+ austria.8.t:0 "Austria Proposes Alliance"
+ austria.8.desc:0 "Austrian diplomats have arrived proposing an alliance. The SS accompanying them has offered a lucrative personnel exchange offer that can benefit both of our states."
+ austria.8.a:0 "A tempting proposal, but Croatia forges its own path."
+ austria.8.b:0 "We gladly accept their offer"
+
+ austria.9.t:0 "Croatia refuses Alliance"
+ austria.9.desc:0 "Austrian diplomats and the SS haven't been successful in tempting the Croats to stand by our side. While most unfortunate, its hardly surprising considering how pride a people they are."
+ austria.9.a:0 "We didn't need them anyway."
+
+ austria.10.t:0 "Croatia agrees to Alliance"
+ austria.10.desc:0 "Austrian diplomats have been successful in their mission. The SS have already began their exchange program. We expect great things from the Croats."
+ austria.10.a:0 "A toast to our Croat friends!"
+
+ austria.11.t:0 "Austria Proposes Alliance"
+ austria.11.desc:0 "Austrian diplomats have arrived proposing an alliance. The SS accompanying them has offered a lucrative personnel exchange offer that can benefit both of our states."
+ austria.11.a:0 "An alliance with Germans has already ruined us once before"
+ austria.11.b:0 "An perfect opportunity, we join!"
+
+ austria.12.t:0 "Turkey refuses Alliance"
+ austria.12.desc:0 "Austrian diplomats and the SS haven't been successful in tempting the Turkey to stand by our side. While most unfortunate, its hardly surprising considering how pride a people they are."
+ austria.12.a:0 "Filthy Cockroaches, thats what they are!"
+
+ austria.13.t:0 "Turkey agrees to Alliance"
+ austria.13.desc:0 "Austrian diplomats have been successful in their mission. The SS have already began their exchange program. We expect great things from the Turks."
+ austria.13.a:0 "A toast to our Turkish friends!"
+
+ austria.100.t:0 "Deutschland, Deutschland über alles!"
+ austria.100.desc:0 "Deutschland, Deutschland über alles, \nüber alles in der Welt, \nWenn es stets zu Schutz und Trutze \nbrüderlich zusammen hält, \nVon der Maas bis an die Memel, \nvon der Etsch bis an den [Little] Belt, \nDeutschland, Deutschland über alles, \nüber alles in der Welt!"
+ austria.100.a:0 "Erika!"
+
+
+
+ austria.14.t:0 "The HRE Emperor demands restoration of the Electorate of Bohemia"
+ austria.14.desc:0 "Austrian diplomats have arrived demanding we return to the imperial realm. Our history reaches far back into the empire, but can we really risk falling into a personal union under the Habsburgs once more?."
+ austria.14.a:0 "Unconquered city on Vltavas shore, Is protected by its people"
+ austria.14.b:0 "The Empire did last one thousand years... perhaps it shall again."
+
+ austria.15.t:0 "Czechoslovakia Rejects the Offer"
+ austria.15.desc:0 "Austrian diplomats haven't been successful in pressuring the Czechs. They have refused to become part of the Holy Roman Empire, to be restored to their place. We shall take more direct means to reunite the Imperial Realm."
+ austria.15.a:0 "There will be no 1648 this time."
+
+ austria.16.t:0 "Bohemia joins the Empire!"
+ austria.16.desc:0 "Austrian diplomats have been successful in convincing the Czechs. They have agreed to be restored as an Imperial Elector.
+ austria.16.a:0 "The hole in the empire if filled."
+
+ austria.17.t:0 "The HRE Emperor demands a Call to Arms"
+ austria.17.desc:0 "Austrian diplomats have arrived demanding we join in their war. The situation is rather dire and they have made rathe big concessions of prestige on their part."
+ austria.17.a:0 "The Empire is in time of peril, we must help!"
+ austria.17.b:0 "We have no reason to join the fight"
+
+ austria.18.t:0 "A Prince Rejects Demands"
+ austria.18.desc:0 "Austrian diplomats haven't been successful in pressuring the prince to join our fight."
+ austria.18.a:0 "We have no need for traitors anyway!"
+
+ austria.19.t:0 "A Prince Accepts Demands"
+ austria.19.desc:0 "Austrian diplomats have been successful in convincing the prince to join the war. We eagerly await them.
+ austria.19.a:0 "To the front!"
+
+
+########################################
+#####################
+#######################################
+
+
+ croatia.1.t:0 "Assassination Attempt on Ante Pavelic!"
+ croatia.1.desc:0 "On a routine walk, a car with a gunman sprayed down Ante Pavelic with sub-machinegun fire. Pavelic's personal guard returned fire, and Pavelic was body slamed to the ground by the closest guard. While fast and efficient, the guard still moves slower than fired lead and Pavelic sustained several wounds. \nHe was rushed to the nerest hospital and now the best docter in the city inspects his wounds. The surgury takes several hours, perhaps longer than it should have, as the swarms of secret police and personal guard kept impeading the medical staff's efforts. \nAlready, there are rumors spweaping the capital of Pavelic's condition. Increased activity not only from the far left, but from centralists and democrats has been witnessed. If an official anoucnent isnt made soon, the capital will sprial into political violence. \nAtlast, the docter steps out of the operation room, adjusts his glasses and pronouces that Pavelic..."
+ croatia.1.a:0 "Can soon return to office, no vital organs were hit."
+ croatia.1.b:0 "Will live, but confined to intense medical care."
+ croatia.1.c:0 "Please commander! I have family!"
+
+
+
+########################################
+##################### CZE
+#####################################
+
+ bp_cze.1.t:0 "To choose a king for Bohemia!"
+ bp_cze.1.desc:0 "uufnuugfurbugbrug"
+ bp_cze.1.a:0 "A Habsburg"
+ bp_cze.1.b:0 "gdfgthgfhb"
+ bp_cze.1.c:0 "ghfhbgfbh"
+
+ bp_cze.2.t:0 "Bohemia requests to join the Empire"
+ bp_cze.2.desc:0 "dfdfd"
+ bp_cze.2.a:0 "The missing lamb returns to the flock."
+ bp_cze.2.b:0 "They demand to be an elector once more? Preposterous!"
+
+
+######################################
+################### SER
+###################################
+
+ serbia.1.t:0 "Serbia Proposes a Cultural Exchange Program"
+ serbia.1.desc:0 "Delegates from Serbia have arrived today, preaching about establishing a cultural exchange program. To have the "mighty" serbs step down to us mere mortals? They most assuredly have some kind of scheme behind this."
+ serbia.1.a:0 "Know Thy Enemy"
+ serbia.1.b:0 "The simple sight of a Serb before my eyes sickens me!"
+ serbia.2.t:0 "Cultural Exchange Program rejected"
+ serbia.2.desc:0 "A country has rejected our proposal of a cultural exchange program. Unfortunate, but no hard feelings are to be found."
+ serbia.2.a:0 "They don't understand they are missing out."
+ serbia.3.t:0 "Cultural Exchange Program Accepted"
+ serbia.3.desc:0 "A country has accepted our proposal of a cultural exchange program. We glady welcome them."
+ serbia.3.a:0 "I wonder how the weather over there is?"
+ serbia.4.t:0 "Yugoslavia Proposes Autonomus Membership"
+ serbia.4.desc:0 "Delegates from Yugoslavia have arrived today, suprisingly perhaps, with not a decleration of war, but a proposition. They propose that instead of a war of seize our land, we can become an autonomus territory. They preach of Yugoslav brotherhood, yet hold a whip in hand."
+ serbia.4.a:0 "They wouldn't possibly strip us of that autonomy, right?"
+ serbia.4.b:0 "Even death is preferable to the Serbian boot!"
+ serbia.5.t:0 "Autonomus Status Rejected"
+ serbia.5.desc:0 "A country has rejected our proposal of autonomus status as part of Yugoslavia. They have begun to mobalize for war."
+ serbia.5.a:0 "Well, we simply have to shoot them, then"
+ serbia.6.t:0 "Autonomus Status Accepted"
+ serbia.6.desc:0 "A country has accepted our proposal of autonomus status as part of Yugoslavia."
+ serbia.6.a:0 "Perhaps there is an intelligent politician over there"
+ serbia.7.t:0 "Serbia Proposes an Alliance"
+ serbia.7.desc:0 "Serbian delegates have arrived with a proposal of an alliance. They say that all Slavs must unite under a single alliance in these troubled times in order to secure their safety."
+ serbia.7.a:0 "Instead of shooting the Serb, we can shoot with the Serb!"
+ serbia.7.b:0 "Shoot the Serb"
+ serbia.8.t:0 "Bulgarians execute our Delegate"
+ serbia.8.desc:0 "In response to our best intentions, the Bulgarians have reacted with violence. They have shot our delegate and spat on his corpse. This disrespect cannot go unpunished and besides, perhaps it was too much to expect the crooks in the Bulgarian government to agree to an alliance."
+ serbia.8.a:0 "Oh, we'll unify the Slavs - under one flag!"
+ serbia.9.t:0 "Bulgaria has accepted the Alliance offer"
+ serbia.9.desc:0 "Our Proposal for an alliance has been met with approval. The borders have been opened and our militaries can cooperate closer than ever."
+ serbia.9.a:0 "We welcome our slavic brothers."
+ serbia.10.t:0 "Serbia Proposes an Alliance"
+ serbia.10.desc:0 "Delegates from Serbia have arrived today, proposing an Alliance. They state that with their union with Bulgaria, they now seek an alliance with all the Slavs in Eastern Europe. This means that our neighbors, the Slovaks have received one too."
+ serbia.10.a:0 "This alliance will secure slavic security for unknown years ahead."
+ serbia.10.b:0 "The simple sight of a Serb before my eyes sickens me!"
+ serbia.11.t:0 "Czech Alliance offer Rejected"
+ serbia.11.desc:0 "The Czechs have rejected our proposal for an alliance, mocking our efforts for a pan-slavic alliance."
+ serbia.11.a:0 "They aren't real slavs anyway"
+ serbia.12.t:0 "Czechoslovakia has accepted the Alliance offer"
+ serbia.12.desc:0 "Czechoslovakia has accepted our proposal of an Alliance. The borders have been opened and our militaries can cooperate closer than ever."
+ serbia.12.a:0 "We welcome our slavic brothers."
+ serbia.13.t:0 "Serbia Proposes an Alliance"
+ serbia.13.desc:0 "Delegates from Serbia have arrived today, proposing an Alliance. They state that with their union with Bulgaria, they now seek an alliance with all the Slavs in Eastern Europe. This means that our neighbors, the Czechs have received one too."
+ serbia.13.a:0 "This alliance will secure slavic security for unknown years ahead."
+ serbia.13.b:0 "The simple sight of a Serb before my eyes sickens me!"
+ serbia.14.t:0 "Slovak Alliance offer Rejected"
+ serbia.14.desc:0 "The Slovaks have rejected our proposal for an alliance, mocking our efforts for a pan-slavic alliance. "
+ serbia.14.a:0 "They aren't real slavs anyway"
+ serbia.15.t:0 "Slovakia has accepted the Alliance offer"
+ serbia.15.desc:0 "Slovakia has accepted our proposal of an Alliance. The borders have been opened and our militaries can cooperate closer than ever."
+ serbia.15.a:0 "We welcome our slavic brothers."
+
+########################################
+##################### SLV
+#####################################
+
+slovenia.1.desc:0 "We've found 2 candidates for our throne. Franc Rupnik, which is a poor farmer, and Marko Podobnik, a rich businessman. Franc is a kind old man, he's patriotic and thinks everyone should have the same rights. While Marko is a egoistic man, which cares that the rich should be in the leadership."

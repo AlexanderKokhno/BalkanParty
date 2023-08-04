@@ -350,6 +350,29 @@ ideas = {
 
 			}
 		}
+		ALB_new_staff_idea = {
+			
+			picture = chi_incompetent_officers
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				max_command_power_mult = -0.1
+				command_power_gain_mult = -0.1
+				land_equipment_upgrade_xp_cost = 0.1
+				max_training = -0.1
+				political_power_factor = -0.05
+				
+				
+			}
+		}
   }
 
 }

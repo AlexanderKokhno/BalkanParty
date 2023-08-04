@@ -138,6 +138,7 @@ spriteTypes = {
 
 
 
+
 ################### SAMPLE
 	SpriteType = {
 	name = "GFX_goal_continuous_air_production"

@@ -1,6 +1,6 @@
 ﻿l_english: 
 
-########################################### ALB
+########################################### BB_shared
   ALB_ZOG_stand_zog:0 "Stand with King Zog"
   ALB_ZOG_stand_zog_desc:0 ""
 
@@ -13,6 +13,8 @@
   ALB_N_ZOG_balance_the_parties_desc:0 ""
   ALB_retire_old_guard_loyalists:0 "Retire Old Guard Loyalists"
   ALB_retire_old_guard_loyalists_desc:0 ""
+  ALB_new_staff:0 "New Administration Staff"
+  ALB_new_staff_desc:0 ""
   ALB_N_reform_law:0 "State Law Reform"
   ALB_N_reform_law_desc:0 ""
 
@@ -32,11 +34,29 @@
   ALB_anti_com_meeting_desc:0 "Bashkimi Politik = Political Union"
   ALB_raise_wages_bust_unions:0 "Higher Wages and Union Busting"
   ALB_raise_wages_bust_unions_desc:0 ""
+  ALB_anti_union_propaganda:0 "Anti Unionist Propaganda"
+  ALB_anti_union_propaganda_desc:0 ""
   ALB_KOS_guard:0 "Kosovite Guard"
   ALB_KOS_guard_desc:0 ""
+  ALB_accept_greek_private_paramilitarist_organizations:0 "Accept Greek Private Paramilitarist Organizations"
+  ALB_accept_greek_private_paramilitarist_organizations_desc:0 ""
 
   ALB_COM_assult_meating:0 "Assault the Bashkimi Politik Assembly"
   ALB_COM_assult_meating_desc:0 ""
+  ALB_COM_mob_rallies:0 "Mob Rallies"
+  ALB_COM_mob_rallies_desc:0 ""
+  ALB_COM_secure_naval_support:0 "Secure Support Within the Navy"
+  ALB_COM_secure_naval_support_desc:0 ""
+  ALB_COM_distrubute_arms_to_the_proletariat:0 "Distribute Arms to the Proletariat"
+  ALB_COM_distrubute_arms_to_the_proletariat_desc:0 ""
+  ALB_COM_LOWER_YUG_COM_spread:0 "Arm the Proletariate of the South-West Balkan Peninsula"
+  ALB_COM_LOWER_YUG_COM_spread_desc:0 ""
+  ALB_COM_GRE_COM_spread:0 "Arm the Greek Proletariat"
+  ALB_COM_GRE_COM_spread_desc:0 ""
+  ALB_COM_propaganda:0 "Spread Propaganda"
+  ALB_COM_propaganda_desc:0 ""
+  ALB_COM_election_day:0 "Election Day"
+  ALB_COM_election_day_desc:0 ""
 
   ALB_fortification_planning_I:0 "Ministry of National Defence"
   ALB_fortification_planning_I_desc:0 ""
@@ -394,6 +414,12 @@
  CZE_BOH_fire_the_league_war_desc:0 ""
  CZE_BOH_league_war_victory:0 "League War Victory!"
  CZE_BOH_league_war_victory_desc:0 ""
+
+
+##################
+
+
+
 ################### MNT
 
   MNT_focus_1:0 "March on Podgorica"
@@ -749,6 +775,71 @@
   SLV_encourage_them_desc:0 "We need to encourage them!"
   SLV_contigency_plans:0 "Contigency Plans"
 
+
+#########################################################################################################################################
+###################################################### SHARED FOCUSES
+########################################################################################################################################
+
+
+######################################## SHARED (Generic)
+
+ BB_shared_military_research_institute:0 "Military Exercises"
+ BB_shared_military_research_institute_desc:0 "The Military Technical Institute exists to provide the Czechoslovak armed forces with military research, development, and testing capabilities."
+ BB_shared_mountain_bonus:0 "Mountain Troops"
+ BB_shared_mountain_bonus_desc:0 "When so much of our border consists of hills and mountains, the need for specialized soldiers to police and defend those areas is clear."
+ BB_shared_inf_and_artillery_advancement:1 "Infantry Advancement"
+ BB_shared_inf_and_artillery_advancement_desc:1 "Infantry is the most important unit in our army, so improving their weapons is a vital step towards successful national defense."
+ BB_shared_support_bonus:1 "Support Units"
+ BB_shared_support_bonus_desc:1 "In order for our infantry to perform at peak efficiency, the supporting branches must also be modernized."
+ BB_shared_inf_and_artillery_advancement_2:1 "Artillery Advancement"
+ BB_shared_inf_and_artillery_advancement_2_desc:1 "Queen of the battlefield, modern artillery will be a large force-multiplier in our army."
+ BB_shared_doctrine_bonus:0 "Doctrine Discoveries"
+ BB_shared_doctrine_bonus_desc:0 "Weapons alone do not make an army potent, effective doctrines are also required. The Military Technical Institute is well aware of this and has offered several suggestions."
+ BB_shared_motorization_scheme:0 "Motorization Scheme"
+ BB_shared_motorization_scheme_desc:0 "While we do not have the largest army around, motorization offers the possibility of concentrating our forces more rapidly in an area."
+ BB_shared_armour_bonus_1:1 "The LT vz. 38"
+ BB_shared_armour_bonus_1_desc:0 "Our army boasts some of the most advanced tanks in the world, but technology in this field is rapidly advancing and we cannot afford to be left behind."
+ BB_shared_mechanization:0 "Mechanization"
+ BB_shared_mechanization_desc:0 "While motorization offered our soldiers speed, mechanization offers them speed, protection, and firepower."
+ BB_shared_armour_bonus_ii:1 "Armor Modernization"
+ BB_shared_armour_bonus_ii_desc:0 "The Military Technical Institute continues to work closely with Skoda Works to design new and better tanks."
+ BB_shared_doctrine_bonus_2:0 "Doctrine Discoveries II"
+ BB_shared_doctrine_bonus_2_desc:0 "Weapons alone do not make an army potent, effectives doctrines are also required. The Military Technical Institute is well aware of this and has offered several suggestions."
+ BB_shared_war_college:0 "War College"
+ BB_shared_war_college_desc:0 "The War College provides our army with the well-trained leaders it needs to lead it to victory."
+ BB_shared_war_college_effect_tt:0 "§YIf you already have 5 research slots you will not receive an extra.§!\n"
+ BB_shared_military_aeronautical_institute:0 "Airforce Exercises"
+ BB_shared_military_aeronautical_institute_desc:0 "The Military Aeronautical Institute provides the Czechoslovak air force with research and design proposals."
+ BB_shared_import_foreign_fighters:0 "Import Foreign Fighters"
+ BB_shared_import_foreign_fighters_desc:0 "By importing a variety of foreign fighters planes to test and evaluate, our own aircraft designers will learn valuable lessons."
+ BB_shared_light_fighter_focus:0 "Light Fighter Focus"
+ BB_shared_light_fighter_focus_desc:0 "The Military Aeronautical Institute has concluded that Light Fighters are the most useful and should form the core of our air force."
+ BB_shared_heavy_fighter_focus:0 "Heavy Fighter Focus"
+ BB_shared_heavy_fighter_focus_desc:0 "The Military Aeronautical Institute has concluded that Heavy Fighters are the most useful and should form the core of our air force."
+ BB_shared_rule_the_air:0 "Aviation Docterin Evolution"
+ BB_shared_rule_the_air_desc:0 "Our commitment to the air force has allowed us to build up a remarkable production efficiency."
+ BB_shared_import_foreign_bombers:0 "Import Foreign Bombers"
+ BB_shared_import_foreign_bombers_desc:0 "By importing a variety of foreign bombers to test and evaluate, our own aircraft designers will learn valuable lessons."
+ BB_shared_cas_focus:0 "CAS Focus"
+ BB_shared_cas_focus_desc:0 "The conclusion of the Military Aeronautical Institute's tests indicate that we should focus on Close Air Support planes."
+ BB_shared_tac_focus:0 "Tactical Bomber Focus"
+ BB_shared_tac_focus_desc:0 "The conclusion of the Military Aeronautical Institute's tests indicate that we should focus on Tactical Bombers."
+ BB_shared_access_to_the_sea:0 "Access to the Sea"
+ BB_shared_access_to_the_sea_desc:0 "No longer are we landlocked! Now that we have a coastline we must study marine matters and come up with a plan to establish a Navy."
+ BB_shared_sudden_shipyard:0 "Sudden Shipyard"
+ BB_shared_sudden_shipyard_desc:0 "A Navy requires a shipyard. We did not plan for this, but large engineering projects are nothing new to us. With the proper effort a shipyard should take no time at all."
+ BB_shared_shipbuilding_legacy:0 "Makeshift Capitals"
+ BB_shared_shipbuilding_legacy_desc:0 "While having a navy of our own is new, Skoda Works has a long history of building components for the Austro-Hungarian navy's ships. Now they can use that same experience to produce ships for our own navy."
+ BB_shared_battleship_catchup_1:1 "Battleship Breakthrough"
+ BB_shared_battleship_catchup_1_desc:1 "Our new need for a navy has resulting in a sudden flurry of Battleship design."
+ BB_shared_destroyer_catchup_1:1 "Destroyer Breakthrough"
+ BB_shared_destroyer_catchup_1_desc:1 "Our new need for a navy has resulting in a sudden flurry of Destroyer design."
+ BB_shared_cruiser_catchup_1:1 "Cruiser Breakthrough"
+ BB_shared_cruiser_catchup_1_desc:1 "Our new need for a navy has resulting in a sudden flurry of Cruiser design."
+ BB_shared_raiding_focus:0 "Raiding Focus"
+ BB_shared_raiding_focus_desc:1 "Our navy must focus on the indirect approach of avoiding battle and harassing the shipping of our foes."
+ BB_shared_capital_focus:0 "Capital Focus"
+ BB_shared_capital_focus_desc:1 "Our navy must focus on direct and decisive battles."
 
  ##################################### SHARED (YUG)
 

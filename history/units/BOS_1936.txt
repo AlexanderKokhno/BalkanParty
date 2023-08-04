@@ -1,0 +1,195 @@
+﻿division_template = {
+	name = "Pješadijske Divizije"					# Infantry Division
+	division_names_group = BOS_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+units = {
+	#### Československá Vojenská Jednotka #####
+	# directly subordinate
+	division = {
+		name = "Sarajevska Prva Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Sarajevska Sekunda Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Sarajevska Treće Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Sarajevska Četvrto Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Sarajevska Peto Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Banja Luka Prva Pješadijska"
+		location = 20119  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Banja Luka Sekunda Pješadijska"
+		location = 20119  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Banja Luka Treće Pješadijska"
+		location = 20119  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Prijeda Pješadijska"
+		location = 20195  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Bihać Pješadijska"
+		location = 14432  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Doboj Pješadijska"
+		location = 6755  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Brčko Pješadijska"
+		location = 20191  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Bijeljina Pješadijska"
+		location = 2924  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Tuzla Pješadijska"
+		location = 387  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Trebinje Pješadijska"
+		location = 14800  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Zenica Pješadijska"
+		location = 20179  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Bugojno Pješadijska"
+		location = 20189  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Mostar Pješadijska"
+		location = 1186  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+}
+
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BOS"
+		}
+		requested_factories = 2
+		progress = 0.18
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "BOS"
+		}
+		requested_factories = 1
+		progress = 0.48
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "BOS"
+		}
+		requested_factories = 2
+		progress = 0.48
+		efficiency = 100
+	}
+}

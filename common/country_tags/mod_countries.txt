@@ -1,4 +1,13 @@
 FIL	= "countries/Filler.txt"
+FL1	= "countries/Filler1.txt"
+FL2	= "countries/Filler2.txt"
+FL3	= "countries/Filler3.txt"
+FL4	= "countries/Filler4.txt"
+FL5	= "countries/Filler5.txt"
+FL6	= "countries/Filler6.txt"
+FL7	= "countries/Filler7.txt"
+FL8	= "countries/Filler8.txt"
+FL9	= "countries/Filler9.txt"
 
 
 #NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")

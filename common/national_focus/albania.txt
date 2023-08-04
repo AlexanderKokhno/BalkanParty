@@ -87,10 +87,10 @@ focus_tree = {
 	focus = {
 		id = ALB_F_ZOG_integrate_the_right
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		mutually_exclusive = { focus = ALB_N_ZOG_balance_the_parties }
+
 
 		relative_position_id = ALB_ZOG_stand_zog
-		x = -6
+		x = -7
 		y = 1
 
 		cost = 10
@@ -113,6 +113,14 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_popularity = {
+					ideology = fascism
+					popularity = -0.05
+			}
+			add_popularity = {
+					ideology = neutrality
+					popularity = 0.1
+			}
 		}
 	}
 
@@ -122,7 +130,7 @@ focus_tree = {
 
 
 		relative_position_id = ALB_N_ZOG_balance_the_parties
-		x = -3
+		x = -4
 		y = 1
 
 		cost = 10
@@ -142,27 +150,37 @@ focus_tree = {
 
 
 		completion_reward = {
-
+			add_manpower = 50000
 		}
 	}
 
+###################################################
 ######################### Balance parties
+#####################################################
+
 	focus = {
 		id = ALB_N_ZOG_balance_the_parties
 		icon = GFX_goal_generic_neutrality_focus
-		mutually_exclusive = { focus = ALB_F_ZOG_integrate_the_right }
+
 
 		relative_position_id = ALB_ZOG_stand_zog
 		x = 0
 		y = 1
 
 		cost = 10
-		prerequisite = { focus = ALB_ZOG_stand_zog}
+
 		ai_will_do = {
 			factor = 10
 		}
 
 		available = {
+			OR = {
+				AND = {
+					has_completed_focus = ALB_accept_greek_private_paramilitarist_organizations
+					has_completed_focus = ALB_anti_union_propaganda
+					has_completed_focus = ALB_COM_election_day
+				}
+			}
 
 		}
 
@@ -176,12 +194,18 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -50
+			add_popularity = {
+    		ideology = democratic
+    		popularity = 0.05
+			}
 		}
 	}
 
 	focus = {
 		id = ALB_retire_old_guard_loyalists
-		icon = ``GFX_goal_unknown``
+		icon = GFX_focus_usa_guarantee_the_american_dream
 
 
 
@@ -189,7 +213,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = ALB_N_ZOG_balance_the_parties}
 		ai_will_do = {
 			factor = 10
@@ -206,6 +230,54 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_popularity = {
+    		ideology = neutrality
+    		popularity = -0.1
+			}
+			add_timed_idea = { 
+				idea = Heavy_Investments
+				days = 14
+			}
+
+		}
+	}
+
+	focus = {
+		id = ALB_new_staff
+		icon = GFX_focus_generic_improve_the_administration
+
+
+		relative_position_id = ALB_retire_old_guard_loyalists
+		x = -2
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_retire_old_guard_loyalists}
+		prerequisite = { focus = ALB_national_guard}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+			has_completed_focus = ALB_CCP_demand_payment
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_timed_idea = { 
+				idea = ALB_new_staff_idea
+				days = 600
+			}
+			add_political_power = 50
+			add_stability = 0.05
 
 		}
 	}
@@ -223,7 +295,7 @@ focus_tree = {
 
 		cost = 10
 		prerequisite = { focus = ALB_D_ZOG_draft_a_constitution}
-		prerequisite = { focus = ALB_N_ZOG_balance_the_parties}
+		prerequisite = { focus = ALB_retire_old_guard_loyalists}
 		ai_will_do = {
 			factor = 10
 		}
@@ -239,6 +311,8 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -100
 
 		}
 	}
@@ -352,7 +426,7 @@ focus_tree = {
 			add_political_power = -50
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.20
+				popularity = 0.1
 			}	
 		}
 	}
@@ -431,7 +505,7 @@ focus_tree = {
 			add_political_power = -25
 			add_popularity = {
 				ideology = communism
-				popularity = 0.20
+				popularity = 0.1
 			}	
 		}
 	}
@@ -475,6 +549,10 @@ focus_tree = {
 				popularity = -0.25
 			}
 			promote_character = ALB_no_government
+			add_timed_idea = { 
+				idea = ALB_new_staff_idea
+				days = 600
+			}
 		}
 	}
 
@@ -562,6 +640,35 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ALB_accept_greek_private_paramilitarist_organizations
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_KOS_guard
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_KOS_guard}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
 		id = ALB_raise_wages_bust_unions
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 
@@ -599,6 +706,38 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ALB_anti_union_propaganda
+		icon = GFX_goal_generic_propaganda
+
+
+		relative_position_id = ALB_raise_wages_bust_unions
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_raise_wages_bust_unions}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_popularity = { 
+				ideology = communism 
+				popularity = -0.05
+			}
+		}
+	}
+
 ############################ COM
 
 	focus = {
@@ -633,6 +772,229 @@ focus_tree = {
 
 		}
 	}
+
+	focus = {
+		id = ALB_COM_mob_rallies
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+
+
+		relative_position_id = ALB_COM_assult_meating
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_COM_assult_meating}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALB_COM_secure_naval_support
+		icon = GFX_focus_generic_cruiser2
+
+
+		relative_position_id = ALB_COM_assult_meating
+		x = 2
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_COM_assult_meating}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALB_COM_propaganda
+		icon = GFX_goal_generic_propaganda
+
+
+		relative_position_id = ALB_COM_mob_rallies
+		x = 0
+		y = 2
+
+		cost = 10
+		prerequisite = { focus = ALB_COM_mob_rallies}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_popularity = { 
+				ideology = communism 
+				popularity = 0.05
+			}
+
+		}
+	}
+	focus = {
+		id = ALB_COM_distrubute_arms_to_the_proletariat
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+
+
+		relative_position_id = ALB_COM_secure_naval_support
+		x = 0
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_COM_mob_rallies }
+		prerequisite = { focus = ALB_COM_secure_naval_support}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ALB_COM_LOWER_YUG_COM_spread
+		icon = GFX_focus_YUG_dissolve_serbia
+
+
+		relative_position_id = ALB_COM_distrubute_arms_to_the_proletariat
+		x = 0
+		y = 1
+
+		cost = 15
+		prerequisite = { focus = ALB_COM_distrubute_arms_to_the_proletariat}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ALB_COM_GRE_COM_spread
+		icon =GFX_focus_generic_befriend_greece
+
+
+		relative_position_id = ALB_COM_distrubute_arms_to_the_proletariat
+		x = 2
+		y = 1
+
+		cost = 10
+		prerequisite = { focus = ALB_COM_distrubute_arms_to_the_proletariat}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+		}
+	}
+
+#####################
+
+	focus = {
+		id = ALB_COM_election_day
+		icon = GFX_goal_unknown
+
+
+		relative_position_id = ALB_CCP_demand_payment
+		x = 0
+		y = 5
+
+		cost = 5
+
+
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = ALB_anti_union_propaganda
+					has_completed_focus = ALB_accept_greek_private_paramilitarist_organizations
+				}
+				AND = {
+					has_completed_focus = ALB_COM_propaganda
+					has_completed_focus = ALB_COM_LOWER_YUG_COM_spread
+					has_completed_focus = ALB_COM_GRE_COM_spread
+				}
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			country_event = { id = albania.2}
+
+		}
+	}
+
 
 
 ########### Fortifications
