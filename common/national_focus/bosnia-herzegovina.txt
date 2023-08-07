@@ -377,7 +377,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BOS_focus_communism_revolution
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_support_communism
 		prerequisite = {
 			focus = BOS_focus_communism_civillian
 			focus = BOS_focus_communism_millitarization
@@ -391,10 +391,37 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		completion_reward = {
-			add_popularity = {
-				ideology = communism
- 				popularity = 0.05
+			start_civil_war = {
+				ruling_party = communism
+				ideology = ROOT
+				size = 0.4
+				capital = 1494
+				states = {
+				1494 1493 777 2846 2816 2817 1492 835 2820 2815 1502
+				}
+				keep_unit_leaders = yes
+				keep_political_leader = yes
+				keep_political_party_members = yes
 			}
+		}
+	}   
+	focus = {
+		id = BOS_focus_spread_communism
+		icon = GFX_goal_generic_major_war
+		prerequisite = {
+			focus = BOS_focus_communism_civillian
+			focus = BOS_focus_communism_millitarization
+			focus = BOS_focus_communism_weapons
+		}
+		x = 10
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+				unlock_decision_tooltip = BOS_coup_in_montenegro
 		}
 	}   
 	focus = {
