@@ -242,18 +242,6 @@ characters={
 							}
 						}
 					}
-				#	has_completed_focus = TUR_continue_the_policy_of_etatism 
-				}
-				visible = {
-					NOT = {
-						OR = {
-						#	has_completed_focus = TUR_fully_integrate_the_is_bank 
-							has_country_leader = {
-								character = TUR_ismet_inonu
-								ruling_only = yes 
-							}
-						}
-					}
 				}
 				traits = {
 					prime_minister_inonu 
@@ -2489,6 +2477,9 @@ characters={
 	TUR_nihal_atsiz={
 		name=TUR_nihal_atsiz
 		portraits={
+			civilian={
+				large="gfx/leaders/tur/portrait_tur_nihal_atsiz.dds"	
+			}
 			army={
 				small="GFX_idea_tur_nihal_atsiz"
 			}
@@ -2519,9 +2510,6 @@ characters={
 						}
 					}
 				}
-			}
-			visible = {
-			#	has_completed_focus = TUR_turanist_ambition 
 			}
 			traits = {
 				prime_minister_atsiz 

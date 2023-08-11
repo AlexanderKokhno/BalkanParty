@@ -775,6 +775,35 @@
   SLV_encourage_them_desc:0 "We need to encourage them!"
   SLV_contigency_plans:0 "Contigency Plans"
 
+  ############## TURKEY
+
+  TUR_remembering_the_revolt:0 "Remembering The Revolt"
+  TUR_remembering_the_revolt_desc:0 "The Kurdish revolt and the death of Mustafa Kemal Atatürk several years ago greately weakened our standing in the world and forced the creation of the emergency government, now is the time to make our decision and move on, to guide the Turkish nation forward."
+  TUR_military_assumes_total_control:0 "Military Assumes Control"
+  TUR_military_assumes_total_control_desc:0 "After a period of several hours and the losses of many soldiers, we have finally managed to drive back Atsiz and his dogs from the halls of the assembly! However, now we have a larger issue on our hands. With this danger to our democracy present, free elections must be suspended, and the military must take charge until the situation has stabilized."
+  TUR_ultranationalists_coup_inonu:0 "Turanist Coup"
+  TUR_ultranationalists_coup_inonu_desc:0 "After a period of several hours of fighting, we have managed to expel Inonu and his jewish-communist sycophants! However, our work has only just begun, as already, mass protests and a general state of anarchy has arisen throughout Turkey, and if we do not act quickly, our regime will be at risk of being deposed by communist and democratic agitators."
+  TUR_crush_the_opposition:0 "Crush The Opposition"
+  TUR_crush_the_opposition_desc:0 "Whilst we turn our main focus to the destruction of Atsiz and the remnants of his forces, we also cannot forget about others who oppose our rule, such as communists, and democrats who clamor for free elections without taking into account the state at hand. We shall rally our forces and grant ourselves expanded powers to deal with the threats to our republic."
+  TUR_hunt_down_atsiz:0 "Hunt Down Atsiz"
+  TUR_hunt_down_atsiz_desc:0 "Now that we have the upper hand in the struggle for the Turkish nation, we must wipe out Atsiz and his forces before they can conduct any kind of counterattack or sabotage. Turkish army units will be deployed to Turanist safehouses and supply depots in order to cripple their fighting capabilties, but our highest priority is the capture of Atsiz, so he can be tried and executed for his crimes."
+  TUR_disband_the_assembly:0 "Disband The Assembly"
+  TUR_disband_the_assembly_desc:0 "In light of recent events, it is clear that our republic is not as stable as once thought, and that is necessary to take additional measures in order to secure the stability of the Turkish Republic. To this end, it is necessary for us to disband the National Assembly and attain executive powers in order to combat the enemies of the republic."
+  TUR_root_out_turanists:0 "Root Out Turanist Remnants"
+  TUR_root_out_turanists_desc:0 "With a decisive blow being dealt to the Turanists with the capture and execution of Atsiz and the destruction of their main safehouses and supply areas, all that remains for us is to capture secondary safehouses and root out any remnants of the Turanists, so that this thorn in our side will no longer be able to threaten the republic."
+  TUR_protect_the_republic:0 "Protect The Republic"
+  TUR_protect_the_republic_desc:0 "With all internal threats to the republic dealt with, the time has come to see what the future holds in store for our republic. Democratic elements in our country have at many points aided us with the suppression of Turanists and communists, though they have also been competing with our regime for influence utilizing these methods. The time has come to see whether or not our influence is stronger."
+  TUR_secure_istanbul:0 "Secure Istanbul"
+  TUR_secure_istanbul_desc:0 "With the utter anarchy that is consuming Turkey in the wake of our rule, it is necessary to secure key strategic points within our country in order to root out the communist and democratic elements plaguing our regime and reestablish stability. To this end, Turanist paramilitary units and defector army units will be sent to secure Istanbul under our rule, and prevent foreign aid from reaching rebels."
+  TUR_liquidate_the_cabinet:0 "Liquidate The Cabinet"
+  TUR_liquidate_the_cabinet_desc:0 "With our capture of the former Inonu cabinet and the death of Inonu himself, we now must decide upon the fate of the cabinet, and whether we could utilize any of them. Whilst those most sympathetic to jewish-communism will be killed, we must evaluate whether the rest may have any use in the new Turanist state. In displaying our mercy in this way, we could likely convice others to defect to our regime."
+  TUR_sweep_west_turkey:0 "Sweep West Turkey"
+  TUR_sweep_west_turkey_desc:0 "With our securing of Istanbul, we must now turn our attention to the capture of major industrial cities and coastal cities in the west of Turkey, in order to prevent economic collapse and keep these cities out of rebel hands. Of course, we must be swift in our actions, lest the communists have time to entrench themselves and sabotage our state."
+  TUR_sweep_east_turkey:0 "Sweep East Turkey"
+  TUR_sweep_east_turkey_desc:0 "With the anarchy present within East Turkey and the border with the Soviet Union, it is obvious that the rebels within our country are being funded by them, therefore we must deploy all availiable divisions to immediately crush all resistance in Eastern Turkey, in order to secure our influence along the Black Sea and prevent Soviet aid from reaching the communist rebels."
+  TUR_crush_the_communists:0 "Crush The Communists"
+  TUR_crush_the_communists_desc:0 "With all major cities within Turkey secured, we can now turn our attention to the pacification of the countryside and the final destruction of communist forces. Of course, our forces by this point are exhausted, and if the communists have attained too much strength from our failures, a final counteroffensive may be all they need to erase our progress and dismantle our regime. This must not happen."
+
 
 #########################################################################################################################################
 ###################################################### SHARED FOCUSES
