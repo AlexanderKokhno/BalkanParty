@@ -232,3 +232,21 @@
 #####################################
 
 slovenia.1.desc:0 "We've found 2 candidates for our throne. Franc Rupnik, which is a poor farmer, and Marko Podobnik, a rich businessman. Franc is a kind old man, he's patriotic and thinks everyone should have the same rights. While Marko is a egoistic man, which cares that the rich should be in the leadership."
+
+########################################
+##################### TUR
+#####################################
+
+ turkey.2.t:0 "The Culmination Of Wills"
+ turkey.2.desc:0 "When looking out into Ankara, one can spot little difference besides the usual bustling city streets and traffic, though tonight is a much different situation. Across Ankara, a faction mobilizes, prepared to enact their long-awaited plans to seize the Turkish nation for themselves. Nihâl Atsiz and his faction of Turanists have grown powerful with the turmoil brought upon by recent circumstances, aiming to overthrow the Inonu government, which he has accused of working with Turkish communists. As the rumbling of trucks approached key government buildings within Ankara, the fate of Turkey shall be decided in the next few hours."
+ turkey.2.a:0 "Inonu loyalists prevail, driving out ultranationalist forces."
+ turkey.2.b:0 "Ultranationalists storm the National Assembly, and capture the Inonu government."
+ turkey.3.t:0 "The House Stands"
+ turkey.3.desc:0 "As the last of the gunshots fall silent, and bodies lay strewn throughout the streets of Ankara, Inonu and other government officials are scrambling through the halls of the assembly, attempting to piece together what has happened. Though whatever may come, they have survived. Finally, they reached their destination, shouting commands to the soldiers and generals that now surrounded them. Inonu scrambled to the radio and grasped it in his hands, quickly turning it on and saying three key words."
+ turkey.3.a:0 "Mobilize the army!"
+ turkey.4.t:0 "The House Burns Down"
+ turkey.4.desc:0 "As the last of the gunshots fall silent, the sound is quickly replaced by the sounds of marching boots, as dozens of soldiers march into the center of the assembly. Behind them, Atsiz and senior party members enter the room, shouting orders to the soldiers as the remnants of the Inonu cabinet are moved out of the building and into waiting trucks outside. After several minutes of this, Inonu himself was dragged to the center of the assembly and placed firmly infront of Atsiz, who quickly drew a pistol and fired three rounds into his skull. Turning to his soldiers, he motioned for them to exit the assembly and yelled six choice words."
+ turkey.4.a:0 "Secure the rest of Ankara, quickly!"
+ turkey.5.t:0 "And Everything Is On Fire"
+ turkey.5.desc:0 "Atsiz looked around at his subordinates rushing between the halls of parliament, moving to different locations in order to communicate orders and make sense of the situation. In the wake of the Turanist coup, an all-encompassing anarchy has already begun to consume everything outside of Ankara, and Atsiz knew he would have to act soon, or the Turanist dream would be lost to jews and communists. \n\nOn the outskirts of Ankara, Turanist paramilitary units come under fire from a group of communist rebels, two being killed instantly and three more wounded, forcing the survivors to cover. Over the hours, reinforcements would be called, and the rebels would be killed, but this was merely the beginning of the Turanist troubles."
+ turkey.5.a:0 "May the strongest win."
