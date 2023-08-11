@@ -31,6 +31,17 @@
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
 
+
+HUN_TW_01 = { 
+	name = "Két szélesség" 
+	for_countries = { HUN } 
+	can_use = { always = yes }
+	division_types = { "infantry" } 
+	ordered = {
+		1 = { "%d Két szélesség" }
+	}
+}
+
 HUN_INF_01 = 
 {
 	name = "Infantry Divisions"
