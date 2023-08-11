@@ -37,8 +37,8 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
-	division = {
-		name = "Sarajevska Prva Pješadijska"
+units = {
+		name = "Sarajevska Sekunda Pješadijska"
 		location = 14631  # not Prague
 		division_template = "Pješadijske Divizije"
 		start_experience_factor = 0.5
@@ -46,8 +46,8 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
-	division = {
-		name = "Sarajevska Prva Pješadijska"
+@ -35,7 +35,7 @@ units = {
+		name = "Sarajevska Treće Pješadijska"
 		location = 14631  # not Prague
 		division_template = "Pješadijske Divizije"
 		start_experience_factor = 0.5
@@ -55,8 +55,8 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
-	division = {
-		name = "Sarajevska Prva Pješadijska"
+@ -43,7 +43,7 @@ units = {
+		name = "Sarajevska Četvrto Pješadijska"
 		location = 14631  # not Prague
 		division_template = "Pješadijske Divizije"
 		start_experience_factor = 0.5
@@ -64,8 +64,8 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
-	division = {
-		name = "Sarajevska Prva Pješadijska"
+@ -51,7 +51,7 @@ units = {
+		name = "Sarajevska Peto Pješadijska"
 		location = 14631  # not Prague
 		division_template = "Pješadijske Divizije"
 		start_experience_factor = 0.5
@@ -73,9 +73,81 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
-	division = {
-		name = "Sarajevska Prva Pješadijska"
-		location = 14631  # not Prague
+@ -59,7 +59,7 @@ units = {
+		name = "Banja Luka Prva Pješadijska"
+		location = 20119  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+@ -67,7 +67,7 @@ units = {
+		name = "Banja Luka Sekunda Pješadijska"
+		location = 20119  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+@ -75,7 +75,7 @@ units = {
+		name = "Banja Luka Treće Pješadijska"
+		location = 20119  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+@ -83,7 +83,7 @@ units = {
+		name = "Prijeda Pješadijska"
+		location = 20195  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+@ -91,7 +91,7 @@ units = {
+		name = "Bihać Pješadijska"
+		location = 14432  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+@ -99,7 +99,7 @@ units = {
+		name = "Doboj Pješadijska"
+		location = 6755  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+@ -107,7 +107,7 @@ units = {
+		name = "Brčko Pješadijska"
+		location = 20191  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+@ -115,7 +115,7 @@ units = {
+		name = "Bijeljina Pješadijska"
+		location = 2924  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+@ -123,15 +123,15 @@ units = {
+		name = "Tuzla Pješadijska"
+		location = 387  # not Prague
 		division_template = "Pješadijske Divizije"
 		start_experience_factor = 0.5
 		start_experience_factor = 0.1
@@ -83,42 +155,43 @@ units = {
 
 	}
 	division = {
-		name = "Sarajevska Prva Pješadijska"
-		location = 14631  # not Prague
+		name = "Brčko Pješadijska"
+		location = 20191  # not Prague
+		name = "Trebinje Pješadijska"
+		location = 14800  # not Prague
 		division_template = "Pješadijske Divizije"
 		start_experience_factor = 0.5
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-	division = {
-		name = "Sarajevska Prva Pješadijska"
-		location = 14631  # not Prague
+@ -139,7 +139,7 @@ units = {
+		name = "Zenica Pješadijska"
+		location = 20179  # not Prague
 		division_template = "Pješadijske Divizije"
 		start_experience_factor = 0.5
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-	division = {
-		name = "Sarajevska Prva Pješadijska"
-		location = 14631  # not Prague
+@ -147,7 +147,7 @@ units = {
+		name = "Bugojno Pješadijska"
+		location = 20189  # not Prague
 		division_template = "Pješadijske Divizije"
 		start_experience_factor = 0.5
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-	division = {
-		name = "Sarajevska Prva Pješadijska"
-		location = 14631  # not Prague
+@ -155,42 +155,42 @@
+		name = "Mostar Pješadijska"
+		location = 1186  # not Prague
 		division_template = "Pješadijske Divizije"
 		start_experience_factor = 0.5
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-	
 }
 
 
