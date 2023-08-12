@@ -793,6 +793,8 @@
   TUR_root_out_turanists_desc:0 "With a decisive blow being dealt to the Turanists with the capture and execution of Atsiz and the destruction of their main safehouses and supply areas, all that remains for us is to capture secondary safehouses and root out any remnants of the Turanists, so that this thorn in our side will no longer be able to threaten the republic."
   TUR_protect_the_republic:0 "Protect The Republic"
   TUR_protect_the_republic_desc:0 "With all internal threats to the republic dealt with, the time has come to see what the future holds in store for our republic. Democratic elements in our country have at many points aided us with the suppression of Turanists and communists, though they have also been competing with our regime for influence utilizing these methods. The time has come to see whether or not our influence is stronger."
+  TUR_protect_the_republic_d:0 "Protect The Republic"
+  TUR_protect_the_republic_d_desc:0 "With all internal threats to the republic dealt with, the time has come to see what the future holds in store for our republic. Democratic elements in our country have at many points aided us with the suppression of Turanists and communists, though they have also been competing with our regime for influence utilizing these methods. The time has come to see whether or not our influence is stronger."
   TUR_secure_istanbul:0 "Secure Istanbul"
   TUR_secure_istanbul_desc:0 "With the utter anarchy that is consuming Turkey in the wake of our rule, it is necessary to secure key strategic points within our country in order to root out the communist and democratic elements plaguing our regime and reestablish stability. To this end, Turanist paramilitary units and defector army units will be sent to secure Istanbul under our rule, and prevent foreign aid from reaching rebels."
   TUR_liquidate_the_cabinet:0 "Liquidate The Cabinet"
@@ -803,7 +805,8 @@
   TUR_sweep_east_turkey_desc:0 "With the anarchy present within East Turkey and the border with the Soviet Union, it is obvious that the rebels within our country are being funded by them, therefore we must deploy all availiable divisions to immediately crush all resistance in Eastern Turkey, in order to secure our influence along the Black Sea and prevent Soviet aid from reaching the communist rebels."
   TUR_crush_the_communists:0 "Crush The Communists"
   TUR_crush_the_communists_desc:0 "With all major cities within Turkey secured, we can now turn our attention to the pacification of the countryside and the final destruction of communist forces. Of course, our forces by this point are exhausted, and if the communists have attained too much strength from our failures, a final counteroffensive may be all they need to erase our progress and dismantle our regime. This must not happen."
-
+  TUR_crush_the_communists_c:0 "Crush The Communists"
+  TUR_crush_the_communists_c_desc:0 "With all major cities within Turkey secured, we can now turn our attention to the pacification of the countryside and the final destruction of communist forces. Of course, our forces by this point are exhausted, and if the communists have attained too much strength from our failures, a final counteroffensive may be all they need to erase our progress and dismantle our regime. This must not happen."
 
 #########################################################################################################################################
 ###################################################### SHARED FOCUSES

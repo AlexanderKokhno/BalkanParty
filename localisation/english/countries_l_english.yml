@@ -3532,8 +3532,8 @@
 
    #DEMOCRATIC
 
-    TUR_democratic:0 "Republic of Turkey"
-    TUR_democratic_DEF:0 "the Republic of Turkey"
+    TUR_democratic:0 "Provisional Government Of Turkey"
+    TUR_democratic_DEF:0 "the Government Of Turkey"
     TUR_democratic_ADJ:0 "Turkish"
 
    #FASCISM

@@ -99,7 +99,13 @@
 
  SER_YUG_road_to_brotherhood_union_tooltip:0 "§H Gradually decrease the autonomy of Serbian puppets §H"
  
+ tur_neutrality_path_tooltip:0 "§HDefend The Republic!§H"
+ tur_turanist_path_tooltip:0 "§HThe National Revolution Begins!§H"
 
+ tur_democratic_strength_tooltip:0 "§HThis will strengthen the opposition.§H"
+ tur_kemalist_strength_tooltip:0 "§HThis will strengthen our government.§H"
+ tur_communist_strength_tooltip:0 "§HThis will strengthen the rebels.§H"
+ tur_fascist_strength_tooltip:0 "§HThis will strengthen our government.§H"
 ##################################################### BONUS NAMES ###########################################
 
  industry_bonus_name:0 "Industrial Research Effort"
