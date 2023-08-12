@@ -50,26 +50,19 @@ HRE_emperor_decisions = {
 			OR = {
 				AND = {
 					ROOT = {
-						owns_state = 451
-						owns_state = 2332
-						owns_state = 402
-						owns_state = 358
-						owns_state = 399
-						owns_state = 2331
-						owns_state = 2717
-						owns_state = 432
-						owns_state = 2344
-						owns_state = 383
-						owns_state = 1317
-						owns_state = 1319
-						owns_state = 364
-						owns_state = 346
-						owns_state = 336
-						owns_state = 331
+						owns_state = 7
+						owns_state = 35
+						owns_state = 36
 					}
 					NOT = {
-						any_core_state = {
-							is_core_of = HOL
+						7 = {
+							is_core_of = ROOT
+						}
+						35 = {
+							is_core_of = ROOT
+						}
+						36 = {
+							is_core_of = ROOT
 						}
 					}
 				}
@@ -81,23 +74,14 @@ HRE_emperor_decisions = {
 						owns_state = 358
 						owns_state = 399
 						owns_state = 2331
-						owns_state = 2717
-						owns_state = 432
-						owns_state = 2344
-						owns_state = 383
-						owns_state = 1317
-						owns_state = 1319
-						owns_state = 364
-						owns_state = 346
-						owns_state = 336
-						owns_state = 331
+						owns_state = 
 						is_puppet_of = ROOT				
 					}
 				}
 				AND = {
 					HOL = {
 						all_core_state = {
-							is_controlled_by = ROOT
+							is_controlled_by = SER
 						}
 					}
 				}
@@ -123,11 +107,14 @@ HRE_emperor_decisions = {
 				annex_country = { target = HOL transfer_troops = no }
 				add_timed_idea = { idea = HOL_revolt days = 365 }
 			}
-			every_state = {
-				limit = {
-					is_core_of = HOL
-				}
-				add_core_of = ROOT
+			7 = {
+				add_core_of = AUS
+			}
+			35 = {
+				add_core_of = AUS
+			}
+			36 = {
+				add_core_of = AUS
 			}
 		}
 	}

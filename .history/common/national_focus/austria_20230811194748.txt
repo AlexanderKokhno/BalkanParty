@@ -1556,14 +1556,27 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = AUS_a_roman_empire_tooltip
 
-		every_country = {
+			PRE = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			FRA = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			SAX = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			HES = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			HAN = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
 			limit = {
-				has_idea = HRE_autonomous_neutrality_idea
-			}   
-			PREV = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
-		}
-
-
+				limit = {
+					is_in_faction_with = CZE
+				}
+				CZE = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared} }								
+			}
+			WUR = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			MEK = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			HAN = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			SWI = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			HOL = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			LBV = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			SPM = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			TOS = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			COR = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			LUX = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
 
 		}
 	}
@@ -1973,23 +1986,28 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				HUN = {
-					all_core_state = {
-						OR = {
-							is_owned_by = AUS
-						}
+				AND = {
+					AUS = {
+						owns_state = 43
+						owns_state = 154
+						owns_state = 155
 					}
 				}
 				AND = {
 					HUN = {
 						is_puppet_of = AUS
+						owns_state = 43
+						owns_state = 154
+						owns_state = 155
 					}
 				}
 			}
 		}
 		bypass = {
-			NOT = {
-				country_exists = HUN
+			AUS = {
+				owns_state = 43
+				owns_state = 154
+				owns_state = 155
 			}
 		}
 			
@@ -2017,13 +2035,12 @@ focus_tree = {
 			factor = 10
 		}
 		available_if_capitulated = yes
-		available = {
-
-				any_state = {
-					is_core_of = HUN
-					is_owned_by = AUS
-				}
-
+		avaliable = {
+			AUS = {
+				owns_state = 43
+				owns_state = 154
+				owns_state = 155
+			}
 		}
 
 		completion_reward = {

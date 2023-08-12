@@ -180,10 +180,6 @@ country_event = {
 					tag = COR
 				}
 			}
-			modifier = {
-				factor = 1.5
-				has_global_flag = AUS_bring_in_vat
-			}
 		}
 
 		CZE = {

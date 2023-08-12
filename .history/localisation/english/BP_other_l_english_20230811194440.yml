@@ -28,8 +28,6 @@
   AUS_HRE_party_long:0 "Christlichsoziale Partei"
   SLV_thepatriots_party:0 "The Patriots"
   SLV_thepatriots_party_long:0 "The Patriots"
-  TUR_NIH_party:0 "TRM"
-  TUR_NIH_party_long:0 "Turanist Revival Association"
 #################################################### COUNTRIES ##########################################
   SER_YUG_KING_neutrality:0 "Kingdom of Yugoslavia"
   SER_YUG_KING_neutrality_ADJ:0 "Yugoslavian"
@@ -60,9 +58,6 @@
   MOL_CKHAN_cosmetic:0 "Crimeian Khanate"
   MOL_CKHAN_cosmetic_ADJ:0 "Crimeian"
   MOL_CKHAN_cosmetic_DEF:0 "Crimeian Khanate"
-  TUR_RE:0 "Reorganized Government Of Turan"
-  TUR_RE_ADJ:0 "Turanist"
-  TUR_RE_DEF:0 "Government Of Turan"
   VAT_papal_states_cosmetic_tag:0 "Papal States"
   VAT_papal_states_cosmetic_tag_ADJ:0 "Papal"
   VAT_papal_states_cosmetic_tag_DEF:0 "Papal States"

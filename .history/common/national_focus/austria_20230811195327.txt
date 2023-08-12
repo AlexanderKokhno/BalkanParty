@@ -1557,10 +1557,12 @@ focus_tree = {
 			custom_effect_tooltip = AUS_a_roman_empire_tooltip
 
 		every_country = {
-			limit = {
-				has_idea = HRE_autonomous_neutrality_idea
-			}   
-			PREV = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+
+				limit = {
+					has_idea = HRE_autonomous_neutrality_idea
+				}   
+				add_stability = 0.1
+
 		}
 
 
@@ -1973,23 +1975,28 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				HUN = {
-					all_core_state = {
-						OR = {
-							is_owned_by = AUS
-						}
+				AND = {
+					AUS = {
+						owns_state = 43
+						owns_state = 154
+						owns_state = 155
 					}
 				}
 				AND = {
 					HUN = {
 						is_puppet_of = AUS
+						owns_state = 43
+						owns_state = 154
+						owns_state = 155
 					}
 				}
 			}
 		}
 		bypass = {
-			NOT = {
-				country_exists = HUN
+			AUS = {
+				owns_state = 43
+				owns_state = 154
+				owns_state = 155
 			}
 		}
 			
@@ -2017,13 +2024,12 @@ focus_tree = {
 			factor = 10
 		}
 		available_if_capitulated = yes
-		available = {
-
-				any_state = {
-					is_core_of = HUN
-					is_owned_by = AUS
-				}
-
+		avaliable = {
+			AUS = {
+				owns_state = 43
+				owns_state = 154
+				owns_state = 155
+			}
 		}
 
 		completion_reward = {
