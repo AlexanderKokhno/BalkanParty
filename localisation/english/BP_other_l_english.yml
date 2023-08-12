@@ -62,7 +62,10 @@
   MOL_CKHAN_cosmetic_DEF:0 "Crimeian Khanate"
   TUR_RE:0 "Reorganized Government Of Turan"
   TUR_RE_ADJ:0 "Turanist"
-  TUR_RE_DEF:0 "Government Of Turan"
+  TUR_RE_DEF:0 "the Government Of Turan"
+  TUR_RE:0 "People's Republic Of Turkey"
+  TUR_RE_ADJ:0 "Turkish"
+  TUR_RE_DEF:0 "the People's Republic Of Turkey"
   
 #################################################### MUSIC ##############################################
   maintheme:0 "Bosanska Artiljerija"

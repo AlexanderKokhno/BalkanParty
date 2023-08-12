@@ -40,6 +40,32 @@ focus_tree = {
 	focus = {
 		id = TUR_military_assumes_total_control
 		icon = GFX_goal_generic_political_pressure
+		allow_branch = {
+			if = {
+				limit = {
+					has_country_leader = {
+					character = TUR_ismet_inonu
+					ruling_only = yes
+					}
+				}
+			}	
+			else if = {
+				limit = {
+					has_country_leader = {
+					character = TUR_nihal_atsiz
+					ruling_only = yes
+					}
+				}	
+			}
+			else if = {
+				limit = {
+					has_country_leader = {
+					character = TUR_sefik_husnu
+					ruling_only = yes
+					}
+				}
+			}
+		}	
 		prerequisite = { focus = TUR_remembering_the_revolt }
 		mutually_exclusive = { focus = TUR_ultranationalists_coup_inonu}
 		x = -5
@@ -54,10 +80,6 @@ focus_tree = {
 				flag = TUR_democratic_coup_flag
 				value = 0
 			}
-			set_country_flag = {
-				flag = TUR_democratic_tree_flag
-				value = 0
-			}
 			custom_effect_tooltip = tur_neutrality_path_tooltip
 			country_event = {
 				id = turkey.3
@@ -70,6 +92,32 @@ focus_tree = {
 	focus = {
 		id = TUR_ultranationalists_coup_inonu
 		icon = GFX_goal_generic_wolf_pack
+		allow_branch = {
+			if = {
+				limit = {
+					has_country_leader = {
+					character = TUR_ismet_inonu
+					ruling_only = yes
+					}
+				}
+			}	
+			else if = {
+				limit = {
+					has_country_leader = {
+					character = TUR_nihal_atsiz
+					ruling_only = yes
+					}
+				}	
+			}
+			else if = {
+				limit = {
+					has_country_leader = {
+					character = TUR_celal_bayar
+					ruling_only = yes
+					}
+				}
+			}
+		}	
 		prerequisite = { focus = TUR_remembering_the_revolt }
 		mutually_exclusive = { focus = TUR_military_assumes_total_control}
 		x = 5
@@ -85,10 +133,6 @@ focus_tree = {
 			kill_country_leader = yes
 			set_country_flag = {
 				flag = TUR_communist_coup_flag
-				value = 0
-			}
-			set_country_flag = {
-				flag = TUR_communist_tree_flag
 				value = 0
 			}
 			country_event = {
@@ -201,10 +245,18 @@ focus_tree = {
 		id = TUR_protect_the_republic_d
 		icon = GFX_focus_TUR_ratify_the_six_arrows
     	allow_branch = {
-			has_country_flag = {
-				flag = TUR_democratic_coup_flag
-				value > 2
-			}
+			if = {
+				has_country_flag = {
+					flag = TUR_democratic_coup_flag
+					value > 2
+				}
+				AND = {
+					has_country_leader = {
+						character = TUR_ismet_inonu
+						ruling_only = yes
+					}	
+				}
+			}	
 		}
 		prerequisite = { focus = TUR_disband_the_assembly}
 		prerequisite = { focus = TUR_root_out_turanists}
@@ -217,14 +269,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			modify_country_flag = {
-    		flag = TUR_democratic_tree_flag
-    		value = 2
-			}
-			modify_country_flag = {
-    		flag = TUR_kemalist_tree_flag
-    		value = -1
-			}
 			mark_focus_tree_layout_dirty = yes
 			country_event = {
 			id = turkey.12
@@ -232,15 +276,17 @@ focus_tree = {
 		}
 	}
 
+	#####DEMOCRATIC COUP
+
 	focus = {
 		id = TUR_to_save_the_republic
 		icon = GFX_focus_TUR_ratify_the_six_arrows
-    	allow_branch = {
-			has_country_flag = {
-				flag = TUR_democratic_tree_flag
-				value > 1
+		allow_branch = {
+				has_country_leader = {
+				character = TUR_celal_bayar
+				ruling_only = yes
 			}
-		}
+		}	
 		prerequisite = { focus = TUR_remembering_the_revolt}
 		x = -5
 		y = 1
@@ -339,6 +385,8 @@ focus_tree = {
 
 		}
 	}
+
+	####FASCIST STARTING CONTINUE
 
 	focus = {
 		id = TUR_secure_istanbul
@@ -461,11 +509,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			modify_country_flag = {
-    		flag = TUR_communist_tree_flag
-    		value = 2
-			}
-			mark_focus_tree_layout_dirty = yes
 			country_event = {
 			id = turkey.18
 			}
@@ -476,9 +519,9 @@ focus_tree = {
 		id = TUR_the_red_dawn_shines
 		icon = GFX_focus_ger_bulwark_against_bolshevism
 		allow_branch = {
-			has_country_flag = {
-				flag = TUR_communist_tree_flag
-				value > 1
+				has_country_leader = {
+				character = TUR_sefik_husnu
+				ruling_only = yes
 			}
 		}
 		prerequisite = { focus = TUR_remembering_the_revolt}
@@ -498,12 +541,6 @@ focus_tree = {
 	focus = {
 		id = TUR_redistributing_the_wealth
 		icon = GFX_focus_ger_bulwark_against_bolshevism
-		allow_branch = {
-			has_country_flag = {
-				flag = TUR_communist_tree_flag
-				value > 1
-			}
-		}
 		prerequisite = { focus = TUR_the_red_dawn_shines}
 		x = -1
 		y = 1
@@ -521,12 +558,6 @@ focus_tree = {
 	focus = {
 		id = TUR_crush_the_serpent
 		icon = GFX_focus_ger_bulwark_against_bolshevism
-		allow_branch = {
-			has_country_flag = {
-				flag = TUR_communist_tree_flag
-				value > 1
-			}
-		}
 		prerequisite = { focus = TUR_the_red_dawn_shines}
 		x = 1
 		y = 1
@@ -544,12 +575,6 @@ focus_tree = {
 	focus = {
 		id = TUR_creating_labor_camps
 		icon = GFX_focus_ger_bulwark_against_bolshevism
-		allow_branch = {
-			has_country_flag = {
-				flag = TUR_communist_tree_flag
-				value > 1
-			}
-		}
 		prerequisite = { focus = TUR_the_red_dawn_shines}
 		x = -1
 		y = 2
@@ -567,12 +592,6 @@ focus_tree = {
 	focus = {
 		id = TUR_exterminate_the_remnants
 		icon = GFX_focus_ger_bulwark_against_bolshevism
-		allow_branch = {
-			has_country_flag = {
-				flag = TUR_communist_tree_flag
-				value > 1
-			}
-		}
 		prerequisite = { focus = TUR_the_red_dawn_shines}
 		x = 1
 		y = 2
@@ -590,12 +609,6 @@ focus_tree = {
 	focus = {
 		id = TUR_the_final_struggle
 		icon = GFX_focus_ger_bulwark_against_bolshevism
-		allow_branch = {
-			has_country_flag = {
-				flag = TUR_communist_tree_flag
-				value > 1
-			}
-		}
 		prerequisite = { focus = TUR_the_red_dawn_shines}
 		x = 0
 		y = 3

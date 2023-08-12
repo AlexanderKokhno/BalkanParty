@@ -349,11 +349,12 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
-		complete_national_focus = TUR_to_save_the_republic
 		set_politics = {
 			ruling_party = democratic
 			elections_allowed = yes
 			}
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = TUR_to_save_the_republic
 		set_popularities = {
 			democratic = 80
 			neutrality = 10
@@ -460,7 +461,7 @@ country_event = {
     	flag = TUR_communist_coup_flag
     	value = 1
 		}
-		add_stability = .5
+		add_stability = .05
 		add_manpower = -2678
 		1932 = {set_demilitarized_zone = no}
 		1008 = {set_demilitarized_zone = no}
@@ -566,7 +567,20 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = TUR_the_red_dawn_shines
+		set_popularities = {
+			democratic = 0
+			neutrality = 40
+			fascism = 20
+			communism = 40
+		}
 		add_stability = -.30
 		every_owned_state = {set_demilitarized_zone = no}
+		set_cosmetic_tag = TUR_PE
 	}
 }
