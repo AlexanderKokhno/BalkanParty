@@ -58,9 +58,6 @@
   MOL_CKHAN_cosmetic:0 "Crimeian Khanate"
   MOL_CKHAN_cosmetic_ADJ:0 "Crimeian"
   MOL_CKHAN_cosmetic_DEF:0 "Crimeian Khanate"
-  VAT_papal_states_cosmetic_tag:0 "Papal States"
-  VAT_papal_states_cosmetic_tag_ADJ:0 "Papal"
-  VAT_papal_states_cosmetic_tag_DEF:0 "Papal States"
   
 #################################################### MUSIC ##############################################
   maintheme:0 "Bosanska Artiljerija"

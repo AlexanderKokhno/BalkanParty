@@ -123,11 +123,14 @@ HRE_emperor_decisions = {
 				annex_country = { target = HOL transfer_troops = no }
 				add_timed_idea = { idea = HOL_revolt days = 365 }
 			}
-			every_state = {
-				limit = {
-					is_core_of = HOL
-				}
-				add_core_of = ROOT
+			7 = {
+				add_core_of = AUS
+			}
+			35 = {
+				add_core_of = AUS
+			}
+			36 = {
+				add_core_of = AUS
 			}
 		}
 	}

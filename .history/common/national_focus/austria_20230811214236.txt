@@ -2017,13 +2017,13 @@ focus_tree = {
 			factor = 10
 		}
 		available_if_capitulated = yes
-		available = {
-
+		avaliable = {
+			ROOT = {
 				any_state = {
 					is_core_of = HUN
 					is_owned_by = AUS
 				}
-
+			}
 		}
 
 		completion_reward = {

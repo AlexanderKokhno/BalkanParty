@@ -350,7 +350,22 @@ focus_tree = {
 					}
 				}
 
-
+				every_state = {
+					limit = { 
+						OR = {
+							is_core_of = VAT
+							is_core_of = LAZ
+							is_core_of = UMB
+							is_core_of = MAR
+						}
+					}
+					VAT = {
+						transfer_state = PREV
+						add_state_core = PREV
+						add_ideas = HRE_autonomous_neutrality_idea
+						add_ideas = HRE_elector_idea
+					}
+				}
 
 				every_state = {
 					limit = { 
@@ -1143,6 +1158,10 @@ focus_tree = {
 						autonomy_state = bp_hre_elector
 					}
 					set_autonomy = {
+						target = VAT
+						autonomy_state = bp_hre_elector
+					}
+					set_autonomy = {
 						target = BAY
 						autonomy_state = bp_hre_elector
 					}
@@ -1177,8 +1196,8 @@ focus_tree = {
 			FRA = { has_opinion = { target = AUS value > 75 } }
 			SAX = { has_opinion = { target = AUS value > 75 } }
 			HES = { has_opinion = { target = AUS value > 50 } }
-			HSN = { has_opinion = { target = AUS value > 75 } }
 			HAN = { has_opinion = { target = AUS value > 50 } }
+			VAT = { has_opinion = { target = AUS value > 50 } }
 			BAY = { has_opinion = { target = AUS value > 50 } }
 			if = {
 				limit = {
@@ -1203,8 +1222,8 @@ focus_tree = {
 			 PRE = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
 			 SAX = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
 			 HES = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
-			 HSN = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
 			 HAN = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
+			 VAT = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
 			 BAY = { add_opinion_modifier = { target = AUS modifier = electors_secured_leanings } }
 			 limit = {
 				limit = {
@@ -1297,27 +1316,6 @@ focus_tree = {
 
 		completion_reward = {
 
-			hidden_effect = {
-				every_state = {
-					limit = { 
-						OR = {
-							is_core_of = GAL
-						}
-					}
-					GAL = {
-						transfer_state = PREV
-					}
-				}
-				GAL = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 3000
-						producer = TTS
-					}
-					add_manpower = 100000
-					load_oob = "GAL_unit_spawn"
-				}				
-			}
 			every_state = {
 				limit = { 
 					AND = {
@@ -1334,6 +1332,26 @@ focus_tree = {
 				declare_war_on = {
 					target = GAL
 					type = annex_everything
+				}				
+			}
+			hidden_effect = {
+				every_state = {
+					limit = { 
+						OR = {
+							is_core_of = GAL
+						}
+					}
+					GAL = {
+						transfer_state = PREV
+					}
+				}
+				GAL = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 7500
+						producer = TTS
+					}
+					add_manpower = 100000
 				}				
 			}
 
@@ -1364,6 +1382,12 @@ focus_tree = {
 
 		completion_reward = {
 
+			AUS = {
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+				}				
+			}
 
 			hidden_effect = { 
 				every_state = {
@@ -1385,10 +1409,9 @@ focus_tree = {
 				POL = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 7500
+						amount = 20000
 						producer = TTS
 					}
-					load_oob = "POL_unit_spawn"
 					add_manpower = 500000
 					add_command_power = 200
 					add_political_power = 200
@@ -1405,12 +1428,6 @@ focus_tree = {
 					complete_national_focus = POL_king_of_lithuania
 					complete_national_focus = POL_LIT_union
 				}
-			}
-			AUS = {
-				declare_war_on = {
-					target = POL
-					type = annex_everything
-				}				
 			}
 
 		}
@@ -1508,34 +1525,30 @@ focus_tree = {
 		completion_reward = {
 
 			hidden_effect = {
-				every_state = {
-					limit = { 
-						OR = {
-							is_core_of = VAT
-							is_core_of = LAZ
-							is_core_of = UMB
-							is_core_of = MAR
-						}
+				PAP = {
+
+					transfer_state = 2
+					transfer_state = 157
+					transfer_state = 161
+					add_ideas = HRE_autonomous_neutrality_idea
+					add_ideas = HRE_elector_idea
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.5
 					}
-					VAT = {
-						transfer_state = PREV
-						add_state_core = PREV
-						add_ideas = HRE_autonomous_neutrality_idea
-						add_ideas = HRE_elector_idea
-						add_ideas = catholic_league_member
-						set_cosmetic_tag = VAT_papal_states_cosmetic_tag
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
 					}
 				}
 			}
 			AUS = {
 				set_autonomy = {
-					target = VAT
+					target = PAP
 					autonomy_state = bp_hre_elector
 				}
-				add_ideas = catholic_league_member
 			}
 			custom_effect_tooltip = AUS_bring_in_pap_tooltip
-			set_global_flag = AUS_bring_in_vat
 
 		}
 	}
@@ -1556,14 +1569,27 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = AUS_a_roman_empire_tooltip
 
-		every_country = {
+			FRA = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			BAY = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			DNZ = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			PRE = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			SAX = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
 			limit = {
-				has_idea = HRE_autonomous_neutrality_idea
-			}   
-			PREV = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
-		}
-
-
+				limit = {
+					is_in_faction_with = CZE
+				}
+				CZE = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared} }								
+			}
+			WUR = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			MEK = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			HAN = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			SWI = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			HOL = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			LBV = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			SPM = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			TOS = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			COR = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
+			LUX = { add_opinion_modifier = { target = AUS modifier = hre_roman_empire_declared } }
 
 		}
 	}
@@ -1973,23 +1999,28 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				HUN = {
-					all_core_state = {
-						OR = {
-							is_owned_by = AUS
-						}
+				AND = {
+					AUS = {
+						owns_state = 43
+						owns_state = 154
+						owns_state = 155
 					}
 				}
 				AND = {
 					HUN = {
 						is_puppet_of = AUS
+						owns_state = 43
+						owns_state = 154
+						owns_state = 155
 					}
 				}
 			}
 		}
 		bypass = {
-			NOT = {
-				country_exists = HUN
+			AUS = {
+				owns_state = 43
+				owns_state = 154
+				owns_state = 155
 			}
 		}
 			
@@ -2017,13 +2048,12 @@ focus_tree = {
 			factor = 10
 		}
 		available_if_capitulated = yes
-		available = {
-
-				any_state = {
-					is_core_of = HUN
-					is_owned_by = AUS
-				}
-
+		avaliable = {
+			AUS = {
+				owns_state = 43
+				owns_state = 154
+				owns_state = 155
+			}
 		}
 
 		completion_reward = {
