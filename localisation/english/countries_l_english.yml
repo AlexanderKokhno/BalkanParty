@@ -3526,14 +3526,14 @@
 
    #COMMUNISM
 
-    TUR_communism:0 "Turkish Socialist Republic"
-    TUR_communism_DEF:0 "the Turkish Socialist Republic"
+    TUR_communism:0 "People's Republic Of Turkey"
+    TUR_communism_DEF:0 "the People's Republic Of Turkey"
     TUR_communism_ADJ:0 "Turkish"
 
    #DEMOCRATIC
 
-    TUR_democratic:0 "Republic of Turkey"
-    TUR_democratic_DEF:0 "the Republic of Turkey"
+    TUR_democratic:0 "Provisional Government Of Turkey"
+    TUR_democratic_DEF:0 "the Government Of Turkey"
     TUR_democratic_ADJ:0 "Turkish"
 
    #FASCISM
