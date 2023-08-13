@@ -28,6 +28,8 @@
   AUS_HRE_party_long:0 "Christlichsoziale Partei"
   SLV_thepatriots_party:0 "The Patriots"
   SLV_thepatriots_party_long:0 "The Patriots"
+  TUR_NIH_party:0 "TRM"
+  TUR_NIH_party_long:0 "Turanist Revival Association"
 #################################################### COUNTRIES ##########################################
   SER_YUG_KING_neutrality:0 "Kingdom of Yugoslavia"
   SER_YUG_KING_neutrality_ADJ:0 "Yugoslavian"
@@ -61,6 +63,12 @@
   VAT_papal_states_cosmetic_tag:0 "Papal States"
   VAT_papal_states_cosmetic_tag_ADJ:0 "Papal"
   VAT_papal_states_cosmetic_tag_DEF:0 "Papal States"
+  TUR_RE:0 "Reorganized Government Of Turan"
+  TUR_RE_ADJ:0 "Turanist"
+  TUR_RE_DEF:0 "the Government Of Turan"
+  TUR_RE:0 "People's Republic Of Turkey"
+  TUR_RE_ADJ:0 "Turkish"
+  TUR_RE_DEF:0 "the People's Republic Of Turkey"
   
 #################################################### MUSIC ##############################################
   maintheme:0 "Bosanska Artiljerija"
@@ -97,7 +105,13 @@
 
  SER_YUG_road_to_brotherhood_union_tooltip:0 "§H Gradually decrease the autonomy of Serbian puppets §H"
  
+ tur_neutrality_path_tooltip:0 "§HDefend The Republic!§H"
+ tur_turanist_path_tooltip:0 "§HThe National Revolution Begins!§H"
 
+ tur_democratic_strength_tooltip:0 "§HThis will strengthen the opposition.§H"
+ tur_kemalist_strength_tooltip:0 "§HThis will strengthen our government.§H"
+ tur_communist_strength_tooltip:0 "§HThis will strengthen the rebels.§H"
+ tur_fascist_strength_tooltip:0 "§HThis will strengthen our government.§H"
 ##################################################### BONUS NAMES ###########################################
 
  industry_bonus_name:0 "Industrial Research Effort"

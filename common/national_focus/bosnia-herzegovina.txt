@@ -1,3 +1,18 @@
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		relative_position_id = 
+#		available = {
+#		available = {
+#			NOT = { has_idea = BOS_heavy_investments }
+#		}
+#		
+#		bypass = {
+#
+#		}
+#		continue_if_invalid = yes
+#		available_if_capitulated = yes
+
+
 focus_tree = {
 	id = bosnia-herzegovina_focus
 	
@@ -15,47 +30,434 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1100 }
 
-#	focus = {
-#		id = ROM_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	} 
-
-####################################################################
-#################### SHARED 
-###############################################################
-	shared_focus = YUG_shared_modernize_the_air_force
-	shared_focus = YUG_shared_expand_the_split_shipyards
-	shared_focus = YUG_shared_expand_the_serbian_shipyards
-	shared_focus = YUG_shared_fund_army
+	focus = {
+		id = BOS_bosnian_spring_recover
+		icon = GFX_goal_generic_construction2
+		x = -3
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			remove_ideas = BOS_bosnian_spring
+		}
+	} 
+	focus = {
+		id = BOS_invest_krajina
+		icon = GFX_goal_BOS_krajina
+		prerequisite = { focus = BOS_bosnian_spring_recover}
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			NOT = { has_idea = BOS_heavy_investments }
+		}
+		cancel_if_invalid = no
+		completion_reward = {
+			add_timed_idea = { 
+				idea = BOS_heavy_investments
+				days = 70
+			}
+			777 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1494 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	} 
+	focus = {
+		id = BOS_invest_capital
+		icon = GFX_goal_BOS_sarajevo
+		prerequisite = { focus = BOS_bosnian_spring_recover}
+		x = -3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		available = {
+			NOT = { has_idea = BOS_heavy_investments }
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_timed_idea = { 
+				idea = BOS_heavy_investments
+				days = 70
+			}
+			1499 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	} 
+	focus = {
+		id = BOS_invest_east
+		icon = GFX_goal_BOS_east
+		prerequisite = { focus = BOS_bosnian_spring_recover}
+		x = -5
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		available = {
+			NOT = { has_idea = BOS_heavy_investments }
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_timed_idea = { 
+				idea = BOS_heavy_investments
+				days = 70
+			}
+			2814 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			2813 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1497 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			2824 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	} 
+	focus = {
+		id = BOS_balkan_diplomacy
+		icon = GFX_focus_generic_balkan_diplomacy
+		x = 10
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_political_power = 200
+		}
+	} 
+	focus = {
+		id = BOS_focus_communism
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = BOS_balkan_diplomacy}
+		x = 10
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+ 				popularity = 0.05
+			}
+		}
+	}  
+	focus = {
+		id = BOS_focus_communism_weapons
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		prerequisite = { focus = BOS_focus_communism}
+		x = 10
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+ 				popularity = 0.05
+			}
+		add_tech_bonus = {
+			bonus = 1
+  			uses = 5
+			category = infantry_weapons
+		}
+			
+		}
+	}   
+	focus = {
+		id = BOS_focus_communism_millitarization
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BOS_focus_communism}
+		x = 8
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+ 				popularity = 0.05
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+		}
+	}    
+	focus = {
+		id = BOS_focus_communism_civillian
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BOS_focus_communism}
+		x = 12
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+ 				popularity = 0.05
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = BOS_focus_communism_revolution
+		icon = GFX_goal_support_communism
+		prerequisite = {
+			focus = BOS_focus_communism_civillian
+			focus = BOS_focus_communism_millitarization
+			focus = BOS_focus_communism_weapons
+		}
+		x = 10
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			start_civil_war = {
+				ruling_party = communism
+				ideology = ROOT
+				size = 0.4
+				capital = 1494
+				states = {
+				1494 1493 777 2846 2816 2817 1492 835 2820 2815 1502
+				}
+				keep_unit_leaders = yes
+				keep_political_leader = yes
+				keep_political_party_members = yes
+			}
+		}
+	}   
+	focus = {
+		id = BOS_focus_spread_communism
+		icon = GFX_goal_generic_major_war
+		prerequisite = {
+			focus = BOS_focus_communism_civillian
+			focus = BOS_focus_communism_millitarization
+			focus = BOS_focus_communism_weapons
+		}
+		x = 10
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+				unlock_decision_tooltip = BOS_coup_in_montenegro
+		}
+	}   
+	focus = {
+		id = BOS_focus_fascism
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = BOS_balkan_diplomacy}
+		x = 5
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+ 				popularity = 0.05
+			}
+		}
+	}  
+	focus = {
+		id = BOS_focus_democracy
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = BOS_balkan_diplomacy}
+		x = 15
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+ 				popularity = 0.05
+			}
+		}
+	} 
 }

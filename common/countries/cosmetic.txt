@@ -39,7 +39,15 @@ MOL_CKHAN_cosmetic = {
 	color_ui = rgb { 0 0 0 }
 }
 
+TUR_RE = {
+    color = rgb { 128 128 128 }
+    color_ui = rgb { 128 128 128 }
+}
 
+TUR_PE = {
+	color = rgb { 127 0 0}
+    color_ui = rgb { 127 0 0}
+}
 
 MAL_UK = {
     color = rgb { 201 56 93 }

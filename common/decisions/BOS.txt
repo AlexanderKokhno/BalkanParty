@@ -1,0 +1,11 @@
+BOS_coup_in_montenegro = {
+
+	BOS_coup_montenegro = {
+
+		icon = decision_generic_nationalism
+
+		allowed = {
+			original_tag = BOS
+		}
+	}
+}
