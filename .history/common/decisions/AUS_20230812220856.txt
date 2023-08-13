@@ -1,0 +1,430 @@
+
+
+HRE_emperor_decisions = {
+  call_hre_to_arms = {
+
+
+
+		available = {
+      has_completed_focus = AUS_secure_electors
+			surrender_progress > 0.5
+		}
+
+		cost = 10
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+      OR = {
+        has_completed_focus = AUS_declare_HRE
+      }
+		}
+
+		complete_effect = {
+			add_stability = -0.05
+      add_war_support = -0.05
+      add_political_power = -300
+			news_event = bp_event.1
+			every_country = {
+				limit = {
+					has_idea = HRE_autonomous_neutrality_idea
+				}
+				country_event = {
+					id = austria.17
+					days = 5
+					random_hours = 72
+					random_days = 5
+				}	
+			}
+		}
+	}
+
+	AUS_hre_annex_hol = {
+
+		available = {
+      has_completed_focus = AUS_austrian_netherlands
+			OR = {
+				AND = {
+					ROOT = {
+						owns_state = 451
+						owns_state = 2332
+						owns_state = 402
+						owns_state = 358
+						owns_state = 399
+						owns_state = 2331
+						owns_state = 2717
+						owns_state = 432
+						owns_state = 2344
+						owns_state = 383
+						owns_state = 1317
+						owns_state = 1319
+						owns_state = 364
+						owns_state = 346
+						owns_state = 336
+						owns_state = 331
+					}
+					NOT = {
+						any_core_state = {
+							is_core_of = HOL
+						}
+					}
+				}
+				AND = {
+					any_country = {
+						owns_state = 451
+						owns_state = 2332
+						owns_state = 402
+						owns_state = 358
+						owns_state = 399
+						owns_state = 2331
+						owns_state = 2717
+						owns_state = 432
+						owns_state = 2344
+						owns_state = 383
+						owns_state = 1317
+						owns_state = 1319
+						owns_state = 364
+						owns_state = 346
+						owns_state = 336
+						owns_state = 331
+						is_puppet_of = ROOT				
+					}
+				}
+				AND = {
+					HOL = {
+						all_core_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+			}
+		}
+
+		cost = 200
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+      OR = {
+        has_completed_focus = AUS_declare_HRE
+      }
+		}
+
+		complete_effect = {
+			AUS = {
+				annex_country = { target = HOL transfer_troops = no }
+				add_timed_idea = { idea = HOL_revolt days = 365 }
+			}
+			every_state = {
+				limit = {
+					is_core_of = HOL
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
+
+	AUS_hre_unification = {
+
+		available = {
+      has_completed_focus = AUS_a_roman_empire
+			AND = {
+
+			}
+		}
+
+		cost = 1000
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		visible = {
+      OR = {
+        has_completed_focus = AUS_declare_HRE
+      }
+		}
+
+		complete_effect = {
+
+		}
+	}
+}
+
+AUS_HRE_spread_habsburgs_category = {
+	AUS_HRE_PU_Bavaria = {
+		avaliable = {
+			has_completed_focus = AUS_control_swabia
+		}
+		visible = {
+			has_completed_focus = AUS_declare_HRE
+		}
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor 100
+		}
+		available = {
+			has_completed_focus = AUS_duchy_of_bavaria
+		}
+		complete_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = BAY
+					autonomy_state = bp_hre_pu
+				}
+			}
+			BAY = {
+				remove_ideas = HRE_autonomous_neutrality_idea
+			}
+		}
+	}
+	AUS_HRE_PU_Swabia = {
+		avaliable = {
+			has_completed_focus = AUS_control_swabia
+		}
+		visible = {
+			has_completed_focus = AUS_declare_HRE
+		}
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_completed_focus = AUS_control_swabia
+		}
+		complete_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = WUR
+					autonomy_state = bp_hre_pu
+				}
+			}
+			WUR = {
+				remove_ideas = HRE_autonomous_neutrality_idea
+			}
+			every_state = {
+				limit = {
+					region = 35
+					NOT = {
+						OR = {
+							is_core_of = BAY
+							is_core_of = HES
+						}
+					}
+				}
+				WUR = {
+					add_state_core = PREV
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+	AUS_HRE_PU_FRA_BUR = {
+		available = {
+			has_completed_focus = AUS_reclaim_burgundy
+		}
+		visible = {
+			has_completed_focus = AUS_declare_HRE
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = FRA
+					autonomy_state = bp_hre_pu
+				}
+			}
+			FRA = {
+				remove_ideas = HRE_autonomous_neutrality_idea
+			}
+			every_state = {
+				limit = {
+					is_core_of = 
+				}
+			}
+			FRA = {
+
+				start_civil_war = {	
+					ideology = neutrality
+
+					size = 0.75
+					capital = 16
+					states = { 17 28 18 16}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.5
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.5
+					}
+					
+				}
+				
+			}
+		}
+	}
+	AUS_HRE_PU_Milan = {
+		available = {
+			has_completed_focus = AUS_duchy_of_milan
+		}
+		visible = {
+			has_completed_focus = AUS_declare_HRE
+		}
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = LBV
+					autonomy_state = bp_hre_pu
+				}
+			}
+		}
+	}
+	AUS_HRE_PU_Naples = {
+		available = {
+			has_completed_focus = AUS_king_of_naples
+			TTS = {
+				is_puppet_of = AUS
+			}
+		}
+		visible = {
+			has_completed_focus = AUS_declare_HRE
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = TTS
+					autonomy_state = bp_hre_pu
+				}
+			}
+		}
+	}
+}
+
+AUS_GER_party_purge_and_army_reform = {
+	AUS_GER_purge_the_party_of_rivals = {
+
+		available = {
+      has_completed_focus = AUS_GER_purge_party
+			AND = {
+
+			}
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+      OR = {
+        has_completed_focus = AUS_GER_purge_party
+      }
+		}
+
+		complete_effect = {
+			add_popularity = {
+    		ideology = fascism
+    		popularity = -0.1
+			}
+			add_ideas = AUS_GER_purge_party_I
+		}
+	}
+	AUS_GER_approach_army = {
+
+		available = {
+      has_completed_decision = AUS_GER_purge_the_party_of_rivals
+			AND = {
+				has_idea = AUS_GER_purge_party_I
+			}
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+      OR = {
+        has_completed_focus = AUS_GER_purge_party
+      }
+		}
+
+		complete_effect = {
+			add_command_power = 50
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			remove_ideas = AUS_GER_purge_party_I
+			add_ideas = AUS_GER_purge_party_II
+
+		}
+	}
+	AUS_GER_appease_the_army = {
+
+		available = {
+      has_completed_decision = AUS_GER_approach_army
+			AND = {
+				has_idea = AUS_GER_purge_party_II
+			}
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+      AND = {
+        has_completed_focus = AUS_GER_purge_party
+				
+      }
+		}
+
+		complete_effect = {
+			remove_ideas = AUS_GER_purge_party_II
+			swap_ideas = {
+				remove_idea = AUS_GER_army_disloyalty
+				add_idea = AUS_GER_placated_army
+			}
+		}
+	}
+}
+

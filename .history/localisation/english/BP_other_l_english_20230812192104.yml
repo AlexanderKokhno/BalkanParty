@@ -1,0 +1,146 @@
+﻿l_english: 
+#################################################### BOOKMARKS ###########################################
+  BALKAN_TITLE:0 "Balkan Party"
+  BALKAN_DESC:0 "The Balkans, also known as the Balkan Peninsula, is a geographical area in southeastern Europe with various geographical and historical definitions. The region takes its name from the Balkan Mountains that stretch throughout the whole of Bulgaria. The Balkan Peninsula is bordered by the Adriatic Sea in the northwest, the Ionian Sea in the southwest, the Aegean Sea in the south, the Turkish Straits in the east, and the Black Sea in the northeast. The northern border of the peninsula is variously defined. The highest point of the Balkans is Mount Musala, 2,925 metres (9,596 ft), in the Rila mountain range, Bulgaria. We, the modder's expanded this slightly."
+  SER_BALKAN_DESC:0 "Yugoslavia is but a memory, shattered into a multitude of nations. Will Seriba, the inheritor of Yugoslavia's army and Belgrade try to make amends with its neighbors or will it seek to establish the form control of Belgrade from Slovenia to Macedonia once more?"
+  
+#################################################### CHARACTERS ##############################################
+  SER_YUG_king_char:0 "Prince Paul"
+  AUS_HRE_Archduke_Robert_of_Austria_Este:0 "Archduke Robert of Austria Este"
+  AUS_HRE_Archduke_Robert_of_Austria_Este_desc:0 "he was the second son of Karl I, last Emperor of Austria-Hungary, and Princess Zita of Bourbon-Parma. He was also known as Robert Karl Erzherzog von Österreich."
+  SER_COM_blagoje_neskovic:0 "Blagoje Nešković"
+  SER_COM_blagoje_neskovic_desc:0 ""
+  SER_YUG_josip_broz_tito:0 "Josip Broz Tito"
+  SER_YUG_josip_broz_tito_desc:0 ""
+  ALB_no_government:0 "Abdicated Government"
+  ALB_no_government_desc:0 "The King has abdicated, communists ran rampent through the streets and PRC propaganda is on every corner. Political violence is rampant as the anti communist league rallies"
+
+#################################################### POLITICAL PARTIES #############################################
+  SER_kings_party:0 "King's Party"
+  SER_kings_party_long:0 "Party of Prince Paul of Yugoslavia"
+  SER_Blagoje_party:0 "SKS"
+  SER_Blagoje_party_long:0 "Savez Komunista Srbije"
+  SER_YUG_tito_party:0 "KPJ"
+  SER_YUG_tito_party_long:0 "Komunistička Partija Jugoslavije"
+  AUS_KPO_party:0 "KPO"
+  AUS_KPO_party_long:0 "Kommunistische Partei Österreichs"
+  AUS_HRE_party:0 "CSP"
+  AUS_HRE_party_long:0 "Christlichsoziale Partei"
+  SLV_thepatriots_party:0 "The Patriots"
+  SLV_thepatriots_party_long:0 "The Patriots"
+#################################################### COUNTRIES ##########################################
+  SER_YUG_KING_neutrality:0 "Kingdom of Yugoslavia"
+  SER_YUG_KING_neutrality_ADJ:0 "Yugoslavian"
+  SER_YUG_TITO_neutrality_DEF:0 "Kingdom of Yugoslavia"
+  SER_YUG_TITO_neutrality:0 "Kingdom of Yugoslavia"
+  SER_YUG_TITO_neutrality_ADJ:0 "Yugoslavian"
+  SER_YUG_KING_neutrality_DEF:0 "Kingdom of Yugoslavia"
+  AUS_GER_greater_aus_cos_tag:0 "Größeres Österreich"
+  AUS_GER_greater_aus_cos_tag_ADJ:0 "Größeres Österreichisch"
+  AUS_GER_greater_aus_cos_tag_DEF:0 "Größeres Österreichisch"
+  AUS_GER_GER_cos_tag:0 "Deutschland"
+  AUS_GER_GER_cos_tag_ADJ:0 "Größeres Deutschland-Österreichisch"
+  AUS_GER_GER_cos_tag_DEF:0 "Größeres Deutschland-Österreichisch"
+  FRA_HRE_BURGUNDY_TAG:0 "Burgundy"
+  FRA_HRE_BURGUNDY_TAG_ADJ:0 "Burgundian"
+  FRA_HRE_BURGUNDY_TAG_DEF:0 "Duchy of Burgundy"
+  DNZ_HRE_PALATINATE_TAG:0 "Palatinate"
+  DNZ_HRE_PALATINATE_TAG_ADJ:0 "Palatinatian"
+  DNZ_HRE_PALATINATE_TAG_DEF:0 "Palatinate"
+  CZE_BOH:0 "Kingdom of Bohemia"
+  CZE_BOH_ADJ:0 "Bohemian"
+  CZE_BOH_DEF:0 "Bohemia"
+  CZE_BOH_AUS_subject:0 "Kingdom of Bohemia"
+  CZE_BOH_democratic:0 "Commonwealth of Bohemia"
+  CZE_BOH_communism:0 "Bohemian People's Republic"
+  CZE_BOH_communism_ADJ:0 "PR Bohemian"
+  CZE_BOH_communism_DEF:0 "PR Bohemia"
+  MOL_CKHAN_cosmetic:0 "Crimeian Khanate"
+  MOL_CKHAN_cosmetic_ADJ:0 "Crimeian"
+  MOL_CKHAN_cosmetic_DEF:0 "Crimeian Khanate"
+  VAT_papal_states_cosmetic_tag:0 "Papal States"
+  VAT_papal_states_cosmetic_tag_ADJ:0 "Papal"
+  VAT_papal_states_cosmetic_tag_DEF:0 "Papal States"
+  
+#################################################### MUSIC ##############################################
+  maintheme:0 "Bosanska Artiljerija"
+  maintheme2:0 "My Dad is a War Criminal"
+  maintheme3:0 "Serbian Artillery is led by God"
+
+##################################################### TOOLTIP ###########################################
+
+ AUS_GER_anti_commie_tooltip:0 "§HGain a casus belli on all commies§H"
+ AUS_COM_anti_fascist_tooltip:0 "§HGain a casus belli on all fascists§H"
+ Anti_democrat_tooltip:0 "§HGain a casus belli on democrats§H"
+ COM_guarantees_tooltip:0 "§HGuarantee all fellow communist nations§H"
+
+ austria.3.tooltip:0 "§HGain a wargoal to seize Slovenia.§H"
+ austria.4.tooltip:0 "§HIntegrate Slovenia§H"
+ austria.6.tooltip:0 "§HGain a wargoal to subjugate Hungary.§H"
+ austria.7.tooltip:0 "§HGain a Hungarian puppet.§H"
+ austria.7.tooltip.youwillbesubject:0 "§RYOU WILL BECOME A SUBJECT§R"
+ austria.10.tooltip:0 "§HCroatia joins our faction§H"
+ austria.13.tooltip:0 "§HThe Turks join our faction§H"
+ austria.100.tooltip:0 "§HForm Deutschland§H"
+
+
+ aus_create_hre_tooltip:0 "§HTurn back the hands of time, the pages of the history books... the Holy Roman Empire has returned!§H"
+ CZE_get_pp_in_preperation_for_leagues_tooltip:0 "§HAny country outside the HRE with 100 relations to Bohemia will be invited to the leagues.§H"
+ CZE_start_the_league_war_tooltip:0 "§HFracture the empire, start the fire of religious war!§H"
+ cze_seize_emperorship_tooltip:0 "§HBohemia seizes the Imperial Throne§H"
+ AUS_bring_in_pap_tooltip:0 "§HThe introduction of the Holy See into the Holy Roman Empire will incline those seeking to join the League Wars in the favour of the Catholics."
+ AUS_HRE_balance_of_power:0 "Guarantee all nations that have a high opinion of Austria or Austria has of them.§H"
+ AUS_a_roman_empire_tooltip:0 "§HUnlocks a decision to unify the Holy Roman Empire into a single entity.§H"
+ AUS_GER_purge_party_tooltip:0 "§HA series of decisions will allow us to curtail the sprawl of the party and reign in the army's loyalty to us!§H"
+ AUS_spread_the_von_habsburgs_tooltip:0 "§HSend a small gift to all neutrality minded nations§H"
+ AUS_invest_in_the_provinces_tooltip:0 "§HAdd building slots in any states owned by Austria, her puppets or allies in the regions of Western Balkans & Northern Balkans§H"
+
+ SER_YUG_road_to_brotherhood_union_tooltip:0 "§H Gradually decrease the autonomy of Serbian puppets §H"
+ 
+
+##################################################### BONUS NAMES ###########################################
+
+ industry_bonus_name:0 "Industrial Research Effort"
+
+##################################################### PUPPETS #################################################
+
+ bp_hre_prince:0 "Imperial Prince"
+ bp_hre_elector:0 "Imperial Elector"
+ bp_hre_pu:0 "Personal Union"
+
+###################################################### OPINION MODIFIERS ###############################################
+
+ electors_secured_leanings:0 "Austrian Emperor secured the Electors"
+ hre_member_denied_emperors_call:0 "Denied the Emperor's call to Arms"
+ hre_roman_empire_declared:0 "Emperor Proclamation for Unification"
+ deal_with_brandenburg_pre_pissed:0 "Brandenburg dealt with!"
+ AUS_spread_the_von_habsburgs_opinion:0 "Received Habsburg Gifts"
+ established_embassy:0 "Embassy Established"
+ tito_stalin_split:0 "Tito–Stalin split"
+
+
+######################################################### DECISION CATAGORIES #############################################
+
+ HRE_emperor_decisions:0 "Imperial Decisions"
+ HRE_emperor_decisions_desc:0 "Imperial Decrees from the Emperor"
+ AUS_GER_party_purge_and_army_reform:0 "Purge the Party and Reign in Army"
+
+######################################################### DECISIONS ##############################################
+
+ call_hre_to_arms:0 "Issue a demand for Imperial Defence"
+ call_hre_to_arms_desc:0 "The Emperor is in danger, we must mobilize the empire to save us. Just as we protect them, they must protect us."
+ AUS_hre_annex_hol:0 "Integrate the Lowlands"
+ AUS_hre_annex_hol_desc:0 ""
+ AUS_HRE_PU_Bavaria:0 "Enforce Personal Union on Bavaria"
+ AUS_HRE_PU_Bavaria_desc:0 ""
+ AUS_HRE_PU_Swabia:0 "Enforce Personal Union on Swabia-Wuremburg"
+ AUS_HRE_PU_FRA_BUR:0 "Inherit the crown of Burgundy"
+ AUS_HRE_PU_FRA_BUR_desc:0 ""
+ AUS_HRE_PU_Milan:0 "Seize the Crown of Milan"
+ AUS_HRE_PU_Milan_desc:0 ""
+ AUS_HRE_PU_Naples:0 "Conquer the Crown of Naples"
+ AUS_HRE_PU_Naples_desc:0 ""
+
+ AUS_GER_purge_the_party_of_rivals:0 "Purge the Party of Rivals"
+ AUS_GER_approach_army:0 "Approach the Army"
+ AUS_GER_appease_the_army:0 "Appease the Army"
