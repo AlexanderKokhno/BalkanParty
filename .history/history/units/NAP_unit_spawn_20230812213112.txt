@@ -1,0 +1,350 @@
+﻿####### Division Templates #######
+division_template = { 
+	name = "Divisione di Fanteria" 
+	division_names_group = NAP_INF_01 
+
+	# Represents nearly all infantry divisions
+	# In later years, CC.NN. Brigade added to INF Division (1x2 MIL/INF regiments)
+	# Also represent semi-mountain divisions (1st, 2nd, 3rd, 4th, 6th Divisions)
+	regiments = { 
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = { 
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = { 
+	name = "Divisione Alpina" 
+	division_names_group = NAP_MNT_01 
+
+	regiments = { 
+		mountaineers = { x = 0 y = 0 }												# (elite) Alpini Regiment
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = { 
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+
+	priority = 2 
+}
+
+
+
+
+division_template = { 
+	name = "Reggimento di Cavalleria" 
+	division_names_group = NAP_CAV_01 
+
+	regiments = { 
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+
+division_template = {
+	name = "Due larghezze"			
+	division_names_group = NAP_TW_01
+	template_counter = 33
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+
+	}
+
+}
+
+
+
+
+####### OOB #######
+units = {
+	division = { 
+		location = 20008
+		division_template = "Reggimento di Cavalleria"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20008
+		division_template = "Reggimento di Cavalleria"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20008
+		division_template = "Reggimento di Cavalleria"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20008
+		division_template = "Divisione Alpina"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20008
+		division_template = "Divisione Alpina"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20008
+		division_template = "Divisione di Fanteria"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Divisione di Fanteria"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	##################### 2 WIDTH #################
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 14805
+		division_template = "Due larghezze"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+
+
+
+}

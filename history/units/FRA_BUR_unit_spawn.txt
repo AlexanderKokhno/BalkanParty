@@ -1,0 +1,432 @@
+﻿division_template = {
+	name = "Deux largeurs"			
+	division_names_group = FRA_TW_01
+	template_counter = 33
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+
+	}
+
+}
+
+units = {
+
+
+
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 19850
+		division_template = "Deux largeurs"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+
+}
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "FRA"
+		}
+		requested_factories = 1
+		progress = 0.43
+		efficiency = 100
+	}
+}

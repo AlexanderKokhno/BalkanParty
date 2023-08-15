@@ -29,7 +29,20 @@
 #           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
 #                                      where you choose the historical division name.
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
-#                                      the current game version.
+#  
+
+
+                                    the current game version.
+
+BUL_TW_01 = { 
+	name = "Две ширини" 
+	for_countries = { BUL } 
+	can_use = { always = yes }
+	division_types = { "infantry" } 
+	ordered = {
+		1 = { "%d Две ширини" }
+	}
+}																		
 
 BUL_INF_01 = 
 {

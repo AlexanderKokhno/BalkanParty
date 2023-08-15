@@ -31,6 +31,17 @@
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
 
+POL_TW_01 = { 
+	name = "Dwie szerokości" 
+	for_countries = { POL } 
+	can_use = { always = yes }
+	division_types = { "infantry" } 
+	ordered = {
+		1 = { "%d Dwie szerokości" }
+	}
+}
+
+
 POL_INF_01 = 
 {
 	name = "Infantry Division"

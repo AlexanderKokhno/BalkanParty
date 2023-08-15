@@ -31,6 +31,16 @@
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
 
+TUR_TW_01 = { 
+	name = "Iki genişlik" 
+	for_countries = { TUR } 
+	can_use = { always = yes }
+	division_types = { "infantry" } 
+	ordered = {
+		1 = { "%d Iki genişlik" }
+	}
+}
+
 TUR_INF_01 = 
 {
 	name = "Infantry Divisions"

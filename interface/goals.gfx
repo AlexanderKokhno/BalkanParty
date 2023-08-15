@@ -3804,5 +3804,9 @@ spriteTypes = {
 	name = "GFX_goal_BOS_sarajevo"
 	texturefile = "gfx/interface/goals/sarajevo.dds"			
 	}
+	SpriteType = {
+	name = "GFX_goal_BOS_east"
+	texturefile = "gfx/interface/goals/east.dds"			
+	}
 
 }

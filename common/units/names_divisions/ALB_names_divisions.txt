@@ -30,6 +30,18 @@
 #                                      where you choose the historical division name.
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
+
+ALB_TW_01 = { 
+	name = "Dy gjerësi" 
+	for_countries = { ALB } 
+	can_use = { always = yes }
+	division_types = { "infantry" } 
+	ordered = {
+		1 = { "%d Dy gjerësi" }
+	}
+}
+
+
 ALB_INF_01 = 
 {
 	name = "Infantry Division"
