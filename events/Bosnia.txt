@@ -1,0 +1,79 @@
+##################
+#bosnia events
+#################
+
+add_namespace = bosnia
+
+#################### AUS GER
+
+country_event = {
+	id = bosnia.1
+	title = bosnia.1.t
+	desc = bosnia.1.desc
+	picture = GFX_news_event_003
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = BOS
+	}
+	option = {
+		name = bosnia.1.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = MNT
+		}
+	}
+}
+
+country_event = {
+	id = bosnia.2
+	title = bosnia.2.t
+	desc = bosnia.2.desc
+	picture = GFX_news_event_063
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = BOS
+	}
+	option = {
+		name = bosnia.2.a
+		MNT = {
+			set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+			}
+		}
+	}
+}
+country_event = {
+	id = bosnia.3
+	title = bosnia.3.t
+	desc = bosnia.3.desc
+	picture = news_event_056
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = BOS
+	}
+	option = {
+		name = bosnia.3.a
+		MNT = {
+			start_civil_war = {
+				ruling_party = communism
+				ideology = ROOT
+				size = 0.4
+				capital = 863
+				states = {
+				863 1527 2801 2800 1986
+				}
+				keep_unit_leaders = yes
+				keep_political_leader = yes
+				keep_political_party_members = yes
+			}
+		}
+	}
+}
+

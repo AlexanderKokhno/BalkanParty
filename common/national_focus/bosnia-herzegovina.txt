@@ -242,6 +242,10 @@ focus_tree = {
 		x = 10
 		y = 1
 		cost = 5
+		mutually_exclusive = {
+			 focus =  BOS_focus_fascism
+			 focus =  BOS_focus_democracy
+			}
 		ai_will_do = {
 			factor = 1
 		}
@@ -409,9 +413,7 @@ focus_tree = {
 		id = BOS_focus_spread_communism
 		icon = GFX_goal_generic_major_war
 		prerequisite = {
-			focus = BOS_focus_communism_civillian
-			focus = BOS_focus_communism_millitarization
-			focus = BOS_focus_communism_weapons
+			focus = BOS_focus_communism_revolution
 		}
 		x = 10
 		y = 4
@@ -421,9 +423,19 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		completion_reward = {
-				unlock_decision_tooltip = BOS_coup_in_montenegro
+			random_list = {
+				33 = {
+					country_event = { id = bosnia.1 days = 1 }
+				}
+				33 = {
+					country_event = { id = bosnia.2 days = 1 }
+				}
+				33 = {
+					country_event = { id = bosnia.3 days = 1 }
+				}
+			}
 		}
-	}   
+	}
 	focus = {
 		id = BOS_focus_fascism
 		icon = GFX_goal_support_fascism
@@ -433,6 +445,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
+		}
+		mutually_exclusive = {
+			 focus =  BOS_focus_communism
+			 focus =  BOS_focus_democracy
 		}
 		cancel_if_invalid = yes
 		completion_reward = {
@@ -446,6 +462,10 @@ focus_tree = {
 		id = BOS_focus_democracy
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = BOS_balkan_diplomacy}
+		mutually_exclusive = {
+			 focus =  BOS_focus_communism
+			 focus =  BOS_focus_fascism
+		}
 		x = 15
 		y = 1
 		cost = 5
