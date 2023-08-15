@@ -1,0 +1,266 @@
+bookmarks = {
+	bookmark = {
+		name = "BALKAN_TITLE"
+		desc = "BALKAN_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "ROM"
+		default = yes
+		
+
+
+		"CZE"={
+			history = "CZE_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				CZE_skoda_works
+				CZE_divided_nation
+			}
+			focuses = {
+				CZE_sudeten_1
+				CZE_industrial_legacy
+				CZE_Bohemian_memories
+			}
+		}
+
+		"HUN"={
+			history = "HUN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				HUN_treaty_of_triannon
+			}
+			focuses = {
+				HUN_proclaim_the_restoration_of_austria_hungary
+				HUN_secret_rearmament
+				HUN_renounce_the_treaty_of_trianon
+			}
+		}
+
+		"ROM"={
+			history = "ROM_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				ROM_king_carol_ii_hedonist
+				neutrality_idea
+			}
+			focuses = {
+				ROM_balkans_dominance
+				ROM_institute_royal_dictatorship
+				ROM_preserve_greater_romania
+			}
+		}
+
+
+		"BUL"={
+			history = "BUL_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				BUL_second_national_catastrophe
+				BUL_army_restrictions
+				BUL_imro_01
+			}
+			focuses = {
+				BUL_the_fatherland_front
+				BUL_restore_the_bulgarian_patriarchate
+				BUL_prussia_of_the_balkans
+			}
+		}
+
+		"AUS"={
+			history = "AUS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				AUS_Saal_Schutz
+				AUS_germans
+			}
+			focuses = {
+				AUS_Archduke_Robert_of_Austria_Este
+				AUS_elect_the_KPO
+				AUS_GER_greater_austria
+			}
+		}
+
+		"TUR"={
+			history = "TUR_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				TUR_sectarian_woes
+				TUR_disorganised_armed_forces
+				TUR_debt_council
+			}
+			focuses = {
+				TUR_ratify_the_six_arrows
+				TUR_reaffirm_the_balkan_pact
+				TUR_pivot_to_the_past
+			}
+		}
+		"SER"={
+			history = "SER_BALKAN_DESC"
+			ideology = neutrality
+			ideas = {
+				SER_memories_of_YUG_1
+				SER_36_paramilitaries
+			}
+			focuses = {
+				SER_acknowledge_neighbors
+				SER_revive_YUG
+				SER_COM_coup
+			}
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
+
+
+		"MNT"={
+			minor = yes
+			history = 
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"GRE"={
+			history = "GRE_GATHERING_STORM_DESC"
+			minor = yes
+			ideology = neutrality
+			ideas = {
+				GRE_debt_to_the_ifc
+				GRE_schachtplan
+				GRE_political_instability_dummy
+			}
+			focuses = {
+				GRE_metaxism_focus
+				GRE_resurrecting_the_megali_idea
+				GRE_stage_an_incident_in_the_bosporus
+			}
+		}
+		"CRO"={
+			minor = yes
+			history = "CRO_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+			focuses = {
+				CRO_assassination_attempt_ante_pavelic
+
+			}
+		}
+		"BOS"={
+			minor = yes
+			history = "BOS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"KOS"={
+			minor = yes
+			history = "KOS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"MAC"={
+			minor = yes
+			history = "MAC_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}		
+		"SLV"={
+			minor = yes
+			history = "SLV_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"ALB"={
+			minor = yes
+			history = "ALB_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+				ALB_ZOG_stand_zog
+				ALB_CCP_chi_investments
+
+			}
+		}
+		"SLO"={
+			minor = yes
+			history = "SLO_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+				SLO_fortification_studies
+			}
+		}		
+		"MOL"={
+			minor = yes
+			history = "MOL_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				MOL_romanian_nationalists
+
+			}
+			focuses = {
+
+			}
+		}		
+		"TRA"={
+			minor = yes
+			history = "TRA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"KUR"={
+			minor = yes
+			history = "KUR_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

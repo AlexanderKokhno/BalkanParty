@@ -1,0 +1,355 @@
+﻿ division_template = {
+	name = "Pješadijske Divizije"					# Infantry Division
+	division_names_group = BOS_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Dvije širine"			
+	division_names_group = BOS_TW_01
+	template_counter = 33
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+
+	}
+
+}
+
+
+units = {
+	#### Československá Vojenská Jednotka #####
+	# directly subordinate
+	division = {
+		name = "Sarajevska Prva Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Sarajevska Prva Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Sarajevska Prva Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Sarajevska Prva Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Sarajevska Prva Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Sarajevska Prva Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Sarajevska Prva Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Sarajevska Prva Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Sarajevska Prva Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Sarajevska Prva Pješadijska"
+		location = 14631  # not Prague
+		division_template = "Pješadijske Divizije"
+		start_experience_factor = 0.5
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	
+}
+
+
+
+
+
+
+units = {
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = no
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = no
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+
+
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BOS"
+		}
+		requested_factories = 2
+		progress = 0.18
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "BOS"
+		}
+		requested_factories = 1
+		progress = 0.48
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "BOS"
+		}
+		requested_factories = 2
+		progress = 0.48
+		efficiency = 100
+	}
+}

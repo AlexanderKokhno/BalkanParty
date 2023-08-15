@@ -30,6 +30,18 @@
 #                                      where you choose the historical division name.
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
+
+AUS_TW_01 = { 
+  name = "Zwei Breiten" 
+  for_countries = { AUS } 
+  can_use = { always = yes }
+  division_types = { "infantry" } 
+  ordered = {
+    1 = { "%d Zwei Breiten" } 
+  }
+}
+
+
 AUS_INF_01 = 
 {
 	name = "Infantry Division"

@@ -1,0 +1,9 @@
+KUR_TW_01 = { 
+	name = "Du firehî" 
+	for_countries = { KUR } 
+	can_use = { always = yes }
+	division_types = { "infantry" } 
+	ordered = {
+		1 = { "%d Du firehî" }
+	}
+}

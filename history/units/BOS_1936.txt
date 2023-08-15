@@ -15,78 +15,7 @@
 units = {
 	#### Československá Vojenská Jednotka #####
 	# directly subordinate
-	division = {
-		name = "Sarajevska Prva Pješadijska"
-		location = 14631  # not Prague
-		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
 
-	}
-	division = {
-		name = "Sarajevska Sekunda Pješadijska"
-		location = 14631  # not Prague
-		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
-
-	}
-	division = {
-		name = "Sarajevska Treće Pješadijska"
-		location = 14631  # not Prague
-		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
-
-	}
-	division = {
-		name = "Sarajevska Četvrto Pješadijska"
-		location = 14631  # not Prague
-		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
-
-	}
-	division = {
-		name = "Sarajevska Peto Pješadijska"
-		location = 14631  # not Prague
-		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
-
-	}
-	division = {
-		name = "Banja Luka Prva Pješadijska"
-		location = 20119  # not Prague
-		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
-
-	}
-	division = {
-		name = "Banja Luka Sekunda Pješadijska"
-		location = 20119  # not Prague
-		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
-
-	}
-	division = {
-		name = "Banja Luka Treće Pješadijska"
-		location = 20119  # not Prague
-		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
-
-	}
-	division = {
-		name = "Prijeda Pješadijska"
-		location = 20195  # not Prague
-		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
-
-	}
 	division = {
 		name = "Bihać Pješadijska"
 		location = 14432  # not Prague
@@ -167,29 +96,222 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
-			creator = "BOS"
-		}
-		requested_factories = 2
-		progress = 0.18
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
+			type = infantry_equipment_0
 			creator = "BOS"
 		}
 		requested_factories = 1
-		progress = 0.48
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_2
-			creator = "BOS"
-		}
-		requested_factories = 2
-		progress = 0.48
+		progress = 0.86
 		efficiency = 100
 	}
 }
+
+division_template = {
+	name = "Dvije širine"			
+	division_names_group = BOS_TW_01
+	template_counter = 33
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+
+	}
+
+}
+
+units = {
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = no
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = no
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 20119
+		division_template = "Dvije širine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+
+	
+
+}
+

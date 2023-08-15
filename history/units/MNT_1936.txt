@@ -1,39 +1,163 @@
-﻿division_template = {
-	name = "Montenegro Divizija"	# Infantry Division	
-	# Note: infantry divisions were all at low reserve levels even just prior to Axis 
-	#	invasion of 1941
+﻿
+division_template = {
+	name = "Konna Divizija" 			# Cavalry Division
 
-	division_names_group = YUG_INF_01
+	division_names_group = MNT_CAV_01
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
 	}
 }
 
-units = {
-	division = {
-		name = "Podgorica I"
-		location = 17762
-		division_template = "Montenegro Divizija"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "Podgorica II"
-		location = 17762
-		division_template = "Montenegro Divizija"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "Podgorica III"
-		location = 17762
-		division_template = "Montenegro Divizija"
-		start_experience_factor = 0.3
+division_template = {
+	name = "Две ширини"			
+	division_names_group = MNT_TW_01
+	template_counter = 33
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+
 	}
 
-}  # Neboja if we get font support
+}
+
+units = {
+	##### Bulgarski Glavno Komandvane #####
+	division = {
+		#name = "1-va Konna divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 17762
+		division_template = "Konna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "2-ra Konna divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 17762
+		division_template = "Konna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+
+	############################ 2 Width ###################
+
+
+	division = { 
+		location = 17762
+		division_template = "Две ширини"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 17762
+		division_template = "Две ширини"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 17762
+		division_template = "Две ширини"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 17762
+		division_template = "Две ширини"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 17762
+		division_template = "Две ширини"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 17762
+		division_template = "Две ширини"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 17762
+		division_template = "Две ширини"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 17762
+		division_template = "Две ширини"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 17762
+		division_template = "Две ширини"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = { 
+		location = 17762
+		division_template = "Две ширини"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+}
 
 ### Starting Production ###
 instant_effect = {
