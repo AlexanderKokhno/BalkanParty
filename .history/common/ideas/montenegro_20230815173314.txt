@@ -2,27 +2,20 @@ ideas = {
 	# MILITARY
 	country = {
 		MNT_anti_BOS_buffs = {
-			picture = volunteer_only
+			picture = generic_production_bonus
 			allowed = {
-				original_tag = MNT
-				always = yes
+				original_tag = FRA
+				always = no
 			}
 
 			allowed_civil_war = {
-				tag = MNT
+				tag = FRA #stays with main country
 			}
 
 			removal_cost = -1
-
-			targeted_modifier = {
-				tag = BOS
-				defense_bonus_against = 0.1
-				attack_bonus_against = 0.1
-			}
 			
 			modifier = {
 				conscription_factor = 0.05
-				weekly_manpower = 250
 			}
 		}
 	}

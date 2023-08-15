@@ -68,23 +68,18 @@ country_event = {
 		name = bosnia.3.a
 		MNT = {
 			start_civil_war = {
-
-				ruling_party = fascism  #MNT
-
-				ideology = communism		#Rebels
-
-				
+				ruling_party = communism
 				size = 0.4
 				capital = 863
 				states = {
 				863 1527 2801 2800 1986
 				}
-				keep_unit_leaders = no
-				keep_political_leader = no
-				keep_political_party_members = no
+				keep_unit_leaders = yes
+				keep_political_leader = yes
+				keep_political_party_members = yes
 				set_country_flag = MNT_lf
 			}
-
+			ruling_party = neutrality
 		}
 		ROOT = {
       country_event = { id = bosnia.4 days = 15 }
@@ -104,9 +99,6 @@ country_event = {
 	}
 	option = {
 		name = bosnia.4.a
-		MNT = {
-			add_ideas = MNT_anti_BOS_buffs
-		}
 		BOS = {
 			create_wargoal = {
 				type = puppet_wargoal_focus

@@ -104,9 +104,6 @@ country_event = {
 	}
 	option = {
 		name = bosnia.4.a
-		MNT = {
-			add_ideas = MNT_anti_BOS_buffs
-		}
 		BOS = {
 			create_wargoal = {
 				type = puppet_wargoal_focus

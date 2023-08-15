@@ -472,13 +472,6 @@ focus_tree = {
 			}
 		}
 	}  
-
-
-	####################################
-	############# DEMOCRACY
-	##################################
-
-	
 	focus = {
 		id = BOS_focus_democracy
 		icon = GFX_goal_support_democracy

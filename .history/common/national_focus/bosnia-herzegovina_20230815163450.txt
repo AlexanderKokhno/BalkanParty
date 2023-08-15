@@ -37,7 +37,7 @@ focus_tree = {
 		y = 0
 		cost = 5
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 		cancel_if_invalid = yes
 		completion_reward = {
@@ -221,12 +221,6 @@ focus_tree = {
 			}
 		}
 	} 
-
-	########################################
-	############ BALKAN DIPLOMACY
-	#########################################
-
-
 	focus = {
 		id = BOS_balkan_diplomacy
 		icon = GFX_focus_generic_balkan_diplomacy
@@ -234,19 +228,13 @@ focus_tree = {
 		y = 0
 		cost = 5
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 		cancel_if_invalid = yes
 		completion_reward = {
 			add_political_power = 200
 		}
 	} 
-
-	##############################################
-	################ COM
-	##############################################
-
-
 	focus = {
 		id = BOS_focus_communism
 		icon = GFX_goal_support_communism
@@ -259,7 +247,7 @@ focus_tree = {
 			 focus =  BOS_focus_democracy
 			}
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 		cancel_if_invalid = yes
 		completion_reward = {
@@ -277,7 +265,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 		cancel_if_invalid = yes
 		completion_reward = {
@@ -301,7 +289,7 @@ focus_tree = {
 		y = 2
 		cost = 5
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 		cancel_if_invalid = yes
 		completion_reward = {
@@ -350,7 +338,7 @@ focus_tree = {
 		y = 2
 		cost = 5
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 		cancel_if_invalid = yes
 		completion_reward = {
@@ -403,14 +391,14 @@ focus_tree = {
 		y = 3
 		cost = 5
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 		cancel_if_invalid = yes
 		completion_reward = {
 			start_civil_war = {
 				ruling_party = communism
 				ideology = ROOT
-				size = 0.35
+				size = 0.4
 				capital = 1494
 				states = {
 				1494 1493 777 2846 2816 2817 1492 835 2820 2815 1502
@@ -434,7 +422,7 @@ focus_tree = {
 		y = 4
 		cost = 5
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 		cancel_if_invalid = yes
 		completion_reward = {
@@ -443,13 +431,6 @@ focus_tree = {
 			}
     }
 	}
-
-
-	####################################
-	############## FASCISM
-	##################################
-
-
 	focus = {
 		id = BOS_focus_fascism
 		icon = GFX_goal_support_fascism
@@ -458,7 +439,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 		mutually_exclusive = {
 			 focus =  BOS_focus_communism
@@ -472,13 +453,6 @@ focus_tree = {
 			}
 		}
 	}  
-
-
-	####################################
-	############# DEMOCRACY
-	##################################
-
-	
 	focus = {
 		id = BOS_focus_democracy
 		icon = GFX_goal_support_democracy
@@ -491,7 +465,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 		cancel_if_invalid = yes
 		completion_reward = {

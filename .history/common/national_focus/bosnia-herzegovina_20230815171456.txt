@@ -221,12 +221,6 @@ focus_tree = {
 			}
 		}
 	} 
-
-	########################################
-	############ BALKAN DIPLOMACY
-	#########################################
-
-
 	focus = {
 		id = BOS_balkan_diplomacy
 		icon = GFX_focus_generic_balkan_diplomacy
@@ -241,12 +235,6 @@ focus_tree = {
 			add_political_power = 200
 		}
 	} 
-
-	##############################################
-	################ COM
-	##############################################
-
-
 	focus = {
 		id = BOS_focus_communism
 		icon = GFX_goal_support_communism
@@ -443,13 +431,6 @@ focus_tree = {
 			}
     }
 	}
-
-
-	####################################
-	############## FASCISM
-	##################################
-
-
 	focus = {
 		id = BOS_focus_fascism
 		icon = GFX_goal_support_fascism
@@ -472,13 +453,6 @@ focus_tree = {
 			}
 		}
 	}  
-
-
-	####################################
-	############# DEMOCRACY
-	##################################
-
-	
 	focus = {
 		id = BOS_focus_democracy
 		icon = GFX_goal_support_democracy
