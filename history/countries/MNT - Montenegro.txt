@@ -1,4 +1,4 @@
-﻿capital = 105 # Montenegro
+﻿capital = 881 # Montenegro
 
 oob = "MNT_1936"
 

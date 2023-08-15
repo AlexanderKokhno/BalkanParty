@@ -1,0 +1,50 @@
+﻿division_template = {
+	name = "Montenegro Divizija"	# Infantry Division	
+	# Note: infantry divisions were all at low reserve levels even just prior to Axis 
+	#	invasion of 1941
+
+	division_names_group = YUG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "Podgorica I"
+		location = 17762
+		division_template = "Montenegro Divizija"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Podgorica II"
+		location = 17762
+		division_template = "Montenegro Divizija"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Podgorica III"
+		location = 17762
+		division_template = "Montenegro Divizija"
+		start_experience_factor = 0.3
+	}
+
+}  # Neboja if we get font support
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "MNT"
+		}
+		requested_factories = 1
+		progress = 0.37
+		efficiency = 100
+	}
+	
+}

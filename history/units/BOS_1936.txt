@@ -19,144 +19,144 @@ units = {
 		name = "Sarajevska Prva Pješadijska"
 		location = 14631  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Sarajevska Sekunda Pješadijska"
 		location = 14631  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Sarajevska Treće Pješadijska"
 		location = 14631  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Sarajevska Četvrto Pješadijska"
 		location = 14631  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Sarajevska Peto Pješadijska"
 		location = 14631  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Banja Luka Prva Pješadijska"
 		location = 20119  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Banja Luka Sekunda Pješadijska"
 		location = 20119  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Banja Luka Treće Pješadijska"
 		location = 20119  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Prijeda Pješadijska"
 		location = 20195  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Bihać Pješadijska"
 		location = 14432  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Doboj Pješadijska"
 		location = 6755  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Brčko Pješadijska"
 		location = 20191  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Bijeljina Pješadijska"
 		location = 2924  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Tuzla Pješadijska"
 		location = 387  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Trebinje Pješadijska"
 		location = 14800  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Zenica Pješadijska"
 		location = 20179  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Bugojno Pješadijska"
 		location = 20189  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Mostar Pješadijska"
 		location = 1186  # not Prague
 		division_template = "Pješadijske Divizije"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 
 	}
 }
