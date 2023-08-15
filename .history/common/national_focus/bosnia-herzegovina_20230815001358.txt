@@ -425,21 +425,13 @@ focus_tree = {
 		completion_reward = {
 			random_list = {
 				33 = {
-					ROOT = {
-						country_event = { id = bosnia.1 days = 1 }
-					}
+					country_event = { id = bosnia.1 days = 1 }
 				}
 				33 = {
-					ROOT = {
-						country_event = { id = bosnia.2 days = 1 }
-					}
-					
+					country_event = { id = bosnia.2 days = 1 }
 				}
 				33 = {
-					ROOT = {
-						country_event = { id = bosnia.3 days = 1 }
-					}
-					
+					country_event = { id = bosnia.3 days = 1 }
 				}
 			}
 		}
