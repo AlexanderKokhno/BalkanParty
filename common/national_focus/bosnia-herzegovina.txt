@@ -411,6 +411,9 @@ focus_tree = {
 	}   
 	focus = {
 		id = BOS_focus_spread_communism
+		available = {
+			NOT = { has_civil_war = yes }
+		}
 		icon = GFX_goal_generic_major_war
 		prerequisite = {
 			focus = BOS_focus_communism_revolution
@@ -423,26 +426,10 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		completion_reward = {
-			random_list = {
-				33 = {
-					ROOT = {
-						country_event = { id = bosnia.1 days = 1 }
-					}
-				}
-				33 = {
-					ROOT = {
-						country_event = { id = bosnia.2 days = 1 }
-					}
-					
-				}
-				33 = {
-					ROOT = {
-						country_event = { id = bosnia.3 days = 1 }
-					}
-					
-				}
-			}
-		}
+                    	MNT = {
+                        	country_event = { id = montenegro.1 days = 1 }
+                	}
+        }
 	}
 	focus = {
 		id = BOS_focus_fascism

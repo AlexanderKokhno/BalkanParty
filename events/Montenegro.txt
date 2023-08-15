@@ -1,0 +1,56 @@
+##################
+#montenegro events
+#################
+
+add_namespace = montenegro
+
+#################### AUS GER
+
+country_event = {
+	id = montenegro.1
+	title = montenegro.1.t
+	desc = montenegro.1.desc
+	picture = GFX_news_event_003
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = MNT
+	}
+	option = {
+		name = montenegro.1.a
+		BOS = {
+                	country_event = { id = bosnia.1 days = 1 }
+		}
+	}
+	option = {
+		name = montenegro.1.b
+		BOS = {
+                	country_event = { id = bosnia.2 days = 1 }
+		}
+	}
+	option = {
+		name = montenegro.1.c
+		BOS = {
+                	country_event = { id = bosnia.3 days = 1 }
+		}
+		ROOT = {
+                	country_event = { id = montenegro.2 days = 1 }
+		}
+	}
+}
+country_event = {
+	id = montenegro.2
+	title = montenegro.2.t
+	desc = montenegro.2.desc
+	picture = GFX_news_event_021
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = MNT
+	}
+	option = {
+		name = montenegro.2.a
+	}
+}

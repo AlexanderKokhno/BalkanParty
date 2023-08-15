@@ -72,8 +72,36 @@ country_event = {
 				keep_unit_leaders = yes
 				keep_political_leader = yes
 				keep_political_party_members = yes
+				set_country_flag = MNT_lf
 			}
 		}
+		ROOT = {
+                	country_event = { id = bosnia.4 days = 15 }
+		}
+	}
+}
+country_event = {
+	id = bosnia.4
+	title = bosnia.4.t
+	desc = bosnia.4.desc
+	picture = news_event_005
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = BOS
+	}
+	option = {
+		name = bosnia.4.a
+		BOS = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = DM1
+			}
+		}
+	}
+	option = {
+		name = bosnia.4.b
 	}
 }
 
