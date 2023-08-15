@@ -66,7 +66,7 @@ focus_tree = {
 		id = MNT_focus_1
 		icon = GFX_focus_ger_reichskommisariats
 		x = 7
-		y = -1
+		y = 0
 
 		cost = 15
 
@@ -102,14 +102,13 @@ focus_tree = {
 	focus = {
 		id = MNT_focus_2
 		icon = GFX_goal_tfv_saf_support_ossebrandwag
-		x = -2
+		x = 4
 		y = 1
 	    prerequisite = { focus = MNT_focus_1 }
 			    prerequisite = { focus = MNT_focus_11 }
 					    prerequisite = { focus = MNT_focus_18 }
 							    prerequisite = { focus = MNT_focus_21 }
-		relative_position_id = MNT_focus_1
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 10
 
 		ai_will_do = {
@@ -145,7 +144,7 @@ focus_tree = {
 		x = 14
 		y = 2
 	    prerequisite = { focus = MNT_focus_22 }
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 10
 
 		ai_will_do = {
@@ -176,7 +175,7 @@ focus_tree = {
 		x = 14
 		y = 3
 	    prerequisite = { focus = MNT_focus_25 }
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 5
 
 		ai_will_do = {
@@ -212,7 +211,7 @@ focus_tree = {
 		x = 12
 		y = 3
 	    prerequisite = { focus = MNT_focus_24 }
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 5
 
 		ai_will_do = {
@@ -248,7 +247,7 @@ focus_tree = {
 		x = 12
 		y = 2
 			    prerequisite = { focus = MNT_focus_23 }
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 10
 
 		ai_will_do = {
@@ -290,7 +289,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		x = 4
 		y = -1
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 10
 
 		ai_will_do = {
@@ -324,7 +323,7 @@ focus_tree = {
 		x = 13
 		y = -1
 	
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 10
 
 		ai_will_do = {
@@ -402,7 +401,7 @@ focus_tree = {
 			    prerequisite = { focus = MNT_focus_11 }
 					    prerequisite = { focus = MNT_focus_18 }
 							    prerequisite = { focus = MNT_focus_21 }
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 10
 
 		ai_will_do = {
@@ -425,7 +424,6 @@ focus_tree = {
 
 		completion_reward = {
 		add_manpower = 30000
-		add_ideas = MNT_anti_BOS_buffs
 		
 	
 		}
@@ -436,7 +434,7 @@ focus_tree = {
 		x = 14
 		y = 1
 	    prerequisite = { focus = MNT_focus_20 }
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 5
 
 		ai_will_do = {
@@ -490,7 +488,7 @@ focus_tree = {
 		prerequisite = { focus = MNT_focus_11 }
 		prerequisite = { focus = MNT_focus_18 }
 			    prerequisite = { focus = MNT_focus_21 }
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 10
 
 		ai_will_do = {
@@ -534,7 +532,7 @@ focus = {
 		prerequisite = { focus = MNT_focus_1 }
 		prerequisite = { focus = MNT_focus_11 }
 			    prerequisite = { focus = MNT_focus_21 }
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 5
 
 		ai_will_do = {
@@ -579,13 +577,12 @@ focus = {
     focus = {
 		id = MNT_focus_5
 		icon = GFX_focus_generic_armored_air_support
-		x = 0
+		x = 5
 		y = 1
 	    prerequisite = { focus = MNT_focus_2 }
         prerequisite = { focus = MNT_focus_3 }
         prerequisite = { focus = MNT_focus_4 }
-		relative_position_id = MNT_focus_2
-
+        relative_position_id = HOL_the_western_possessions
 		cost = 10
 
 		ai_will_do = {
@@ -624,7 +621,7 @@ focus = {
 		x = 12
 		y = 1
 	    prerequisite = { focus = MNT_focus_19 }
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 10
 
 		ai_will_do = {
@@ -684,11 +681,10 @@ focus = {
 focus = {
 		id = MNT_focus_6
 		icon = GFX_goal_generic_more_territorial_claims
-		x = -2
-		y = 1
+		x = 2
+		y = 2
 	    prerequisite = { focus = MNT_focus_5 }
-		relative_position_id = MNT_focus_8
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 5
 
 		ai_will_do = {
@@ -720,11 +716,10 @@ focus = {
     focus = {
 		id = MNT_focus_7
 		icon = GFX_goal_generic_position_armies
-		x = 2
-		y = 1
+		x = 8
+		y = 2
 	    prerequisite = { focus = MNT_focus_5 }
-		relative_position_id = MNT_focus_8
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 5
 
 		ai_will_do = {
@@ -756,11 +751,10 @@ focus = {
 	    focus = {
 		id = MNT_focus_29
 		icon = GFX_focus_generic_conspiracy
-		x = 1
-		y = 1
+		x = 8
+		y = 4
 	    prerequisite = { focus = MNT_focus_7 }
-			relative_position_id = MNT_focus_7
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 3
 
 		ai_will_do = {
@@ -792,13 +786,12 @@ focus = {
 	focus = {
 		id = MNT_focus_17
 		icon = GFX_goal_generic_national_unity
-		x = 0
-		y = 1
+		x = 5
+		y = 3
 	    prerequisite = { focus = MNT_focus_8 }
 		prerequisite = { focus = MNT_focus_6 }
 		prerequisite = { focus = MNT_focus_7 }
-		relative_position_id = MNT_focus_8
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 20
 
 		ai_will_do = {
@@ -843,11 +836,10 @@ add_state_core = 45
 	focus = {
 		id = MNT_focus_30
 		icon = GFX_focus_generic_monarchy_2
-		x = 0
-		y = 2
+		x = 5
+		y = 4
 	    prerequisite = { focus = MNT_focus_17 }
-			relative_position_id = MNT_focus_17
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 7
 
 		ai_will_do = {
@@ -885,7 +877,7 @@ add_state_core = 45
 	    prerequisite = { focus = MNT_focus_16 }
 		prerequisite = { focus = MNT_focus_27 }
 		prerequisite = { focus = MNT_focus_26 }
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 10
 
 		ai_will_do = {
@@ -970,11 +962,10 @@ add_state_core = 45
     focus = {
 		id = MNT_focus_8
 		icon = GFX_focus_focus_fra_fascist_threat
-		x = 0
+		x = 5
 		y = 2
 	    prerequisite = { focus = MNT_focus_5 }
-			relative_position_id = MNT_focus_2
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 5
 
 		ai_will_do = {
@@ -1010,7 +1001,7 @@ add_state_core = 45
 		icon = GFX_focus_focus_fra_maquis
 		x = 10
 		y = -1
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 5
 
 		ai_will_do = {
@@ -1121,7 +1112,7 @@ add_state_core = 45
 		prerequisite = { focus = MNT_focus_1 }
 		prerequisite = { focus = MNT_focus_18 }
 			    prerequisite = { focus = MNT_focus_21 }
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 5
 
 		ai_will_do = {
@@ -1158,7 +1149,7 @@ add_state_core = 45
 		x = 10
 		y = 1
 		prerequisite = { focus = MNT_focus_13}
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 5
 
 		ai_will_do = {
@@ -1255,7 +1246,7 @@ add_state_core = 45
 		x = 10
 		y = 2
 		prerequisite = { focus = MNT_focus_14}
-        
+        relative_position_id = HOL_the_western_possessions
 
 		cost = 5
 
@@ -1288,7 +1279,7 @@ add_state_core = 45
 		x = 10
 		y = 3
 		prerequisite = { focus = MNT_focus_15}
-        
+        relative_position_id = HOL_the_western_possessions
 
 		cost = 5
 
@@ -1335,7 +1326,7 @@ add_state_core = 45
 			    prerequisite = { focus = MNT_focus_11 }
 					    prerequisite = { focus = MNT_focus_18 }
 							    prerequisite = { focus = MNT_focus_21 }
-        
+        relative_position_id = HOL_the_western_possessions
 		cost = 10
 
 		ai_will_do = {
@@ -1381,7 +1372,7 @@ add_state_core = 45
 		x = 13
 		y = 6
 		prerequisite = { focus = MNT_focus_14}
-        
+        relative_position_id = HOL_the_western_possessions
 
 		cost = 10
 

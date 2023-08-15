@@ -20,22 +20,22 @@ country_event = {
 	option = {
 		name = montenegro.1.a
 		BOS = {
-      country_event = { id = bosnia.1 days = 1 }
+                	country_event = { id = bosnia.1 days = 1 }
 		}
 	}
 	option = {
 		name = montenegro.1.b
 		BOS = {
-      country_event = { id = bosnia.2 days = 1 }
+                	country_event = { id = bosnia.2 days = 1 }
 		}
 	}
 	option = {
 		name = montenegro.1.c
 		BOS = {
-      country_event = { id = bosnia.3 days = 1 }
+                	country_event = { id = bosnia.3 days = 1 }
 		}
 		ROOT = {
-      country_event = { id = montenegro.2 days = 1 }
+                	country_event = { id = montenegro.2 days = 1 }
 		}
 	}
 }

@@ -425,7 +425,6 @@ focus_tree = {
 
 		completion_reward = {
 		add_manpower = 30000
-		add_ideas = MNT_anti_BOS_buffs
 		
 	
 		}
@@ -843,10 +842,9 @@ add_state_core = 45
 	focus = {
 		id = MNT_focus_30
 		icon = GFX_focus_generic_monarchy_2
-		x = 0
-		y = 2
+		x = 5
+		y = 4
 	    prerequisite = { focus = MNT_focus_17 }
-			relative_position_id = MNT_focus_17
         
 		cost = 7
 

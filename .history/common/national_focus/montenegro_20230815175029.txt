@@ -425,7 +425,6 @@ focus_tree = {
 
 		completion_reward = {
 		add_manpower = 30000
-		add_ideas = MNT_anti_BOS_buffs
 		
 	
 		}
