@@ -1,7 +1,7 @@
 ideas = {
   country = {
-	BOS_bosnian_spring = {
-			picture = bosnian_spring_worse
+	BOS_bosnian_spring_3 = {
+			picture = GFX_generic_goods_red_bonus
 			allowed = {
 				always = yes
 			}
@@ -14,6 +14,86 @@ ideas = {
 				party_popularity_stability_factor = -0.1
 				stability_factor = -0.05
 				production_speed_buildings_factor = -0.1
+			}
+		}
+	BOS_landmines_3 = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_infrastructure_complex_factor = -0.3
+			}
+		}
+	BOS_bosnian_spring_2 = {
+			picture = GFX_generic_goods_red_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				party_popularity_stability_factor = -0.075
+				stability_factor = -0.04
+				production_speed_buildings_factor = -0.075
+			}
+		}
+	BOS_landmines_2 = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.075
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_infrastructure_complex_factor = -0.2
+			}
+		}
+	BOS_bosnian_spring_1 = {
+			picture = GFX_generic_goods_red_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				party_popularity_stability_factor = -0.05
+				stability_factor = -0.025
+				production_speed_buildings_factor = -0.05
+			}
+		}
+	BOS_landmines_1 = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_infrastructure_complex_factor = -0.1
 			}
 		}
 	BOS_heavy_investments = {

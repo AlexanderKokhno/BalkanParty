@@ -29,11 +29,15 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1100 }
+ 
 
+	########################################
+	############ FACTORIES
+	#########################################
 	focus = {
 		id = BOS_bosnian_spring_recover
 		icon = GFX_goal_generic_construction2
-		x = -3
+		x = -2
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -41,13 +45,33 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		completion_reward = {
-			remove_ideas = BOS_bosnian_spring
+			swap_ideas = {
+				remove_ideas = BOS_bosnian_spring_3
+				add_idea = BOS_bosnian_spring_2
+			}
+		}
+	}
+	focus = {
+		id = BOS_bosnian_landmines
+		icon = GFX_goal_generic_construction2
+		x = -4
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_ideas = BOS_landmines_3
+				add_idea = BOS_landmines_2
+			}
 		}
 	} 
 	focus = {
 		id = BOS_invest_krajina
 		icon = GFX_goal_BOS_krajina
-		prerequisite = { focus = BOS_bosnian_spring_recover}
+		prerequisite = { focus = BOS_bosnian_spring_recover focus = BOS_bosnian_landmines}
 		x = -1
 		y = 1
 		cost = 10
@@ -425,6 +449,7 @@ focus_tree = {
 		id = BOS_focus_spread_communism
 		available = {
 			NOT = { has_civil_war = yes }
+			has_army_manpower = { size > 49999 }
 		}
 		icon = GFX_goal_generic_major_war
 		prerequisite = {
@@ -480,6 +505,28 @@ focus_tree = {
 
 	
 	focus = {
+		id = BOS_focus_democracy
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = BOS_balkan_diplomacy}
+		mutually_exclusive = {
+			 focus =  BOS_focus_communism
+			 focus =  BOS_focus_fascism
+		}
+		x = 15
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+ 				popularity = 0.05
+			}
+		}
+	}
+ 	focus = {
 		id = BOS_focus_democracy
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = BOS_balkan_diplomacy}

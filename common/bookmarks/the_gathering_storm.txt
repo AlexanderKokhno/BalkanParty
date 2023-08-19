@@ -162,7 +162,8 @@ bookmarks = {
 
 			}
 			focuses = {
-
+				BOS_landmines_3
+				BOS_bosnian_spring_3
 			}
 		}
 		"KOS"={

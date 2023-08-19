@@ -70,7 +70,8 @@ if = {
 		basic_torpedo = 1
 	}
 }
-add_ideas = BOS_bosnian_spring
+add_ideas = BOS_bosnian_spring_3
+add_ideas = BOS_landmines_3
 set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
